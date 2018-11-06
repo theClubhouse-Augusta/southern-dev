@@ -22,6 +22,7 @@ var browserSync = require('browser-sync').create();
 
   gulp.task('watch', ['browserSync', 'sass'], function() {
     gulp.watch('src/sass/*.sass', ['sass']);
+    gulp.watch('src/js/*.js', browserSync.reload);
   });
   
 
