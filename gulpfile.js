@@ -6,7 +6,7 @@ var browserSync = require('browser-sync').create();
   gulp.task('sass', function(){
     return gulp.src('src/sass/*.sass')
       .pipe(sass())
-      .pipe(gulp.dest('docs/css'))
+      .pipe(gulp.dest('dist/css'))
       .pipe(browserSync.reload({
         stream: true
       }))
@@ -15,7 +15,7 @@ var browserSync = require('browser-sync').create();
   gulp.task('browserSync', function() {
     browserSync.init({
       server: {
-        baseDir: 'docs'
+        baseDir: './'
       }
     })
   })
