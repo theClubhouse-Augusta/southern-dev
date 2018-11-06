@@ -18,4 +18,4 @@ cd southern-dev
 npm install
 ```
 
-To run SASS Gulp task, simply do `npm run start`
+To run project, simply do `npm run start`
