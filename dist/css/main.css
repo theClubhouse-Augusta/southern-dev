@@ -8,10 +8,18 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
+main {
+  width: 80%;
+  margin: 0 auto; }
+
+section {
+  background-color: #ddd;
+  padding: 20px;
+  width: 100%; }
+
 h1, p, a {
   text-align: center;
   color: whitesmoke;
-  margin-top: 60px;
   font-size: 30px; }
 
 img {
@@ -20,15 +28,15 @@ img {
 
 p {
   font-size: 20px;
-  line-height: 30px;
+  line-height: 24px;
   color: white;
   text-decoration: none; }
 
 form {
   position: relative;
   background: white;
-  width: 80%;
   margin: 20px auto;
+  width: 100%;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 2px 2px 2px black; }
@@ -47,9 +55,10 @@ h1 {
   font-weight: bold; }
 
 section {
-  background-color: #ddd;
-  padding: 20px;
-  width: 100%; }
+  border-radius: 2px; }
+  section h2 {
+    margin-top: 0;
+    margin-bottom: 20px; }
   section p {
     color: #333;
     width: 60%;
