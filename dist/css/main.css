@@ -14,7 +14,7 @@ main {
 
 section {
   background-color: #ddd;
-  padding: 20px;
+  padding: 20px 0;
   width: 100%; }
 
 h1, p, a {
@@ -61,7 +61,7 @@ section {
     margin-bottom: 20px; }
   section p {
     color: #333;
-    width: 60%;
+    width: 70%;
     margin: 0 auto; }
 
 input[type=email] {
