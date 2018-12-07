@@ -62,26 +62,26 @@ window.onload = function() {
 
 
 
-     // HERE IS THE READ FUNCTION
-     var db = document.getElementById("db");
+    //  // HERE IS THE READ FUNCTION
+    //  var db = document.getElementById("db");
 
-     db.addEventListener("click", function() {
-       var results = document.getElementById("results");
-       fetch("https://gothic-welder-217319.appspot.com?addr", {
-         method: "GET",
-         headers: {
-           "content-type": "text/plain"
-         }
-       })
-       .then(function(response) {
-         return response.text();
-       })
-       .then(function(data) {
-         console.log(data);
-         results.textContent = data;
-       })
-       .catch(function(error) {
-         console.log(error);
-       })
-     });
+    //  db.addEventListener("click", function() {
+    //    var results = document.getElementById("results");
+    //    fetch("https://gothic-welder-217319.appspot.com?addr", {
+    //      method: "GET",
+    //      headers: {
+    //        "content-type": "text/plain"
+    //      }
+    //    })
+    //    .then(function(response) {
+    //      return response.text();
+    //    })
+    //    .then(function(data) {
+    //      console.log(data);
+    //      results.textContent = data;
+    //    })
+    //    .catch(function(error) {
+    //      console.log(error);
+    //    })
+    //  });
  }
