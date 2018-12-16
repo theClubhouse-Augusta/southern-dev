@@ -15,7 +15,8 @@ main {
 section {
   background-color: #ddd;
   padding: 20px 0;
-  width: 100%; }
+  width: 100%;
+  border-radius: 2px; }
 
 h1, p, a {
   text-align: center;
@@ -54,15 +55,14 @@ input {
 h1 {
   font-weight: bold; }
 
-section {
-  border-radius: 2px; }
-  section h2 {
-    margin-top: 0;
-    margin-bottom: 20px; }
-  section p {
-    color: #333;
-    width: 70%;
-    margin: 0 auto; }
+section h2 {
+  margin-top: 0;
+  margin-bottom: 20px; }
+
+section p {
+  color: #333;
+  width: 70%;
+  margin: 0 auto; }
 
 input[type=email] {
   padding: 10px 20px;
@@ -76,6 +76,18 @@ input[type=submit] {
   font-weight: bold;
   font-size: 20px;
   color: white; }
+
+.bios .bio {
+  background: white;
+  border-radius: 10px; }
+
+.bios img {
+  border: 2px solid black;
+  width: 49%; }
+
+.bios p {
+  width: 49%;
+  float: right; }
 
 #results {
   color: tomato;

@@ -20,9 +20,9 @@ var browserSync = require('browser-sync').create();
     })
   })
 
-  gulp.task('watch', gulp.series(gulp.parallel('browserSync', 'sass'), function() {
+  gulp.task('watch', ['sass', 'browserSync'], function() {
     gulp.watch('src/sass/*.sass', ['sass']);
     gulp.watch('src/js/*.js', browserSync.reload);
-  }));
+  });
   
 
