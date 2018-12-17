@@ -9,8 +9,9 @@ body {
   -moz-osx-font-smoothing: grayscale; }
 
 main {
-  width: 80%;
-  margin: 0 auto; }
+  width: 95%;
+  margin: 0 auto;
+  max-width: 1250px; }
 
 section {
   background-color: #ddd;
@@ -78,17 +79,37 @@ input[type=submit] {
   color: white; }
 
 .bios .bio {
+  position: relative;
   background: white;
-  border-radius: 10px; }
+  border-radius: 10px;
+  width: 95%;
+  margin: 0 auto; }
 
 .bios img {
-  border: 2px solid black;
-  width: 49%; }
+  width: 49%;
+  margin: 2rem auto; }
 
-.bios p {
+.bios .bioDescription {
   width: 49%;
   float: right; }
+  .bios .bioDescription h4 {
+    font-size: 2rem;
+    margin: 1rem auto; }
+  .bios .bioDescription p {
+    display: block; }
+
+@media (max-width: 800px) {
+  .bios img, .bios .bioDescription {
+    width: 100%; }
+  .bios img {
+    max-width: 20rem; }
+  .bios .bioDescription {
+    float: none; } }
 
 #results {
   color: tomato;
   margin: 0 auto; }
+
+#location {
+  width: 95%;
+  min-height: 20rem; }
