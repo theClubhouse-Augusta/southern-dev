@@ -88,6 +88,7 @@ input[type=submit] {
     min-width: 100%;
     height: 100%;
     background: url("../images/Augusta-Georgia.jpg") top center/cover no-repeat #424342;
+    -webkit-filter: saturate(1.5) blur(1px) grayscale(0.4) sepia(0.2) contrast(1.2);
     filter: saturate(1.5) blur(1px) grayscale(0.4) sepia(0.2) contrast(1.2); }
   .splash h1, .splash .logo {
     position: relative;
