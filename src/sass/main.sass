@@ -1,5 +1,7 @@
+$primary-gray: #424342
+
 body
-  background-color: #424342
+  background-color: $primary-gray
   text-align: center
   width: 100%
   padding: 0
@@ -9,11 +11,9 @@ body
   -moz-osx-font-smoothing: grayscale
 
 main
-  width: 95%
+  // width: 95%
+  // max-width: 1250px
   margin: 0 auto
-  max-width: 1250px
-  
-
 
 section
   background-color: #ddd
@@ -82,12 +82,37 @@ input[type=submit]
   font-size: 20px
   color: white
 
+// Styled Sections
+
+.splash
+  position: relative
+  min-height: 50vh
+  padding: 2rem 0
+  .splash-img
+    position: absolute
+    display: block
+    top: 0
+    left: 0
+    min-width: 100%
+    height: 100%
+    background: url("../images/Augusta-Georgia.jpg") top center / cover no-repeat $primary-gray
+    -webkit-filter: saturate(1.5) blur(1px) grayscale(.4) sepia(.2) contrast(1.2)
+    filter: saturate(1.5) blur(1px) grayscale(.4) sepia(.2) contrast(1.2)
+  h1, .logo
+    position: relative
+    margin: 0 auto
+  h1
+    background-color: rgba(0, 0, 0, .4)
+    box-shadow: 0px 0px 15px 10px rgba(0, 0, 0, 0.4)
+    padding: 1rem
+
+
 .bios
   .bio
     position: relative
     background: white
     border-radius: 10px
-    width: 95% 
+    width: 95%
     margin: 0 auto
   img
     // border: 2px solid black
@@ -109,7 +134,7 @@ input[type=submit]
     .bioDescription
       float: none
   // @media(min-width: 900px)
-    
+
 
 #results
   color: tomato
@@ -119,4 +144,3 @@ input[type=submit]
   width: 95%
   min-height: 20rem
 
-  
