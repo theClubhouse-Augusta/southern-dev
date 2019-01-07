@@ -33,7 +33,7 @@ var cache = require('gulp-cache');
   gulp.task('browserSync', function() {
     browserSync.init({
       server: {
-        baseDir: './'
+        baseDir: './docs'
       }
     })
   });
