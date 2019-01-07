@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "gulp watch"
+    "start": "gulp watch",
+    "build": "gulp images"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,8 @@
   "devDependencies": {
     "browser-sync": "^2.26.3",
     "gulp": "^3.9.1",
+    "gulp-cache": "^1.0.2",
+    "gulp-imagemin": "^5.0.3",
     "gulp-sass": "^4.0.2"
   }
 }
