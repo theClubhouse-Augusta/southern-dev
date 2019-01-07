@@ -8,7 +8,7 @@ var cache = require('gulp-cache');
   gulp.task('sass', function(){
     return gulp.src('src/sass/*.sass')
       .pipe(sass())
-      .pipe(gulp.dest('dist/css'))
+      .pipe(gulp.dest('docs/css'))
       .pipe(browserSync.reload({
         stream: true
       }))
@@ -16,7 +16,7 @@ var cache = require('gulp-cache');
 
   gulp.task('js', function() {
     return gulp.src('src/js/*.js')
-    .pipe(gulp.dest('dist/js'))
+    .pipe(gulp.dest('docs/js'))
     .pipe(browserSync.reload({
       stream: true
     }))
@@ -27,7 +27,7 @@ var cache = require('gulp-cache');
       .pipe(imagemin({
         interlaced: true
       }))
-      .pipe(gulp.dest('dist/images'))
+      .pipe(gulp.dest('docs/images'))
   });
 
   gulp.task('browserSync', function() {
