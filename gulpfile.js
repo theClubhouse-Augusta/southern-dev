@@ -22,6 +22,14 @@ var cache = require('gulp-cache');
     }))
   });
 
+  gulp.task('html', function() {
+    return gulp.src('src/*.html')
+    .pipe(gulp.dest('docs'))
+    .pipe(browserSync.reload({
+      stream: true
+    }))
+  });
+
   gulp.task('images', function() {
     return gulp.src('src/images/*.+(png|jpg|gif|svg)')
       .pipe(imagemin({
@@ -41,6 +49,7 @@ var cache = require('gulp-cache');
   gulp.task('watch', ['sass', 'js', 'browserSync'], function() {
     gulp.watch('src/sass/*.sass', ['sass']);
     gulp.watch('src/js/*.js', ['js']);
+    gulp.watch('src/*.html', ['html']);
   });
 
 
