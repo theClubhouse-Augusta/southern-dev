@@ -1,5 +1,8 @@
 $primary-gray: #424342
 
+html
+  font-size: 10px
+
 body
   background-color: $primary-gray
   text-align: center
@@ -14,37 +17,26 @@ main
   // width: 95%
   // max-width: 1250px
   margin: 0 auto
+  p
+    font-size: 1.6rem
 
 section
   background-color: #ddd
   padding: 20px 0
-  width: 100%
   border-radius: 2px
 
 h1, p, a
-  text-align: center
   color: whitesmoke
-  font-size: 30px
 
 img
   width: 50%
   max-width: 500px
 
 p
-  font-size: 20px
-  line-height: 24px
+  font-size: 10px
+  line-height: 1.1
   color: white
   text-decoration: none
-
-
-form
-  position: relative
-  background: white
-  margin: 20px auto
-  width: 100%
-  padding: 20px 0
-  border-radius: 10px
-  box-shadow: 2px 2px 2px black
 
 label
   margin: 20px auto
@@ -58,7 +50,7 @@ input
   background-color: lightgray
 
 h1
-  font-weight: bold
+
 
 section
   h2
@@ -82,7 +74,13 @@ input[type=submit]
   font-size: 20px
   color: white
 
-// Styled Sections
+footer
+  p, a
+    font-size: 1.4rem
+  a
+    text-decoration: none
+
+//Styled classes
 
 .splash
   position: relative
@@ -135,6 +133,14 @@ input[type=submit]
       float: none
   // @media(min-width: 900px)
 
+.subscribe-form
+  position: relative
+  background: white
+  margin: 20px auto
+  width: 100%
+  padding: 20px 0
+  border-radius: 10px
+  box-shadow: 2px 2px 2px black
 
 #results
   color: tomato
@@ -143,4 +149,3 @@ input[type=submit]
 #location
   width: 95%
   min-height: 20rem
-
