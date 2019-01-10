@@ -3,7 +3,6 @@ html {
 
 body {
   background-color: #424342;
-  text-align: center;
   width: 100%;
   padding: 0;
   margin: 0;
@@ -12,7 +11,8 @@ body {
   -moz-osx-font-smoothing: grayscale; }
 
 main {
-  margin: 0 auto; }
+  margin: 0 auto;
+  text-align: center; }
   main p {
     font-size: 1.6rem; }
 
@@ -99,15 +99,21 @@ footer a {
   background: white;
   border-radius: 10px;
   width: 95%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  text-align: left; }
 
 .bios img {
   width: 49%;
-  margin: 2rem auto; }
+  position: relative;
+  margin: 2rem 0; }
 
 .bios .bioDescription {
+  position: absolute;
+  text-align: center;
   width: 49%;
-  float: right; }
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%); }
   .bios .bioDescription h4 {
     font-size: 2rem;
     margin: 1rem auto; }
@@ -115,12 +121,15 @@ footer a {
     display: block; }
 
 @media (max-width: 800px) {
+  .bios .bio {
+    text-align: center; }
   .bios img, .bios .bioDescription {
     width: 100%; }
   .bios img {
-    max-width: 20rem; }
+    max-width: 300px; }
   .bios .bioDescription {
-    float: none; } }
+    position: relative;
+    transform: translateY(0); } }
 
 .subscribe-form {
   position: relative;
