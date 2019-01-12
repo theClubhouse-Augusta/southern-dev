@@ -2,7 +2,7 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var browserSync = require('browser-sync').create();
 var imagemin = require('gulp-imagemin');
-var cache = require('gulp-cache');
+// var cache = require('gulp-cache');
 
 
   gulp.task('sass', function(){

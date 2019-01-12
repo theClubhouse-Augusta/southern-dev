@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,62 +9,81 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
   <script src="js/main.js"></script>
+  <!-- <script defer src="https://use.fontawesome.com/releases/v5.6.3/js/all.js" integrity="sha384-EIHISlAOj4zgYieurP0SdoiBYfGJKkgWedPHH4jCzpCXLmzVsw1ouK59MuUtP4a1"
+    crossorigin="anonymous"></script> -->
 </head>
+
 <body>
-  <main>
-    <div class="splash">
-      <img class="splash-img" alt="">
+  <div id="body-wrapper">
+    <main>
+      <div class="splash">
+        <img class="splash-img" id="splash-img" alt="">
         <img class="logo" src="images/logo.png" alt="Southern Dev logo">
         <h1>A Dev Conference for a better community by an awesome community.</h1>
-    </div>
-
-
-    <section class="mission" >
-      <h2>Our Mission</h2>
-      <p>Our goal is to push the conversation of software development beyond the basics and push innovation in design, architecture, data storage, and technical leadership. We believe an annual conference is a way to begin these discussions that can carry over to our developer community, businesses, and organizations throughout the year to improve ourselves and by extension, our community.</p>
-    </section>
-
-    <section class="conduct" >
-      <h2>Code of Conduct</h2>
-      <p>We are dedicated to providing a harassment-free conference experience for everyone, regardless of gender, gender identity and expression, age, sexual orientation, disability, physical appearance, body size, race, ethnicity, religion (or lack thereof), financial status, political views, or technology choices. We do not tolerate harassment of conference participants in any form. Sexual language and imagery is not appropriate for any venue, talk, workshop, party, or online media. Participants violating these rules may be  expelled from the conference without a refund at the discretion of the conference organisers.
-      </p>
-    </section>
-
-    <section class="bios" >
-      <h2>Speakers</h2>
-      <div class="bio" >
-        <img src="images/eric.png" alt="">
-        <div class="bioDescription" >
-          <h4>Eric Harrison</h4>
-          <p>co-founder and CTO of Moonrise, a social-impact startup trying to use AI to connect financially challenged workers to awesome jobs. He's the author of An Introduction to Robot Programming and has spent his career trying to automate-away the worst parts of life.</p>
+        <div class="insta-filters">
+          <button id="sepia">Sepia</button>
+          <button id="default">Default</button>
         </div>
       </div>
-    </section>
 
-    <section class="subscribe-form">
-      <h2>Stay Up to Date</h2>
-      <form name="emailAdd"  >
-        <label for="email">Enter your email address if you want news that is a little cooler than spam.</label>
-        <input type="email" name="email" placeholder="sick@email.aol" />
-        <p id="results">&nbsp;</p>
-        <input type="submit" name="submit" value="subscribe"  />
+
+      <section class="mission">
+        <h2>Our Mission</h2>
+        <p>Our goal is to push the conversation of software development beyond the basics and push innovation in
+          design, architecture, data storage, and technical leadership. We believe an annual conference is a way to
+          begin these discussions that can carry over to our developer community, businesses, and organizations
+          throughout the year to improve ourselves and by extension, our community.</p>
+      </section>
+
+      <section class="conduct">
+        <h2>Code of Conduct</h2>
+        <p>We are dedicated to providing a harassment-free conference experience for everyone, regardless of gender,
+          gender identity and expression, age, sexual orientation, disability, physical appearance, body size, race,
+          ethnicity, religion (or lack thereof), financial status, political views, or technology choices. We do not
+          tolerate harassment of conference participants in any form. Sexual language and imagery is not appropriate
+          for any venue, talk, workshop, party, or online media. Participants violating these rules may be expelled
+          from the conference without a refund at the discretion of the conference organisers.
+        </p>
+      </section>
+
+      <section class="bios">
+        <h2>Speakers</h2>
+        <div class="bio">
+          <img src="images/eric.png" alt="">
+          <div class="bioDescription">
+            <h4>Eric Harrison</h4>
+            <p>co-founder and CTO of Moonrise, a social-impact startup trying to use AI to connect financially challenged workers to awesome jobs. He's the author of An Introduction to Robot Programming and has spent his career trying to automate-away the worst parts of life.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="subscribe-form">
+        <h2>Stay Up to Date</h2>
+        <form name="emailAdd">
+          <label for="email">Enter your email address if you want news that is a little cooler than spam.</label>
+          <input type="email" name="email" placeholder="sick@email.aol" />
+          <p id="results">&nbsp;</p>
+          <input type="submit" name="submit" value="subscribe" />
         </form>
-    </section>
+      </section>
 
-    <section class="location">
-      <h2>Venue Location</h2>
-      <iframe id="location" src="https://www.google.com/maps/d/u/0/embed?mid=1CQdON6sA-pMuOvTIrZcyzU7B6rw-e_lu" ></iframe>
+      <section class="location">
+        <h2>Venue Location</h2>
+        <iframe id="location" src="https://www.google.com/maps/d/u/0/embed?mid=1CQdON6sA-pMuOvTIrZcyzU7B6rw-e_lu"></iframe>
         <!-- width="640" height="480" -->
-    </section>
-  </main>
+      </section>
+    </main>
 
-  <footer>
-    <p>Follow us on Twitter:
-      <a href="https://twitter.com/southerndev_co" >@southerndev_co</a>
-    </p>
-    <p>Email us:
-      <a href="mailto:info@southerndev.co" >info@southerndev.co</a>
-    </p>
-  </footer>
+    <footer>
+      <p>
+        <!-- <i class="fab fa-twitter"></i> -->
+        <a href="https://twitter.com/southerndev_co">@southerndev_co</a>
+      </p>
+      <p>Email us:
+        <a href="mailto:info@southerndev.co">info@southerndev.co</a>
+      </p>
+    </footer>
+  </div>
 </body>
+
 </html>
