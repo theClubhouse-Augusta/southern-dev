@@ -2,7 +2,7 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var browserSync = require('browser-sync').create();
 var imagemin = require('gulp-imagemin');
-var cache = require('gulp-cache');
+// var cache = require('gulp-cache');
 
 
   gulp.task('sass', function(){
@@ -17,6 +17,14 @@ var cache = require('gulp-cache');
   gulp.task('js', function() {
     return gulp.src('src/js/*.js')
     .pipe(gulp.dest('docs/js'))
+    .pipe(browserSync.reload({
+      stream: true
+    }))
+  });
+
+  gulp.task('html', function() {
+    return gulp.src('src/*.html')
+    .pipe(gulp.dest('docs'))
     .pipe(browserSync.reload({
       stream: true
     }))
@@ -41,6 +49,7 @@ var cache = require('gulp-cache');
   gulp.task('watch', ['sass', 'js', 'browserSync'], function() {
     gulp.watch('src/sass/*.sass', ['sass']);
     gulp.watch('src/js/*.js', ['js']);
+    gulp.watch('src/*.html', ['html']);
   });
 
 
