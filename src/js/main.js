@@ -71,10 +71,13 @@ window.onload = function () {
     const filterArray = ["sepia", "default"];
 
     filterArray.forEach(function(element) {
-      let generateButton = instaFilters.createElement("button");
-      generateButton.classList.add(element);
-      generateButton.innerHTML = element;
+      let filterButton = document.createElement("button");
+      filterButton.id = element;
+      filterButton.innerHTML = element;
+      instaFilters.appendChild(filterButton);
     });
+
+    devBtn.style.display = "none";
   }
 
   devBtn.addEventListener("click", GenerateFilters);
