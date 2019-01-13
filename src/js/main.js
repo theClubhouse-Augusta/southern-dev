@@ -62,8 +62,22 @@ window.onload = function () {
   });
 
   /* Insta Filters */
-  const instaFilters = document.querySelector(".insta-filters");
-  const splashImg = document.getElementById("splash-img");
+
+  const instaFilters = document.querySelector(".insta-filters"),
+   splashImg = document.getElementById("splash-img"),
+   devBtn = document.getElementById("dev-btn");
+
+  function GenerateFilters (){
+    const filterArray = ["sepia", "default"];
+
+    filterArray.forEach(function(element) {
+      let generateButton = instaFilters.createElement("button");
+      generateButton.classList.add(element);
+      generateButton.innerHTML = element;
+    });
+  }
+
+  devBtn.addEventListener("click", GenerateFilters);
 
   instaFilters.addEventListener("click", function (event) {
     let instaFilter = event.target;
