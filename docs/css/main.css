@@ -56,16 +56,23 @@ section p {
 
 input[type=email] {
   padding: 10px 20px;
-  text-align: center; }
+  text-align: center;
+  box-shadow: inset 10px 10px 20px -15px rgba(0, 0, 0, 0.4);
+  border-radius: 5px; }
 
 input[type=submit] {
   background-color: #F38770;
   padding: 10px 20px;
   border-radius: 2px;
-  box-shadow: 1px 1px 2px .8px black;
+  border: 2px solid #F38770;
+  box-shadow: 1px 1px 2px 0.8px rgba(0, 0, 0, 0.4);
   font-weight: bold;
   font-size: 2rem;
-  color: white; }
+  color: white;
+  transition: all .2s ease; }
+  input[type=submit]:hover {
+    background-color: white;
+    color: #F38770; }
 
 footer {
   padding: 2rem 0;
@@ -157,6 +164,21 @@ footer {
       margin: 1rem auto; }
     .bios .bioDescription p {
       display: block; }
+  .bios .cfp {
+    background-color: #ddd;
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 0;
+    border-radius: 10px; }
+    .bios .cfp p, .bios .cfp h4, .bios .cfp a {
+      text-align: middle; }
+    .bios .cfp h4 {
+      font-size: 2rem;
+      line-height: 1.8;
+      margin-top: 0;
+      margin-bottom: .5rem; }
+    .bios .cfp a {
+      color: #424342; }
   @media (max-width: 800px) {
     .bios .bio {
       text-align: center;
