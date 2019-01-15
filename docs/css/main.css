@@ -107,52 +107,75 @@ footer {
     top: 0;
     left: 0; }
 
-.bios .bio {
-  position: relative;
-  background: white;
+.conduct {
+  background-color: white;
   border-radius: 10px;
   width: 90%;
   max-width: 1250px;
   margin: 0 auto;
-  text-align: left; }
+  padding: 30px 0; }
+  .conduct h2 {
+    font-size: 2.4rem; }
+  .conduct h4 {
+    font-size: 1.8rem;
+    margin: 2rem 0 1rem 0; }
+  .conduct p {
+    opacity: .9;
+    text-align: left; }
+  .conduct br {
+    height: 10px; }
 
-.bios img {
-  width: 49%;
-  position: relative;
-  margin: 2rem;
-  max-width: 300px; }
-
-.bios .bioDescription {
-  position: absolute;
-  text-align: center;
-  width: 49%;
-  top: 50%;
-  right: 0;
-  transform: translateY(-50%); }
-  .bios .bioDescription h4 {
-    font-size: 2rem;
-    padding: 1rem 0;
-    margin: 1rem auto; }
-  .bios .bioDescription p {
-    display: block; }
-
-@media (max-width: 800px) {
+.bios {
+  background-color: white;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 1250px;
+  margin: 3rem auto; }
   .bios .bio {
-    text-align: center;
-    padding: 2rem 0; }
-  .bios img, .bios .bioDescription {
-    width: 100%; }
-  .bios img {
-    margin: 0; }
-  .bios .bioDescription {
     position: relative;
-    transform: translateY(0); } }
+    background: white;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 1250px;
+    margin: 0 auto;
+    text-align: left; }
+  .bios img {
+    width: 49%;
+    position: relative;
+    margin: 2rem;
+    max-width: 300px; }
+  .bios .bioDescription {
+    position: absolute;
+    text-align: center;
+    width: 49%;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%); }
+    .bios .bioDescription h4 {
+      font-size: 2rem;
+      padding: 1rem 0;
+      margin: 1rem auto; }
+    .bios .bioDescription p {
+      display: block; }
+  @media (max-width: 800px) {
+    .bios .bio {
+      text-align: center;
+      padding: 2rem 0; }
+    .bios img, .bios .bioDescription {
+      width: 100%; }
+    .bios img {
+      margin: 0; }
+    .bios .bioDescription {
+      position: relative;
+      transform: translateY(0); } }
 
 .subscribe-form {
   position: relative;
   background: white;
   margin: 20px auto;
-  width: 100%;
+  width: 90%;
+  max-width: 1250px;
+  margin: 0 auto;
   padding: 20px 0;
   border-radius: 10px;
   box-shadow: 2px 2px 2px black; }
@@ -168,5 +191,7 @@ footer {
   margin: 0 auto; }
 
 #location {
-  width: 95%;
+  width: 90%;
+  max-width: 1250px;
+  margin: 0 auto;
   min-height: 20rem; }
