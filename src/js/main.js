@@ -70,6 +70,7 @@ window.onload = function () {
   function GenerateFilters (){
     const filterArray = ["sepia", "default"];
 
+    // 1. Create insta filters
     filterArray.forEach(function(element) {
       let filterButton = document.createElement("button");
       filterButton.id = element;
@@ -78,23 +79,26 @@ window.onload = function () {
     });
 
     devBtn.style.display = "none";
+
+    // 2. Add Event Listener to filters
+    instaFilters.addEventListener("click", function (event) {
+      let instaFilter = event.target;
+      switch (instaFilter.id) {
+        case "sepia":
+          splashImg.style.webkitfilter = "sepia(1)";
+          splashImg.style.filter = "sepia(1)";
+          break;
+        default:
+          splashImg.style.webkitfilter = "";
+          splashImg.style.filter = "";
+          break;
+      };
+
+    });
   }
 
   devBtn.addEventListener("click", GenerateFilters);
 
-  instaFilters.addEventListener("click", function (event) {
-    let instaFilter = event.target;
-    switch (instaFilter.id) {
-      case "sepia":
-        splashImg.style.webkitfilter = "sepia(1)";
-        splashImg.style.filter = "sepia(1)";
-        break;
-      default:
-        splashImg.style.webkitfilter = "";
-        splashImg.style.filter = "";
-        break;
-    };
 
-  });
 
 }
