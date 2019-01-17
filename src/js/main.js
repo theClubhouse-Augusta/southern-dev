@@ -61,11 +61,14 @@ window.onload = function () {
       })
   });
 
-  /* Insta Filters */
-
+  /*
+  1. Button that enables instagram filters
+  2. It is hidden at the top left corner of the splash page
+  */
   const instaFilters = document.querySelector(".insta-filters"),
    splashImg = document.getElementById("splash-img"),
    devBtn = document.getElementById("dev-btn");
+
 
   function GenerateFilters (){
     const filterArray = ["sepia", "default"];
@@ -77,8 +80,6 @@ window.onload = function () {
       filterButton.innerHTML = element;
       instaFilters.appendChild(filterButton);
     });
-
-    devBtn.style.display = "none";
 
     // 2. Add Event Listener to filters
     instaFilters.addEventListener("click", function (event) {
@@ -100,5 +101,10 @@ window.onload = function () {
   devBtn.addEventListener("click", GenerateFilters);
 
 
+  /* Logo Shadow Hover animation */
+  const logo = document.querySelector(".logo");
 
+  logo.addEventListener("mousemove", function(e) {
+    logo.style.filter = `drop-shadow(${( e.screenX - e.clientX ) / 5}px ${(e.screenY - e.clientY) / 5}px 5px rgba(0, 0, 0, 0.5))`;
+  });
 }

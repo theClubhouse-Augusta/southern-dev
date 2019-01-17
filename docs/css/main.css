@@ -113,6 +113,8 @@ footer {
     position: absolute;
     top: 0;
     left: 0; }
+  .splash .logo {
+    filter: drop-shadow(-10px 10px 5px rgba(0, 0, 0, 0.5)); }
 
 .conduct {
   background-color: white;
@@ -207,6 +209,9 @@ footer {
   text-align: center;
   max-width: 1920px;
   background-color: #ddd; }
+
+#dev-btn {
+  display: none; }
 
 #results {
   color: tomato;
