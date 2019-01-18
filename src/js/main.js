@@ -105,7 +105,11 @@ window.onload = function () {
   var logo = document.querySelector(".logo");
 
   logo.addEventListener("mousemove", function(e) {
-    logo.style.filter = "drop-shadow(" + Math.round((e.screenX - e.clientX) / 5) + "px " + Math.round((e.screenY - e.clientY) / 5) + "px 5px rgba(0, 0, 0, 0.5))" + "-webkit-drop-shadow(" + Math.round((e.screenX - e.clientX) / 5) + "px " + Math.round((e.screenY - e.clientY) / 5) + "px 5px rgba(0, 0, 0, 0.5))";
-    console.log(e.clientX, e.clientY);
+    var xPosition = Math.round((e.screenX - e.clientX) / 5);
+    var yPosition = Math.round((e.screenY - e.clientY) / 5);
+
+    var dropShadow = "drop-shadow(" + xPosition  + "px " + yPosition  + "px 5px rgba(0, 0, 0, 0.5));";
+
+    logo.style.filter = dropShadow;
   });
 }
