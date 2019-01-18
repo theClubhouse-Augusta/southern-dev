@@ -106,5 +106,6 @@ window.onload = function () {
 
   logo.addEventListener("mousemove", function(e) {
     logo.style.filter = "drop-shadow(" + (e.screenX - e.clientX) / 5 + "px " + (e.screenY - e.clientY) / 5 + "px 5px rgba(0, 0, 0, 0.5))";
+    console.log(e.clientX, e.clientY);
   });
 }
