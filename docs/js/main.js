@@ -105,11 +105,13 @@ window.onload = function () {
   var logo = document.querySelector(".logo");
 
   logo.addEventListener("mousemove", function(e) {
-    var xPosition = Math.round((e.screenX - e.clientX) / 5);
-    var yPosition = Math.round((e.screenY - e.clientY) / 5);
+    var xPosition = e.clientX;
+        xPosition = Math.round(- xPosition / 50);
+    var yPosition = e.clientY;
+        yPosition = Math.round(yPosition / 50);
 
-    var dropShadow = "drop-shadow(" + xPosition  + "px " + yPosition  + "px 5px rgba(0, 0, 0, 0.5));";
-
+    var dropShadow = "drop-shadow(" + xPosition  + "px " + yPosition  + "px 5px rgba(0, 0, 0, 0.5))";
+    console.log(xPosition, yPosition);
     logo.style.filter = dropShadow;
   });
 }
