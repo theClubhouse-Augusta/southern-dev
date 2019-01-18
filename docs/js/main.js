@@ -41,7 +41,7 @@ window.onload = function () {
   form.addEventListener('submit', function (e) {
     e.preventDefault();
 
-    const formData = serialize(form);
+    var formData = serialize(form);
     fetch("https://gothic-welder-217319.appspot.com", {
         method: "POST",
         headers: {
@@ -65,17 +65,17 @@ window.onload = function () {
   1. Button that enables instagram filters
   2. It is hidden at the top left corner of the splash page
   */
-  const instaFilters = document.querySelector(".insta-filters"),
+  var instaFilters = document.querySelector(".insta-filters"),
    splashImg = document.getElementById("splash-img"),
    devBtn = document.getElementById("dev-btn");
 
 
   function GenerateFilters (){
-    const filterArray = ["sepia", "default"];
+    var filterArray = ["sepia", "default"];
 
     // 1. Create insta filters
     filterArray.forEach(function(element) {
-      let filterButton = document.createElement("button");
+      var filterButton = document.createElement("button");
       filterButton.id = element;
       filterButton.innerHTML = element;
       instaFilters.appendChild(filterButton);
@@ -83,7 +83,7 @@ window.onload = function () {
 
     // 2. Add Event Listener to filters
     instaFilters.addEventListener("click", function (event) {
-      let instaFilter = event.target;
+      var instaFilter = event.target;
       switch (instaFilter.id) {
         case "sepia":
           splashImg.style.webkitfilter = "sepia(1)";
@@ -102,7 +102,7 @@ window.onload = function () {
 
 
   /* Logo Shadow Hover animation */
-  const logo = document.querySelector(".logo");
+  var logo = document.querySelector(".logo");
 
   logo.addEventListener("mousemove", function(e) {
     logo.style.filter = "drop-shadow(" + (e.screenX - e.clientX) / 5 + "px " + (e.screenY - e.clientY) / 5 + "px 5px rgba(0, 0, 0, 0.5))";
