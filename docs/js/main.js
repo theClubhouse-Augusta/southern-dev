@@ -105,6 +105,6 @@ window.onload = function () {
   const logo = document.querySelector(".logo");
 
   logo.addEventListener("mousemove", function(e) {
-    logo.style.filter = `drop-shadow(${( e.screenX - e.clientX ) / 5}px ${(e.screenY - e.clientY) / 5}px 5px rgba(0, 0, 0, 0.5))`;
+    logo.style.filter = "drop-shadow(" + (e.screenX - e.clientX) / 5 + "px " + (e.screenY - e.clientY) / 5 + "px 5px rgba(0, 0, 0, 0.5))";
   });
 }
