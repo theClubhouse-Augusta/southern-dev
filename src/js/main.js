@@ -105,13 +105,13 @@ window.onload = function () {
   var logo = document.querySelector(".logo");
 
   logo.addEventListener("mousemove", function(e) {
-    var xPosition = e.screenX;
-      xPosition -= e.clientX;
-    var yPosition = e.screenY;
-      yPosition -= e.clientY;
+    var xPosition = e.clientX;
+        xPosition = Math.round(- xPosition / 50);
+    var yPosition = e.clientY;
+        yPosition = Math.round(yPosition / 50);
 
-    var dropShadow = "drop-shadow(" + xPosition  + "px " + yPosition  + "px 5px rgba(0, 0, 0, 0.5));";
-
+    var dropShadow = "drop-shadow(" + xPosition  + "px " + yPosition  + "px 5px rgba(0, 0, 0, 0.5))";
+    // console.log(xPosition, yPosition);
     logo.style.filter = dropShadow;
   });
 }
