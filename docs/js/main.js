@@ -37,7 +37,7 @@ window.onload = function () {
   };
 
   /* Subscribe Form submittal */
-  var form = document.forms.namedItem('emailAdd');
+/*  var form = document.forms.namedItem('emailAdd');
   form.addEventListener('submit', function (e) {
     e.preventDefault();
 
@@ -60,6 +60,8 @@ window.onload = function () {
         console.error(error);
       })
   });
+*/
+
 
   /*
   1. Button that enables instagram filters
