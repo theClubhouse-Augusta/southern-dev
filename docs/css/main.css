@@ -1,6 +1,8 @@
+html {
+  font-size: 10px; }
+
 body {
   background-color: #424342;
-  text-align: center;
   width: 100%;
   padding: 0;
   margin: 0;
@@ -9,41 +11,31 @@ body {
   -moz-osx-font-smoothing: grayscale; }
 
 main {
-  margin: 0 auto; }
+  margin: 0 auto;
+  overflow: hidden; }
+  main p, main label {
+    font-size: 1.6rem; }
 
 section {
-  background-color: #ddd;
   padding: 20px 0;
-  width: 100%;
   border-radius: 2px; }
 
 h1, p, a {
-  text-align: center;
-  color: whitesmoke;
-  font-size: 30px; }
+  color: whitesmoke; }
 
 img {
   width: 50%;
   max-width: 500px; }
 
 p {
-  font-size: 20px;
-  line-height: 24px;
+  line-height: 1.1;
   color: white;
   text-decoration: none; }
 
-form {
-  position: relative;
-  background: white;
-  margin: 20px auto;
-  width: 100%;
-  padding: 20px 0;
-  border-radius: 10px;
-  box-shadow: 2px 2px 2px black; }
-
 label {
-  margin: 20px auto;
-  max-width: 60%; }
+  margin: 0 auto;
+  padding: 2rem;
+  width: 60%; }
 
 input {
   display: block;
@@ -51,12 +43,11 @@ input {
   border: 0;
   background-color: lightgray; }
 
-h1 {
-  font-weight: bold; }
-
 section h2 {
   margin-top: 0;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  font-weight: bold; }
 
 section p {
   color: #333;
@@ -65,16 +56,33 @@ section p {
 
 input[type=email] {
   padding: 10px 20px;
-  text-align: center; }
+  text-align: center;
+  box-shadow: inset 10px 10px 20px -15px rgba(0, 0, 0, 0.4);
+  border-radius: 5px; }
 
 input[type=submit] {
   background-color: #F38770;
   padding: 10px 20px;
   border-radius: 2px;
-  box-shadow: 1px 1px 2px .8px black;
+  border: 2px solid #F38770;
+  box-shadow: 1px 1px 2px 0.8px rgba(0, 0, 0, 0.4);
   font-weight: bold;
-  font-size: 20px;
-  color: white; }
+  font-size: 2rem;
+  color: white;
+  transition: all .2s ease; }
+  input[type=submit]:hover {
+    background-color: white;
+    color: #F38770; }
+
+footer {
+  padding: 2rem 0;
+  background: white; }
+  footer p, footer a {
+    font-size: 1.4rem;
+    color: #424342; }
+  footer a {
+    text-decoration: none;
+    color: #F38770; }
 
 .splash {
   position: relative;
@@ -87,7 +95,11 @@ input[type=submit] {
     left: 0;
     min-width: 100%;
     height: 100%;
-    background: url("../images/Augusta-Georgia.jpg") top center/cover no-repeat #424342;
+    background-image: url("../images/Augusta-Georgia.jpg");
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #424342;
     -webkit-filter: saturate(1.5) blur(1px) grayscale(0.4) sepia(0.2) contrast(1.2);
     filter: saturate(1.5) blur(1px) grayscale(0.4) sepia(0.2) contrast(1.2); }
   .splash h1, .splash .logo {
@@ -97,39 +109,117 @@ input[type=submit] {
     background-color: rgba(0, 0, 0, 0.4);
     box-shadow: 0px 0px 15px 10px rgba(0, 0, 0, 0.4);
     padding: 1rem; }
+  .splash .insta-filters, .splash #dev-btn {
+    position: absolute;
+    top: 0;
+    left: 0; }
+  .splash .logo {
+    filter: drop-shadow(-10px 10px 5px rgba(0, 0, 0, 0.5));
+    transition: all .2s ease; }
 
-.bios .bio {
+.conduct {
+  background-color: white;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 30px 0; }
+  .conduct h2 {
+    font-size: 2.4rem; }
+  .conduct h4 {
+    font-size: 1.8rem;
+    margin: 2rem 0 1rem 0; }
+  .conduct p {
+    opacity: .9;
+    text-align: left; }
+  .conduct br {
+    height: 10px; }
+
+.bios {
+  background-color: white;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 1250px;
+  margin: 3rem auto; }
+  .bios .bio {
+    position: relative;
+    background: white;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 1250px;
+    margin: 0 auto;
+    text-align: left; }
+  .bios img {
+    width: 49%;
+    position: relative;
+    margin: 2rem;
+    max-width: 300px; }
+  .bios .bioDescription {
+    position: absolute;
+    text-align: center;
+    width: 49%;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%); }
+    .bios .bioDescription h4 {
+      font-size: 2rem;
+      padding: 1rem 0;
+      margin: 1rem auto; }
+    .bios .bioDescription p {
+      display: block; }
+  .bios .cfp {
+    background-color: #ddd;
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 0;
+    border-radius: 10px; }
+    .bios .cfp p, .bios .cfp h4, .bios .cfp a {
+      text-align: middle; }
+    .bios .cfp h4 {
+      font-size: 2rem;
+      line-height: 1.8;
+      margin-top: 0;
+      margin-bottom: .5rem; }
+    .bios .cfp a {
+      color: #424342; }
+  @media (max-width: 800px) {
+    .bios .bio {
+      text-align: center;
+      padding: 2rem 0; }
+    .bios img, .bios .bioDescription {
+      width: 100%; }
+    .bios img {
+      margin: 0; }
+    .bios .bioDescription {
+      position: relative;
+      transform: translateY(0); } }
+
+.subscribe-form {
   position: relative;
   background: white;
+  margin: 20px auto;
+  width: 90%;
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 20px 0;
   border-radius: 10px;
-  width: 95%;
-  margin: 0 auto; }
+  box-shadow: 2px 2px 2px black; }
 
-.bios img {
-  width: 49%;
-  margin: 2rem auto; }
+#body-wrapper {
+  margin: 0 auto;
+  text-align: center;
+  max-width: 1920px;
+  background-color: #ddd; }
 
-.bios .bioDescription {
-  width: 49%;
-  float: right; }
-  .bios .bioDescription h4 {
-    font-size: 2rem;
-    margin: 1rem auto; }
-  .bios .bioDescription p {
-    display: block; }
-
-@media (max-width: 800px) {
-  .bios img, .bios .bioDescription {
-    width: 100%; }
-  .bios img {
-    max-width: 20rem; }
-  .bios .bioDescription {
-    float: none; } }
+#dev-btn {
+  display: none; }
 
 #results {
   color: tomato;
   margin: 0 auto; }
 
 #location {
-  width: 95%;
+  width: 90%;
+  max-width: 1250px;
+  margin: 0 auto;
   min-height: 20rem; }
