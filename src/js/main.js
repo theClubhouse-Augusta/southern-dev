@@ -84,4 +84,7 @@ window.onload = function() {
     //      console.log(error);
     //    })
     //  });
+
+    const cLog = () => {console.log("hello world")}
+    cLog();
  }

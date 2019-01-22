@@ -27,12 +27,12 @@ gulp.task('html', function() {
   });
 
   gulp.task('js', function() {
-    return gulp.src('src/js/**/*.js')
+    return gulp.src('src/js/*.js')
       .pipe(sourcemaps.init())
       .pipe(babel({
-        presets: ['@babel/env']
+        presets: ['es2015']
       }))
-      .pipe(concat('all.js'))
+      .pipe(concat('main.js'))
       .pipe(sourcemaps.write('.'))
       .pipe(gulp.dest('docs/js'))
       .pipe(browserSync.reload({
