@@ -116,4 +116,8 @@ window.onload = function () {
     // console.log(xPosition, yPosition);
     logo.style.filter = dropShadow;
   });
+
+  /* Babel Test */
+  const cLog = () => {console.log("hello world")}
+  cLog();
 }
