@@ -152,3 +152,7 @@ window.onload = function () {
   });
 
 }
+  /* Babel Test */
+  const cLog = () => {console.log("hello world")}
+  cLog();
+}

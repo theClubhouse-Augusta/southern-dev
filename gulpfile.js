@@ -4,6 +4,18 @@ var browserSync = require('browser-sync').create();
 var imagemin = require('gulp-imagemin');
 // var cache = require('gulp-cache');
 
+// JS Gulp Plugins
+var babel = require('gulp-babel');
+var sourcemaps = require('gulp-sourcemaps');
+var concat = require('gulp-concat');
+
+gulp.task('html', function() {
+  return gulp.src('src/*.html')
+    .pipe(gulp.dest('docs'))
+    .pipe(browserSync.reload({
+      stream: true
+    }))
+});
 
   gulp.task('sass', function(){
     return gulp.src('src/sass/*.sass')
@@ -16,15 +28,13 @@ var imagemin = require('gulp-imagemin');
 
   gulp.task('js', function() {
     return gulp.src('src/js/*.js')
-      .pipe(gulp.dest('docs/js'))
-      .pipe(browserSync.reload({
-        stream: true
+      .pipe(sourcemaps.init())
+      .pipe(babel({
+        presets: ['es2015']
       }))
-  });
-
-  gulp.task('html', function() {
-    return gulp.src('src/*.html')
-      .pipe(gulp.dest('docs'))
+      .pipe(concat('main.js'))
+      .pipe(sourcemaps.write('.'))
+      .pipe(gulp.dest('docs/js'))
       .pipe(browserSync.reload({
         stream: true
       }))
