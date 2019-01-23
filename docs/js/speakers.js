@@ -1,4 +1,4 @@
-[
+var speakers = [
   {
     "name": "Jerome Hardaway",
     "bio-short": "Front End Developer && Geek &amp; Arms of Vets Who Code. After serving the Air Force as a member of Security Forces, he transitioned into code during the Great Recession with his first job working on Databases with the Dept of Homeland Security.",

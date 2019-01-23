@@ -116,4 +116,34 @@ window.onload = function () {
     // console.log(xPosition, yPosition);
     logo.style.filter = dropShadow;
   });
+
+
+/* SPEAKER SECTION */
+  // function speakerTemplateBuilder(speakers) {
+  //   var bios = document.getElementById("bios")
+  //   speakers.forEach(function(speaker) {
+  //     var speakerName = speaker.name;
+  //     speakerName = speakerName
+  //     console.log(speaker.name);
+  //   })
+  // }
+
+  function SpeakerTemplate (speaker) {
+    var name = speaker.name,
+      bioShort = speaker["bio-short"],
+      image = speaker.image;
+
+    SpeakerHTMLCompile(name, bioShort, image)
+  }
+
+  function SpeakerHTMLCompile(name, bioShort, image) {
+    // document.createElement
+  }
+  
+  // speakerTemplateBuilder(speakers);
+
+  speakers.forEach(function(speaker) {
+    SpeakerTemplate(speaker)
+  });
+
 }
