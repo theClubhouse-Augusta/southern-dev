@@ -1,5 +1,5 @@
-$primary-gray: #424342
-$primary-pink: #F38770
+@import "global/variables"
+@import "components/bios"
 
 html
   font-size: 10px
@@ -139,67 +139,6 @@ footer
     text-align: left
   br
     height: 10px
-
-.bios
-  background-color: white
-  border-radius: 10px
-  width: 90%
-  max-width: 1250px
-  margin: 3rem auto
-  .bio
-    position: relative
-    background: white
-    border-radius: 10px
-    width: 90%
-    max-width: 1250px
-    margin: 0 auto
-    text-align: left
-  img
-    // border: 2px solid black
-    width: 300px
-    position: relative
-    margin: 2rem
-    max-width: 300px
-  .bioDescription
-    position: absolute
-    text-align: center
-    width: 49%
-    top: 50%
-    right: 0
-    transform: translateY(-50%)
-    h4
-      font-size: 2rem
-      padding: 1rem 0
-      margin: 1rem auto
-    p
-      display: block
-  .cfp
-    background-color: #ddd
-    width: 90%
-    margin: 0 auto
-    padding: 10px 0
-    border-radius: 10px
-    p, h4, a
-      text-align: middle
-    h4
-      font-size: 2rem
-      line-height: 1.8
-      margin-top: 0
-      margin-bottom: .5rem
-    a
-      color: $primary-gray
-  @media(max-width: 800px)
-    .bio
-        text-align: center
-        padding: 2rem 0
-    img, .bioDescription
-      width: 100%
-    img
-      margin: 0
-    .bioDescription
-      position: relative
-      transform: translateY(0)
-  // @media(min-width: 900px)
 
 .subscribe-form
   position: relative

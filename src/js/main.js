@@ -151,7 +151,6 @@ window.onload = function () {
     SpeakerTemplate(speaker)
   });
 
-}
   /* Babel Test */
   const cLog = () => {console.log("hello world")}
   cLog();

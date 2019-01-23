@@ -1,3 +1,5 @@
+'use strict';
+
 window.onload = function () {
 
   /*!
@@ -7,7 +9,7 @@ window.onload = function () {
    * @return {String}      The serialized form data
    */
 
-  const serialize = function (form) {
+  var serialize = function serialize(form) {
 
     // Setup our serialized data
     var serialized = {};
@@ -29,54 +31,52 @@ window.onload = function () {
       }
 
       // Convert field data to a query string
-      else if ((field.type !== 'checkbox' && field.type !== 'radio') || field.checked) {
-        serialized[encodeURIComponent(field.name)] = encodeURIComponent(field.value);
-      }
+      else if (field.type !== 'checkbox' && field.type !== 'radio' || field.checked) {
+          serialized[encodeURIComponent(field.name)] = encodeURIComponent(field.value);
+        }
     }
     return serialized;
   };
 
   /* Subscribe Form submittal */
-/*  var form = document.forms.namedItem('emailAdd');
-  form.addEventListener('submit', function (e) {
-    e.preventDefault();
-
-    var formData = serialize(form);
-    fetch("https://gothic-welder-217319.appspot.com", {
-        method: "POST",
-        headers: {
-          "content-type": "text/plain"
-        },
-        body: JSON.stringify(formData)
-      })
-      .then(function (resp) {
-        return resp.text();
-      })
-      .then(function (data) {
-        console.log(data);
-        results.textContent = data;
-      })
-      .catch(function (error) {
-        console.error(error);
-      })
-  });
-*/
-
+  /*  var form = document.forms.namedItem('emailAdd');
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+  
+      var formData = serialize(form);
+      fetch("https://gothic-welder-217319.appspot.com", {
+          method: "POST",
+          headers: {
+            "content-type": "text/plain"
+          },
+          body: JSON.stringify(formData)
+        })
+        .then(function (resp) {
+          return resp.text();
+        })
+        .then(function (data) {
+          console.log(data);
+          results.textContent = data;
+        })
+        .catch(function (error) {
+          console.error(error);
+        })
+    });
+  */
 
   /*
   1. Button that enables instagram filters
   2. It is hidden at the top left corner of the splash page
   */
   var instaFilters = document.querySelector(".insta-filters"),
-   splashImg = document.getElementById("splash-img"),
-   devBtn = document.getElementById("dev-btn");
+      splashImg = document.getElementById("splash-img"),
+      devBtn = document.getElementById("dev-btn");
 
-
-  function GenerateFilters (){
+  function GenerateFilters() {
     var filterArray = ["sepia", "default"];
 
     // 1. Create insta filters
-    filterArray.forEach(function(element) {
+    filterArray.forEach(function (element) {
       var filterButton = document.createElement("button");
       filterButton.id = element;
       filterButton.innerHTML = element;
@@ -96,24 +96,81 @@ window.onload = function () {
           splashImg.style.filter = "";
           break;
       };
-
     });
   }
 
   devBtn.addEventListener("click", GenerateFilters);
 
-
   /* Logo Shadow Hover animation */
   var logo = document.querySelector(".logo");
 
-  logo.addEventListener("mousemove", function(e) {
+  logo.addEventListener("mousemove", function (e) {
     var xPosition = e.clientX;
-        xPosition = Math.round(- xPosition / 50);
+    xPosition = Math.round(-xPosition / 50);
     var yPosition = e.clientY;
-        yPosition = Math.round(yPosition / 50);
+    yPosition = Math.round(yPosition / 50);
 
-    var dropShadow = "drop-shadow(" + xPosition  + "px " + yPosition  + "px 5px rgba(0, 0, 0, 0.5))";
+    var dropShadow = "drop-shadow(" + xPosition + "px " + yPosition + "px 5px rgba(0, 0, 0, 0.5))";
     // console.log(xPosition, yPosition);
     logo.style.filter = dropShadow;
   });
-}
+
+  /* SPEAKER SECTION */
+  function SpeakerTemplate(speaker) {
+    // 1. Parse Speakers Object
+    var name = speaker.name,
+        bioShort = speaker["bio-short"],
+        image = speaker.image;
+
+    // 2. Create Elements
+    var nameTemplate = document.createElement("h4"),
+        bioShortTemplate = document.createElement("p"),
+        imgTemplate = document.createElement("img"),
+        bio = document.createElement("div");
+
+    // 3. Assign Element's Content
+    nameTemplate.textContent = name;
+    bioShortTemplate.textContent = bioShort;
+    imgTemplate.src = "images/" + image;
+    bio.classList.add("bio");
+
+    // 4. Assign HTML Context
+    bio.appendChild(imgTemplate);
+    bio.appendChild(nameTemplate);
+    bio.appendChild(bioShortTemplate);
+
+    // 5. Attach to Document
+    var bios = document.getElementById("bios");
+    bios.appendChild(bio);
+  }
+
+  speakers.forEach(function (speaker) {
+    SpeakerTemplate(speaker);
+  });
+
+  /* Babel Test */
+  var cLog = function cLog() {
+    console.log("hello world");
+  };
+  cLog();
+};
+"use strict";
+
+var speakers = [{
+  "name": "Jerome Hardaway",
+  "bio-short": "Front End Developer && Geek &amp; Arms of Vets Who Code. After serving the Air Force as a member of Security Forces, he transitioned into code during the Great Recession with his first job working on Databases with the Dept of Homeland Security.",
+  "image": "jerome.jpg"
+}, {
+  "name": "Eric Harrison",
+  "bio-short": "co-founder and CTO of Moonrise, a social-impact startup trying to use AI to connect financially challenged workers to awesome jobs. He's the author of An Introduction to Robot Programming and has spent his career trying to automate-away the worst parts of life.",
+  "image": "eric.png"
+}, {
+  "name": "Harsha Vemulapalli",
+  "bio-short": "Head of Design for Robert Bosch’s North American region. In this capacity, he leads UX efforts focused on building on Bosch’s history of excellence as a leading global supplier of technology and services by driving adoption of innovative, design-thinking solutions and services. His teams span the gamut from Industrial Design, Service Design, Interaction Design, Visual Design and User Research.",
+  "image": "Harsha.jpg"
+}, {
+  "name": "Mark Noonan",
+  "bio-short": "Web developer at Content Thread (a digital agency and consulting firm specializing in AEM) and a member of Code for Atlanta's leadership team. He also serves as a program developer for People Making Progress, an Atlanta-based nonprofit serving adults with developmental disabilities at home, work, and in the community. In 2017 he led the Paratransit Pal project, which won AT&T's Civic Coding Challenge, after which the project team donated the entire $40,000 prize to charity.",
+  "image": "mark.jpg"
+}];
+//# sourceMappingURL=main.js.map
