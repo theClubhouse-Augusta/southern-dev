@@ -119,28 +119,33 @@ window.onload = function () {
 
 
 /* SPEAKER SECTION */
-  // function speakerTemplateBuilder(speakers) {
-  //   var bios = document.getElementById("bios")
-  //   speakers.forEach(function(speaker) {
-  //     var speakerName = speaker.name;
-  //     speakerName = speakerName
-  //     console.log(speaker.name);
-  //   })
-  // }
-
-  function SpeakerTemplate (speaker) {
+  function SpeakerTemplate(speaker) {
+    // 1. Parse Speakers Object
     var name = speaker.name,
       bioShort = speaker["bio-short"],
       image = speaker.image;
 
-    SpeakerHTMLCompile(name, bioShort, image)
-  }
+    // 2. Create Elements
+    var nameTemplate = document.createElement("h4"),
+      bioShortTemplate = document.createElement("p"),
+      imgTemplate = document.createElement("img"),
+      bio = document.createElement("div");
 
-  function SpeakerHTMLCompile(name, bioShort, image) {
-    // document.createElement
+    // 3. Assign Element's Content
+      nameTemplate.textContent = name;
+      bioShortTemplate.textContent = bioShort;
+      imgTemplate.src = "images/" + image;
+      bio.classList.add("bio");
+
+    // 4. Assign HTML Context
+      bio.appendChild(imgTemplate);
+      bio.appendChild(nameTemplate);
+      bio.appendChild(bioShortTemplate);
+
+    // 5. Attach to Document
+    var bios = document.getElementById("bios");
+    bios.appendChild(bio);
   }
-  
-  // speakerTemplateBuilder(speakers);
 
   speakers.forEach(function(speaker) {
     SpeakerTemplate(speaker)
