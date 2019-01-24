@@ -244,7 +244,7 @@ a {
   background-color: #c2c2c2; }
 
 #dev-btn {
-  display: block; }
+  display: none; }
 
 #results {
   color: tomato;
