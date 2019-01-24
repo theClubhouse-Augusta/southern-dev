@@ -180,11 +180,35 @@ a {
       background-color: white;
       color: #F38770; }
 
+.location .iframeCont {
+  position: relative;
+  z-index: 1;
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 10px;
+  overflow: hidden; }
+  .location .iframeCont:before {
+    content: '';
+    border-radius: 10px;
+    position: absolute;
+    box-shadow: inset 0px 0px 4px 2px #757675;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    pointer-events: none; }
+
 .location iframe {
-  height: 500px; }
+  height: 500px;
+  min-height: 20rem;
+  width: 100%;
+  margin: 0 auto;
+  border: none; }
 
 .location p, .location a {
-  font-size: 2.4rem; }
+  font-size: 2.4rem;
+  padding-bottom: 2rem; }
 
 .footerMain {
   overflow: hidden;
@@ -211,9 +235,3 @@ a {
 #results {
   color: tomato;
   margin: 0 auto; }
-
-#location {
-  width: 90%;
-  max-width: 1250px;
-  margin: 0 auto;
-  min-height: 20rem; }

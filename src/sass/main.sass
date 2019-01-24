@@ -164,10 +164,37 @@ a
       color: $primary-pink
 
 .location
+  .iframeCont
+    position: relative
+    z-index: 1
+    width: 90%
+    margin: 0 auto
+    border-radius: 10px
+    overflow: hidden
+    &:before
+      content: ''
+      border-radius: 10px
+      position: absolute
+      box-shadow: inset 0px 0px 4px 2px lighten($primary-gray, 20%)
+      top: 0
+      right: 0
+      bottom: 0
+      left: 0
+      z-index: 2
+      pointer-events: none
   iframe
     height: 500px
+    min-height: 20rem
+    width: 100%
+    margin: 0 auto
+    border: none
+  
+
+
   p, a
     font-size: 2.4rem
+    padding-bottom: 2rem
+  
 
 .footerMain
   overflow: hidden
@@ -178,7 +205,6 @@ a
     img
       width: 100%
       max-width: 100px
-
   .main
     float: right
     width: 50%
@@ -197,9 +223,3 @@ a
 #results
   color: tomato
   margin: 0 auto
-
-#location
-  width: 90%
-  max-width: 1250px
-  margin: 0 auto
-  min-height: 20rem
