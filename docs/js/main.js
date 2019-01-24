@@ -81,6 +81,9 @@ window.onload = function () {
       filterButton.id = element;
       filterButton.innerHTML = element;
       instaFilters.appendChild(filterButton);
+
+      // Reset Dev Button's style
+      devBtn.style.display = "none";
     });
 
     // 2. Add Event Listener to filters
