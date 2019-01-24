@@ -137,7 +137,7 @@ window.onload = function () {
     // 4. Assign HTML Context
     bio.appendChild(imgTemplate);
     bio.appendChild(nameTemplate);
-    bio.appendChild(bioShortTemplate);
+    // bio.appendChild(bioShortTemplate);
 
     // 5. Attach to Document
     var bios = document.getElementById("bios");

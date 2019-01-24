@@ -1,54 +1,52 @@
 #bios {
-  background-color: white;
   border-radius: 10px;
   width: 90%;
   max-width: 1250px;
   margin: 3rem auto;
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  flex-wrap: wrap; }
   #bios .bio {
     position: relative;
     background: white;
-    border-radius: 10px;
-    width: 90%;
-    max-width: 1250px;
-    margin: 0 auto; }
+    border-radius: 5px;
+    width: 30%;
+    box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.4), 2px 2px 8px 4px rgba(0, 0, 0, 0.2);
+    margin: 10px; }
   #bios img {
-    width: 200px;
+    border-radius: 100%;
+    width: 90%;
+    max-width: 200px;
     position: relative;
-    margin: 2rem; }
+    margin: 2rem auto; }
     #bios img h4 {
       font-size: 2rem;
       padding: 1rem 0;
       margin: 1rem auto; }
     #bios img p {
       display: block; }
-  #bios .cfp {
-    background-color: #ddd;
-    width: 90%;
-    margin: 0 auto;
-    padding: 10px 0;
-    border-radius: 10px; }
-    #bios .cfp p, #bios .cfp h4, #bios .cfp a {
-      text-align: middle; }
-    #bios .cfp h4 {
-      font-size: 2rem;
-      line-height: 1.8;
-      margin-top: 0;
-      margin-bottom: .5rem; }
-    #bios .cfp a {
-      color: #424342; }
+
+.cfp {
+  background-color: #ddd;
+  width: 90%;
+  margin: 0 auto;
+  padding: 10px 0;
+  border-radius: 10px; }
+  .cfp p, .cfp h4, .cfp a {
+    text-align: middle; }
+  .cfp h4 {
+    font-size: 2rem;
+    line-height: 1.8;
+    margin-top: 0;
+    margin-bottom: .5rem; }
+  .cfp a {
+    color: #424342; }
   @media (max-width: 800px) {
-    #bios .bio {
+    .cfp .bio {
       text-align: center;
       padding: 2rem 0; }
-    #bios img, #bios .bioDescription {
-      width: 100%; }
-    #bios img {
-      margin: 0; }
-    #bios .bioDescription {
-      position: relative;
-      transform: translateY(0); } }
+    .cfp img {
+      width: 100%; } }
 
 html {
   font-size: 10px; }
