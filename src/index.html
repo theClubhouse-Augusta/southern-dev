@@ -14,11 +14,12 @@
   <meta name="google-site-verification" content="6kUjhvEiJXYvAHEbR88rpfXohyc23GlOoXzcgnWAqcU" />
   <title>Southern Dev</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+  <link rel="stylesheet" type="text/css" href="css/base.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css" />
+  <script src="js/speakers.js"></script>
   <script src="js/main.js"></script>
-  <!-- <script defer src="https://use.fontawesome.com/releases/v5.6.3/js/all.js" integrity="sha384-EIHISlAOj4zgYieurP0SdoiBYfGJKkgWedPHH4jCzpCXLmzVsw1ouK59MuUtP4a1"
-    crossorigin="anonymous"></script> -->
+  <script defer src="https://use.fontawesome.com/releases/v5.6.3/js/all.js" integrity="sha384-EIHISlAOj4zgYieurP0SdoiBYfGJKkgWedPHH4jCzpCXLmzVsw1ouK59MuUtP4a1"
+    crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -35,7 +36,8 @@
       </div>
 
       <section class="date" >
-        <h2>Conference Date<br>April 27, 2019</h2>
+        <h2>Conference Date<br><span>April 27, 2019</span></h2>
+
 
       </section>
 
@@ -57,39 +59,14 @@
         <p>Harassment includes offensive verbal comments related to gender, gender identity and expression, age, sexual orientation, disability, physical appearance, body size, race, ethnicity, religion, technology choices, sexual images in public spaces, deliberate intimidation, stalking, following, harassing photography or recording, sustained disruption of talks or other events, inappropriate physical contact, and unwelcome sexual attention.<br><br>Participants asked to stop any harassing behavior are expected to comply immediately.<br><br>Sponsors are also subject to the anti-harassment policy. In particular, sponsors should not use sexualized images, activities, or other material. Booth staff (including volunteers) should not use sexualized clothing/uniforms/costumes, or otherwise create a sexualized environment.<br><br>If a participant engages in harassing behavior, the conference organisers may take any action they deem appropriate, including warning the offender or expulsion from the conference with no refund.<br><br>If you are being harassed, notice that someone else is being harassed, or have any other concerns, please contact a member of conference staff immediately. Conference staff can be identified as they'll be wearing branded t-shirts.<br><br>Conference staff will be happy to help participants contact hotel/venue security or local law enforcement, provide escorts, or otherwise assist those experiencing harassment to feel safe for the duration of the conference. We value your attendance.<br><br>We expect participants to follow these rules at conference and workshop venues and conference-related social events.</p>
       </section>
 
-      <section class="bios">
+      <section class="speakers">
         <h2>Speakers</h2>
-        <div class="bio">
-          <img src="images/jerome.jpg" alt="">
-          <div class="bioDescription">
-            <h4>Jerome Hardaway</h4>
-            <p>Front End Developer && Geek @ Arms of Vets Who Code. After serving the Air Force as a member of Security Forces, he transitioned into code during the Great Recession with his first job working on Databases with the Dept of Homeland Security.</p>
-          </div>
-        </div>
-        <div class="bio">
-          <img src="images/eric.png" alt="">
-          <div class="bioDescription">
-            <h4>Eric Harrison</h4>
-            <p>co-founder and CTO of Moonrise, a social-impact startup trying to use AI to connect financially challenged workers to awesome jobs. He's the author of An Introduction to Robot Programming and has spent his career trying to automate-away the worst parts of life.</p>
-          </div>
-        </div>
-        <div class="bio">
-          <img src="images/Harsha.jpg" alt="">
-          <div class="bioDescription">
-            <h4>Harsha Vemulapalli</h4>
-            <p>Head of Design for Robert Bosch’s North American region. In this capacity, he leads UX efforts focused on building on Bosch’s history of excellence as a leading global supplier of technology and services by driving adoption of innovative, design-thinking solutions and services. His teams span the gamut from Industrial Design, Service Design, Interaction Design, Visual Design and User Research.</p>
-          </div>
-        </div>
-        <div class="bio">
-          <img src="images/mark.jpg" alt="">
-          <div class="bioDescription">
-            <h4>Mark Noonan</h4>
-            <p>Web developer at Content Thread (a digital agency and consulting firm specializing in AEM) and a member of Code for Atlanta's leadership team. He also serves as a program developer for People Making Progress, an Atlanta-based nonprofit serving adults with developmental disabilities at home, work, and in the community. In 2017 he led the Paratransit Pal project, which won AT&T's Civic Coding Challenge, after which the project team donated the entire $40,000 prize to charity.</p>
-          </div>
+        <div id="bios">
+          <!-- .bio>img+h4+p -->
         </div>
         <div class="cfp" >
           <h4>CFP</h4>
-          <p>Submit a talk &commat;<a href="https://www.papercall.io/southerndev">PaperCall.io/SouthernDev</a></p>
+          <p>Submit a talk <a href="https://www.papercall.io/southerndev">&commat;PaperCall.io/SouthernDev</a></p>
         </div>
       </section>
 
@@ -105,27 +82,38 @@
 
       <section class="location">
         <h2>Venue Location</h2>
-        <iframe id="location" src="https://www.google.com/maps/d/u/0/embed?mid=1CQdON6sA-pMuOvTIrZcyzU7B6rw-e_lu"></iframe>
+        <a href="https://cybercenter.georgia.gov/" target="_blank" rel="noreferrer noopener" >Georgia Cyber Center</a>
+        <p>100 Grace Hopper Lane, Augusta, GA 30901</p>
+        <div class="iframeCont" >
+          <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1CQdON6sA-pMuOvTIrZcyzU7B6rw-e_lu"></iframe>
+        </div>
         <!-- width="640" height="480" -->
       </section>
     </main>
 
-    <footer>
-      <p>
-        <!-- <i class="fab fa-twitter"></i> -->
-        Twitter:
-        <a href="https://twitter.com/southerndev_co">@southerndev_co</a>
-      </p>
-      <p>Email us:
-        <a href="mailto:info@southerndev.co">info@southerndev.co</a>
-      </p>
-      <p>Coded with love by
-        <a href="https://augustadevs.github.io/">Augusta Devs</a>
-      </p>
-      <p>
-        Check out the code for this on:
-        <a href="https://github.com/theClubhouse-Augusta/southern-dev">Github</a>
-      </p>
+    <footer class="footerMain" >
+      <div class="clubhouse">
+        <p>Organized by <a href="https://theclubhou.se/">theClubhou.se</a>  and friends</p>
+        <a href="https://theclubhou.se/">
+          <img src="images/theclubhouse.png" alt="">
+        </a>
+      </div>
+      <div class="main" >
+        <p>
+          <i class="fab fa-twitter"></i> 
+          <a href="https://twitter.com/southerndev_co">@southerndev_co</a>
+        </p>
+        <p><i class="far fa-envelope" ></i>
+          <a href="mailto:info@southerndev.co">info@southerndev.co</a>
+        </p>
+        <p>❤️ by
+          <a href="https://augustadevs.github.io/">Augusta Devs</a>
+        </p>
+        <p>
+            <i class="fab fa-github"></i>
+          <a href="https://github.com/theClubhouse-Augusta/southern-dev">Our code</a>
+        </p>
+      </div>
     </footer>
   </div>
 </body>

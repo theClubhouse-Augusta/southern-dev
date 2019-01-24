@@ -1,6 +1,7 @@
-$primary-gray: #424342
-$primary-pink: #F38770
+@import "global/variables"
+@import "components/bios"
 
+// Layout
 html
   font-size: 10px
 
@@ -19,75 +20,49 @@ main
   p, label
     font-size: 1.6rem
 
-section
+section, footer
   padding: 20px 0
   border-radius: 2px
-
-h1, p, a
-  color: whitesmoke
-
-img
-  width: 50%
-  max-width: 500px
-
-p
-  line-height: 1.1
-  color: white
-  text-decoration: none
-
-label
+  width: 90%
+  max-width: 1250px
   margin: 0 auto
-  padding: 2rem
-  width: 60%
-
-input
-  display: block
-  margin: 20px auto
-  border: 0
-  background-color: lightgray
-
-section
   h2
     margin-top: 0
     margin-bottom: 20px
-    font-size: 1.8rem
     font-weight: bold
+    font-size: 3rem
+    color: darken($primary-gray, 50%)
   p
-    color: #333
     width: 70%
     margin: 0 auto
 
-input[type=email]
-  padding: 10px 20px
-  text-align: center
-  box-shadow: inset 10px 10px 20px -15px rgba(0, 0, 0, 0.4)
-  border-radius: 5px
-
-input[type=submit]
-  background-color: $primary-pink
-  padding: 10px 20px
-  border-radius: 2px
-  border: 2px solid $primary-pink
-  box-shadow: 1px 1px 2px .8px rgba(0, 0, 0, .4)
-  font-weight: bold
-  font-size: 2rem
-  color: white
-  transition: all .2s ease
-  &:hover
-    background-color: white
-    color: $primary-pink
-
 footer
-  padding: 2rem 0
-  background: white
-  p, a
-    font-size: 1.4rem
-    color: $primary-gray
-  a
-    text-decoration: none
-    color: $primary-pink
+  p
+    padding: .5rem 0
 
-//Styled classes
+// Typography
+h1
+  color: lighten($primary-gray, 70%)
+
+p
+  font-size: 1.6rem
+  line-height: 1.1
+  color: white
+  text-decoration: none
+  color: darken($primary-gray, 10%)
+  margin: 0
+
+a
+  text-decoration: none
+  color: darken($primary-pink, 10%)
+  transition: all .3s ease
+  font-weight: bold
+  margin: 0
+  text-shadow: 0 0 0 lighten($primary-gray, 30%)
+  &:hover
+    text-shadow: 2px 2px 2px lighten($primary-gray, 30%)
+
+// Classes
 
 .splash
   position: relative
@@ -119,8 +94,12 @@ footer
     top: 0
     left: 0
   .logo
-    filter: drop-shadow(-10px 10px 5px rgba(0, 0, 0, 0.5));
+    filter: drop-shadow(-10px 10px 5px rgba(0, 0, 0, 0.5))
     transition: all .2s ease
+
+.date
+  h2 span
+    color: darken($primary-pink, 10%)
 
 .conduct
   background-color: white
@@ -130,9 +109,9 @@ footer
   margin: 0 auto
   padding: 30px 0
   h2
-    font-size: 2.4rem
+    font-size: 3rem
   h4
-    font-size: 1.8rem
+    font-size: 2rem
     margin: 2rem 0 1rem 0
   p
     opacity: .9
@@ -140,66 +119,11 @@ footer
   br
     height: 10px
 
-.bios
-  background-color: white
-  border-radius: 10px
-  width: 90%
-  max-width: 1250px
-  margin: 3rem auto
-  .bio
-    position: relative
-    background: white
-    border-radius: 10px
-    width: 90%
-    max-width: 1250px
-    margin: 0 auto
-    text-align: left
-  img
-    // border: 2px solid black
-    width: 49%
-    position: relative
-    margin: 2rem
-    max-width: 300px
-  .bioDescription
-    position: absolute
-    text-align: center
-    width: 49%
-    top: 50%
-    right: 0
-    transform: translateY(-50%)
-    h4
-      font-size: 2rem
-      padding: 1rem 0
-      margin: 1rem auto
-    p
-      display: block
+.speakers
   .cfp
-    background-color: #ddd
-    width: 90%
-    margin: 0 auto
-    padding: 10px 0
-    border-radius: 10px
-    p, h4, a
-      text-align: middle
     h4
-      font-size: 2rem
-      line-height: 1.8
-      margin-top: 0
-      margin-bottom: .5rem
-    a
-      color: $primary-gray
-  @media(max-width: 800px)
-    .bio
-        text-align: center
-        padding: 2rem 0
-    img, .bioDescription
-      width: 100%
-    img
+      font-size: 2.4rem
       margin: 0
-    .bioDescription
-      position: relative
-      transform: translateY(0)
-  // @media(min-width: 900px)
 
 .subscribe-form
   position: relative
@@ -211,12 +135,87 @@ footer
   padding: 20px 0
   border-radius: 10px
   box-shadow: 2px 2px 2px black
+  label
+    margin: 0 auto
+    padding: 2rem
+    width: 60%
+  input
+    display: block
+    margin: 20px auto
+    border: 0
+    background-color: lightgray
+  input[type=email]
+    padding: 10px 20px
+    text-align: center
+    box-shadow: inset 10px 10px 20px -15px rgba(0, 0, 0, 0.4)
+    border-radius: 5px
+  input[type=submit]
+    background-color: $primary-pink
+    padding: 10px 20px
+    border-radius: 2px
+    border: 2px solid $primary-pink
+    box-shadow: 1px 1px 2px .8px rgba(0, 0, 0, .4)
+    font-weight: bold
+    font-size: 2rem
+    color: white
+    transition: all .2s ease
+    &:hover
+      background-color: white
+      color: $primary-pink
 
+.location
+  .iframeCont
+    position: relative
+    z-index: 1
+    width: 90%
+    margin: 0 auto
+    border-radius: 10px
+    overflow: hidden
+    &:before
+      content: ''
+      border-radius: 10px
+      position: absolute
+      box-shadow: inset 0px 0px 4px 2px lighten($primary-gray, 20%)
+      top: 0
+      right: 0
+      bottom: 0
+      left: 0
+      z-index: 2
+      pointer-events: none
+  iframe
+    height: 500px
+    min-height: 20rem
+    width: 100%
+    margin: 0 auto
+    border: none
+  
+
+
+  p, a
+    font-size: 2.4rem
+    padding-bottom: 2rem
+  
+
+.footerMain
+  overflow: hidden
+  padding: 2rem
+  .clubhouse
+    float: left
+    width: 50%
+    img
+      width: 100%
+      max-width: 100px
+  .main
+    float: right
+    width: 50%
+    
+
+// Id styles
 #body-wrapper
   margin: 0 auto
   text-align: center
   max-width: 1920px
-  background-color: #ddd
+  background-color: lighten($primary-gray, 50%)
 
 #dev-btn
   display: none
@@ -224,9 +223,3 @@ footer
 #results
   color: tomato
   margin: 0 auto
-
-#location
-  width: 90%
-  max-width: 1250px
-  margin: 0 auto
-  min-height: 20rem
