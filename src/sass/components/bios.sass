@@ -1,62 +1,48 @@
-// @import "../global/variables"
-
 #bios
-  background-color: white
   border-radius: 10px
   width: 90%
   max-width: 1250px
   margin: 3rem auto
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  justify-content: space-around
   .bio
-    position: relative
-    background: white
-    border-radius: 10px
-    width: 90%
-    max-width: 1250px
-    margin: 0 auto
-    text-align: left
-  img
-    // border: 2px solid black
-    width: 300px
-    position: relative
-    margin: 2rem
-    max-width: 300px
-  .bioDescription
-    position: absolute
-    text-align: center
-    width: 49%
-    top: 50%
-    right: 0
-    transform: translateY(-50%)
+    background-color: lighten($primary-gray, 70%)
+    border-radius: 3px
+    box-shadow: 2px 2px 1px 0 lighten($primary-gray, 20%), 2px 2px 8px 2px lighten($primary-gray, 30%)
+    margin: 1rem
+    img
+      border-radius: 100%
+      max-width: 90%
+      width: 250px
+      margin: 2rem auto
     h4
-      font-size: 2rem
-      padding: 1rem 0
-      margin: 1rem auto
+      font-size: 20px 
+      padding: 1rem 1rem 0 1rem
+      margin: 0 auto
     p
       display: block
-  .cfp
-    background-color: #ddd
-    width: 90%
-    margin: 0 auto
-    padding: 10px 0
-    border-radius: 10px
-    p, h4, a
-      text-align: middle
-    h4
-      font-size: 2rem
-      line-height: 1.8
-      margin-top: 0
-      margin-bottom: .5rem
-    a
-      color: $primary-gray
-  @media(max-width: 800px)
-    .bio
-        text-align: center
-        padding: 2rem 0
-    img, .bioDescription
+      padding-bottom: 1rem
       width: 100%
-    img
-      margin: 0
-    .bioDescription
-      position: relative
-      transform: translateY(0)
-  // @media(min-width: 900px)
+  // @media(max-width: 800px)
+  //   .bio
+  //       text-align: center
+  //       padding: 2rem 0
+  //   img
+  //     width: 100%
+// .cfp
+//   background-color: #ddd
+//   width: 90%
+//   margin: 0 auto
+//   padding: 10px 0
+//   border-radius: 10px
+//   p, h4, a
+//     text-align: middle
+//   h4
+//     font-size: 2rem
+//     line-height: 1.8
+//     margin-top: 0
+//     margin-bottom: .5rem
+//   a
+//     color: $primary-gray

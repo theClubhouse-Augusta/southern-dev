@@ -130,7 +130,8 @@ window.onload = function () {
 
     // 3. Assign Element's Content
     nameTemplate.textContent = name;
-    bioShortTemplate.textContent = bioShort;
+    // bioShortTemplate.textContent = bioShort;
+    bioShortTemplate.textContent = "Dummy Text for now";
     imgTemplate.src = "images/" + image;
     bio.classList.add("bio");
 
