@@ -89,7 +89,7 @@ a {
 
 .splash {
   position: relative;
-  min-height: 50vh;
+  min-height: 50vw;
   padding: 2rem 0; }
   .splash .splash-img {
     position: absolute;
@@ -118,7 +118,9 @@ a {
     left: 0; }
   .splash .logo {
     filter: drop-shadow(-10px 10px 5px rgba(0, 0, 0, 0.5));
-    transition: all .2s ease; }
+    transition: all .2s ease;
+    width: 50%;
+    max-width: 500px; }
 
 .date h2 span {
   color: #ef6041; }
