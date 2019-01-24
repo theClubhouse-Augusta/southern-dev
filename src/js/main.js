@@ -123,25 +123,27 @@ window.onload = function () {
     // 1. Parse Speakers Object
     var name = speaker.name,
       bioShort = speaker["bio-short"],
-      image = speaker.image;
+      image = speaker.image,
+      title = speaker.title;
 
     // 2. Create Elements
     var nameTemplate = document.createElement("h4"),
       bioShortTemplate = document.createElement("p"),
       imgTemplate = document.createElement("img"),
+      titleTemplate = document.createElement("h5"),
       bio = document.createElement("div");
 
     // 3. Assign Element's Content
       nameTemplate.textContent = name;
-      // bioShortTemplate.textContent = bioShort;
-      bioShortTemplate.textContent = "Dummy Text for now";
+      titleTemplate.textContent = title;
+      bioShortTemplate.textContent = bioShort;
       imgTemplate.src = "images/" + image;
       bio.classList.add("bio");
 
     // 4. Assign HTML Context
       bio.appendChild(imgTemplate);
       bio.appendChild(nameTemplate);
-      bio.appendChild(bioShortTemplate);
+      bio.appendChild(titleTemplate);
 
     // 5. Attach to Document
     var bios = document.getElementById("bios");
