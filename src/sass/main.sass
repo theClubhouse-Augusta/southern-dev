@@ -1,6 +1,7 @@
 @import "global/variables"
 @import "components/bios"
 
+// Layout
 html
   font-size: 10px
 
@@ -22,72 +23,43 @@ main
 section
   padding: 20px 0
   border-radius: 2px
-
-h1, p, a
-  color: whitesmoke
-
-img
-  width: 50%
-  max-width: 500px
-
-p
-  line-height: 1.1
-  color: white
-  text-decoration: none
-
-label
-  margin: 0 auto
-  padding: 2rem
-  width: 60%
-
-input
-  display: block
-  margin: 20px auto
-  border: 0
-  background-color: lightgray
-
-section
   h2
     margin-top: 0
     margin-bottom: 20px
-    font-size: 1.8rem
     font-weight: bold
+    font-size: 3rem
+    color: darken($primary-gray, 50%)
   p
-    color: #333
     width: 70%
     margin: 0 auto
 
-input[type=email]
-  padding: 10px 20px
-  text-align: center
-  box-shadow: inset 10px 10px 20px -15px rgba(0, 0, 0, 0.4)
-  border-radius: 5px
-
-input[type=submit]
-  background-color: $primary-pink
-  padding: 10px 20px
-  border-radius: 2px
-  border: 2px solid $primary-pink
-  box-shadow: 1px 1px 2px .8px rgba(0, 0, 0, .4)
-  font-weight: bold
-  font-size: 2rem
-  color: white
-  transition: all .2s ease
-  &:hover
-    background-color: white
-    color: $primary-pink
-
 footer
-  padding: 2rem 0
-  background: white
-  p, a
-    font-size: 1.4rem
-    color: $primary-gray
-  a
-    text-decoration: none
-    color: $primary-pink
+  p
+    padding: .5rem 0
 
-//Styled classes
+// Typography
+h1
+  color: lighten($primary-gray, 70%)
+
+p
+  font-size: 1.6rem
+  line-height: 1.1
+  color: white
+  text-decoration: none
+  color: darken($primary-gray, 10%)
+  margin: 0
+
+a
+  text-decoration: none
+  color: darken($primary-pink, 10%)
+  transition: all .3s ease
+  font-weight: bold
+  margin: 0
+  text-shadow: 0 0 0 lighten($primary-gray, 30%)
+  &:hover
+    text-shadow: 2px 2px 2px lighten($primary-gray, 30%)
+
+// Classes
 
 .splash
   position: relative
@@ -119,8 +91,12 @@ footer
     top: 0
     left: 0
   .logo
-    filter: drop-shadow(-10px 10px 5px rgba(0, 0, 0, 0.5));
+    filter: drop-shadow(-10px 10px 5px rgba(0, 0, 0, 0.5))
     transition: all .2s ease
+
+.date
+  h2 span
+    color: darken($primary-pink, 10%)
 
 .conduct
   background-color: white
@@ -130,15 +106,21 @@ footer
   margin: 0 auto
   padding: 30px 0
   h2
-    font-size: 2.4rem
+    font-size: 3rem
   h4
-    font-size: 1.8rem
+    font-size: 2rem
     margin: 2rem 0 1rem 0
   p
     opacity: .9
     text-align: left
   br
     height: 10px
+
+.speakers
+  .cfp
+    h4
+      font-size: 2.4rem
+      margin: 0
 
 .subscribe-form
   position: relative
@@ -150,12 +132,46 @@ footer
   padding: 20px 0
   border-radius: 10px
   box-shadow: 2px 2px 2px black
+  label
+    margin: 0 auto
+    padding: 2rem
+    width: 60%
+  input
+    display: block
+    margin: 20px auto
+    border: 0
+    background-color: lightgray
+  input[type=email]
+    padding: 10px 20px
+    text-align: center
+    box-shadow: inset 10px 10px 20px -15px rgba(0, 0, 0, 0.4)
+    border-radius: 5px
+  input[type=submit]
+    background-color: $primary-pink
+    padding: 10px 20px
+    border-radius: 2px
+    border: 2px solid $primary-pink
+    box-shadow: 1px 1px 2px .8px rgba(0, 0, 0, .4)
+    font-weight: bold
+    font-size: 2rem
+    color: white
+    transition: all .2s ease
+    &:hover
+      background-color: white
+      color: $primary-pink
 
+.location
+  iframe
+    height: 500px
+  p, a
+    font-size: 2.4rem
+
+// Id styles
 #body-wrapper
   margin: 0 auto
   text-align: center
   max-width: 1920px
-  background-color: #ddd
+  background-color: lighten($primary-gray, 50%)
 
 #dev-btn
   display: none
