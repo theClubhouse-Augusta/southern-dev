@@ -73,7 +73,7 @@ window.onload = function () {
 
 
   function GenerateFilters (){
-    var filterArray = ["sepia", "default"];
+    var filterArray = ["sepia", "simarillion", "luna", "default"];
 
     // 1. Create insta filters
     filterArray.forEach(function(element) {
@@ -81,12 +81,23 @@ window.onload = function () {
       filterButton.id = element;
       filterButton.innerHTML = element;
       instaFilters.appendChild(filterButton);
+
+    // Reset Dev Button's style
+      devBtn.style.display = "none";
     });
 
     // 2. Add Event Listener to filters
     instaFilters.addEventListener("click", function (event) {
       var instaFilter = event.target;
       switch (instaFilter.id) {
+        case "luna":
+          splashImg.style.webkitfilter = "grayscale(.9) brightness(1.7)";
+          splashImg.style.filter = "grayscale(.9) brightness(1.7)";
+          break;
+        case "simarillion":
+          splashImg.style.webkitfilter = "brightness(1.4) sepia(.5) contrast(1.4) blur(1px) saturate(1)";
+          splashImg.style.filter = "brightness(1.4) sepia(.5) contrast(1.4) blur(1px) saturate(1)";
+          break; 
         case "sepia":
           splashImg.style.webkitfilter = "sepia(1)";
           splashImg.style.filter = "sepia(1)";
