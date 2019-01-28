@@ -134,6 +134,49 @@ a {
 .date h2 span {
   color: #ef6041; }
 
+.mission {
+  overflow: hidden;
+  background-color: white;
+  border-radius: 5px;
+  margin: 2rem auto;
+  padding: 80px 0 20px 0;
+  width: 400px;
+  transition: all .5s ease; }
+  .mission div.font-container {
+    margin-bottom: 20px; }
+  .mission span {
+    font-size: 80px;
+    transition: all .5s ease; }
+  .mission h2 {
+    margin: 0 auto;
+    transition: all .5s ease; }
+  .mission p {
+    position: relative;
+    height: 100%;
+    max-height: 0;
+    padding-top: 20px;
+    opacity: 0;
+    transition: all .3s ease; }
+  .mission:hover {
+    background-color: #F38770; }
+  .mission.expanded {
+    padding: 20px 0 20px 0;
+    height: 100%;
+    max-height: 1000px;
+    transition: all 1s ease; }
+    .mission.expanded span {
+      font-size: 40px; }
+    .mission.expanded h2 {
+      font-size: 2.4rem; }
+    .mission.expanded p {
+      opacity: 1;
+      max-height: 1000px;
+      transition: all 1s ease; }
+    .mission.expanded:hover {
+      background-color: #F38770; }
+      .mission.expanded:hover span, .mission.expanded:hover h2 {
+        color: black; }
+
 .conduct {
   background-color: white;
   border-radius: 10px;
@@ -227,15 +270,19 @@ a {
 .footerMain {
   overflow: hidden;
   padding: 2rem; }
-  .footerMain .clubhouse {
-    float: left;
-    width: 50%; }
-    .footerMain .clubhouse img {
+  .footerMain .clubhouse, .footerMain .main {
+    float: none;
+    width: 100%; }
+    .footerMain .clubhouse img, .footerMain .main img {
       width: 100%;
       max-width: 100px; }
-  .footerMain .main {
-    float: right;
-    width: 50%; }
+  @media (min-width: 750px) {
+    .footerMain .clubhouse {
+      float: left;
+      width: 50%; }
+    .footerMain .main {
+      float: right;
+      width: 50%; } }
 
 #body-wrapper {
   margin: 0 auto;

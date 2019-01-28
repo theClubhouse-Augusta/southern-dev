@@ -112,6 +112,49 @@ a
   h2 span
     color: darken($primary-pink, 10%)
 
+.mission
+  overflow: hidden
+  background-color: white
+  border-radius: 5px
+  margin: 2rem auto
+  padding: 80px 0 20px 0
+  width: 400px
+  transition: all .5s ease
+  div.font-container
+      margin-bottom: 20px
+  span
+    font-size: 80px
+    transition: all .5s ease
+  h2
+    margin: 0 auto
+    transition: all .5s ease
+  p
+    position: relative
+    height: 100%
+    max-height: 0
+    padding-top: 20px
+    opacity: 0
+    transition: all .3s ease
+  &:hover
+    background-color: $primary-pink
+  &.expanded
+    padding: 20px 0 20px 0
+    height: 100%
+    max-height: 1000px
+    transition: all 1s ease
+    span
+      font-size: 40px
+    h2
+      font-size: 2.4rem
+    p
+      opacity: 1
+      max-height: 1000px
+      transition: all 1s ease
+    &:hover
+      background-color: $primary-pink
+      span, h2
+        color: darken($primary-gray, 50%)
+
 .conduct
   background-color: white
   border-radius: 10px
@@ -199,27 +242,28 @@ a
     width: 100%
     margin: 0 auto
     border: none
-  
-
 
   p, a
     font-size: 2.4rem
     padding-bottom: 2rem
-  
+
 
 .footerMain
   overflow: hidden
   padding: 2rem
-  .clubhouse
-    float: left
-    width: 50%
+  .clubhouse, .main
+    float: none
+    width: 100%
     img
       width: 100%
       max-width: 100px
-  .main
-    float: right
-    width: 50%
-    
+  @media(min-width: 750px)
+    .clubhouse
+      float: left
+      width: 50%
+    .main
+      float: right
+      width: 50%
 
 // Id styles
 #body-wrapper

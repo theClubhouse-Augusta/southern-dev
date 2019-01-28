@@ -97,7 +97,7 @@ window.onload = function () {
         case "simarillion":
           splashImg.style.webkitfilter = "brightness(1.4) sepia(.5) contrast(1.4) blur(1px) saturate(1)";
           splashImg.style.filter = "brightness(1.4) sepia(.5) contrast(1.4) blur(1px) saturate(1)";
-          break; 
+          break;
         case "sepia":
           splashImg.style.webkitfilter = "sepia(1)";
           splashImg.style.filter = "sepia(1)";
@@ -168,4 +168,12 @@ window.onload = function () {
   /* Babel Test */
   const cLog = () => {console.log("hello world")}
   cLog();
+
+  /* Card Event Listeners */
+  let missionCard = document.getElementById("mission-card");
+  missionCard.addEventListener("click", function(e) {
+    missionCard.classList.toggle("expanded");
+  });
+
+
 }

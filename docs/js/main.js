@@ -167,6 +167,12 @@ window.onload = function () {
     console.log("hello world");
   };
   cLog();
+
+  /* Card Event Listeners */
+  var missionCard = document.getElementById("mission-card");
+  missionCard.addEventListener("click", function (e) {
+    missionCard.classList.toggle("expanded");
+  });
 };
 "use strict";
 
