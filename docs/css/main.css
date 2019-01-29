@@ -192,8 +192,8 @@ a {
   .conduct p {
     opacity: .9;
     text-align: left; }
-  .conduct br {
-    height: 10px; }
+  .conduct p + p {
+    padding: 10px 0; }
 
 .speakers .cfp h4 {
   font-size: 2.4rem;
