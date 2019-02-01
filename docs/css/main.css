@@ -210,8 +210,6 @@ a {
   border-radius: 10px;
   box-shadow: 2px 2px 2px black; }
   .subscribe-form label {
-    margin: 0 auto;
-    padding: 2rem;
     width: 60%; }
   .subscribe-form input {
     display: block;
@@ -283,6 +281,9 @@ a {
     .footerMain .main {
       float: right;
       width: 50%; } }
+
+#mc_embed_signup {
+  margin: 0 auto; }
 
 #body-wrapper {
   margin: 0 auto;
