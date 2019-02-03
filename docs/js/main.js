@@ -161,12 +161,6 @@ window.onload = function () {
   speakers.forEach(function (speaker) {
     SpeakerTemplate(speaker);
   });
-
-  /* Babel Test */
-  var cLog = function cLog() {
-    console.log("hello world");
-  };
-  cLog();
 };
 "use strict";
 
