@@ -162,11 +162,18 @@ window.onload = function () {
     SpeakerTemplate(speaker);
   });
 
-  /* Babel Test */
-  var cLog = function cLog() {
-    console.log("hello world");
-  };
-  cLog();
+  /* Google Analytics Handling */
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+
+  var GAButton = document.getElementById("GAButton");
+  GAButton.addEventListener("click", function () {
+    gtag('js', new Date());
+
+    gtag('config', 'UA-132392058-1');
+  });
 };
 "use strict";
 

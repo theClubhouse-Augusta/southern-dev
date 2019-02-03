@@ -97,7 +97,7 @@ window.onload = function () {
         case "simarillion":
           splashImg.style.webkitfilter = "brightness(1.4) sepia(.5) contrast(1.4) blur(1px) saturate(1)";
           splashImg.style.filter = "brightness(1.4) sepia(.5) contrast(1.4) blur(1px) saturate(1)";
-          break; 
+          break;
         case "sepia":
           splashImg.style.webkitfilter = "sepia(1)";
           splashImg.style.filter = "sepia(1)";
@@ -165,7 +165,14 @@ window.onload = function () {
     SpeakerTemplate(speaker)
   });
 
-  /* Babel Test */
-  const cLog = () => {console.log("hello world")}
-  cLog();
+  /* Google Analytics Handling */
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+
+  const GAButton = document.getElementById("GAButton");
+  GAButton.addEventListener("click", function() {
+    gtag('js', new Date());
+
+    gtag('config', 'UA-132392058-1');
+  });
 }
