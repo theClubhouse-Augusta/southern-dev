@@ -164,15 +164,4 @@ window.onload = function () {
   speakers.forEach(function(speaker) {
     SpeakerTemplate(speaker)
   });
-
-  /* Google Analytics Handling */
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-
-  const GAButton = document.getElementById("GAButton");
-  GAButton.addEventListener("click", function() {
-    gtag('js', new Date());
-
-    gtag('config', 'UA-132392058-1');
-  });
 }
