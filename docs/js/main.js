@@ -177,7 +177,7 @@ var speakers = [{
   "image": "eric.png"
 }, {
   "name": "Harsha Vemulapalli",
-  "title": "Regional Head of Design for Bosch",
+  "title": "Head of Design for Bosch",
   "bio-short": "Head of Design for Robert Bosch’s North American region. In this capacity, he leads UX efforts focused on building on Bosch’s history of excellence as a leading global supplier of technology and services by driving adoption of innovative, design-thinking solutions and services. His teams span the gamut from Industrial Design, Service Design, Interaction Design, Visual Design and User Research.",
   "bio-long": "Harsha Vemulapalli is the Head of Design for Robert Bosch’s North American region. In this capacity, he leads UX efforts focused on building on Bosch’s history of excellence as a leading global supplier of technology and services by driving adoption of innovative, design-thinking solutions and services. His teams span the gamut from Industrial Design, Service Design, Interaction Design, Visual Design and User Research.\nPrior to joining Bosch, Harsha served in UX leadership roles with the United States Air Force and the Centers for Disease Control and Prevention, and worked on design and product teams at Blackbaud, Morris DigitalWorks, Mirant and Softsys (hey it was the Tech Bubble days and all the good names were taken).\nLike the Ultimate Warrior, Harsha hails from parts unknown. He would also prefer to be introduced as “weight unknown” and \“height unknown.\”",
   "image": "Harsha.jpg"
@@ -191,5 +191,10 @@ var speakers = [{
   "title": "Web Developer, Founder, Mentor Director, Instructor",
   "bio-short": "Mark Locklear is a web developer at the eXtension Initiative, founder of Remotegig.io and Director of mentors at Vets Who Code. He is an Adjunct Instructor at Asheville Buncombe Technical Community College and is passionate about education and teaching students software development.",
   "image": "markL.jpg"
+}, {
+  "name": "Patrick Rodgers",
+  "title": "Project Manager and Lead Programmer",
+  "bio-short": "Patrick is a Lead Programmer and Project Manager at Powerserve in Augusta, Georgia. He began his career at Powerserve 13 years ago as a web designer, but in that time discovered his love for programming and made a career swap. He now leads a team of programmers who work on a site that sells over $100 million dollars worth of product annually. He has a passion for solving problems using the best means and 80's punk music.",
+  "image": "patrickr.png"
 }];
 //# sourceMappingURL=main.js.map
