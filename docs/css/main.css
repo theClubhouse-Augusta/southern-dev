@@ -191,7 +191,7 @@ input[type=submit] {
   font-size: 2.4rem;
   margin: 0; }
 
-.subscribe-form {
+.subscribe-form, .tickets {
   position: relative;
   background: white;
   margin: 20px auto;
@@ -201,18 +201,21 @@ input[type=submit] {
   padding: 20px 0;
   border-radius: 10px;
   box-shadow: 2px 2px 2px black; }
-  .subscribe-form label {
-    width: 60%; }
-  .subscribe-form input {
-    display: block;
-    margin: 20px auto;
-    border: 0;
-    background-color: lightgray; }
-  .subscribe-form input[type=email] {
-    padding: 10px 20px;
-    text-align: center;
-    box-shadow: inset 10px 10px 20px -15px rgba(0, 0, 0, 0.4);
-    border-radius: 5px; }
+
+.subscribe-form label {
+  width: 60%; }
+
+.subscribe-form input {
+  display: block;
+  margin: 20px auto;
+  border: 0;
+  background-color: lightgray; }
+
+.subscribe-form input[type=email] {
+  padding: 10px 20px;
+  text-align: center;
+  box-shadow: inset 10px 10px 20px -15px rgba(0, 0, 0, 0.4);
+  border-radius: 5px; }
 
 .location .iframeCont {
   position: relative;
