@@ -133,11 +133,11 @@ input[type=submit] {
     left: 0;
     min-width: 100%;
     height: 100%;
-    background-image: url("../images/Augusta-Georgia.jpg");
+		background-image: url("../images/ga.jpg");
+		image-rendering: optimizeQuality;
     background-position: top center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-color: #424342;
     -webkit-filter: saturate(1.5) blur(1px) grayscale(0.4) sepia(0.2) contrast(1.2);
     filter: saturate(1.5) blur(1px) grayscale(0.4) sepia(0.2) contrast(1.2); }
   .splash h1, .splash .logo {
@@ -195,8 +195,7 @@ input[type=submit] {
   position: relative;
   background: white;
   margin: 20px auto;
-  width: 90%;
-  max-width: 1250px;
+  width: 50%;
   margin: 0 auto;
   padding: 20px 0;
   border-radius: 10px;
@@ -267,7 +266,8 @@ input[type=submit] {
   margin: 0 auto;
   text-align: center;
   max-width: 1920px;
-  background-color: #c2c2c2; }
+  background-color: #41d0ef;
+  }
 
 #dev-btn {
   display: none; }
