@@ -110,6 +110,35 @@ window.onload = function () {
     });
   }
 
+  /* Conduct drop down */
+  // 1. set click listener on dropdown container.
+  var dropdown = document.querySelector("#dropdown");
+  dropdown.addEventListener("click", clicked);
+
+  // 2. if the target does not have class expanded when clicked then add class expand.
+  //    otherwise reset all the targets.
+  function clicked(e) {
+    var buttonid = e.target.getAttribute("target-id");
+    var button = document.querySelector(buttonid);
+
+    if (button.getAttribute("class") != "expanded") {
+      reset();
+      button.setAttribute("class", "expanded");
+    } else {
+      reset();
+    }
+  }
+
+  // 3. Reset function loops over all targets
+  //    sets the class to collapse.
+  function reset() {
+    Array.from(dropdown.children).forEach(function (e) {
+      if (document.querySelector(e.getAttribute("target-id")).classList.contains("expanded")) {
+        document.querySelector(e.getAttribute("target-id")).setAttribute("class", "collapsed");
+      }
+    });
+  }
+
   devBtn.addEventListener("click", GenerateFilters);
 
   /* Logo Shadow Hover animation */
@@ -125,39 +154,6 @@ window.onload = function () {
     // console.log(xPosition, yPosition);
     logo.style.filter = dropShadow;
   });
-
-
-  // **** Drop down
-  // 1. set click listener on dropdown container.
-  let dropdown = document.querySelector("#dropdown"); 
-  dropdown.addEventListener("click", clicked);
-
-
-  // 2. if the target does not have class expanded when clicked then add class expand.
-  //    otherwise reset all the targets.
-  function clicked(e){
-      let buttonid = e.target.getAttribute("target-id");
-      let button = document.querySelector(buttonid);
-      
-      if(button.getAttribute("class") != "expanded"){
-          reset();
-          button.setAttribute("class", "expanded");
-      } else{
-          reset();
-      }
-      
-  };
-
-  // 3. Reset function loops over all targets
-  //    sets the class to collapse.
-  function reset(){
-      Array.from(dropdown.children).forEach(e =>{
-          if(document.querySelector(e.getAttribute("target-id")).classList.contains("expanded")){
-            document.querySelector(e.getAttribute("target-id")).setAttribute("class", "collapsed");
-          }
-      });
-  };
-  // ***** Drop down
 
   /* SPEAKER SECTION */
   function SpeakerTemplate(speaker) {

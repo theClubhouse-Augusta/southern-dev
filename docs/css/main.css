@@ -188,16 +188,13 @@ input[type=submit] {
     height: 10px; }
 
 .dropdown {
-    display: inline-block;
-}
+  display: inline-block; }
 
 .collapsed {
-    display: none;
-}
+  display: none; }
 
 .expanded {
-    display: inline-block;
-}
+  display: inline-block; }
 
 .speakers .cfp h4 {
   font-size: 2.4rem;
