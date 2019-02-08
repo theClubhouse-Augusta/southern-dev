@@ -187,6 +187,18 @@ input[type=submit] {
   .conduct br {
     height: 10px; }
 
+.dropdown {
+    display: inline-block;
+}
+
+.collapsed {
+    display: none;
+}
+
+.expanded {
+    display: inline-block;
+}
+
 .speakers .cfp h4 {
   font-size: 2.4rem;
   margin: 0; }
