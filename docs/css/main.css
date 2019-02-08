@@ -186,14 +186,14 @@ input[type=submit] {
     text-align: left; }
   .conduct br {
     height: 10px; }
-
-.dropdown {
-  display: inline-block; }
+  .conduct button {
+    margin: 2rem 2rem 0 2rem; }
 
 .collapsed {
   display: none; }
 
 .expanded {
+  margin-top: 2rem;
   display: inline-block; }
 
 .speakers .cfp h4 {
