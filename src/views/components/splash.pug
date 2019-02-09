@@ -1,8 +1,13 @@
 div.splash
-  div.splash-img#splash-img(alt="Augusta skyline from the Savannah river at sunset")
-  img.logo(src="images/logo.png" alt="Southern Dev Logo")
-  h1 A Dev Conference for a better community by an awesome community.
-  //-
-    This unlocks all the cool and fun dev stuff and features that I'm playing around with on the site.
-  button#dev-btn Dev Button
-  div.insta-filters
+  #page
+    if page === "index"
+      div.splash-img#splash-index(alt="Augusta skyline from the Savannah river at sunset")
+      img.logo(src="images/logo.png" alt="Southern Dev Logo")
+      h1 A Dev Conference for a better community by an awesome community.
+      //-
+        This unlocks all the cool and fun dev stuff and features that I'm playing around with on the site.
+      button#dev-btn Dev Button
+      div.insta-filters
+    else if page === "about"
+      div.splash-img#splash-about(alt="Stock photo of an audience, Photo by Coco Championship from Pexels")
+      h1 A Dev Conference for a better community by an awesome community.
