@@ -120,9 +120,6 @@ header#main {
       position: relative;
       display: block;
       list-style-type: none;
-      padding: 20px 0 30px 0;
-      width: 100%;
-      margin-top: 10px;
       text-align: center;
       transition: all ease .2s; }
       header#main nav li:after {
@@ -130,12 +127,17 @@ header#main {
         position: absolute;
         display: block;
         left: 10%;
+        bottom: 20px;
         margin-top: 1rem;
         width: 0;
         height: 3px;
         background-color: #CDF589;
         transition: all .2s ease; }
       header#main nav li a {
+        display: block;
+        width: 100%;
+        margin-top: 10px;
+        padding: 20px 0 30px 0;
         font-size: 1.6rem; }
       header#main nav li:hover {
         background-color: #5f7cbe;
@@ -146,6 +148,7 @@ header#main {
           box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2); }
   @media (min-width: 1200px) {
     header#main {
+      position: fixed;
       top: 0;
       width: 100%;
       height: auto; }
@@ -160,9 +163,12 @@ header#main {
           width: 100%; }
         header#main nav li {
           display: inline-block;
-          width: 19%;
           border-radius: 10px 10px 0 0;
-          margin-top: 0; } }
+          margin-top: 0;
+          width: 15%; }
+          header#main nav li a {
+            width: 100%;
+            padding: 10px 0 30px 0; } }
 
 html {
   font-size: 10px; }
