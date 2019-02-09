@@ -136,7 +136,6 @@ header#main {
       header#main nav li a {
         display: block;
         width: 100%;
-        margin-top: 10px;
         padding: 20px 0 30px 0;
         font-size: 1.6rem; }
       header#main nav li:hover {
@@ -168,7 +167,7 @@ header#main {
           width: 15%; }
           header#main nav li a {
             width: 100%;
-            padding: 10px 0 30px 0; } }
+            padding: 20px 0 30px 0; } }
 
 html {
   font-size: 10px; }
