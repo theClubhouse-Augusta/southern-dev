@@ -425,5 +425,10 @@ input[type=submit] {
 #splash-about {
   background-image: url("../images/stock-audience.jpg"); }
 
+<<<<<<< HEAD
+#splash-tickets {
+  background-image: url("../images/stock-ticket.jpg"); }
+=======
 #splash-contact {
   background-image: url("../images/stock-contact.jpg"); }
+>>>>>>> b71dd0efd46289d0739fe738326b61f3aa22b2f1
