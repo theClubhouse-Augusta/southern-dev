@@ -30,37 +30,71 @@
       width: 90%; }
 
 header#main {
-  background-color: white;
   position: fixed;
-  top: 0;
+  right: 0;
+  height: 100%;
+  width: 15rem;
   z-index: 10;
-  width: 100%;
   overflow: hidden;
-  background-color: #6b89cd; }
+  background-color: #6b89cd;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4); }
   header#main img {
     width: 10rem;
     margin: 0; }
   header#main nav {
-    position: absolute;
+    position: relative;
     width: 80%;
-    bottom: 50%;
-    transform: translateY(50%);
-    right: 0; }
+    right: 0;
+    top: 0; }
     header#main nav ul {
       position: relative;
       display: block;
-      width: 100%; }
-      header#main nav ul li {
-        display: inline-block;
-        list-style-type: none;
-        width: 19%;
-        padding: 30px 0;
-        text-align: center; }
-        header#main nav ul li a {
-          font-size: 2rem; }
-        header#main nav ul li:hover {
-          background-color: #5f7cbe;
-          cursor: pointer; }
+      width: 100%;
+      padding: 0; }
+    header#main nav li {
+      position: relative;
+      display: block;
+      list-style-type: none;
+      padding: 20px 0 30px 0;
+      width: 100%;
+      border-radius: 0 5px 5px 0;
+      margin-top: 10px;
+      text-align: center;
+      transition: all ease .2s; }
+      header#main nav li:after {
+        content: "";
+        position: absolute;
+        display: block;
+        left: 10%;
+        margin-top: 1rem;
+        width: 0;
+        height: 3px;
+        background-color: #CDF589;
+        transition: all .5s ease; }
+      header#main nav li a {
+        font-size: 1.6rem; }
+      header#main nav li:hover {
+        background-color: #5f7cbe;
+        cursor: pointer;
+        box-shadow: inset 0 0 10px 0 rgba(0, 0, 0, 0.2); }
+        header#main nav li:hover:after {
+          width: 80%;
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2); }
+  @media (min-width: 1200px) {
+    header#main {
+      top: 0;
+      width: 100%;
+      height: auto; }
+      header#main nav {
+        position: absolute;
+        bottom: 0; }
+        header#main nav ul {
+          margin: 2rem auto 0 auto; }
+        header#main nav li {
+          display: inline-block;
+          width: 19%;
+          border-radius: 10px 10px 0 0;
+          margin-top: 0; } }
 
 html {
   font-size: 10px; }
@@ -122,7 +156,7 @@ a {
 .splash {
   position: relative;
   min-height: 50vw;
-  padding: 6rem 0; }
+  padding: 10rem 0 6rem; }
   .splash .splash-img {
     position: absolute;
     display: block;
