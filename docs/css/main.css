@@ -222,6 +222,41 @@ a {
   a:hover {
     text-shadow: 2px 2px 2px #8e908e; }
 
+button {
+  background-color: #F38770;
+  border-radius: 2px;
+  border: 2px solid #F38770;
+  box-shadow: 1px 1px 2px 0.8px rgba(0, 0, 0, 0.4);
+  font-weight: bold;
+  font-size: 2rem;
+  color: white;
+  padding: 0;
+  transition: all .2s ease; }
+  button a {
+    display: block;
+    color: white;
+    padding: 10px 20px; }
+    button a:hover {
+      text-shadow: none; }
+    button a:visited {
+      color: white; }
+  button:hover {
+    background-color: white;
+    color: #F38770; }
+    button:hover a {
+      color: #F38770; }
+
+input[type=submit] {
+  background-color: #F38770;
+  padding: 10px 20px;
+  border-radius: 2px;
+  border: 2px solid #F38770;
+  box-shadow: 1px 1px 2px 0.8px rgba(0, 0, 0, 0.4);
+  font-weight: bold;
+  font-size: 2rem;
+  color: white;
+  transition: all .2s ease; }
+
 .splash {
   position: relative;
   min-height: 50vw;
@@ -291,7 +326,7 @@ a {
   font-size: 2.4rem;
   margin: 0; }
 
-.subscribe-form {
+.subscribe-form, .tickets {
   position: relative;
   background: white;
   margin: 20px auto;
@@ -301,31 +336,21 @@ a {
   padding: 20px 0;
   border-radius: 10px;
   box-shadow: 2px 2px 2px black; }
-  .subscribe-form label {
-    width: 60%; }
-  .subscribe-form input {
-    display: block;
-    margin: 20px auto;
-    border: 0;
-    background-color: lightgray; }
-  .subscribe-form input[type=email] {
-    padding: 10px 20px;
-    text-align: center;
-    box-shadow: inset 10px 10px 20px -15px rgba(0, 0, 0, 0.4);
-    border-radius: 5px; }
-  .subscribe-form input[type=submit] {
-    background-color: #F38770;
-    padding: 10px 20px;
-    border-radius: 2px;
-    border: 2px solid #F38770;
-    box-shadow: 1px 1px 2px 0.8px rgba(0, 0, 0, 0.4);
-    font-weight: bold;
-    font-size: 2rem;
-    color: white;
-    transition: all .2s ease; }
-    .subscribe-form input[type=submit]:hover {
-      background-color: white;
-      color: #F38770; }
+
+.subscribe-form label {
+  width: 60%; }
+
+.subscribe-form input {
+  display: block;
+  margin: 20px auto;
+  border: 0;
+  background-color: lightgray; }
+
+.subscribe-form input[type=email] {
+  padding: 10px 20px;
+  text-align: center;
+  box-shadow: inset 10px 10px 20px -15px rgba(0, 0, 0, 0.4);
+  border-radius: 5px; }
 
 .location .iframeCont {
   position: relative;
