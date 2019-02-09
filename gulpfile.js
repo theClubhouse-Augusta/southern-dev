@@ -40,7 +40,7 @@ gulp.task('css', function(){
 
   gulp.task('sass', function(){
     return gulp.src('src/sass/main.sass')
-      .pipe(sass())
+      .pipe(sass().on('error', sass.logError))
       .pipe(gulp.dest('docs/css'))
       .pipe(browserSync.reload({
         stream: true
