@@ -35,9 +35,10 @@ header#main {
   top: 0;
   z-index: 10;
   width: 100%;
-  overflow: hidden; }
+  overflow: hidden;
+  background-color: #6b89cd; }
   header#main img {
-    width: 10%;
+    width: 10rem;
     margin: 0; }
   header#main nav {
     position: absolute;
@@ -58,7 +59,8 @@ header#main {
         header#main nav ul li a {
           font-size: 2rem; }
         header#main nav ul li:hover {
-          background-color: #5b5d5b; }
+          background-color: #5f7cbe;
+          cursor: pointer; }
 
 html {
   font-size: 10px; }
@@ -120,7 +122,7 @@ a {
 .splash {
   position: relative;
   min-height: 50vw;
-  padding: 2rem 0; }
+  padding: 6rem 0; }
   .splash .splash-img {
     position: absolute;
     display: block;
@@ -128,13 +130,13 @@ a {
     left: 0;
     min-width: 100%;
     height: 100%;
-    background-image: url("../images/Augusta-Georgia.jpg");
+    background-image: url("../images/ga.jpg");
     background-position: top center;
     background-size: cover;
     background-repeat: no-repeat;
     background-color: #456AC0;
-    -webkit-filter: saturate(1.5) blur(1px) grayscale(0.4) sepia(0.2) contrast(1.2);
-    filter: saturate(1.5) blur(1px) grayscale(0.4) sepia(0.2) contrast(1.2); }
+    filter: saturate(1.5) blur(1px) grayscale(0.4) sepia(0.2) contrast(1.2);
+    -webkit-filter: saturate(1.5) blur(1px) grayscale(0.4) sepia(0.2) contrast(1.2); }
   .splash h1, .splash .logo {
     position: relative;
     margin: 0 auto; }
@@ -272,7 +274,7 @@ a {
   margin: 0 auto;
   text-align: center;
   max-width: 1920px;
-  background-color: #424342; }
+  background-color: #dbdcdb; }
 
 #dev-btn {
   display: none; }
