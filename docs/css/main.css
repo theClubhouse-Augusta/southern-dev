@@ -79,13 +79,12 @@
     height: 100%;
     transition: right .4s ease; }
     .mobile-nav.active-nav {
-      right: 0; } }
-
-.mobile-nav #body-wrapper {
-  right: 0;
-  transition: right .4s ease; }
-  .mobile-nav #body-wrapper.active-nav {
-    right: 10rem; }
+      right: 0; }
+  #body-wrapper {
+    right: 0;
+    transition: right .4s ease; }
+    #body-wrapper.active-nav {
+      right: 10rem; } }
 
 header#main {
   position: relative;
