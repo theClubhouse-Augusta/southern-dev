@@ -64,7 +64,6 @@ html {
   font-size: 10px; }
 
 body {
-  background-color: #424342;
   width: 100%;
   padding: 0;
   margin: 0;
@@ -89,7 +88,7 @@ section, footer {
     margin-bottom: 20px;
     font-weight: bold;
     font-size: 3rem;
-    color: black; }
+    color: #020204; }
   section p, footer p {
     width: 70%;
     margin: 0 auto; }
@@ -98,7 +97,7 @@ footer p {
   padding: .5rem 0; }
 
 h1 {
-  color: whitesmoke; }
+  color: white; }
 
 p {
   font-size: 1.6rem;
@@ -133,7 +132,7 @@ a {
     background-position: top center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-color: #424342;
+    background-color: #456AC0;
     -webkit-filter: saturate(1.5) blur(1px) grayscale(0.4) sepia(0.2) contrast(1.2);
     filter: saturate(1.5) blur(1px) grayscale(0.4) sepia(0.2) contrast(1.2); }
   .splash h1, .splash .logo {
@@ -273,7 +272,7 @@ a {
   margin: 0 auto;
   text-align: center;
   max-width: 1920px;
-  background-color: #c2c2c2; }
+  background-color: #424342; }
 
 #dev-btn {
   display: none; }
