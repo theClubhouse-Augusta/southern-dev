@@ -161,6 +161,17 @@ window.onload = function () {
   speakers.forEach(function (speaker) {
     SpeakerTemplate(speaker);
   });
+  var mobileNav = {
+    arrow: document.querySelector(".mobile-tray-arrow"),
+    container: document.querySelector(".mobile-nav"),
+    bodyWrapper: document.querySelector("#body-wrapper")
+  };
+
+  mobileNav.arrow.addEventListener("click", function () {
+    mobileNav.container.classList.toggle("active-nav");
+    mobileNav.bodyWrapper.classList.toggle("active-nav");
+    mobileNav.arrow.classList.toggle("active-nav");
+  });
 };
 "use strict";
 
