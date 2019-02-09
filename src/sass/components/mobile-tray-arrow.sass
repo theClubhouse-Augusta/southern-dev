@@ -1,0 +1,33 @@
+.mobile-tray-arrow
+    position: fixed
+    top: 50%
+    transform: translateY(-50%)
+    z-index: 2
+    right: 15rem
+    padding: 3rem 1rem 3rem 3rem
+    background-color: lighten($primary-blue, 10%)
+    border-radius: 50% 0 0 50%
+    span
+        display: block
+        width: 4rem
+        height: .5rem
+        background-color: $primary-green
+        margin: .5rem auto
+        &:first-child
+            transform: rotate(45deg)
+        &:nth-child(2)
+            opacity: 0
+            height: 1rem
+        &:last-child
+            transform: rotate(-45deg)
+
+
+        /* Pointing Left */
+        // &:first-child
+        //     transform: rotate(-45deg)
+        // &:nth-child(2)
+        //     opacity: 0
+        //     height: 1rem
+        // &:last-child
+        //     transform: rotate(45deg)
+            

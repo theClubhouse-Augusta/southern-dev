@@ -2,6 +2,8 @@ doctype html
 html
   include head.html
   body
-    header#main
-      img(src="images/logoBig.png").header-image
-      include ../components/navbar.pug
+    .mobile-nav
+      header#main
+        img(src="images/logoBig.png").header-image
+        include ../components/navbar.pug
+      include ../components/mobile-tray-arrow.pug

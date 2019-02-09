@@ -3,16 +3,18 @@ header#main
     right: 0
     height: 100%
     width: 15rem
-    z-index: 10
+    z-index: 1
     overflow: hidden
     background-color: lighten($primary-blue, 10%)
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, .4)
     img
-        width: 10rem
+        position: relative
+        top: 1rem
+        width: 100%
         margin: 0
     nav
         position: relative
-        width: 80%
+        width: 100%
         right: 0
         top: 0
         ul 
@@ -20,13 +22,13 @@ header#main
             display: block
             width: 100%
             padding: 0
+            margin: 0 auto
         li
             position: relative
             display: block
             list-style-type: none
             padding: 20px 0 30px 0
             width: 100%
-            border-radius: 0 5px 5px 0
             margin-top: 10px
             text-align: center
             transition: all ease .2s
@@ -39,7 +41,7 @@ header#main
                 width: 0
                 height: 3px
                 background-color: $primary-green
-                transition: all .5s ease
+                transition: all .2s ease
             a
                 font-size: 1.6rem
             &:hover
@@ -53,14 +55,19 @@ header#main
         top: 0
         width: 100%
         height: auto
+        img
+            width: 10rem
         nav
             position: absolute
             bottom: 0
+            width: 80%
             ul
                 margin: 2rem auto 0 auto
+                width: 100%
             li
                 display: inline-block
                 width: 19%
                 border-radius: 10px 10px 0 0
+                // border-radius: 0 5px 5px 0
                 margin-top: 0
 

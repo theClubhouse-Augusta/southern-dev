@@ -29,35 +29,61 @@
       padding: 0 1rem;
       width: 90%; }
 
+.mobile-tray-arrow {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  right: 15rem;
+  padding: 3rem 1rem 3rem 3rem;
+  background-color: #6b89cd;
+  border-radius: 50% 0 0 50%; }
+  .mobile-tray-arrow span {
+    display: block;
+    width: 4rem;
+    height: .5rem;
+    background-color: #CDF589;
+    margin: .5rem auto;
+    /* Pointing Left */ }
+    .mobile-tray-arrow span:first-child {
+      transform: rotate(45deg); }
+    .mobile-tray-arrow span:nth-child(2) {
+      opacity: 0;
+      height: 1rem; }
+    .mobile-tray-arrow span:last-child {
+      transform: rotate(-45deg); }
+
 header#main {
   position: fixed;
   right: 0;
   height: 100%;
   width: 15rem;
-  z-index: 10;
+  z-index: 1;
   overflow: hidden;
   background-color: #6b89cd;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4); }
   header#main img {
-    width: 10rem;
+    position: relative;
+    top: 1rem;
+    width: 100%;
     margin: 0; }
   header#main nav {
     position: relative;
-    width: 80%;
+    width: 100%;
     right: 0;
     top: 0; }
     header#main nav ul {
       position: relative;
       display: block;
       width: 100%;
-      padding: 0; }
+      padding: 0;
+      margin: 0 auto; }
     header#main nav li {
       position: relative;
       display: block;
       list-style-type: none;
       padding: 20px 0 30px 0;
       width: 100%;
-      border-radius: 0 5px 5px 0;
       margin-top: 10px;
       text-align: center;
       transition: all ease .2s; }
@@ -70,7 +96,7 @@ header#main {
         width: 0;
         height: 3px;
         background-color: #CDF589;
-        transition: all .5s ease; }
+        transition: all .2s ease; }
       header#main nav li a {
         font-size: 1.6rem; }
       header#main nav li:hover {
@@ -85,11 +111,15 @@ header#main {
       top: 0;
       width: 100%;
       height: auto; }
+      header#main img {
+        width: 10rem; }
       header#main nav {
         position: absolute;
-        bottom: 0; }
+        bottom: 0;
+        width: 80%; }
         header#main nav ul {
-          margin: 2rem auto 0 auto; }
+          margin: 2rem auto 0 auto;
+          width: 100%; }
         header#main nav li {
           display: inline-block;
           width: 19%;
