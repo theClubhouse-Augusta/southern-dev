@@ -86,6 +86,11 @@
     #body-wrapper.active-nav {
       right: 10rem; } }
 
+.slick {
+  display: block;
+  height: 50vh;
+  width: 100%; }
+
 header#main {
   position: relative;
   right: 0;
