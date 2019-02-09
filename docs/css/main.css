@@ -267,7 +267,6 @@ input[type=submit] {
     left: 0;
     min-width: 100%;
     height: 100%;
-    background-image: url("../images/ga.jpg");
     background-position: top center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -410,3 +409,9 @@ input[type=submit] {
 #results {
   color: tomato;
   margin: 0 auto; }
+
+#splash-index {
+  background-image: url("../images/ga.jpg"); }
+
+#splash-about {
+  background-image: url("../images/stock-audience.jpg"); }
