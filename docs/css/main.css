@@ -196,7 +196,7 @@ input[type=submit] {
   transition: max-height 0.05s ease-out; }
 
 .expanded {
-  max-height: 500px;
+  max-height: 100%;
   transition: max-height 0.1s ease-in;
   transition-delay: 0.15s;
   margin-top: 2rem;
