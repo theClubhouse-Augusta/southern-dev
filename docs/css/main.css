@@ -1,33 +1,31 @@
-#bios {
-  border-radius: 10px;
-  width: 90%;
-  max-width: 1250px;
-  margin: 3rem auto;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around; }
-  #bios .bio {
-    background-color: whitesmoke;
+section.speakers {
+  background-color: white;
+  border-radius: 10px; }
+  section.speakers .bio {
     border-radius: 3px;
-    box-shadow: 2px 2px 1px 0 #757675, 2px 2px 8px 2px #8e908e;
-    margin: 1rem;
-    max-width: 90%;
-    width: 250px; }
-    #bios .bio img {
+    padding: 60px 0;
+    text-align: left; }
+    section.speakers .bio img {
+      display: inline-block;
       border-radius: 100%;
-      margin: 2rem auto;
-      width: 90%; }
-    #bios .bio h4 {
-      font-size: 2rem;
-      padding: 1rem 1rem 0 1rem;
-      margin: 0 auto; }
-    #bios .bio h5 {
-      font-size: 1.8rem;
-      font-weight: normal;
-      display: block;
-      padding: 0 1rem;
-      width: 90%; }
+      width: 20%;
+      border: 1px solid #91806e; }
+    section.speakers .bio .txt-container {
+      display: inline-block;
+      width: 79%; }
+      section.speakers .bio .txt-container h4 {
+        font-size: 2rem;
+        padding: 1rem 1rem 0 1rem; }
+      section.speakers .bio .txt-container h5 {
+        font-size: 1.8rem;
+        font-weight: normal;
+        display: block;
+        padding: 0 10px;
+        width: 90%; }
+      section.speakers .bio .txt-container p {
+        margin: 0;
+        padding: 0;
+        width: 100%; }
 
 @media (max-width: 1200px) {
   .mobile-tray-arrow {
@@ -176,7 +174,7 @@ body {
   width: 100%;
   padding: 0;
   margin: 0;
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
@@ -188,9 +186,6 @@ main {
 
 section, footer {
   padding: 20px 0;
-  border-radius: 2px;
-  width: 90%;
-  max-width: 1250px;
   margin: 0 auto; }
   section h2, footer h2 {
     margin-top: 0;
@@ -425,10 +420,8 @@ input[type=submit] {
 #splash-about {
   background-image: url("../images/stock-audience.jpg"); }
 
-<<<<<<< HEAD
 #splash-tickets {
   background-image: url("../images/stock-ticket.jpg"); }
-=======
+
 #splash-contact {
   background-image: url("../images/stock-contact.jpg"); }
->>>>>>> b71dd0efd46289d0739fe738326b61f3aa22b2f1

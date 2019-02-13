@@ -93,19 +93,23 @@ function SpeakerTemplate(speaker) {
       bioShortTemplate = document.createElement("p"),
       imgTemplate = document.createElement("img"),
       titleTemplate = document.createElement("h5"),
+      txtContainer = document.createElement("div"),
       bio = document.createElement("div");
 
-  // 3. Assign Element's Content
+  // 3. Assign Element Properties
   nameTemplate.textContent = name;
   titleTemplate.textContent = title;
   bioShortTemplate.textContent = bioShort;
   imgTemplate.src = "images/" + image;
   bio.classList.add("bio");
+  txtContainer.classList.add("txt-container");
 
   // 4. Assign HTML Context
+  txtContainer.appendChild(nameTemplate);
+  txtContainer.appendChild(titleTemplate);
+  txtContainer.appendChild(bioShortTemplate);
   bio.appendChild(imgTemplate);
-  bio.appendChild(nameTemplate);
-  bio.appendChild(titleTemplate);
+  bio.appendChild(txtContainer);
 
   // 5. Attach to Document
   var bios = document.getElementById("bios");
