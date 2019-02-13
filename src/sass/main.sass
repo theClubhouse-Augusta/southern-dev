@@ -172,12 +172,13 @@ input[type=submit]
 .collapsed
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.1s ease-out;
+  transition: max-height 0.05s ease-out;
  
 
 .expanded
   max-height: 500px;
-  transition: max-height 0.3s ease-in;
+  transition: max-height 0.1s ease-in;
+  transition-delay: 0.15s;
   margin-top: 2rem;
   overflow: hidden;
   display: inline-block;
