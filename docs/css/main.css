@@ -191,9 +191,13 @@ input[type=submit] {
     margin: 2rem 2rem 0 2rem; }
 
 .collapsed {
-  display: none; }
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1s ease-out; }
 
 .expanded {
+  max-height: 500px;
+  transition: max-height 3s ease-in;
   margin-top: 2rem;
   display: inline-block; }
 
