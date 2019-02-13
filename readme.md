@@ -17,4 +17,10 @@ cd southern-dev
 npm install
 ```
 
-To run project, simply do `npm run start`
+To run project use `npm run start`
+Edit files in `src` folder and Gulp along with Browser sync will reload browser.
+
+- Known Gulp bugs
+    - Pug errors break gulp needing to restart
+    - HTML does not reload process (change a sass file and will run HTML)
+    - If images are added when Gulp isn't running Image process doesn't run. Need to be running Gulp to get it to work
