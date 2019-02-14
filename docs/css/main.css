@@ -25,7 +25,7 @@ h5 {
 h6 {
   font-size: 1.8rem; }
 
-p {
+p, a {
   font-size: 1.6rem;
   line-height: 1.6; }
 
@@ -38,11 +38,16 @@ section.speakers {
     padding: 40px 0;
     margin: 0 auto;
     margin-bottom: 40px; }
+    @media (min-width: 1200px) {
+      section.speakers h1 {
+        padding-top: 125px; } }
   section.speakers .bio {
     border-radius: 3px;
     padding: 60px 0;
     text-align: left;
     width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
     border-bottom: 1px solid #f3f2f2; }
     section.speakers .bio img {
       display: block;
@@ -50,10 +55,17 @@ section.speakers {
       border-radius: 100%;
       width: 150px;
       border: 1px solid #91806e; }
+      @media (min-width: 900px) {
+        section.speakers .bio img {
+          float: left; } }
     section.speakers .bio .txt-container {
       display: block;
       margin: 0 auto;
-      width: 80%; }
+      width: 80%;
+      max-width: 500px; }
+      @media (min-width: 900px) {
+        section.speakers .bio .txt-container {
+          padding-left: 80px; } }
       section.speakers .bio .txt-container h4 {
         font-size: 3.6rem;
         color: #456abf;
@@ -62,6 +74,27 @@ section.speakers {
         font-weight: normal;
         display: block;
         margin-bottom: 10px; }
+  section.speakers .cfp {
+    padding: 60px 0; }
+    section.speakers .cfp .txt-box {
+      display: block;
+      margin: 20px auto 0 auto;
+      padding: 10px 0;
+      width: 60%;
+      min-width: 300px;
+      max-width: 400px;
+      width: 60%;
+      text-decoration: none;
+      color: #f3f2f2;
+      background-color: #456abf;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+      transition: box-shadow .5s ease; }
+      section.speakers .cfp .txt-box:hover {
+        box-shadow: none; }
+    section.speakers .cfp h4 {
+      font-size: 3.6rem;
+      font-weight: bold; }
 
 @media (max-width: 1200px) {
   .mobile-tray-arrow {

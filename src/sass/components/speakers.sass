@@ -7,12 +7,16 @@ section.speakers
     padding: 40px 0
     margin: 0 auto
     margin-bottom: 40px
+    @media(min-width: 1200px)
+      padding-top: 125px
   #bios
   .bio
     border-radius: 3px
     padding: 60px 0
     text-align: left
     width: 100%
+    max-width: 800px
+    margin: 0 auto
     border-bottom: 1px solid $gray2
     img
       display: block
@@ -20,10 +24,15 @@ section.speakers
       border-radius: 100%
       width: 150px
       border: 1px solid $gray5
+      @media(min-width: 900px)
+        float: left
     .txt-container
       display: block
       margin: 0 auto
       width: 80%
+      max-width: 500px
+      @media(min-width: 900px)
+        padding-left: 80px
       h4
         font-size: 3.6rem
         color: $blue5
@@ -32,6 +41,25 @@ section.speakers
         font-weight: normal
         display: block
         margin-bottom: 10px
-        
-
+  .cfp
+    padding: 60px 0
+    .txt-box
+      display: block
+      margin: 20px auto 0 auto
+      padding: 10px 0
+      width: 60%
+      min-width: 300px
+      max-width: 400px
+      width: 60%
+      text-decoration: none
+      color: $gray2
+      background-color: $blue5
+      border-radius: 10px
+      box-shadow: $shadow3
+      transition: box-shadow .5s ease
+      &:hover
+        box-shadow: none
+    h4
+      font-size: 3.6rem
+      font-weight: bold
 
