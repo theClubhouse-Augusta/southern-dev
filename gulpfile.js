@@ -32,7 +32,7 @@ gulp.task('views', function () {
 })
 
 gulp.task('css', function(){
-  return gulp.src(['src/css/normalize.css', 'skeleton.css'])
+  return gulp.src(['src/css/normalize.css'])
     .pipe(concat('base.css'))
     .pipe(gulp.dest('docs/css'))
     .pipe(browserSync.reload({
