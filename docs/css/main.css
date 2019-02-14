@@ -34,13 +34,7 @@ section.speakers {
   padding: 0; }
   section.speakers h1 {
     color: #fdfcfc;
-    background-color: #f48971;
-    padding: 40px 0;
-    margin: 0 auto;
-    margin-bottom: 40px; }
-    @media (min-width: 1200px) {
-      section.speakers h1 {
-        padding-top: 125px; } }
+    background-color: #f48971; }
   section.speakers .bio {
     border-radius: 3px;
     padding: 60px 0;
@@ -240,6 +234,14 @@ body {
   width: 100%;
   padding: 0;
   margin: 0; }
+
+header h1 {
+  padding: 40px 0;
+  margin: 0 auto;
+  margin-bottom: 40px; }
+  @media (min-width: 1200px) {
+    header h1 {
+      padding-top: 125px; } }
 
 main {
   margin: 0 auto;
