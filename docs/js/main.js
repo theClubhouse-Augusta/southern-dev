@@ -93,19 +93,23 @@ function SpeakerTemplate(speaker) {
       bioShortTemplate = document.createElement("p"),
       imgTemplate = document.createElement("img"),
       titleTemplate = document.createElement("h5"),
+      txtContainer = document.createElement("div"),
       bio = document.createElement("div");
 
-  // 3. Assign Element's Content
+  // 3. Assign Element Properties
   nameTemplate.textContent = name;
   titleTemplate.textContent = title;
   bioShortTemplate.textContent = bioShort;
   imgTemplate.src = "images/" + image;
   bio.classList.add("bio");
+  txtContainer.classList.add("txt-container");
 
   // 4. Assign HTML Context
+  txtContainer.appendChild(nameTemplate);
+  txtContainer.appendChild(titleTemplate);
+  txtContainer.appendChild(bioShortTemplate);
   bio.appendChild(imgTemplate);
-  bio.appendChild(nameTemplate);
-  bio.appendChild(titleTemplate);
+  bio.appendChild(txtContainer);
 
   // 5. Attach to Document
   var bios = document.getElementById("bios");
@@ -118,12 +122,14 @@ var speakers = [{
   "title": "Geek @ Arms of Vets Who Code",
   "bio-short": "Front End Developer && Geek @ Arms of Vets Who Code. After serving the Air Force as a member of Security Forces, he transitioned into code during the Great Recession with his first job working on Databases with the Dept of Homeland Security.",
   "bio-long": "Jerome Hardaway is a Front End Developer && Geek @ Arms of Vets Who Code. After serving the Air Force as a member of Security Forces, he transitioned into code during the Great Recession with his first job working on Databases with the Dept of Homeland Security.\n    While building and leading engineers at Vets Who Code, his main duties is building relationships, telling the stories of our veterans, talks, learning and passing higher level training to the incoming leadership team as they support and grow the next groups of entry-level && junior developers.",
-  "image": "jerome.jpg"
+  "image": "jerome.jpg",
+  "twitter": "https://twitter.com/JeromeHardaway"
 }, {
   "name": "Eric Harrison",
   "title": "Co-founder and CTO of Moonrise",
   "bio-short": "co-founder and CTO of Moonrise, a social-impact startup trying to use AI to connect financially challenged workers to awesome jobs. He's the author of An Introduction to Robot Programming and has spent his career trying to automate-away the worst parts of life.",
-  "image": "eric.png"
+  "image": "eric.png",
+  "twitter": "https://twitter.com/blister"
 }, {
   "name": "Harsha Vemulapalli",
   "title": "Head of Design for Bosch",
@@ -134,16 +140,20 @@ var speakers = [{
   "name": "Mark Noonan",
   "title": "Web Developer at Content Thread",
   "bio-short": "Web developer at Content Thread (a digital agency and consulting firm specializing in AEM) and a member of Code for Atlanta's leadership team. He also serves as a program developer for People Making Progress, an Atlanta-based nonprofit serving adults with developmental disabilities at home, work, and in the community. In 2017 he led the Paratransit Pal project, which won AT&T's Civic Coding Challenge, after which the project team donated the entire $40,000 prize to charity.",
-  "image": "mark.jpg"
+  "image": "mark.jpg",
+  "twitter": "https://twitter.com/marktnoonan"
+
 }, {
   "name": "Mark Locklear",
   "title": "Web Developer, Founder, Mentor Director, Instructor",
   "bio-short": "Mark Locklear is a web developer at the eXtension Initiative, founder of Remotegig.io and Director of mentors at Vets Who Code. He is an Adjunct Instructor at Asheville Buncombe Technical Community College and is passionate about education and teaching students software development.",
-  "image": "markL.jpg"
+  "image": "markL.jpg",
+  "twitter": "https://twitter.com/marklocklear"
 }, {
   "name": "Patrick Rodgers",
   "title": "Project Manager and Lead Programmer",
   "bio-short": "Patrick is a Lead Programmer and Project Manager at Powerserve in Augusta, Georgia. He began his career at Powerserve 13 years ago as a web designer, but in that time discovered his love for programming and made a career swap. He now leads a team of programmers who work on a site that sells over $100 million dollars worth of product annually. He has a passion for solving problems using the best means and 80's punk music.",
-  "image": "patrickr.png"
+  "image": "patrickr.png",
+  "twitter": "https://twitter.com/1hitsong"
 }];
 //# sourceMappingURL=main.js.map
