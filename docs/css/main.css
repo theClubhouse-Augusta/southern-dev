@@ -165,7 +165,7 @@ header#main {
   width: 15rem;
   z-index: 1;
   overflow: hidden;
-  background-color: #6b89cd;
+  background-color: white;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4); }
   header#main img {
     position: relative;
