@@ -1,13 +1,36 @@
 h1
   font-size: 4rem
   background-color: $blue1
-  color: $gray9
-  
-.mission
-  width: 100%
-  max-width: 600px
+  color: $blue7
+  font-weight: bold
+
+.mission, .policies, .who-we-are
+  width: 80%
+  max-width: 800px
+  clear: both
+  h2
+    margin: 20px auto 20px auto
+    max-width: 200px
+    color: $pink7
+    font-weight: 500
+    @media(min-width: 900px)
+      margin: 20px 0
+      float: left
   p
+    display: block
+    vertical-align: top
     text-align: left
+    width: 100%
+    max-width: 500px
+    @media(min-width: 900px)
+      margin: 20px 0
+      float: right
+
+
+.policies
+  .button-cont
+    clear: both
+    padding-top: 30px
 
 .location
   width: 100%
@@ -17,7 +40,7 @@ h1
   border-radius: 10px
   background-color: $blue1
   box-shadow: $shadow3
-  h2, p
+  h3, p
     color: $gray9
   a
     font-size: 2.4rem
