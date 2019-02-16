@@ -3,7 +3,7 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-h1, h2, h3, h4, h5, h6, p {
+h1, h2, h3, h4, h5, h6, p, a, label {
   font-family: 'Roboto', sans-serif;
   color: #211a12; }
 
@@ -90,7 +90,7 @@ section.speakers {
       font-size: 3.6rem;
       font-weight: bold; }
 
-header h1 {
+h1 {
   font-size: 4rem;
   background-color: #cfdcfc;
   color: #211a12; }
@@ -151,6 +151,54 @@ header h1 {
     width: 300px;
     margin: 0 auto;
     border: none; }
+
+.contact h2 {
+  color: #fce8e8; }
+
+.contact form {
+  width: 600px;
+  margin: 0 auto;
+  background-color: #456abf;
+  padding: 40px 0;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4); }
+
+.contact label {
+  display: block;
+  text-align: left;
+  color: #cfdcfc; }
+
+.contact input {
+  display: block;
+  text-align: left;
+  font-size: 1.8rem;
+  margin: 20px auto;
+  background-color: #f3f2f2;
+  color: #211a12;
+  padding: .5rem;
+  border-radius: 5px; }
+
+.contact input[type=submit] {
+  background-color: #f48971;
+  padding: 5px 20px;
+  border-radius: 5px;
+  border: 2px solid #f48971;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+  font-size: 2rem;
+  color: #fdfcfc; }
+
+.contact .indicates-required {
+  font-size: 1.6rem;
+  color: #cfdcfc;
+  padding-bottom: 20px; }
+
+.contact .mc-field-group {
+  width: 300px;
+  margin: 40px auto; }
+
+.contact #mc_embed_signup div.mce_inline_error {
+  background-color: #f48971; }
 
 @media (max-width: 1200px) {
   .mobile-tray-arrow {
@@ -297,12 +345,12 @@ body {
   padding: 0;
   margin: 0; }
 
-header h1 {
+h1 {
   padding: 40px 0;
   margin: 0 auto;
   margin-bottom: 40px; }
   @media (min-width: 1200px) {
-    header h1 {
+    h1 {
       padding-top: 125px; } }
 
 main {
@@ -352,29 +400,6 @@ button {
 
 label {
   width: 100%; }
-
-input {
-  display: inline-block;
-  margin: 20px auto;
-  border: 0;
-  background-color: lightgray; }
-
-input[type=email] {
-  padding: 10px 20px;
-  text-align: center;
-  box-shadow: inset 10px 10px 20px -15px rgba(0, 0, 0, 0.4);
-  border-radius: 5px; }
-
-input[type=submit] {
-  background-color: #F38770;
-  padding: 10px 20px;
-  border-radius: 2px;
-  border: 2px solid #F38770;
-  box-shadow: 1px 1px 2px 0.8px rgba(0, 0, 0, 0.4);
-  font-weight: bold;
-  font-size: 2rem;
-  color: white;
-  transition: all .2s ease; }
 
 .splash {
   position: relative;
@@ -440,7 +465,7 @@ input[type=submit] {
   .conduct br {
     height: 10px; }
 
-.subscribe-form, .tickets {
+.tickets {
   position: relative;
   background: white;
   margin: 20px auto;
@@ -450,9 +475,9 @@ input[type=submit] {
   padding: 20px 0;
   border-radius: 10px;
   box-shadow: 2px 2px 2px black; }
-  .subscribe-form .datefield input, .tickets .datefield input {
+  .tickets .datefield input {
     width: 10%; }
-  .subscribe-form p, .subscribe-form a, .tickets p, .tickets a {
+  .tickets p, .tickets a {
     font-size: 2.4rem;
     padding-bottom: 2rem; }
 
@@ -468,11 +493,6 @@ input[type=submit] {
   .footerMain .main {
     float: right;
     width: 50%; }
-
-#mc_embed_signup {
-  background: #fff;
-  width: 100%;
-  margin: 0 auto; }
 
 #body-wrapper {
   position: relative;
