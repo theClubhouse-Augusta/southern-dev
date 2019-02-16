@@ -175,6 +175,10 @@ h1 {
     margin: 0 auto;
     border: none; }
 
+.contact h1 {
+  color: #cfdcfc;
+  background-color: #456abf; }
+
 .contact h2 {
   color: #fce8e8; }
 
@@ -212,63 +216,6 @@ h1 {
 
 .contact #mc_embed_signup div.mce_inline_error {
   background-color: #f48971; }
-
-@media (max-width: 1200px) {
-  .mobile-tray-arrow {
-    position: absolute;
-    top: 7%;
-    transform: translateY(-50%);
-    z-index: 2;
-    right: 15rem;
-    padding: 1rem;
-    cursor: pointer;
-    background-color: #6b89cd;
-    border-radius: 50% 0 0 50%;
-    box-shadow: inset -5px 0 10px 0 rgba(0, 0, 0, 0.3), 0 0 10px 0 rgba(0, 0, 0, 0.3);
-    transition: all .6s ease; }
-    .mobile-tray-arrow.active-nav span {
-      /* Pointing Right */ }
-      .mobile-tray-arrow.active-nav span:first-child {
-        transform: translateY(3px) rotate(45deg); }
-      .mobile-tray-arrow.active-nav span:last-child {
-        transform: translateY(-3px) rotate(-45deg); }
-    .mobile-tray-arrow.active-nav:hover {
-      background-color: #5f7cbe; }
-      .mobile-tray-arrow.active-nav:hover span:first-child {
-        transform: translateY(3px) rotate(50deg); }
-      .mobile-tray-arrow.active-nav:hover span:last-child {
-        transform: translateY(-3px) rotate(-50deg); }
-    .mobile-tray-arrow span {
-      display: block;
-      width: 3rem;
-      height: .5rem;
-      background-color: #CDF589;
-      margin: .5rem auto;
-      transition: all .4s ease;
-      top: 50%;
-      /* Pointing Left */ }
-      .mobile-tray-arrow span:nth-child(2) {
-        opacity: 0;
-        height: 1rem; }
-      .mobile-tray-arrow span:first-child {
-        transform: translateY(10px) rotate(90deg); }
-      .mobile-tray-arrow span:last-child {
-        transform: translateY(-15px) rotate(0deg); } }
-
-@media (max-width: 1200px) {
-  .mobile-nav {
-    position: fixed;
-    right: -15rem;
-    z-index: 2;
-    height: 100%;
-    transition: right .4s ease; }
-    .mobile-nav.active-nav {
-      right: 0; }
-  #body-wrapper {
-    right: 0;
-    transition: right .4s ease; }
-    #body-wrapper.active-nav {
-      right: 10rem; } }
 
 .slick {
   display: block;
@@ -400,83 +347,86 @@ h1 {
   .index-nav .index-contact .index-bg {
     background-image: url("../images/phone.jpg"); }
 
+.conduct {
+  border-radius: 10px;
+  width: 90%;
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 30px 0; }
+  .conduct h4 {
+    font-size: 3rem;
+    margin: 2rem 0 1rem 0; }
+  .conduct p {
+    color: #333333;
+    text-align: left; }
+  .conduct br {
+    height: 10px; }
+  .conduct p, .conduct a {
+    font-size: 2.4rem;
+    padding-bottom: 2rem; }
+
 header#main {
-  position: relative;
   right: 0;
   height: 100%;
   width: 15rem;
   z-index: 1;
   overflow: hidden;
-  background-color: #6b89cd;
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4); }
+  background-color: #333333;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: auto; }
   header#main img {
     position: relative;
     top: 1rem;
-    width: 100%;
+    width: 20%;
+    max-width: 100px;
     margin: 0; }
   header#main nav {
-    position: relative;
-    width: 100%;
-    right: 0;
-    top: 0; }
+    display: inline-block;
+    width: 80%;
+    vertical-align: top;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%); }
     header#main nav ul {
       position: relative;
-      display: block;
+      display: flex;
       width: 100%;
-      padding: 0;
+      max-width: 900px;
       margin: 0 auto; }
     header#main nav li {
       position: relative;
-      display: block;
       list-style-type: none;
       text-align: center;
-      transition: all ease .2s; }
+      transition: all ease .2s;
+      display: inline-block;
+      width: 80px;
+      margin: 0 auto; }
       header#main nav li:after {
         content: "";
         position: absolute;
         display: block;
         left: 10%;
-        bottom: 20px;
+        bottom: -5px;
         margin-top: 1rem;
         width: 0;
         height: 3px;
-        background-color: #CDF589;
+        background-color: #a3aaf5;
         transition: all .2s ease; }
       header#main nav li a {
         display: block;
+        text-decoration: none;
+        color: #fdfcfc;
         width: 100%;
-        padding: 20px 0 30px 0;
-        font-size: 1.6rem; }
+        font-size: 1.6rem;
+        width: 100%; }
       header#main nav li:hover {
-        background-color: #5f7cbe;
-        cursor: pointer;
-        box-shadow: inset 0 0 10px 0 rgba(0, 0, 0, 0.2); }
+        cursor: pointer; }
         header#main nav li:hover:after {
-          width: 80%;
-          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2); }
-  @media (min-width: 1200px) {
-    header#main {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      height: auto; }
-      header#main img {
-        width: 10rem; }
-      header#main nav {
-        position: absolute;
-        bottom: 0;
-        width: 80%; }
-        header#main nav ul {
-          margin: 2rem auto 0 auto;
-          width: 100%; }
-        header#main nav li {
-          display: inline-block;
-          border-radius: 10px 10px 0 0;
-          margin-top: 0;
-          width: 15%; }
-          header#main nav li a {
-            width: 100%;
-            padding: 20px 0 30px 0; } }
+          width: 80%; }
 
 body {
   width: 100%;
@@ -485,11 +435,9 @@ body {
 
 h1 {
   padding: 40px 0;
+  padding-top: 125px;
   margin: 0 auto;
   margin-bottom: 40px; }
-  @media (min-width: 1200px) {
-    h1 {
-      padding-top: 125px; } }
 
 main {
   margin: 0 auto;
@@ -532,27 +480,6 @@ button {
 
 label {
   width: 100%; }
-
-.conduct {
-  background-color: white;
-  border-radius: 10px;
-  width: 90%;
-  max-width: 1250px;
-  margin: 0 auto;
-  padding: 30px 0; }
-  .conduct h2 {
-    font-size: 3rem; }
-  .conduct h4 {
-    font-size: 2rem;
-    margin: 2rem 0 1rem 0; }
-  .conduct p {
-    opacity: .9;
-    text-align: left; }
-  .conduct br {
-    height: 10px; }
-  .conduct p, .conduct a {
-    font-size: 2.4rem;
-    padding-bottom: 2rem; }
 
 .footerMain {
   overflow: hidden;

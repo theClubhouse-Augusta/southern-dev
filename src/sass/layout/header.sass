@@ -1,77 +1,66 @@
 header#main
-    position: relative
     right: 0
     height: 100%
     width: 15rem
     z-index: 1
     overflow: hidden
-    background-color: lighten($primary-blue, 10%)
+    background-color: $gray7
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, .4)
+    position: fixed
+    top: 0
+    width: 100%
+    height: auto
     img
         position: relative
         top: 1rem
-        width: 100%
+        width: 20%
+        max-width: 100px
         margin: 0
     nav
-        position: relative
-        width: 100%
-        right: 0
-        top: 0
+        display: inline-block
+        width: 80%
+        vertical-align: top
+        position: absolute
+        text-align: center
+        top: 50%
+        transform: translateY(-50%)
         ul 
             position: relative
-            display: block
+            display: flex
             width: 100%
-            padding: 0
+            max-width: 900px
             margin: 0 auto
         li
             position: relative
-            display: block
             list-style-type: none
             text-align: center
             transition: all ease .2s
+            display: inline-block
+            width: 80px
+            margin: 0 auto
             &:after
                 content: ""
                 position: absolute
                 display: block
                 left: 10%
-                bottom: 20px
+                bottom: -5px
                 margin-top: 1rem
                 width: 0
                 height: 3px
-                background-color: $primary-green
+                background-color: $blue3
                 transition: all .2s ease
             a
                 display: block
+                text-decoration: none
+                color: $gray1
                 width: 100%
-                padding: 20px 0 30px 0
+                // padding: 20px 0
                 font-size: 1.6rem
+                width: 100%
             &:hover
-                background-color: lighten($primary-dark-blue, 10%)
+                // background-color: lighten($primary-dark-blue, 10%)
                 cursor: pointer
-                box-shadow: inset 0 0 10px 0 rgba(0, 0, 0, .2)
+                // box-shadow: inset 0 0 10px 0 rgba(0, 0, 0, .2)
                 &:after
                     width: 80%
-                    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .2)
-    @media(min-width: 1200px)
-        position: fixed
-        top: 0
-        width: 100%
-        height: auto
-        img
-            width: 10rem
-        nav
-            position: absolute
-            bottom: 0
-            width: 80%
-            ul
-                margin: 2rem auto 0 auto
-                width: 100%
-            li
-                display: inline-block
-                border-radius: 10px 10px 0 0
-                margin-top: 0
-                width: 15%
-                a
-                    width: 100%
-                    padding: 20px 0 30px 0
-
+                    // box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .2)
