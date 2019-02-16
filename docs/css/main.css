@@ -337,6 +337,7 @@ h1 {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   background-color: white; }
   .date h2, .tickets h2 {
+    font-weight: 500;
     margin: 20px auto; }
   .date h2 div, .tickets h2 div {
     padding-top: 18px;
