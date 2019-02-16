@@ -5,7 +5,11 @@ var speakers = [
     "bio-short": "Front End Developer && Geek @ Arms of Vets Who Code. After serving the Air Force as a member of Security Forces, he transitioned into code during the Great Recession with his first job working on Databases with the Dept of Homeland Security.",
     "bio-long": "Jerome Hardaway is a Front End Developer && Geek @ Arms of Vets Who Code. After serving the Air Force as a member of Security Forces, he transitioned into code during the Great Recession with his first job working on Databases with the Dept of Homeland Security.\n    While building and leading engineers at Vets Who Code, his main duties is building relationships, telling the stories of our veterans, talks, learning and passing higher level training to the incoming leadership team as they support and grow the next groups of entry-level && junior developers.",
     "image": "jerome.jpg",
-    "twitter": "https://twitter.com/JeromeHardaway"
+    "social-media": {
+      "twitter": "https://twitter.com/JeromeHardaway",
+      "linkedin": "url"
+    }
+
   },
   {
     "name": "Eric Harrison",

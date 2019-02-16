@@ -87,7 +87,8 @@ function SpeakerTemplate(speaker) {
   const name = speaker.name,
     bioShort = speaker["bio-short"],
     image = speaker.image,
-    title = speaker.title;
+    title = speaker.title,
+    twitterLink = speaker.twitter;
 
   // 2. Create Elements
   const nameTemplate = document.createElement("h4"),
@@ -95,17 +96,26 @@ function SpeakerTemplate(speaker) {
     imgTemplate = document.createElement("img"),
     titleTemplate = document.createElement("h5"),
     txtContainer = document.createElement("div"),
-    bio = document.createElement("div");
+    bio = document.createElement("div"),
+    twitterContainer = document.createElement("a"),
+    twitter = document.createElement("i");
 
   // 3. Assign Element Properties
     nameTemplate.textContent = name;
     titleTemplate.textContent = title;
     bioShortTemplate.textContent = bioShort;
     imgTemplate.src = "images/" + image;
+    twitterContainer.setAttribute("href", twitterLink);
+
+    twitter.classList.add("fab", "fa-twitter");
     bio.classList.add("bio");
     txtContainer.classList.add("txt-container");
 
   // 4. Assign HTML Context
+    twitterContainer.appendChild(twitter);
+    // txtContainer.appendChild(socialMediaList());
+
+
     txtContainer.appendChild(nameTemplate);
     txtContainer.appendChild(titleTemplate);
     txtContainer.appendChild(bioShortTemplate);

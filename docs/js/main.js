@@ -86,7 +86,8 @@ function SpeakerTemplate(speaker) {
   var name = speaker.name,
       bioShort = speaker["bio-short"],
       image = speaker.image,
-      title = speaker.title;
+      title = speaker.title,
+      twitterLink = speaker.twitter;
 
   // 2. Create Elements
   var nameTemplate = document.createElement("h4"),
@@ -94,17 +95,26 @@ function SpeakerTemplate(speaker) {
       imgTemplate = document.createElement("img"),
       titleTemplate = document.createElement("h5"),
       txtContainer = document.createElement("div"),
-      bio = document.createElement("div");
+      bio = document.createElement("div"),
+      twitterContainer = document.createElement("a"),
+      twitter = document.createElement("i");
 
   // 3. Assign Element Properties
   nameTemplate.textContent = name;
   titleTemplate.textContent = title;
   bioShortTemplate.textContent = bioShort;
   imgTemplate.src = "images/" + image;
+  twitterContainer.setAttribute("href", twitterLink);
+
+  twitter.classList.add("fab", "fa-twitter");
   bio.classList.add("bio");
   txtContainer.classList.add("txt-container");
 
   // 4. Assign HTML Context
+  twitterContainer.appendChild(twitter);
+  // txtContainer.appendChild(socialMediaList());
+
+
   txtContainer.appendChild(nameTemplate);
   txtContainer.appendChild(titleTemplate);
   txtContainer.appendChild(bioShortTemplate);
@@ -123,7 +133,11 @@ var speakers = [{
   "bio-short": "Front End Developer && Geek @ Arms of Vets Who Code. After serving the Air Force as a member of Security Forces, he transitioned into code during the Great Recession with his first job working on Databases with the Dept of Homeland Security.",
   "bio-long": "Jerome Hardaway is a Front End Developer && Geek @ Arms of Vets Who Code. After serving the Air Force as a member of Security Forces, he transitioned into code during the Great Recession with his first job working on Databases with the Dept of Homeland Security.\n    While building and leading engineers at Vets Who Code, his main duties is building relationships, telling the stories of our veterans, talks, learning and passing higher level training to the incoming leadership team as they support and grow the next groups of entry-level && junior developers.",
   "image": "jerome.jpg",
-  "twitter": "https://twitter.com/JeromeHardaway"
+  "social-media": {
+    "twitter": "https://twitter.com/JeromeHardaway",
+    "linkedin": "url"
+  }
+
 }, {
   "name": "Eric Harrison",
   "title": "Co-founder and CTO of Moonrise",
