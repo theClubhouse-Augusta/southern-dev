@@ -1,0 +1,78 @@
+
+.splash
+  position: relative
+  min-height: 50vw
+  padding: 10rem 0 6rem
+  .splash-img
+    position: absolute
+    display: block
+    top: 0
+    left: 0
+    min-width: 100%
+    height: 100%
+    background-position: top center
+    background-size: cover
+    background-repeat: no-repeat
+    background-color: $primary-blue
+    filter: saturate(1.5) grayscale(.4) sepia(.2) contrast(1.2)
+    -webkit-filter: saturate(1.5) grayscale(.4) sepia(.2) contrast(1.2)
+  h1, .logo
+    position: relative
+    margin: 0 auto
+  h1
+    position: absolute
+    bottom: 10%
+    width: 100%
+    opacity: 0
+    transition: opacity .4s ease
+    // background-color: rgba(0, 0, 0, .4)
+    background-color: transparent
+    // box-shadow: 0px 0px 15px 10px rgba(0, 0, 0, 0.4)
+    padding: 1rem
+    color: $gray1
+    text-shadow: 0 0 80px $gray3
+    @media(min-width: 600px)
+        opacity: 1
+
+  .insta-filters, #dev-btn
+    position: absolute
+    top: 0
+    left: 0
+  button
+    background-color: $primary-pink
+    border-radius: 5px
+    font-size: 1.6rem
+    font-weight: bold
+    padding: 10px 20px
+    margin: 10px 5px
+    color: white
+    border: none
+  .logo
+    filter: drop-shadow(-10px 10px 5px rgba(0, 0, 0, 0.5))
+    transition: all .2s ease
+    width: 50%
+    max-width: 500px
+
+.date, .tickets
+    display: inline-block
+    vertical-align: top
+    max-width: 450px
+    padding: 100px 0
+    margin: 0 auto
+    width: 100%
+    box-shadow: $shadow1
+    // border-radius: 5px
+    background-color: white
+    h2
+        margin: 20px auto
+    h2 div
+        padding-top: 18px
+        color: $pink7
+.tickets
+    margin-bottom: 150px
+
+.index-nav
+    background: green
+    max-width: 900px
+    width: 100%
+    padding: 0

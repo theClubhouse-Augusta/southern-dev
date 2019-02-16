@@ -1,9 +1,6 @@
 window.onload = function () {
 
-  const instaFilters = document.querySelector(".insta-filters"),
-    splashImg = document.getElementById("splash-img"),
-    devBtn = document.getElementById("dev-btn"),
-    logo = document.querySelector(".logo"),
+  const logo = document.querySelector(".logo"),
     mobileNav = {
     arrow:  document.querySelector(".mobile-tray-arrow"),
     container: document.querySelector(".mobile-nav"),
@@ -20,11 +17,11 @@ window.onload = function () {
     mobileNav.container.classList.toggle("active-nav");
     mobileNav.bodyWrapper.classList.toggle("active-nav");
     mobileNav.arrow.classList.toggle("active-nav");
-  })
+  });
 
-  if(devBtn) {
-    devBtn.addEventListener("click", GenerateFilters);
-  }
+  // if(logo) {
+  //   logo.addEventListener("click", GenerateFilters);
+  // }
   if(logo) {
     logo.addEventListener("mousemove", function(e) {
       var xPosition = e.clientX;
@@ -40,6 +37,8 @@ window.onload = function () {
 }
 
 function GenerateFilters (){
+  const instaFilters = document.querySelector(".insta-filters"),
+    splashImg = document.getElementById("splash-img");
   /*
     1. Button that enables instagram filters
     2. It is hidden at the top left corner of the splash page
@@ -54,7 +53,7 @@ function GenerateFilters (){
     instaFilters.appendChild(filterButton);
 
   // Reset Dev Button's style
-    devBtn.style.display = "none";
+    // devBtn.style.display = "none";
   });
 
   // 2. Add Event Listener to filters

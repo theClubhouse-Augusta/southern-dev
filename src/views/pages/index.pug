@@ -2,13 +2,31 @@
 include ../layouts/header.pug
 #body-wrapper
   main
-    include ../components/splash.pug
+    section.splash
+      div.splash-img#splash-index(alt="Augusta skyline from the Savannah river at sunset")
+      img.logo(src="images/logo.png" alt="Southern Dev Logo")
+      h1 A Dev Conference for a better community by an awesome community.
+      //-
+        This unlocks all the cool and fun dev stuff and features that I'm playing around with on the site.
+      button#dev-btn Dev Button
+      div.insta-filters
   section.date
     h2 Conference Date
-      br
-      span April 27, 2019
-    include ../components/tickets.pug
-    include ../components/conduct.pug
-    include ../components/speakers.pug
-    include ../components/mail-chimp.html
+      div April 27, 2019
+  section.tickets
+    h2 Early Bird Tickets On Sale Now!
+    a.button(href="https://www.eventbrite.com/e/southern-developer-conference-tickets-55867745932") 
+      button Purchase Here
+
+  section.index-nav
+    .about-us
+      a.button(href="about.html")
+        button About Us
+    .speakers
+      a.button(href="speakers.html")
+        button Speakers
+    .contact
+      a.button(href="contact.html")
+        button Contact Us
+        
   include ../layouts/footer.pug

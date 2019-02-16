@@ -275,6 +275,82 @@ h1 {
   height: 50vh;
   width: 100%; }
 
+.splash {
+  position: relative;
+  min-height: 50vw;
+  padding: 10rem 0 6rem; }
+  .splash .splash-img {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 100%;
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #456AC0;
+    filter: saturate(1.5) grayscale(0.4) sepia(0.2) contrast(1.2);
+    -webkit-filter: saturate(1.5) grayscale(0.4) sepia(0.2) contrast(1.2); }
+  .splash h1, .splash .logo {
+    position: relative;
+    margin: 0 auto; }
+  .splash h1 {
+    position: absolute;
+    bottom: 10%;
+    width: 100%;
+    opacity: 0;
+    transition: opacity .4s ease;
+    background-color: transparent;
+    padding: 1rem;
+    color: #fdfcfc;
+    text-shadow: 0 0 80px #bcb3a9; }
+    @media (min-width: 600px) {
+      .splash h1 {
+        opacity: 1; } }
+  .splash .insta-filters, .splash #dev-btn {
+    position: absolute;
+    top: 0;
+    left: 0; }
+  .splash button {
+    background-color: #F38770;
+    border-radius: 5px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin: 10px 5px;
+    color: white;
+    border: none; }
+  .splash .logo {
+    filter: drop-shadow(-10px 10px 5px rgba(0, 0, 0, 0.5));
+    transition: all .2s ease;
+    width: 50%;
+    max-width: 500px; }
+
+.date, .tickets {
+  display: inline-block;
+  vertical-align: top;
+  max-width: 450px;
+  padding: 100px 0;
+  margin: 0 auto;
+  width: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  background-color: white; }
+  .date h2, .tickets h2 {
+    margin: 20px auto; }
+  .date h2 div, .tickets h2 div {
+    padding-top: 18px;
+    color: #f2370d; }
+
+.tickets {
+  margin-bottom: 150px; }
+
+.index-nav {
+  background: green;
+  max-width: 900px;
+  width: 100%;
+  padding: 0; }
+
 header#main {
   position: relative;
   right: 0;
@@ -408,49 +484,6 @@ button {
 label {
   width: 100%; }
 
-.splash {
-  position: relative;
-  min-height: 50vw;
-  padding: 10rem 0 6rem; }
-  .splash .splash-img {
-    position: absolute;
-    display: block;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    height: 100%;
-    background-position: top center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: #456AC0;
-    filter: saturate(1.5) blur(1px) grayscale(0.4) sepia(0.2) contrast(1.2);
-    -webkit-filter: saturate(1.5) blur(1px) grayscale(0.4) sepia(0.2) contrast(1.2); }
-  .splash h1, .splash .logo {
-    position: relative;
-    margin: 0 auto; }
-  .splash h1 {
-    background-color: rgba(0, 0, 0, 0.4);
-    box-shadow: 0px 0px 15px 10px rgba(0, 0, 0, 0.4);
-    padding: 1rem; }
-  .splash .insta-filters, .splash #dev-btn {
-    position: absolute;
-    top: 0;
-    left: 0; }
-  .splash button {
-    background-color: #F38770;
-    border-radius: 5px;
-    font-size: 1.6rem;
-    font-weight: bold;
-    padding: 10px 20px;
-    margin: 10px 5px;
-    color: white;
-    border: none; }
-  .splash .logo {
-    filter: drop-shadow(-10px 10px 5px rgba(0, 0, 0, 0.5));
-    transition: all .2s ease;
-    width: 50%;
-    max-width: 500px; }
-
 .date h2 span {
   color: #ef6041; }
 
@@ -471,20 +504,7 @@ label {
     text-align: left; }
   .conduct br {
     height: 10px; }
-
-.tickets {
-  position: relative;
-  background: white;
-  margin: 20px auto;
-  width: 90%;
-  max-width: 1250px;
-  margin: 0 auto;
-  padding: 20px 0;
-  border-radius: 10px;
-  box-shadow: 2px 2px 2px black; }
-  .tickets .datefield input {
-    width: 10%; }
-  .tickets p, .tickets a {
+  .conduct p, .conduct a {
     font-size: 2.4rem;
     padding-bottom: 2rem; }
 
