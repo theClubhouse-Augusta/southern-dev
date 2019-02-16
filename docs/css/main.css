@@ -381,21 +381,21 @@ button {
   box-shadow: 1px 1px 2px 0.8px rgba(0, 0, 0, 0.4);
   font-weight: bold;
   font-size: 2rem;
+  padding: 10px 20px;
   color: white;
-  padding: 0;
   transition: all .2s ease; }
-  button a {
+  button a, .button a {
     display: block;
     color: white;
     padding: 10px 20px; }
-    button a:hover {
+    button a:hover, .button a:hover {
       text-shadow: none; }
-    button a:visited {
+    button a:visited, .button a:visited {
       color: white; }
-  button:hover {
+  button:hover, .button:hover {
     background-color: white;
     color: #F38770; }
-    button:hover a {
+    button:hover a, .button:hover a {
       color: #F38770; }
 
 label {
