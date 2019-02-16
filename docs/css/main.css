@@ -91,14 +91,66 @@ section.speakers {
       font-weight: bold; }
 
 header h1 {
-  background-color: #f48971;
-  color: #fdfcfc; }
+  font-size: 4rem;
+  background-color: #cfdcfc;
+  color: #211a12; }
 
 .mission {
   width: 100%;
   max-width: 600px; }
   .mission p {
     text-align: left; }
+
+.location {
+  width: 100%;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 40px 0;
+  border-radius: 10px;
+  background-color: #cfdcfc;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4); }
+  .location h2, .location p {
+    color: #211a12; }
+  .location a {
+    font-size: 2.4rem;
+    color: #080891;
+    text-decoration: none; }
+  .location p {
+    margin-bottom: 40px; }
+  .location .txt-container {
+    vertical-align: top;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto; }
+    @media (min-width: 800px) {
+      .location .txt-container {
+        display: inline-block;
+        transform: translateY(50%); } }
+  .location .iframeCont {
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+    width: 300px;
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden; }
+    .location .iframeCont:before {
+      content: '';
+      border-radius: 10px;
+      position: absolute;
+      box-shadow: inset 0px 0px 4px 2px #757675;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 2;
+      pointer-events: none; }
+  .location iframe {
+    height: 300px;
+    min-height: 20rem;
+    width: 300px;
+    margin: 0 auto;
+    border: none; }
 
 @media (max-width: 1200px) {
   .mobile-tray-arrow {
@@ -388,10 +440,6 @@ input[type=submit] {
   .conduct br {
     height: 10px; }
 
-.speakers .cfp h4 {
-  font-size: 2.4rem;
-  margin: 0; }
-
 .subscribe-form, .tickets {
   position: relative;
   background: white;
@@ -404,36 +452,9 @@ input[type=submit] {
   box-shadow: 2px 2px 2px black; }
   .subscribe-form .datefield input, .tickets .datefield input {
     width: 10%; }
-
-.location .iframeCont {
-  position: relative;
-  z-index: 1;
-  width: 90%;
-  margin: 0 auto;
-  border-radius: 10px;
-  overflow: hidden; }
-  .location .iframeCont:before {
-    content: '';
-    border-radius: 10px;
-    position: absolute;
-    box-shadow: inset 0px 0px 4px 2px #757675;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 2;
-    pointer-events: none; }
-
-.location iframe {
-  height: 500px;
-  min-height: 20rem;
-  width: 100%;
-  margin: 0 auto;
-  border: none; }
-
-.location p, .location a {
-  font-size: 2.4rem;
-  padding-bottom: 2rem; }
+  .subscribe-form p, .subscribe-form a, .tickets p, .tickets a {
+    font-size: 2.4rem;
+    padding-bottom: 2rem; }
 
 .footerMain {
   overflow: hidden;

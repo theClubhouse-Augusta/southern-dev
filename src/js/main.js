@@ -22,19 +22,21 @@ window.onload = function () {
     mobileNav.arrow.classList.toggle("active-nav");
   })
 
-  // devBtn.addEventListener("click", GenerateFilters);
-
-  // logo.addEventListener("mousemove", function(e) {
-  //   var xPosition = e.clientX;
-  //       xPosition = Math.round(- xPosition / 50);
-  //   var yPosition = e.clientY;
-  //       yPosition = Math.round(yPosition / 50);
-
-  //   var dropShadow = "drop-shadow(" + xPosition  + "px " + yPosition  + "px 5px rgba(0, 0, 0, 0.5))";
-  //   // console.log(xPosition, yPosition);
-  //   logo.style.filter = dropShadow;
-  // });
-
+  if(devBtn) {
+    devBtn.addEventListener("click", GenerateFilters);
+  }
+  if(logo) {
+    logo.addEventListener("mousemove", function(e) {
+      var xPosition = e.clientX;
+          xPosition = Math.round(- xPosition / 50);
+      var yPosition = e.clientY;
+          yPosition = Math.round(yPosition / 50);
+  
+      var dropShadow = "drop-shadow(" + xPosition  + "px " + yPosition  + "px 5px rgba(0, 0, 0, 0.5))";
+      // console.log(xPosition, yPosition);
+      logo.style.filter = dropShadow;
+    });
+  }
 }
 
 function GenerateFilters (){
@@ -109,7 +111,7 @@ function SpeakerTemplate(speaker) {
   if ("social-media" in speaker){
     txtContainer.appendChild(SocialMediaTemplate(speaker));
   }
-  
+
   txtContainer.appendChild(nameTemplate);
   txtContainer.appendChild(titleTemplate);
   txtContainer.appendChild(bioShortTemplate);
