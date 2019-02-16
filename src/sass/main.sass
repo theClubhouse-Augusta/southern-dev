@@ -9,6 +9,14 @@ body
   padding: 0
   margin: 0
 
+
+h1
+  padding: 40px 0
+  margin: 0 auto
+  margin-bottom: 40px
+  @media(min-width: 1200px)
+    padding-top: 125px
+
 main
   margin: 0 auto
   overflow: hidden
@@ -80,27 +88,13 @@ button, .button
 
 label
   width: 100%
-input
-  display: inline-block
-  margin: 20px auto
-  border: 0
-  background-color: lightgray
-input[type=email]
-  padding: 10px 20px
-  text-align: center
-  box-shadow: inset 10px 10px 20px -15px rgba(0, 0, 0, 0.4)
-  border-radius: 5px
+// input[type=email]
+//   padding: 10px 20px
+//   text-align: center
+//   box-shadow: inset 10px 10px 20px -15px rgba(0, 0, 0, 0.4)
+//   border-radius: 5px
 
-input[type=submit]
-  background-color: $primary-pink
-  padding: 10px 20px
-  border-radius: 2px
-  border: 2px solid $primary-pink
-  box-shadow: 1px 1px 2px .8px rgba(0, 0, 0, .4)
-  font-weight: bold
-  font-size: 2rem
-  color: white
-  transition: all .2s ease
+
 
 // Classes
 
@@ -170,13 +164,13 @@ input[type=submit]
   br
     height: 10px
 
-.speakers
-  .cfp
-    h4
-      font-size: 2.4rem
-      margin: 0
+// .speakers
+//   .cfp
+//     h4
+//       font-size: 2.4rem
+//       margin: 0
 
-.subscribe-form, .tickets
+.tickets
   position: relative
   background: white
   margin: 20px auto
@@ -189,32 +183,6 @@ input[type=submit]
   .datefield
     input
       width: 10%
-
-.location
-  .iframeCont
-    position: relative
-    z-index: 1
-    width: 90%
-    margin: 0 auto
-    border-radius: 10px
-    overflow: hidden
-    &:before
-      content: ''
-      border-radius: 10px
-      position: absolute
-      box-shadow: inset 0px 0px 4px 2px lighten($primary-gray, 20%)
-      top: 0
-      right: 0
-      bottom: 0
-      left: 0
-      z-index: 2
-      pointer-events: none
-  iframe
-    height: 500px
-    min-height: 20rem
-    width: 100%
-    margin: 0 auto
-    border: none
 
 
 
@@ -239,18 +207,12 @@ input[type=submit]
 
 // Id styles
 
-#mc_embed_signup
-  background:#fff
-  clear:left
-  width: 100%
-  margin: 0 auto
-
 #body-wrapper
   position: relative
   margin: 0 auto
   text-align: center
   max-width: 1920px
-  background-color: lighten($primary-gray, 60%)
+  background-color: $gray1
 
 #dev-btn
   display: none

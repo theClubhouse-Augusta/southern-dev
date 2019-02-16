@@ -22,19 +22,21 @@ window.onload = function () {
     mobileNav.arrow.classList.toggle("active-nav");
   })
 
-  devBtn.addEventListener("click", GenerateFilters);
-
-  logo.addEventListener("mousemove", function(e) {
-    var xPosition = e.clientX;
-        xPosition = Math.round(- xPosition / 50);
-    var yPosition = e.clientY;
-        yPosition = Math.round(yPosition / 50);
-
-    var dropShadow = "drop-shadow(" + xPosition  + "px " + yPosition  + "px 5px rgba(0, 0, 0, 0.5))";
-    // console.log(xPosition, yPosition);
-    logo.style.filter = dropShadow;
-  });
-
+  if(devBtn) {
+    devBtn.addEventListener("click", GenerateFilters);
+  }
+  if(logo) {
+    logo.addEventListener("mousemove", function(e) {
+      var xPosition = e.clientX;
+          xPosition = Math.round(- xPosition / 50);
+      var yPosition = e.clientY;
+          yPosition = Math.round(yPosition / 50);
+  
+      var dropShadow = "drop-shadow(" + xPosition  + "px " + yPosition  + "px 5px rgba(0, 0, 0, 0.5))";
+      // console.log(xPosition, yPosition);
+      logo.style.filter = dropShadow;
+    });
+  }
 }
 
 function GenerateFilters (){
@@ -81,7 +83,7 @@ function GenerateFilters (){
 }
 
 
-/* SPEAKER SECTION */
+/* SPEAKER SECTION TEMPLATE */
 function SpeakerTemplate(speaker) {
   // 1. Parse Speakers Object
   const name = speaker.name,
@@ -98,22 +100,46 @@ function SpeakerTemplate(speaker) {
     bio = document.createElement("div");
 
   // 3. Assign Element Properties
-    nameTemplate.textContent = name;
-    titleTemplate.textContent = title;
-    bioShortTemplate.textContent = bioShort;
-    imgTemplate.src = "images/" + image;
-    bio.classList.add("bio");
-    txtContainer.classList.add("txt-container");
+  nameTemplate.textContent = name;
+  titleTemplate.textContent = title;
+  bioShortTemplate.textContent = bioShort;
+  imgTemplate.src = "images/" + image;
+  bio.classList.add("bio");
+  txtContainer.classList.add("txt-container");
 
   // 4. Assign HTML Context
-    txtContainer.appendChild(nameTemplate);
-    txtContainer.appendChild(titleTemplate);
-    txtContainer.appendChild(bioShortTemplate);
-    bio.appendChild(imgTemplate);
-    bio.appendChild(txtContainer);
+  if ("social-media" in speaker){
+    txtContainer.appendChild(SocialMediaTemplate(speaker));
+  }
+
+  txtContainer.appendChild(nameTemplate);
+  txtContainer.appendChild(titleTemplate);
+  txtContainer.appendChild(bioShortTemplate);
+  bio.appendChild(imgTemplate);
+  bio.appendChild(txtContainer);
 
 
   // 5. Attach to Document
   const bios = document.getElementById("bios");
   bios.appendChild(bio);
 }
+
+function SocialMediaTemplate(speaker){
+
+  let div = document.createElement("div");
+  div.classList.add("social-media");
+
+  Object.keys(speaker["social-media"]).forEach(function(socialMedia) {
+    let socialMediaLink = document.createElement("a"),
+    socialMediaIcon = document.createElement("i");
+    
+    socialMediaLink.setAttribute("href", speaker["social-media"][socialMedia]);
+    socialMediaIcon.classList.add("fab", "fa-" + socialMedia);
+
+    socialMediaLink.appendChild(socialMediaIcon);
+    div.appendChild(socialMediaLink);
+  });
+
+  return div;
+}
+  

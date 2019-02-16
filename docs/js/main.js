@@ -24,18 +24,21 @@ window.onload = function () {
     mobileNav.arrow.classList.toggle("active-nav");
   });
 
-  devBtn.addEventListener("click", GenerateFilters);
+  if (devBtn) {
+    devBtn.addEventListener("click", GenerateFilters);
+  }
+  if (logo) {
+    logo.addEventListener("mousemove", function (e) {
+      var xPosition = e.clientX;
+      xPosition = Math.round(-xPosition / 50);
+      var yPosition = e.clientY;
+      yPosition = Math.round(yPosition / 50);
 
-  logo.addEventListener("mousemove", function (e) {
-    var xPosition = e.clientX;
-    xPosition = Math.round(-xPosition / 50);
-    var yPosition = e.clientY;
-    yPosition = Math.round(yPosition / 50);
-
-    var dropShadow = "drop-shadow(" + xPosition + "px " + yPosition + "px 5px rgba(0, 0, 0, 0.5))";
-    // console.log(xPosition, yPosition);
-    logo.style.filter = dropShadow;
-  });
+      var dropShadow = "drop-shadow(" + xPosition + "px " + yPosition + "px 5px rgba(0, 0, 0, 0.5))";
+      // console.log(xPosition, yPosition);
+      logo.style.filter = dropShadow;
+    });
+  }
 };
 
 function GenerateFilters() {
@@ -80,7 +83,7 @@ function GenerateFilters() {
   });
 }
 
-/* SPEAKER SECTION */
+/* SPEAKER SECTION TEMPLATE */
 function SpeakerTemplate(speaker) {
   // 1. Parse Speakers Object
   var name = speaker.name,
@@ -105,6 +108,10 @@ function SpeakerTemplate(speaker) {
   txtContainer.classList.add("txt-container");
 
   // 4. Assign HTML Context
+  if ("social-media" in speaker) {
+    txtContainer.appendChild(SocialMediaTemplate(speaker));
+  }
+
   txtContainer.appendChild(nameTemplate);
   txtContainer.appendChild(titleTemplate);
   txtContainer.appendChild(bioShortTemplate);
@@ -115,6 +122,25 @@ function SpeakerTemplate(speaker) {
   var bios = document.getElementById("bios");
   bios.appendChild(bio);
 }
+
+function SocialMediaTemplate(speaker) {
+
+  var div = document.createElement("div");
+  div.classList.add("social-media");
+
+  Object.keys(speaker["social-media"]).forEach(function (socialMedia) {
+    var socialMediaLink = document.createElement("a"),
+        socialMediaIcon = document.createElement("i");
+
+    socialMediaLink.setAttribute("href", speaker["social-media"][socialMedia]);
+    socialMediaIcon.classList.add("fab", "fa-" + socialMedia);
+
+    socialMediaLink.appendChild(socialMediaIcon);
+    div.appendChild(socialMediaLink);
+  });
+
+  return div;
+}
 "use strict";
 
 var speakers = [{
@@ -123,13 +149,18 @@ var speakers = [{
   "bio-short": "Front End Developer && Geek @ Arms of Vets Who Code. After serving the Air Force as a member of Security Forces, he transitioned into code during the Great Recession with his first job working on Databases with the Dept of Homeland Security.",
   "bio-long": "Jerome Hardaway is a Front End Developer && Geek @ Arms of Vets Who Code. After serving the Air Force as a member of Security Forces, he transitioned into code during the Great Recession with his first job working on Databases with the Dept of Homeland Security.\n    While building and leading engineers at Vets Who Code, his main duties is building relationships, telling the stories of our veterans, talks, learning and passing higher level training to the incoming leadership team as they support and grow the next groups of entry-level && junior developers.",
   "image": "jerome.jpg",
-  "twitter": "https://twitter.com/JeromeHardaway"
+  "social-media": {
+    "twitter": "https://twitter.com/JeromeHardaway"
+  }
+
 }, {
   "name": "Eric Harrison",
   "title": "Co-founder and CTO of Moonrise",
   "bio-short": "co-founder and CTO of Moonrise, a social-impact startup trying to use AI to connect financially challenged workers to awesome jobs. He's the author of An Introduction to Robot Programming and has spent his career trying to automate-away the worst parts of life.",
   "image": "eric.png",
-  "twitter": "https://twitter.com/blister"
+  "social-media": {
+    "twitter": "https://twitter.com/blister"
+  }
 }, {
   "name": "Harsha Vemulapalli",
   "title": "Head of Design for Bosch",
@@ -141,19 +172,24 @@ var speakers = [{
   "title": "Web Developer at Content Thread",
   "bio-short": "Web developer at Content Thread (a digital agency and consulting firm specializing in AEM) and a member of Code for Atlanta's leadership team. He also serves as a program developer for People Making Progress, an Atlanta-based nonprofit serving adults with developmental disabilities at home, work, and in the community. In 2017 he led the Paratransit Pal project, which won AT&T's Civic Coding Challenge, after which the project team donated the entire $40,000 prize to charity.",
   "image": "mark.jpg",
-  "twitter": "https://twitter.com/marktnoonan"
-
+  "social-media": {
+    "twitter": "https://twitter.com/marktnoonan"
+  }
 }, {
   "name": "Mark Locklear",
   "title": "Web Developer, Founder, Mentor Director, Instructor",
   "bio-short": "Mark Locklear is a web developer at the eXtension Initiative, founder of Remotegig.io and Director of mentors at Vets Who Code. He is an Adjunct Instructor at Asheville Buncombe Technical Community College and is passionate about education and teaching students software development.",
   "image": "markL.jpg",
-  "twitter": "https://twitter.com/marklocklear"
+  "social-media": {
+    "twitter": "https://twitter.com/marklocklear"
+  }
 }, {
   "name": "Patrick Rodgers",
   "title": "Project Manager and Lead Programmer",
   "bio-short": "Patrick is a Lead Programmer and Project Manager at Powerserve in Augusta, Georgia. He began his career at Powerserve 13 years ago as a web designer, but in that time discovered his love for programming and made a career swap. He now leads a team of programmers who work on a site that sells over $100 million dollars worth of product annually. He has a passion for solving problems using the best means and 80's punk music.",
   "image": "patrickr.png",
-  "twitter": "https://twitter.com/1hitsong"
+  "social-media": {
+    "twitter": "https://twitter.com/1hitsong"
+  }
 }];
 //# sourceMappingURL=main.js.map
