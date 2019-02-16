@@ -19,14 +19,20 @@ include ../layouts/header.pug
       button Purchase Here
 
   section.index-nav
-    .about-us
-      a.button(href="about.html")
-        button About Us
-    .speakers
-      a.button(href="speakers.html")
-        button Speakers
-    .contact
-      a.button(href="contact.html")
-        button Contact Us
-        
+    a(href="about.html")
+      .index-about
+        .index-bg
+          .hover-filter
+        button.button About Us
+    a(href="speakers.html")
+      .index-speakers
+        .index-bg
+          .hover-filter
+        button.button Speakers
+    a(href="contact.html")
+      .index-contact
+        .index-bg
+          .hover-filter
+        button.button Contact Us
+
   include ../layouts/footer.pug
