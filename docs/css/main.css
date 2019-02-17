@@ -436,10 +436,11 @@ header#main {
       font-size: 1.6rem;
       width: 100%;
       padding: 20px 0; }
-      header#main nav a:hover {
-        cursor: pointer; }
-        header#main nav a:hover .select:after {
-          width: 80%; }
+      @media (hover) {
+        header#main nav a:hover {
+          cursor: pointer; }
+          header#main nav a:hover .select:after {
+            width: 80%; } }
 
 .footerMain {
   overflow: hidden;
