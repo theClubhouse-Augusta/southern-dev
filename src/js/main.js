@@ -88,19 +88,19 @@ function SpeakerTemplate(speaker) {
   const name = speaker.name,
     bioShort = speaker["bio-short"],
     image = speaker.image,
-    title = speaker.title;
+    company = speaker.company;
 
   // 2. Create Elements
   const nameTemplate = document.createElement("h4"),
     bioShortTemplate = document.createElement("p"),
     imgTemplate = document.createElement("img"),
-    titleTemplate = document.createElement("h5"),
+    companyTemplate = document.createElement("h5"),
     txtContainer = document.createElement("div"),
     bio = document.createElement("div");
 
   // 3. Assign Element Properties
   nameTemplate.textContent = name;
-  titleTemplate.textContent = title;
+  companyTemplate.textContent = company;
   bioShortTemplate.textContent = bioShort;
   imgTemplate.src = "images/" + image;
   bio.classList.add("bio");
@@ -112,7 +112,7 @@ function SpeakerTemplate(speaker) {
   }
 
   txtContainer.appendChild(nameTemplate);
-  txtContainer.appendChild(titleTemplate);
+  txtContainer.appendChild(companyTemplate);
   txtContainer.appendChild(bioShortTemplate);
   bio.appendChild(imgTemplate);
   bio.appendChild(txtContainer);

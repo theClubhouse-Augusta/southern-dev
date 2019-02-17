@@ -93,7 +93,7 @@ section.speakers {
 h1 {
   font-size: 4rem;
   background-color: #cfdcfc;
-  color: #080891;
+  color: #1f36ad;
   font-weight: bold; }
 
 .mission, .policies, .who-we-are {
@@ -136,7 +136,7 @@ h1 {
     color: #211a12; }
   .location a {
     font-size: 2.4rem;
-    color: #080891;
+    color: #1f36ad;
     text-decoration: none; }
   .location p {
     margin-bottom: 40px; }
@@ -384,13 +384,12 @@ header#main {
     max-width: 100px;
     margin: 0; }
   header#main nav {
-    display: inline-block;
     width: 80%;
-    vertical-align: top;
     position: absolute;
     text-align: center;
     top: 50%;
-    transform: translateY(-50%); }
+    left: 50%;
+    transform: translate(-50%); }
     header#main nav ul {
       position: relative;
       display: flex;
@@ -427,6 +426,47 @@ header#main {
         cursor: pointer; }
         header#main nav li:hover:after {
           width: 80%; }
+
+.footerMain {
+  overflow: hidden;
+  padding: 2rem;
+  width: 80%;
+  max-width: 900px; }
+  .footerMain a {
+    display: block;
+    text-decoration: none; }
+  .footerMain .clubhouse {
+    float: none;
+    margin: 20px 0; }
+    @media (min-width: 700px) {
+      .footerMain .clubhouse {
+        float: left; } }
+    .footerMain .clubhouse img {
+      width: 100%;
+      max-width: 100px; }
+    .footerMain .clubhouse a:hover {
+      color: #f48971; }
+  .footerMain .main {
+    float: none;
+    display: block;
+    margin: 0 auto; }
+    @media (min-width: 700px) {
+      .footerMain .main {
+        float: right; } }
+    .footerMain .main a {
+      display: inline-block; }
+  .footerMain ul {
+    text-align: left;
+    margin: 0 auto;
+    width: 170px; }
+  .footerMain li {
+    display: inline-block;
+    margin: 0;
+    width: 300px; }
+  .footerMain li:nth-child(odd) a:hover {
+    color: #456abf; }
+  .footerMain li:nth-child(even) a:hover {
+    color: #f48971; }
 
 body {
   width: 100%;
@@ -481,18 +521,8 @@ button {
 label {
   width: 100%; }
 
-.footerMain {
-  overflow: hidden;
-  padding: 2rem; }
-  .footerMain .clubhouse {
-    float: left;
-    width: 50%; }
-    .footerMain .clubhouse img {
-      width: 100%;
-      max-width: 100px; }
-  .footerMain .main {
-    float: right;
-    width: 50%; }
+.fa-twitter {
+  color: #1f36ad; }
 
 #body-wrapper {
   position: relative;
