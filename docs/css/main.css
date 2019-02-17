@@ -464,7 +464,7 @@ header#main {
   .footerMain .main {
     float: none;
     display: block;
-    margin: 0 auto; }
+    margin: 20px auto; }
     @media (min-width: 700px) {
       .footerMain .main {
         float: right; } }
