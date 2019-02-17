@@ -43,6 +43,8 @@ section.speakers {
     max-width: 800px;
     margin: 0 auto;
     border-bottom: 1px solid #f3f2f2; }
+    section.speakers .bio .fa-twitter {
+      color: #a3aaf5; }
     section.speakers .bio img {
       display: block;
       margin: 0 auto;
@@ -71,17 +73,13 @@ section.speakers {
   section.speakers .cfp {
     padding: 60px 0; }
     section.speakers .cfp .txt-box {
-      display: block;
+      display: inline-block;
       margin: 20px auto 0 auto;
-      padding: 10px 0;
-      width: 60%;
-      min-width: 300px;
-      max-width: 400px;
-      width: 60%;
+      padding: 10px 40px;
       text-decoration: none;
       color: #f3f2f2;
       background-color: #456abf;
-      border-radius: 10px;
+      border-radius: 5px;
       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
       transition: box-shadow .5s ease; }
       section.speakers .cfp .txt-box:hover {
@@ -183,7 +181,8 @@ h1 {
   color: #fce8e8; }
 
 .contact form {
-  width: 600px;
+  width: 80%;
+  max-width: 900px;
   margin: 0 auto;
   background-color: #456abf;
   padding: 40px 0;
@@ -196,14 +195,19 @@ h1 {
   color: #cfdcfc; }
 
 .contact input {
+  box-size: border-box;
   display: block;
   text-align: left;
   font-size: 1.8rem;
-  margin: 20px auto;
+  margin: 20px 0;
   background-color: #f3f2f2;
   color: #211a12;
   padding: .5rem;
-  border-radius: 5px; }
+  border-radius: 5px;
+  width: 80%; }
+
+.contact input[type="submit"] {
+  width: auto; }
 
 .contact .indicates-required {
   font-size: 1.6rem;
@@ -211,11 +215,15 @@ h1 {
   padding-bottom: 20px; }
 
 .contact .mc-field-group {
-  width: 300px;
+  width: 100%;
+  max-width: 300px;
+  padding: 0 20px;
   margin: 40px auto; }
 
 .contact #mc_embed_signup div.mce_inline_error {
-  background-color: #f48971; }
+  background-color: #f48971;
+  width: 90%;
+  margin: 0 auto; }
 
 .slick {
   display: block;
@@ -277,12 +285,14 @@ h1 {
 .date, .tickets {
   display: inline-block;
   vertical-align: top;
-  max-width: 450px;
   padding: 100px 0;
   margin: 0 auto;
   width: 100%;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   background-color: white; }
+  @media (min-width: 900px) {
+    .date, .tickets {
+      max-width: 450px; } }
   .date h2, .tickets h2 {
     font-weight: 500;
     margin: 20px auto; }
@@ -388,8 +398,12 @@ header#main {
     position: absolute;
     text-align: center;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%); }
+    right: 0;
+    transform: translateY(-50%); }
+    @media (min-width: 600px) {
+      header#main nav {
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%); } }
     header#main nav ul {
       position: relative;
       display: flex;
@@ -404,27 +418,27 @@ header#main {
       display: inline-block;
       width: 80px;
       margin: 0 auto; }
-      header#main nav li:after {
-        content: "";
-        position: absolute;
-        display: block;
-        left: 10%;
-        bottom: -5px;
-        margin-top: 1rem;
-        width: 0;
-        height: 3px;
-        background-color: #a3aaf5;
-        transition: all .2s ease; }
-      header#main nav li a {
-        display: block;
-        text-decoration: none;
-        color: #fdfcfc;
-        width: 100%;
-        font-size: 1.6rem;
-        width: 100%; }
-      header#main nav li:hover {
+    header#main nav .select:after {
+      content: "";
+      position: absolute;
+      display: block;
+      left: 10%;
+      margin-top: 1rem;
+      width: 0;
+      height: 3px;
+      background-color: #a3aaf5;
+      transition: all .2s ease; }
+    header#main nav a {
+      display: block;
+      text-decoration: none;
+      color: #fdfcfc;
+      width: 100%;
+      font-size: 1.6rem;
+      width: 100%;
+      padding: 20px 0; }
+      header#main nav a:hover {
         cursor: pointer; }
-        header#main nav li:hover:after {
+        header#main nav a:hover .select:after {
           width: 80%; }
 
 .footerMain {

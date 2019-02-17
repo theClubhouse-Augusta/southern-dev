@@ -56,13 +56,14 @@
 .date, .tickets
     display: inline-block
     vertical-align: top
-    max-width: 450px
     padding: 100px 0
     margin: 0 auto
     width: 100%
     box-shadow: $shadow1
     // border-radius: 5px
     background-color: white
+    @media(min-width: 900px)
+        max-width: 450px
     h2
         font-weight: 500
         margin: 20px auto
