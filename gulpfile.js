@@ -66,7 +66,8 @@ gulp.task('css', function(){
   gulp.task('images', function() {
     return gulp.src('src/images/*.+(png|jpg|gif|svg)')
       .pipe(imagemin({
-        interlaced: true
+        interlaced: true,
+        progressive: true
       }))
       .pipe(gulp.dest('docs/images'))
       .pipe(browserSync.reload({
