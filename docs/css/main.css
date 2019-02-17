@@ -376,17 +376,17 @@ h1 {
     padding-bottom: 2rem; }
 
 header#main {
-  right: 0;
-  height: 100%;
-  width: 15rem;
-  z-index: 1;
+  height: auto;
+  z-index: 3;
   overflow: hidden;
-  background-color: #333333;
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4);
   position: fixed;
   top: 0;
   width: 100%;
-  height: auto; }
+  max-width: 1920px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333333;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4); }
   header#main img {
     position: relative;
     padding: .5rem;
