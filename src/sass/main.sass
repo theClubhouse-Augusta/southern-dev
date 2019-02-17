@@ -1,18 +1,20 @@
-@import "global/variables"
-@import "components/bios"
+@import "global/global"
+@import "components/components"
+@import "layout/layout"
 
 // Layout
-html
-  font-size: 10px
 
 body
-  background-color: $primary-gray
   width: 100%
   padding: 0
   margin: 0
-  font-family: 'Avenir', Helvetica, Arial, sans-serif
-  -webkit-font-smoothing: antialiased
-  -moz-osx-font-smoothing: grayscale
+
+h1
+  padding: 40px 0
+  padding-top: 125px
+  margin: 0 auto
+  margin-bottom: 40px
+    
 
 main
   margin: 0 auto
@@ -22,237 +24,54 @@ main
 
 section, footer
   padding: 20px 0
-  border-radius: 2px
-  width: 90%
-  max-width: 1250px
   margin: 0 auto
   h2
     margin-top: 0
     margin-bottom: 20px
     font-weight: bold
     font-size: 3rem
-    color: darken($primary-gray, 50%)
+    color: darken($primary-blue, 50%)
   p
-    width: 70%
     margin: 0 auto
 
 footer
   p
     padding: .5rem 0
 
-// Typography
-h1
-  color: lighten($primary-gray, 70%)
 
-p
-  font-size: 1.6rem
-  line-height: 1.1
-  color: white
-  text-decoration: none
-  color: darken($primary-gray, 10%)
-  margin: 0
-
-a
-  text-decoration: none
-  color: darken($primary-pink, 10%)
-  transition: all .3s ease
-  font-weight: bold
-  margin: 0
-  text-shadow: 0 0 0 lighten($primary-gray, 30%)
-  &:hover
-    text-shadow: 2px 2px 2px lighten($primary-gray, 30%)
-
-button, .button
+a.button, input[type=submit]
   display: inline-block
-  background-color: $primary-pink
+  background-color: $pink5
   border-radius: 2px
-  border: 2px solid $primary-pink
-  box-shadow: 1px 1px 2px .8px rgba(0, 0, 0, .4)
+  border: 2px solid $pink5
+  box-shadow: $shadow3
   font-weight: bold
   font-size: 2rem
-  padding: 10px 20px
-  color: white
-  transition: all .2s ease
-  a
-    display: block
-    color: white
-    padding: 10px 20px
-    &:hover
-      text-shadow: none
-    &:visited
-      color: white
+  padding: 5px 20px
+  color: $gray1
+  transition: box-shadow .4s ease
   &:hover
-    background-color: white
-    color: $primary-pink
-    a
-      color: $primary-pink
+    box-shadow: $shadow1
+button
+  background-color: transparent
+  border: none
 
-input[type=submit]
-  background-color: $primary-pink
-  padding: 10px 20px
-  border-radius: 2px
-  border: 2px solid $primary-pink
-  box-shadow: 1px 1px 2px .8px rgba(0, 0, 0, .4)
-  font-weight: bold
-  font-size: 2rem
-  color: white
-  transition: all .2s ease
+label
+  width: 100%
 
 // Classes
 
-.splash
-  position: relative
-  min-height: 50vw
-  padding: 2rem 0
-  .splash-img
-    position: absolute
-    display: block
-    top: 0
-    left: 0
-    min-width: 100%
-    height: 100%
-    background-image: url("../images/Augusta-Georgia.jpg")
-    background-position: top center
-    background-size: cover
-    background-repeat: no-repeat
-    background-color: $primary-gray
-    -webkit-filter: saturate(1.5) blur(1px) grayscale(.4) sepia(.2) contrast(1.2)
-    filter: saturate(1.5) blur(1px) grayscale(.4) sepia(.2) contrast(1.2)
-  h1, .logo
-    position: relative
-    margin: 0 auto
-  h1
-    background-color: rgba(0, 0, 0, .4)
-    box-shadow: 0px 0px 15px 10px rgba(0, 0, 0, 0.4)
-    padding: 1rem
-  .insta-filters, #dev-btn
-    position: absolute
-    top: 0
-    left: 0
-  button
-    background-color: $primary-pink
-    border-radius: 5px
-    font-size: 1.6rem
-    font-weight: bold
-    padding: 10px 20px
-    margin: 10px 5px
-    color: white
-    border: none
-  .logo
-    filter: drop-shadow(-10px 10px 5px rgba(0, 0, 0, 0.5))
-    transition: all .2s ease
-    width: 50%
-    max-width: 500px
-
-.date
-  h2 span
-    color: darken($primary-pink, 10%)
-
-.conduct
-  background-color: white
-  border-radius: 10px
-  width: 90%
-  max-width: 1250px
-  margin: 0 auto
-  padding: 30px 0
-  h2
-    font-size: 3rem
-  h4
-    font-size: 2rem
-    margin: 2rem 0 1rem 0
-  p
-    opacity: .9
-    text-align: left
-  br
-    height: 10px
-
-.speakers
-  .cfp
-    h4
-      font-size: 2.4rem
-      margin: 0
-
-.subscribe-form, .tickets
-  position: relative
-  background: white
-  margin: 20px auto
-  width: 90%
-  max-width: 1250px
-  margin: 0 auto
-  padding: 20px 0
-  border-radius: 10px
-  box-shadow: 2px 2px 2px black
-
-.subscribe-form
-  label
-    width: 60%
-  input
-    display: block
-    margin: 20px auto
-    border: 0
-    background-color: lightgray
-  input[type=email]
-    padding: 10px 20px
-    text-align: center
-    box-shadow: inset 10px 10px 20px -15px rgba(0, 0, 0, 0.4)
-    border-radius: 5px
-
-
-.location
-  .iframeCont
-    position: relative
-    z-index: 1
-    width: 90%
-    margin: 0 auto
-    border-radius: 10px
-    overflow: hidden
-    &:before
-      content: ''
-      border-radius: 10px
-      position: absolute
-      box-shadow: inset 0px 0px 4px 2px lighten($primary-gray, 20%)
-      top: 0
-      right: 0
-      bottom: 0
-      left: 0
-      z-index: 2
-      pointer-events: none
-  iframe
-    height: 500px
-    min-height: 20rem
-    width: 100%
-    margin: 0 auto
-    border: none
-
-
-
-  p, a
-    font-size: 2.4rem
-    padding-bottom: 2rem
-
-
-.footerMain
-  overflow: hidden
-  padding: 2rem
-  .clubhouse
-    float: left
-    width: 50%
-    img
-      width: 100%
-      max-width: 100px
-  .main
-    float: right
-    width: 50%
-
+.fa-twitter
+  color: $blue7
 
 // Id styles
-#mc_embed_signup
-  margin: 0 auto
+
 #body-wrapper
+  position: relative
   margin: 0 auto
   text-align: center
   max-width: 1920px
-  background-color: lighten($primary-gray, 50%)
+  background-color: $gray1
 
 #dev-btn
   display: none
@@ -260,3 +79,13 @@ input[type=submit]
 #results
   color: tomato
   margin: 0 auto
+
+// Splash images throught he pages
+#splash-index
+  background-image: url("../images/ga.jpg")
+#splash-about
+  background-image: url("../images/stock-audience.jpg")
+#splash-tickets
+  background-image: url("../images/stock-ticket.jpg")
+#splash-contact
+  background-image: url("../images/stock-contact.jpg")

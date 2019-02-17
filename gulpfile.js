@@ -22,7 +22,9 @@ gulp.task('html', function() {
 
 gulp.task('views', function () {
   return gulp.src('src/views/pages/*.pug')
-    .pipe(pug())
+    .pipe(pug().on('error', function (error) {
+      console.log(error.plugin + '\n' + error.message + '\n1. Stop Gulp\n2. Fix error\n3. npm run start');
+    }))
     .pipe(gulp.dest('docs'))
     .pipe(browserSync.reload({
       stream: true
@@ -30,7 +32,7 @@ gulp.task('views', function () {
 })
 
 gulp.task('css', function(){
-  return gulp.src(['src/css/normalize.css', 'skeleton.css'])
+  return gulp.src(['src/css/normalize.css'])
     .pipe(concat('base.css'))
     .pipe(gulp.dest('docs/css'))
     .pipe(browserSync.reload({
