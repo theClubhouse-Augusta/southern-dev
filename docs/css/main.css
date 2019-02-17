@@ -389,7 +389,7 @@ header#main {
   height: auto; }
   header#main img {
     position: relative;
-    top: 1rem;
+    padding: .5rem;
     width: 20%;
     max-width: 100px;
     margin: 0; }
