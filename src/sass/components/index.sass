@@ -1,0 +1,130 @@
+
+.splash
+  position: relative
+  min-height: 50vw
+  padding: 10rem 0 6rem
+  .splash-img
+    position: absolute
+    display: block
+    top: 0
+    left: 0
+    min-width: 100%
+    height: 100%
+    background-position: top center
+    background-size: cover
+    background-repeat: no-repeat
+    background-color: $primary-blue
+    filter: saturate(1.5) grayscale(.4) sepia(.2) contrast(1.2)
+    -webkit-filter: saturate(1.5) grayscale(.4) sepia(.2) contrast(1.2)
+  h1, .logo
+    position: relative
+    margin: 0 auto
+  h1
+    position: absolute
+    bottom: 10%
+    width: 100%
+    opacity: 0
+    transition: opacity .4s ease
+    // background-color: rgba(0, 0, 0, .4)
+    background-color: transparent
+    // box-shadow: 0px 0px 15px 10px rgba(0, 0, 0, 0.4)
+    padding: 1rem
+    color: $gray1
+    text-shadow: 0 0 80px $gray3
+    @media(min-width: 600px)
+        opacity: 1
+
+  .insta-filters, #dev-btn
+    position: absolute
+    top: 0
+    left: 0
+  button
+    background-color: $primary-pink
+    border-radius: 5px
+    font-size: 1.6rem
+    font-weight: bold
+    padding: 10px 20px
+    margin: 10px 5px
+    color: white
+    border: none
+  .logo
+    filter: drop-shadow(-10px 10px 5px rgba(0, 0, 0, 0.5))
+    transition: all .2s ease
+    width: 50%
+    max-width: 500px
+
+.date, .tickets
+    display: inline-block
+    vertical-align: top
+    padding: 100px 0
+    margin: 0 auto
+    width: 100%
+    box-shadow: $shadow1
+    // border-radius: 5px
+    background-color: white
+    @media(min-width: 900px)
+        max-width: 450px
+    h2
+        font-weight: 500
+        margin: 20px auto
+    h2 div
+        padding-top: 18px
+        color: $pink7
+.tickets
+    margin-bottom: 150px
+
+.index-nav
+    max-width: 900px
+    width: 100%
+    padding: 0
+    box-shadow: $shadow5
+    border-radius: 10px
+    margin-bottom: 100px
+    .index-about, .index-speakers, .index-contact 
+        height: 200px
+        width: 100% 
+        &:hover
+            .hover-filter
+                opacity: .2
+            .button
+                background-color: $pink5
+    .index-bg
+        background-size: cover
+        background-repeat: no-repeat
+        width: 40%
+        display: block
+        height: 100%
+        position: relative
+        float: left
+        margin: 0 auto
+        padding: 0
+    .hover-filter
+        position: absolute
+        top: 0
+        right: 0
+        bottom: 0
+        left: 0
+        background-color: $pink5
+        opacity: 0
+        transition: all ease .5s
+
+    .button
+        font-size: 3.6rem
+        box-sizing: border-box
+        border-radius: 0
+        width: 60%
+        float: right
+        margin: 0
+        padding: 0
+        height: 100%
+        background-color: white
+        transition: all ease .5s
+        border-bottom: 1px solid $gray2
+    .index-contact .button
+        border-bottom: none
+    .index-about .index-bg
+        background-image: url("../images/chairs.jpg")
+    .index-speakers .index-bg
+        background-image: url("../images/microphone.jpg")
+    .index-contact .index-bg
+        background-image: url("../images/phone.jpg")

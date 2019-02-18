@@ -1,0 +1,85 @@
+h1
+  font-size: 4rem
+  background-color: $blue1
+  color: $blue7
+  font-weight: bold
+
+.mission, .policies, .who-we-are
+  width: 80%
+  max-width: 800px
+  clear: both
+  h2
+    margin: 20px auto 20px auto
+    max-width: 200px
+    color: $pink7
+    font-weight: 500
+    @media(min-width: 900px)
+      margin: 20px 0
+      float: left
+  p
+    display: block
+    vertical-align: top
+    text-align: left
+    width: 100%
+    max-width: 500px
+    @media(min-width: 900px)
+      margin: 20px 0
+      float: right
+
+
+.policies
+  .button-cont
+    clear: both
+    padding-top: 30px
+
+.location
+  width: 100%
+  max-width: 800px
+  margin: 40px auto
+  padding: 40px 0
+  border-radius: 10px
+  background-color: $blue1
+  box-shadow: $shadow3
+  h3, p
+    color: $gray9
+  a
+    font-size: 2.4rem
+    color: $blue7
+    text-decoration: none
+  p
+    margin-bottom: 40px
+  .txt-container
+    vertical-align: top
+    width: 100%
+    max-width: 400px
+    margin: 0 auto
+    @media(min-width: 800px)
+      display: inline-block
+      transform: translateY(50%)
+  .iframeCont
+    position: relative
+    display: inline-block
+    z-index: 1
+    width: 300px
+    margin: 0 auto
+    border-radius: 10px
+    overflow: hidden
+    &:before
+      content: ''
+      border-radius: 10px
+      position: absolute
+      box-shadow: inset 0px 0px 4px 2px lighten($primary-gray, 20%)
+      top: 0
+      right: 0
+      bottom: 0
+      left: 0
+      z-index: 2
+      pointer-events: none
+
+  iframe
+    height: 300px
+    min-height: 20rem
+    width: 300px
+    margin: 0 auto
+    border: none
+
