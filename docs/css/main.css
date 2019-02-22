@@ -375,12 +375,29 @@ h1 {
     font-size: 2.4rem;
     padding-bottom: 2rem; }
 
+.hamburger {
+  position: fixed;
+  z-index: 4;
+  top: 20px;
+  right: 40px;
+  background-color: #333333;
+  height: 50px;
+  width: 60px;
+  padding: 5px;
+  border-radius: 100px; }
+  .hamburger span {
+    display: block;
+    background-color: white;
+    height: 2px;
+    width: 40px;
+    margin: 10px auto; }
+
 header#main {
   z-index: 3;
   overflow: hidden;
   position: fixed;
   top: 0;
-  right: 0;
+  right: -300px;
   width: 150px;
   height: 100vh;
   background-color: #333333;
@@ -396,7 +413,7 @@ header#main {
   header#main img {
     position: relative;
     display: block;
-    padding: .5rem;
+    padding: 100px .5rem .5rem .5rem;
     width: 80%;
     margin: 0 auto; }
     @media (min-width: 900px) {
