@@ -376,48 +376,67 @@ h1 {
     padding-bottom: 2rem; }
 
 header#main {
-  height: auto;
   z-index: 3;
   overflow: hidden;
   position: fixed;
   top: 0;
-  width: 100%;
-  max-width: 1920px;
-  left: 50%;
-  transform: translateX(-50%);
+  right: 0;
+  width: 150px;
+  height: 100vh;
   background-color: #333333;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4); }
+  @media (min-width: 900px) {
+    header#main {
+      left: 50%;
+      right: auto;
+      transform: translateX(-50%);
+      width: 100%;
+      max-width: 1920px;
+      height: auto; } }
   header#main img {
     position: relative;
+    display: block;
     padding: .5rem;
-    width: 20%;
-    max-width: 100px;
-    margin: 0; }
-  header#main nav {
     width: 80%;
+    margin: 0 auto; }
+    @media (min-width: 900px) {
+      header#main img {
+        width: 20%;
+        max-width: 100px;
+        margin: 0; } }
+  header#main nav {
+    width: 100%;
     position: absolute;
-    text-align: center;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%); }
-    @media (min-width: 600px) {
+    text-align: center; }
+    @media (min-width: 900px) {
       header#main nav {
+        width: 80%;
+        margin: 0;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
         left: 50%;
         transform: translateX(-50%) translateY(-50%); } }
     header#main nav ul {
       position: relative;
       display: flex;
+      flex-direction: column;
       width: 100%;
-      max-width: 900px;
-      margin: 0 auto; }
+      max-width: 900px; }
+      @media (min-width: 900px) {
+        header#main nav ul {
+          flex-direction: row; } }
     header#main nav li {
       position: relative;
       list-style-type: none;
       text-align: center;
       transition: all ease .2s;
       display: inline-block;
-      width: 80px;
+      width: 100%;
       margin: 0 auto; }
+      @media (min-width: 900px) {
+        header#main nav li {
+          width: 80px; } }
     header#main nav .select:after {
       content: "";
       position: absolute;
