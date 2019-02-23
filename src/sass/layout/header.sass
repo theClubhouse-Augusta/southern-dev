@@ -1,4 +1,4 @@
-header#main
+#header-main
     z-index: 3
     overflow: hidden
     position: fixed
@@ -8,6 +8,10 @@ header#main
     height: 100vh
     background-color: $gray7
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, .4)
+    transition: right .4s ease
+    &.active-nav
+        @media(max-width: 900px)
+            right: 0
     @media(min-width: 900px)
         left: 50%
         right: auto
