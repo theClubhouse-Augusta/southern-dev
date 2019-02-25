@@ -25,7 +25,8 @@ Edit files in `src` folder and Gulp along with Browser sync will reload browser.
     - HTML does not reload process (change a sass file and will run HTML)
     - If images are added when Gulp isn't running Image process doesn't run. Need to be running Gulp to get it to work
 
-- Template Rules
+- Template Guidelines
+    - *NOTE*: When we get more sponsors uncomment those levels
     - When adding a sponsor:
         - in the `images` folder the naming convention is: `sponsor-` + `sponsor.name` + `.png`
         - I am only handling PNGs template gen will not catch a JPG or any other file format. 

@@ -63,14 +63,14 @@ const speakers = [
 
 const sponsors = [
   {
-    "name": "telWare", 
-      "link": "https://www.telware.com/",
-      "level": "silver"
-  },
-  {
     "name": "DREAM",
     "link": "http://www.dream-enterprise.com/_wp/",
     "level": "silver"
+  },
+  {
+    "name": "telWare", 
+      "link": "https://www.telware.com/",
+      "level": "silver"
   },
   {
     "name": "powerserve",

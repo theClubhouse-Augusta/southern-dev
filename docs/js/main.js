@@ -57,12 +57,12 @@ var speakers = [{
 }];
 
 var sponsors = [{
-  "name": "telWare",
-  "link": "https://www.telware.com/",
-  "level": "silver"
-}, {
   "name": "DREAM",
   "link": "http://www.dream-enterprise.com/_wp/",
+  "level": "silver"
+}, {
+  "name": "telWare",
+  "link": "https://www.telware.com/",
   "level": "silver"
 }, {
   "name": "powerserve",
@@ -88,7 +88,10 @@ window.onload = function () {
 
   if (document.querySelector(".sponsors")) {
     var sponsorSection = document.querySelector(".sponsors");
-    var levels = ["platinum", "gold", "silver", "community"];
+    var levels = [
+    // "platinum", 
+    // "gold", 
+    "silver"];
 
     sponsorSection.appendChild(createLevels(levels));
     sponsors.forEach(function (sponsor) {

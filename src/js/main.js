@@ -16,7 +16,12 @@ window.onload = function () {
   
   if(document.querySelector(".sponsors")) {
     const sponsorSection = document.querySelector(".sponsors");
-    const levels = ["platinum", "gold", "silver", "community"];
+    const levels = [
+      // "platinum", 
+      // "gold", 
+      "silver", 
+      // "community"
+      ];
 
     sponsorSection.appendChild(createLevels(levels));
     sponsors.forEach(function(sponsor) {

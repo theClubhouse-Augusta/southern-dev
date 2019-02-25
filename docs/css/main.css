@@ -371,15 +371,25 @@ h1 {
 
 .sponsors .sponsor-section {
   display: flex;
-  width: 100%;
   justify-content: space-evenly;
-  flex-wrap: wrap; }
-
-.sponsors img {
-  width: 200px; }
-
-.sponsors header {
-  width: 100%; }
+  flex-wrap: wrap;
+  align-items: baseline;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px 0; }
+  .sponsors .sponsor-section img {
+    max-width: 200px;
+    width: 100%;
+    padding: 20px 0; }
+    @media (min-width: 600px) {
+      .sponsors .sponsor-section img {
+        padding: 10px; } }
+  .sponsors .sponsor-section a {
+    vertical-align: top; }
+  .sponsors .sponsor-section header {
+    width: 100%;
+    margin-bottom: 30px; }
 
 .conduct {
   border-radius: 10px;
