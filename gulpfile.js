@@ -83,13 +83,30 @@ gulp.task('css', function(){
     })
   });
 
-  gulp.task('watch', ['views', 'css', 'sass', 'js', 'browserSync'], function() {
-    gulp.watch('src/views/**/*.pug', ['views']);
-    gulp.watch('src/css/*.css', ['css']);
-    gulp.watch('src/sass/**/*.sass', ['sass']);
-    gulp.watch('src/js/*.js', ['js']);
-    // gulp.watch('src/*.html', ['html']);
-    gulp.watch('src/images/*.+(png|jpg|gif|svg)', ['images']);
+  // Gulp Watch
+  gulp.task('watch:views', function() {
+    gulp.watch('src/views/**/*.pug', gulp.series('views'));
   });
+
+  gulp.task('watch:css', function () {
+    gulp.watch('src/css/*.css', gulp.series('css'));
+  });
+
+  gulp.task('watch:sass', function () {
+    gulp.watch('src/sass/**/*.sass', gulp.series('sass'));
+  });
+
+  gulp.task('watch:js', function () {
+    gulp.watch('src/js/*.js', gulp.series('js'));
+  });
+
+  gulp.task('watch:img', function () {
+    gulp.watch('src/images/*.+(png|jpg|gif|svg)', gulp.series('images'));
+  });
+
+
+  gulp.task('watch',
+    gulp.parallel('watch:views', 'watch:css', 'watch:sass', 'watch:sass', 'watch:js', 'watch:img')
+  );
 
 
