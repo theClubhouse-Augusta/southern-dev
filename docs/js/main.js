@@ -57,18 +57,17 @@ var speakers = [{
 }];
 
 var sponsors = [{
-  "telWare": {
-    "link": "https://www.telware.com/",
-    "level": "silver"
-  },
-  "DREAM": {
-    "link": "http://www.dream-enterprise.com/_wp/",
-    "level": "silver"
-  },
-  "powerserve": {
-    "link": "https://www.powerserve.net/",
-    "level": "silver"
-  }
+  "name": "telWare",
+  "link": "https://www.telware.com/",
+  "level": "silver"
+}, {
+  "name": "DREAM",
+  "link": "http://www.dream-enterprise.com/_wp/",
+  "level": "silver"
+}, {
+  "name": "powerserve",
+  "link": "https://www.powerserve.net/",
+  "level": "silver"
 }];
 "use strict";
 
@@ -84,6 +83,15 @@ window.onload = function () {
   if (document.querySelector(".speakers")) {
     speakers.forEach(function (speaker) {
       SpeakerTemplate(speaker);
+    });
+  }
+
+  if (document.querySelector(".sponsors-section")) {
+    var sponsorSection = document.querySelector(".sponsors-section");
+
+    sponsors.forEach(function (sponsor) {
+      // sponsorSection.appendChild(sponsorTemplate(sponsor));
+      sponsorTemplate(sponsor);
     });
   }
 
@@ -211,5 +219,30 @@ function SocialMediaTemplate(speaker) {
   });
 
   return div;
+}
+
+function sponsorTemplate(sponsor) {
+  // let template = document.createElement("div");
+  // let level = 
+
+  console.log(sponsor.level);
+  // sponsorLevelTemplate(sponsor.level);
+}
+
+function sponsorLevelTemplate(level) {
+  var template = document.createElement("div");
+  switch (level) {
+    case "platinum":
+      break;
+    case "gold":
+      break;
+    case "silver":
+      break;
+    case "community":
+      break;
+    default:
+      console.error("Unknown level specified");
+      break;
+  }
 }
 //# sourceMappingURL=main.js.map

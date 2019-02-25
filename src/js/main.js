@@ -13,6 +13,16 @@ window.onload = function () {
     });
   }
 
+  
+  if(document.querySelector(".sponsors-section")) {
+    const sponsorSection = document.querySelector(".sponsors-section");
+
+    sponsors.forEach(function(sponsor) {
+      // sponsorSection.appendChild(sponsorTemplate(sponsor));
+      sponsorTemplate(sponsor);
+    });
+  }
+
   mobileNav.arrow.addEventListener("click", function() {
     mobileNav.container.classList.toggle("active-nav");
     mobileNav.bodyWrapper.classList.toggle("active-nav");
@@ -34,6 +44,9 @@ window.onload = function () {
       logo.style.filter = dropShadow;
     });
   }
+
+
+
 }
 
 function GenerateFilters (){
@@ -141,4 +154,32 @@ function SocialMediaTemplate(speaker){
 
   return div;
 }
+
+
+function sponsorTemplate (sponsor) {
+  // let template = document.createElement("div");
+    // let level = 
+
+  console.log(sponsor.level);
+  // sponsorLevelTemplate(sponsor.level);
+
+}
+
+function sponsorLevelTemplate(level) {
+  let template = document.createElement("div");
+  switch (level) {
+    case "platinum":
+      break;
+    case "gold":
+      break;
+    case "silver":
+      break;
+    case "community":
+      break;
+    default:
+      console.error("Unknown level specified");
+      break;
+  } 
+}
+
   
