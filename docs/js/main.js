@@ -236,7 +236,7 @@ function createLevels(levels) {
         title = document.createElement('h3'),
         header = document.createElement('header');
 
-    title.textContent = level;
+    title.textContent = level.toUpperCase();
     levelTemplate.classList.add("sponsor-section", level);
 
     header.appendChild(title);

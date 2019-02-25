@@ -130,17 +130,32 @@
         background-image: url("../images/phone.jpg")
 
 .sponsors
-    .sponsor-section.silver
+    margin: 30px auto
+    h2
+        font-size: 4rem
+        font-weight: bold
+        margin-bottom: 40px
+    h3
+        display: inline-block
+        padding: 10px 20px
+        color: $gray1
+        font-weight: bold
+        letter-spacing: 1px
+        box-shadow: $shadow3
+        border-radius: 3px
+        text-shadow: 0 0 20px $gray9
+    .platinum
+        h3
+            background-image: linear-gradient(120deg, #EFFBFF, #8490BA)
+    .gold
+        h3
+            background-image: linear-gradient(120deg, #FFDA6F, #FFA23C)
+    .silver
         h3 
-            background-image: linear-gradient(90deg, $gray3, $gray5)
-            display: inline-block
-            padding: 10px 20px
-            color: $gray1
-            font-weight: bold
-            text-shadow: 0 0 20px $gray9
-            letter-spacing: 1px
-            box-shadow: $shadow3
-            border-radius: 3px
+            background-image: linear-gradient(120deg, $gray3, $gray5)
+    .community
+        h3
+            background-image: linear-gradient(120deg, $pink5, $pink7)
     .sponsor-section
         display: flex
         justify-content: space-evenly
