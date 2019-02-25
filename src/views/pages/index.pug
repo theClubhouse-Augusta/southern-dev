@@ -10,29 +10,32 @@ include ../layouts/header.pug
         This unlocks all the cool and fun dev stuff and features that I'm playing around with on the site.
       button#dev-btn Dev Button
       div.insta-filters
-  section.date
-    h2 Conference Date
-      div April 27, 2019
-  section.tickets
-    h2 Early Bird Tickets On Sale Now!
-    a.button(href="https://www.eventbrite.com/e/southern-developer-conference-tickets-55867745932" target="_blank" rel="noreferrer noopener") 
-      button Purchase Here
+    section.date
+      h2 Conference Date
+        div April 27, 2019
+    section.tickets
+      h2 Early Bird Tickets On Sale Now!
+      a.button(href="https://www.eventbrite.com/e/southern-developer-conference-tickets-55867745932" target="_blank" rel="noreferrer noopener") 
+        button Purchase Here
 
-  section.index-nav
-    a(href="about.html")
-      .index-about
-        .index-bg(title="Photo by Andrei Stratu on Unsplash")
-          .hover-filter
-        button.button About Us
-    a(href="speakers.html")
-      .index-speakers
-        .index-bg(title="Photo by Kane Reinholdtsen on Unsplash")
-          .hover-filter
-        button.button Speakers
-    a(href="contact.html")
-      .index-contact
-        .index-bg(title="Photo by Antoine Barrès on Unsplash")
-          .hover-filter
-        button.button Contact Us
-
-  include ../layouts/footer.pug
+    section.index-nav
+      a(href="about.html")
+        .index-about
+          .index-bg(title="Photo by Andrei Stratu on Unsplash")
+            .hover-filter
+          button.button About Us
+      a(href="speakers.html")
+        .index-speakers
+          .index-bg(title="Photo by Kane Reinholdtsen on Unsplash")
+            .hover-filter
+          button.button Speakers
+      a(href="contact.html")
+        .index-contact
+          .index-bg(title="Photo by Antoine Barrès on Unsplash")
+            .hover-filter
+          button.button Contact Us
+    section.sponsors
+      header
+        h2 Sponsors
+      
+  include ../layouts/footer.pug 

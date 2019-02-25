@@ -9,15 +9,31 @@ window.onload = function () {
     });
   }
 
+  
+  if(document.querySelector(".sponsors")) {
+    const sponsorSection = document.querySelector(".sponsors");
+    const levels = [
+      // "platinum", 
+      // "gold", 
+      "silver", 
+      // "community"
+      ];
+
+    sponsorSection.appendChild(createLevels(levels));
+    sponsors.forEach(function(sponsor) {
+
+      // sponsorSection.appendChild(sponsorTemplate(sponsor));
+      sponsorTemplate(sponsor, levels);
+    });
+  }
+
   hamburger.addEventListener("click", function() {
     let main = document.getElementById("header-main");
     main.classList.toggle("active-nav");
     hamburger.classList.toggle("active-nav");
   });
 
-  // if(logo) {
-  //   logo.addEventListener("click", GenerateFilters);
-  // }
+
   if(logo) {
     logo.addEventListener("mousemove", function(e) {
       var xPosition = e.clientX;
@@ -30,6 +46,9 @@ window.onload = function () {
       logo.style.filter = dropShadow;
     });
   }
+
+
+
 }
 
 function GenerateFilters (){
@@ -137,4 +156,57 @@ function SocialMediaTemplate(speaker){
 
   return div;
 }
+
+
+
+function createLevels(levels) {
+  let template = document.createElement("div");
+  template.classList.add("sponsors-section");
+
+  levels.forEach(function(level) {
+    let levelTemplate = document.createElement('div'),
+      title = document.createElement('h3'),
+      header = document.createElement('header');
+      
+    title.textContent = level.toUpperCase();
+    levelTemplate.classList.add("sponsor-section", level);
+
+    header.appendChild(title);
+    levelTemplate.appendChild(header);
+    template.appendChild(levelTemplate);
+  });
+  return template;
+}
+
+
+function sponsorGenerate(sponsor) {
+  let template = document.createElement('a'),
+  imageChild = document.createElement('img');
+
+  let imgSrc = 'images/sponsor-' + sponsor.name + ".png";
+
+
+
+  template.setAttribute('href', sponsor.link);
+  imageChild.src = imgSrc;
+
+  console.log(template);
+  template.appendChild(imageChild);
+
+  return template;
+}
+
+
+function sponsorTemplate(sponsor, levels) {
+
+  let parent = document.querySelector("." + sponsor.level);
+  if(!parent) {
+    console.errror("Sponsor: " + sponsor + "/n Does not have a valid level");
+  }
+  parent.appendChild(sponsorGenerate(sponsor));
+
+  console.log(parent);
+  return parent;
+}
+
   

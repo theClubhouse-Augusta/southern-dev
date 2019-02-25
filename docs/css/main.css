@@ -8,6 +8,7 @@ h1, h2, h3, h4, h5, h6, p, a, label {
   color: #211a12; }
 
 h1 {
+  font-family: 'Merriweather', serif;
   font-size: 4rem; }
 
 h2 {
@@ -357,6 +358,51 @@ h1 {
   .index-nav .index-contact .index-bg {
     background-image: url("../images/phone.jpg"); }
 
+.sponsors {
+  margin: 30px auto; }
+  .sponsors h2 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 40px; }
+  .sponsors h3 {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fdfcfc;
+    font-weight: bold;
+    letter-spacing: 1px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+    border-radius: 3px;
+    text-shadow: 0 0 20px #211a12; }
+  .sponsors .platinum h3 {
+    background-image: linear-gradient(120deg, #EFFBFF, #8490BA); }
+  .sponsors .gold h3 {
+    background-image: linear-gradient(120deg, #FFDA6F, #FFA23C); }
+  .sponsors .silver h3 {
+    background-image: linear-gradient(120deg, #bcb3a9, #91806e); }
+  .sponsors .community h3 {
+    background-image: linear-gradient(120deg, #f48971, #f2370d); }
+  .sponsors .sponsor-section {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: baseline;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px 0; }
+    .sponsors .sponsor-section img {
+      max-width: 200px;
+      width: 100%;
+      padding: 20px 0; }
+      @media (min-width: 600px) {
+        .sponsors .sponsor-section img {
+          padding: 10px; } }
+    .sponsors .sponsor-section a {
+      vertical-align: top; }
+    .sponsors .sponsor-section header {
+      width: 100%;
+      margin-bottom: 30px; }
+
 .conduct {
   border-radius: 10px;
   width: 90%;
@@ -537,7 +583,8 @@ h1 {
         float: left; } }
     .footerMain .clubhouse img {
       width: 100%;
-      max-width: 100px; }
+      max-width: 100px;
+      margin-top: 10px; }
     .footerMain .clubhouse a:hover {
       color: #f48971; }
   .footerMain .main {
