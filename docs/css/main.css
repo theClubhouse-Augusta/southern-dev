@@ -358,7 +358,7 @@ h1 {
   .index-nav .index-contact .index-bg {
     background-image: url("../images/phone.jpg"); }
 
-.sponsors .sponsors-section.silver h3 {
+.sponsors .sponsor-section.silver h3 {
   background-image: linear-gradient(90deg, #bcb3a9, #91806e);
   display: inline-block;
   padding: 10px 20px;
@@ -368,6 +368,18 @@ h1 {
   letter-spacing: 1px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
   border-radius: 3px; }
+
+.sponsors .sponsor-section {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  flex-wrap: wrap; }
+
+.sponsors img {
+  width: 200px; }
+
+.sponsors header {
+  width: 100%; }
 
 .conduct {
   border-radius: 10px;
