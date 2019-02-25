@@ -82,7 +82,6 @@ window.onload = function () {
     });
   }
 
-<<<<<<< HEAD
   if (document.querySelector(".sponsors")) {
     var sponsorSection = document.querySelector(".sponsors");
     var levels = [
@@ -98,21 +97,12 @@ window.onload = function () {
     });
   }
 
-  mobileNav.arrow.addEventListener("click", function () {
-    mobileNav.container.classList.toggle("active-nav");
-    mobileNav.bodyWrapper.classList.toggle("active-nav");
-    mobileNav.arrow.classList.toggle("active-nav");
-=======
   hamburger.addEventListener("click", function () {
     var main = document.getElementById("header-main");
     main.classList.toggle("active-nav");
     hamburger.classList.toggle("active-nav");
->>>>>>> 5b2be522c35ea8aaa29b56a9b8331acd02348e90
   });
 
-  // if(logo) {
-  //   logo.addEventListener("click", GenerateFilters);
-  // }
   if (logo) {
     logo.addEventListener("mousemove", function (e) {
       var xPosition = e.clientX;
