@@ -504,7 +504,8 @@ header#main {
         float: left; } }
     .footerMain .clubhouse img {
       width: 100%;
-      max-width: 100px; }
+      max-width: 100px;
+      margin-top: 10px; }
     .footerMain .clubhouse a:hover {
       color: #f48971; }
   .footerMain .main {
