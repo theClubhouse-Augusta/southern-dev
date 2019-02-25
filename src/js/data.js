@@ -1,4 +1,4 @@
-var speakers = [
+const speakers = [
   {
     "name": "Jerome Hardaway",
     "company": "Vets Who Code",
@@ -57,6 +57,23 @@ var speakers = [
     "image": "patrickr.png",
     "social-media": {
       "twitter": "https://twitter.com/1hitsong"
+    }
+  }
+];
+
+const sponsors = [
+  {
+    "telWare": {
+      "link": "https://www.telware.com/",
+      "level": "silver"
+    },
+    "DREAM": {
+      "link": "http://www.dream-enterprise.com/_wp/",
+      "level": "silver"
+    },
+    "powerserve": {
+      "link": "https://www.powerserve.net/",
+      "level": "silver"
     }
   }
 ]
