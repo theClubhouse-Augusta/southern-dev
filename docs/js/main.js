@@ -61,7 +61,7 @@ var sponsors = [{
   "link": "http://www.dream-enterprise.com/_wp/",
   "level": "silver"
 }, {
-  "name": "telWare",
+  "name": "TelWare",
   "link": "https://www.telware.com/",
   "level": "silver"
 }, {

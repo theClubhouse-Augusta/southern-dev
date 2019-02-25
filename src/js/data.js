@@ -68,7 +68,7 @@ const sponsors = [
     "level": "silver"
   },
   {
-    "name": "telWare", 
+    "name": "TelWare",
       "link": "https://www.telware.com/",
       "level": "silver"
   },
