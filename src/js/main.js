@@ -1,11 +1,7 @@
 window.onload = function () {
 
   const logo = document.querySelector(".logo"),
-    mobileNav = {
-    arrow:  document.querySelector(".mobile-tray-arrow"),
-    container: document.querySelector(".mobile-nav"),
-    bodyWrapper: document.querySelector("#body-wrapper")
-  };
+    hamburger = document.querySelector('.hamburger');
 
   if(document.querySelector(".speakers")) {
     speakers.forEach(function(speaker) {
@@ -31,15 +27,13 @@ window.onload = function () {
     });
   }
 
-  mobileNav.arrow.addEventListener("click", function() {
-    mobileNav.container.classList.toggle("active-nav");
-    mobileNav.bodyWrapper.classList.toggle("active-nav");
-    mobileNav.arrow.classList.toggle("active-nav");
+  hamburger.addEventListener("click", function() {
+    let main = document.getElementById("header-main");
+    main.classList.toggle("active-nav");
+    hamburger.classList.toggle("active-nav");
   });
 
-  // if(logo) {
-  //   logo.addEventListener("click", GenerateFilters);
-  // }
+
   if(logo) {
     logo.addEventListener("mousemove", function(e) {
       var xPosition = e.clientX;

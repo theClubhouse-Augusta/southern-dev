@@ -1,0 +1,110 @@
+/*  Pulled from RRoberts: 
+    https://codepen.io/RRoberts/pen/ZBYaJr?editors=1100 */
+    
+.hamburger
+    @media(max-width: 900px)
+        position: fixed
+        z-index: 4
+        top: 20px
+        right: 40px
+        background-color: $gray5
+        height: 50px
+        width: 50px
+        padding: 10px
+        border-radius: 100px
+        cursor: pointer
+        box-shadow: $shadow1
+        &:hover
+                cursor: pointer
+        .line
+            width: 50px
+            height: 5px
+            background-color: $gray1
+            display: block
+            margin: 8px auto
+            -webkit-transition: all 0.3s ease-in-out
+            -o-transition: all 0.3s ease-in-out
+            transition: all 0.3s ease-in-out
+        &.active-nav
+            -webkit-transition: all 0.3s ease-in-out
+            -o-transition: all 0.3s ease-in-out
+            transition: all 0.3s ease-in-out
+            -webkit-transition-delay: 0.6s
+            -o-transition-delay: 0.6s
+            transition-delay: 0.6s
+            -webkit-transform: rotate(45deg)
+            -ms-transform: rotate(45deg)
+            -o-transform: rotate(45deg)
+            transform: rotate(45deg)
+        &.active-nav .line:nth-child(2)
+            width: 0px
+        &.active-nav .line:nth-child(1),
+        &.active-nav .line:nth-child(3)
+            -webkit-transition-delay: 0.3s
+            -o-transition-delay: 0.3s
+            transition-delay: 0.3s
+        &.active-nav .line:nth-child(1)
+            -webkit-transform: translateY(13px)
+            -ms-transform: translateY(13px)
+            -o-transform: translateY(13px)
+            transform: translateY(13px)
+        &.active-nav .line:nth-child(3)
+            -webkit-transform: translateY(-13px) rotate(90deg)
+            -ms-transform: translateY(-13px) rotate(90deg)
+            -o-transform: translateY(-13px) rotate(90deg)
+            transform: translateY(-13px) rotate(90deg)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //     position: fixed
+    //     z-index: 4
+    //     top: 20px
+    //     right: 40px
+    //     background-color: $gray5
+    //     height: 50px
+    //     width: 60px
+    //     padding: 5px
+    //     border-radius: 100px
+    //     cursor: pointer
+    //     box-shadow: $shadow1
+    //     span
+    //         position: relative
+    //         margin: 0 auto
+    //         // top: 0
+    //         // right: 0
+    //         // bottom: 0
+    //         // margin: auto
+    //         // left: 0
+    //         background-color: $gray1
+    //         display: block
+    //         height: 2px
+    //         width: 40px
+    //         &:before, &:after
+    //             content: ''
+    //             position: absolute
+    //             margin: 10px
+    //             background-color: $gray1
+    //             display: block
+    //             height: 2px
+    //             width: 40px
+    //         &.active-nav
+    //             animation: menu-transition 1s forwards
+
+    // @keyframes menu-transition 
+    //     0% 
+    //         span
+    //             background-color: red
+    //     100% 
+    //         span
+    //             background-color: green
