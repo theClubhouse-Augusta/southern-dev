@@ -76,5 +76,10 @@ const sponsors = [
     "name": "powerserve",
     "link": "https://www.powerserve.net/",
     "level": "silver"
+  },
+  {
+    "name": "runcode",
+    "link": "https://runcode.ninja/",
+    "level": "silver"
   }
 ];

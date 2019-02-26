@@ -385,7 +385,7 @@ h1 {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    align-items: baseline;
+    align-items: center;
     width: 100%;
     max-width: 900px;
     margin: 0 auto;
@@ -397,8 +397,6 @@ h1 {
       @media (min-width: 600px) {
         .sponsors .sponsor-section img {
           padding: 10px; } }
-    .sponsors .sponsor-section a {
-      vertical-align: top; }
     .sponsors .sponsor-section header {
       width: 100%;
       margin-bottom: 30px; }
