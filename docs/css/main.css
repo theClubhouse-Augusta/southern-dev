@@ -393,7 +393,7 @@ h1 {
     .sponsors .sponsor-section img {
       max-width: 200px;
       width: 100%;
-      padding: 20px 0; }
+      padding: 20px; }
       @media (min-width: 600px) {
         .sponsors .sponsor-section img {
           padding: 10px; } }
