@@ -61,7 +61,7 @@ var sponsors = [{
   "link": "http://www.dream-enterprise.com/_wp/",
   "level": "silver"
 }, {
-  "name": "telWare",
+  "name": "TelWare",
   "link": "https://www.telware.com/",
   "level": "silver"
 }, {
@@ -69,8 +69,13 @@ var sponsors = [{
   "link": "https://www.powerserve.net/",
   "level": "silver"
 }, {
+<<<<<<< HEAD
   "name": "emineo",
   "link": "https://www.emineomarketing.com/",
+=======
+  "name": "runcode",
+  "link": "https://runcode.ninja/",
+>>>>>>> 58526305131fb05d609927599ce493ac95c7384a
   "level": "silver"
 }];
 "use strict";
