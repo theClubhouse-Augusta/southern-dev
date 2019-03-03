@@ -69,6 +69,10 @@ var sponsors = [{
   "link": "https://www.powerserve.net/",
   "level": "silver"
 }, {
+  "name": "emineo",
+  "link": "https://www.emineomarketing.com/",
+  "level": "silver"
+}, {
   "name": "runcode",
   "link": "https://runcode.ninja/",
   "level": "silver"
