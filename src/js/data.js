@@ -78,13 +78,13 @@ const sponsors = [
     "level": "silver"
   },
   {
-<<<<<<< HEAD
     "name": "emineo",
     "link": "https://www.emineomarketing.com/",
-=======
+    "level": "silver"
+  },
+  {
     "name": "runcode",
     "link": "https://runcode.ninja/",
->>>>>>> 58526305131fb05d609927599ce493ac95c7384a
     "level": "silver"
   }
 ];
