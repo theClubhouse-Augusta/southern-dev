@@ -2,6 +2,9 @@ section.speakers
   header
     h1 Speakers
   div#bios
+    ul
+    each speaker in speakers
+      li= speaker.name
     //- .bio>img+h4+p
   div.cfp
     h4 CFP
