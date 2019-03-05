@@ -1,6 +1,11 @@
+- var imageUrl = event.image
 div(class='event-display')
-    h4= event.title
-    h5= event.speaker
-    h5= event.date
-    p= event.description
-    img(src='#{event.image}')
+  p(class='event-title')= event.title
+  div(class='event-speaker-div')
+    p(class='event-speaker')= event.speaker
+  div(class='event-place')
+    p(class='event-location')= event.location
+    p(class='event-time')= event.time
+  br
+  p= event.description
+  img(class='event-image'  src='../images/' + imageUrl)

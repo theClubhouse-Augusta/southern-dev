@@ -67,7 +67,13 @@
           "speaker": "Patrick Rogers",
           "image": "patrickr.png",
           "time": "4/27/2019 10:00am",
-          "description": "Bacon ipsum dolor amet pastrami leberkas meatloaf cow chicken pig. Tri-tip prosciutto ribeye doner, chuck porchetta drumstick pork belly venison hamburger tenderloin cow strip steak flank. Tri-tip alcatra strip steak swine. Pork chop salami kielbasa bresaola, capicola ham hock ham rump alcatra. Doner hamburger pancetta capicola ham. Meatball andouille short ribs frankfurter kevin hamburger chuck shankle rump short loin pork fatback. Porchetta filet mignon tenderloin chuck leberkas pork loin drumstick, beef jowl cow hamburger brisket."
+          "location": "Room 1",
+          "description": "Bacon ipsum dolor amet pastrami leberkas meatloaf cow chicken pig. Tri-tip prosciutto ribeye doner, chuck porchetta drumstick pork belly venison hamburger tenderloin cow strip steak flank. Tri-tip alcatra strip steak swine. Pork chop salami kielbasa bresaola, capicola ham hock ham rump alcatra. Doner hamburger pancetta capicola ham. Meatball andouille short ribs frankfurter kevin hamburger chuck shankle rump short loin pork fatback. Porchetta filet mignon tenderloin chuck leberkas pork loin drumstick, beef jowl cow hamburger brisket.",
+          "tags": [
+            "front-end",
+            "nonsense",
+            "this"
+          ]
         }
       ]
 }
