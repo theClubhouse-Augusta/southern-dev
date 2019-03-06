@@ -2,10 +2,19 @@ section.speakers
   header
     h1 Speakers
   div#bios
-    ul
     each speaker in speakers
-      li= speaker.name
+      .bio
+        img(src="../images/" + speaker.image)
+        .txt-container
+          if speaker["social-media"]
+            .social-media
+              each val, index in speaker["social-media"]
+                a(href=val)
+                  i.fab(class="fa-" + index)
+          h4= speaker.name
+          h5= speaker.company
+          p= speaker["bio-short"]
     //- .bio>img+h4+p
-  div.cfp
-    h4 CFP
-    a(href="https://www.papercall.io/southerndev" target="_blank" rel="noreferrer noopener").txt-box Submit a talk
+  //- div.cfp
+  //-   h4 CFP
+  //-   a(href="https://www.papercall.io/southerndev" target="_blank" rel="noreferrer noopener").txt-box Submit a talk

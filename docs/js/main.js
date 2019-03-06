@@ -84,17 +84,18 @@ window.onload = function () {
   var logo = document.querySelector(".logo"),
       hamburger = document.querySelector('.hamburger');
 
-  if (document.querySelector(".speakers")) {
-    speakers.forEach(function (speaker) {
-      SpeakerTemplate(speaker);
-    });
-  }
+  // if(document.querySelector(".speakers")) {
+  //   speakers.forEach(function(speaker) {
+  //     SpeakerTemplate(speaker)
+  //   });
+  // }
+
 
   if (document.querySelector(".sponsors")) {
     var sponsorSection = document.querySelector(".sponsors");
     var levels = [
-    // "platinum", 
-    // "gold", 
+    // "platinum",
+    // "gold",
     "silver"];
 
     sponsorSection.appendChild(createLevels(levels));
@@ -170,20 +171,20 @@ function GenerateFilters() {
 }
 
 /* SPEAKER SECTION TEMPLATE */
-function SpeakerTemplate(speaker) {
+/* function SpeakerTemplate(speaker) {
   // 1. Parse Speakers Object
-  var name = speaker.name,
-      bioShort = speaker["bio-short"],
-      image = speaker.image,
-      company = speaker.company;
+  const name = speaker.name,
+    bioShort = speaker["bio-short"],
+    image = speaker.image,
+    company = speaker.company;
 
   // 2. Create Elements
-  var nameTemplate = document.createElement("h4"),
-      bioShortTemplate = document.createElement("p"),
-      imgTemplate = document.createElement("img"),
-      companyTemplate = document.createElement("h5"),
-      txtContainer = document.createElement("div"),
-      bio = document.createElement("div");
+  const nameTemplate = document.createElement("h4"),
+    bioShortTemplate = document.createElement("p"),
+    imgTemplate = document.createElement("img"),
+    companyTemplate = document.createElement("h5"),
+    txtContainer = document.createElement("div"),
+    bio = document.createElement("div");
 
   // 3. Assign Element Properties
   nameTemplate.textContent = name;
@@ -194,7 +195,7 @@ function SpeakerTemplate(speaker) {
   txtContainer.classList.add("txt-container");
 
   // 4. Assign HTML Context
-  if ("social-media" in speaker) {
+  if ("social-media" in speaker){
     txtContainer.appendChild(SocialMediaTemplate(speaker));
   }
 
@@ -204,19 +205,20 @@ function SpeakerTemplate(speaker) {
   bio.appendChild(imgTemplate);
   bio.appendChild(txtContainer);
 
+
   // 5. Attach to Document
-  var bios = document.getElementById("bios");
+  const bios = document.getElementById("bios");
   bios.appendChild(bio);
 }
 
-function SocialMediaTemplate(speaker) {
+function SocialMediaTemplate(speaker){
 
-  var div = document.createElement("div");
+  let div = document.createElement("div");
   div.classList.add("social-media");
 
-  Object.keys(speaker["social-media"]).forEach(function (socialMedia) {
-    var socialMediaLink = document.createElement("a"),
-        socialMediaIcon = document.createElement("i");
+  Object.keys(speaker["social-media"]).forEach(function(socialMedia) {
+    let socialMediaLink = document.createElement("a"),
+    socialMediaIcon = document.createElement("i");
 
     socialMediaLink.setAttribute("href", speaker["social-media"][socialMedia]);
     socialMediaIcon.classList.add("fab", "fa-" + socialMedia);
@@ -226,7 +228,7 @@ function SocialMediaTemplate(speaker) {
   });
 
   return div;
-}
+} */
 
 function createLevels(levels) {
   var template = document.createElement("div");
