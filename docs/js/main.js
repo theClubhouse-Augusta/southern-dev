@@ -76,6 +76,10 @@ var sponsors = [{
   "name": "runcode",
   "link": "https://runcode.ninja/",
   "level": "silver"
+}, {
+  "name": "freemouth",
+  "link": "",
+  "level": "silver"
 }];
 "use strict";
 
