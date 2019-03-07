@@ -15,7 +15,7 @@ include ../layouts/header.pug
         div April 27, 2019
     section.tickets
       h2 Early Bird Tickets On Sale Now!
-      a.button(href="https://www.eventbrite.com/e/southern-developer-conference-tickets-55867745932" target="_blank" rel="noreferrer noopener") 
+      a.button(href="https://www.eventbrite.com/e/southern-developer-conference-tickets-55867745932" target="_blank" rel="noreferrer noopener")
         button Purchase Here
 
     section.index-nav
@@ -34,8 +34,6 @@ include ../layouts/header.pug
           .index-bg(title="Photo by Antoine Barrès on Unsplash")
             .hover-filter
           button.button Contact Us
-    section.sponsors
-      header
-        h2 Sponsors
-      
-  include ../layouts/footer.pug 
+    include ../components/sponsors.pug
+
+  include ../layouts/footer.pug
