@@ -4,8 +4,8 @@ div(class='event-display')
   div(class='event-speaker-div')
     p(class='event-speaker')= event.speaker
   div(class='event-place')
-    p(class='event-location')= event.location
-    p(class='event-time')= event.time
+    span(class='event-location')= event.location
+    span(class='event-time')= event.date
   br
-  p= event.description
+  div(class='event-description')= event.description
   img(class='event-image'  src='../images/' + imageUrl)

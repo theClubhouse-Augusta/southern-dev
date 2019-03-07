@@ -5,6 +5,9 @@ section.schedule
     color: $gray1
     background-color: $pink5
   .event-display
+    display: grid
+    grid-template-columns: [first] 200px [second] auto
+    grid-template-rows: [first] auto [second] 50px [third] auto
     border-radius: 3px
     padding: 60px 0
     text-align: left
@@ -15,14 +18,35 @@ section.schedule
     .event-title
       font-size: 16px
       font-weight: bold
+      grid-column-start: span 2
+      grid-row-start: first
+      grid-row-end: second
     .event-info
       font-size: large
       color: $gray2
+    .event-speaker
+      grid-column-start: first
+      grid-column-end: second
+      grid-row-start: second
+      grid-row-end: third
+    .event-place
+      grid-column-start: second
+      grid-row-start: second
+      grid-row-end: third
+      font-size: medium
+      justify-self: end
+    .event-description
+      grid-column-start: second
+      grid-row-start: third
+      font-size: medium
     img
       display: block
       margin: 0 auto
       border-radius: 100%
       width: 150px
       border: 1px solid $gray5
+      grid-column-start: first
+      grid-column-end: second
+      grid-row-start: third
       @media(min-width: 900px)
         float: left

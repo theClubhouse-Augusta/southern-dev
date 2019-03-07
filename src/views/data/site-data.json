@@ -62,18 +62,13 @@
         }
       ],
       "events": [
-        {
-          "title": "This Talk Thing",
-          "speaker": "Patrick Rogers",
-          "image": "patrickr.png",
-          "time": "4/27/2019 10:00am",
-          "location": "Room 1",
-          "description": "Bacon ipsum dolor amet pastrami leberkas meatloaf cow chicken pig. Tri-tip prosciutto ribeye doner, chuck porchetta drumstick pork belly venison hamburger tenderloin cow strip steak flank. Tri-tip alcatra strip steak swine. Pork chop salami kielbasa bresaola, capicola ham hock ham rump alcatra. Doner hamburger pancetta capicola ham. Meatball andouille short ribs frankfurter kevin hamburger chuck shankle rump short loin pork fatback. Porchetta filet mignon tenderloin chuck leberkas pork loin drumstick, beef jowl cow hamburger brisket.",
-          "tags": [
-            "front-end",
-            "nonsense",
-            "this"
-          ]
-        }
+          {
+              "title": "This talk that has a pretty long title that is kind of witty, but then maybe lazy too. You really can't tell any more.",
+              "speaker": "Some Guy",
+              "description": "Bacon ipsum dolor amet tenderloin t-bone turducken capicola beef short ribs landjaeger swine pork burgdoggen buffalo. Salami swine chicken alcatra t-bone tenderloin jowl pork loin. Kevin cupim t-bone filet mignon short loin meatloaf. Meatloaf cupim swine corned beef, strip steak flank pork belly ground round alcatra spare ribs. Meatloaf fatback picanha prosciutto t-bone leberkas ground round strip steak capicola short loin pork belly. Kielbasa alcatra meatball tenderloin, fatback corned beef landjaeger. Pork belly turkey shankle pig, bacon jowl tri-tip.",
+              "image": "patrickr.png",
+              "location": "Room 1",
+              "date": "4/27/2019 10:00am"
+          }
       ]
 }
