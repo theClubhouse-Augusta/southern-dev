@@ -10,7 +10,7 @@ window.onload = function () {
   // }
 
 
-  if(document.querySelector(".sponsors")) {
+/*   if(document.querySelector(".sponsors")) {
     const sponsorSection = document.querySelector(".sponsors");
     const levels = [
       // "platinum",
@@ -26,7 +26,7 @@ window.onload = function () {
       sponsorTemplate(sponsor, levels);
     });
   }
-
+ */
   hamburger.addEventListener("click", function() {
     let main = document.getElementById("header-main");
     main.classList.toggle("active-nav");
@@ -158,7 +158,7 @@ function SocialMediaTemplate(speaker){
 } */
 
 
-
+/*
 function createLevels(levels) {
   let template = document.createElement("div");
   template.classList.add("sponsors-section");
@@ -207,5 +207,4 @@ function sponsorTemplate(sponsor, levels) {
 
   console.log(parent);
   return parent;
-}
-
+} */
