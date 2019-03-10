@@ -4,7 +4,7 @@ section.speakers
   div#bios
     each speaker in speakers
       .bio
-        img(src="../images/" + speaker.image)
+        img(src="../images/speaker-" + speaker.image)
         .txt-container
           if speaker["social-media"]
             .social-media
