@@ -90,6 +90,14 @@
           }
         },
         {
+          "name": "Jeanne Schmidt",
+          "company": "RSI",
+          "title": "Senior Principal Consultant",
+          "bio-short": "A Senior Principal Consultant and leads the Quality Assurance practice at Rural Sourcing.  Jeanne Schmidt leads a team of software testers who help customers deliver quality software and advise customers on test strategies.  Jeanne serves as a quality coach and quality advocate to help software teams improve the quality of their delivery.",
+          "bio-long": "Jeanne Schmidt is a Senior Principal Consultant and leads the Quality Assurance practice at Rural Sourcing.  Jeanne Schmidt leads a team of software testers who help customers deliver quality software and advise customers on test strategies.  Jeanne serves as a quality coach and quality advocate to help software teams improve the quality of their delivery. Rural Sourcing is the leader in domestic sourcing and a cost-effective, onshore alternative to the traditional model for IT outsourcing. With more than twenty-five years of experience working in software development, Jeanne advises companies on how to deliver quality software. She managed a QA team and PeopleSoft / Oracle for a number of years. Her client projects include Pfizer, Teva Pharmaceuticals, UPS and the American Cancer Society. She has presented at the Techwell StarEast and StarWest conferences and speaks at Agile Augusta. She is the founder of Women in Technology Augusta.",
+          "image": "jeanneS.jpg"
+        },
+        {
           "name": "Patrick Rodgers",
           "company": "PowerServe",
           "title": "Project Manager and Lead Programmer",
