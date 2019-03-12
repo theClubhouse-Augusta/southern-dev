@@ -130,9 +130,24 @@
           "level": "silver"
         },
         {
+          "name": "freemouth",
+          "link": "https://freemouthmedia.com",
+          "level": "silver"
+        },
+        {
           "name": "runcode",
           "link": "https://runcode.ninja/",
           "level": "silver"
+        },
+        {
+          "name": "github",
+          "link": "https://github.com/",
+          "level": "community"
+        },
+        {
+          "name": "gray",
+          "link": "",
+          "level": "community"
         }
       ],
       "events": [

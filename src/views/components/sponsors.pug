@@ -4,7 +4,7 @@ section.sponsors
   .sponsors-section
     - var levels = ["platinum", "gold", "silver", "community"]
     each level in levels
-      if level === "platinum" || level === "gold" || level === "community"
+      if level === "platinum" || level === "gold"
       else
         .sponsor-section(class=level)
           header
