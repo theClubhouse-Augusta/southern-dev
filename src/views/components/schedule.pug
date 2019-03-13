@@ -1,6 +1,22 @@
 section.schedule
   header
     h1 Schedule
-    each event in events
-      include event-display.pug
+    - var n = 9;
+    ul
+      while n < 17
+        li
+          if n > 12
+            a(class=n-12)= n - 12 
+            |  p.m.
+            - n++
+          else if n === 12
+            a(class="12")= 12
+            |  p.m.
+            - n++
+          else
+            a(class=n)= n++
+            |  a.m.
+
+    //- each event in events
+    //-   include event-display.pug
 

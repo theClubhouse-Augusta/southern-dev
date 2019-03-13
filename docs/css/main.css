@@ -480,6 +480,8 @@ section.schedule {
   section.schedule h1 {
     color: #fdfcfc;
     background-color: #f48971; }
+  section.schedule li {
+    font-size: 1.6rem; }
   section.schedule .event-display {
     display: grid;
     grid-template-columns: [first] 200px [second] auto;
@@ -492,7 +494,6 @@ section.schedule {
     margin: 0 auto;
     border-bottom: 1px solid #f3f2f2; }
     section.schedule .event-display .event-title {
-      font-size: 16px;
       font-weight: bold;
       grid-column-start: span 2;
       grid-row-start: first;
