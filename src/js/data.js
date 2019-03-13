@@ -86,5 +86,10 @@ const sponsors = [
     "name": "runcode",
     "link": "https://runcode.ninja/",
     "level": "silver"
+  },
+  {
+    "name": "freemouth",
+    "link": "https://freemouthmedia.com/",
+    "level": "silver"
   }
 ];

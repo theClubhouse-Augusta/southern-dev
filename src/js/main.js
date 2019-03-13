@@ -3,19 +3,19 @@ window.onload = function () {
   const logo = document.querySelector(".logo"),
     hamburger = document.querySelector('.hamburger');
 
-  if(document.querySelector(".speakers")) {
-    speakers.forEach(function(speaker) {
-      SpeakerTemplate(speaker)
-    });
-  }
+  // if(document.querySelector(".speakers")) {
+  //   speakers.forEach(function(speaker) {
+  //     SpeakerTemplate(speaker)
+  //   });
+  // }
 
-  
-  if(document.querySelector(".sponsors")) {
+
+/*   if(document.querySelector(".sponsors")) {
     const sponsorSection = document.querySelector(".sponsors");
     const levels = [
-      // "platinum", 
-      // "gold", 
-      "silver", 
+      // "platinum",
+      // "gold",
+      "silver",
       // "community"
       ];
 
@@ -26,7 +26,7 @@ window.onload = function () {
       sponsorTemplate(sponsor, levels);
     });
   }
-
+ */
   hamburger.addEventListener("click", function() {
     let main = document.getElementById("header-main");
     main.classList.toggle("active-nav");
@@ -40,7 +40,7 @@ window.onload = function () {
           xPosition = Math.round(- xPosition / 50);
       var yPosition = e.clientY;
           yPosition = Math.round(yPosition / 50);
-  
+
       var dropShadow = "drop-shadow(" + xPosition  + "px " + yPosition  + "px 5px rgba(0, 0, 0, 0.5))";
       // console.log(xPosition, yPosition);
       logo.style.filter = dropShadow;
@@ -98,7 +98,7 @@ function GenerateFilters (){
 
 
 /* SPEAKER SECTION TEMPLATE */
-function SpeakerTemplate(speaker) {
+/* function SpeakerTemplate(speaker) {
   // 1. Parse Speakers Object
   const name = speaker.name,
     bioShort = speaker["bio-short"],
@@ -146,7 +146,7 @@ function SocialMediaTemplate(speaker){
   Object.keys(speaker["social-media"]).forEach(function(socialMedia) {
     let socialMediaLink = document.createElement("a"),
     socialMediaIcon = document.createElement("i");
-    
+
     socialMediaLink.setAttribute("href", speaker["social-media"][socialMedia]);
     socialMediaIcon.classList.add("fab", "fa-" + socialMedia);
 
@@ -155,10 +155,10 @@ function SocialMediaTemplate(speaker){
   });
 
   return div;
-}
+} */
 
 
-
+/*
 function createLevels(levels) {
   let template = document.createElement("div");
   template.classList.add("sponsors-section");
@@ -167,7 +167,7 @@ function createLevels(levels) {
     let levelTemplate = document.createElement('div'),
       title = document.createElement('h3'),
       header = document.createElement('header');
-      
+
     title.textContent = level.toUpperCase();
     levelTemplate.classList.add("sponsor-section", level);
 
@@ -207,6 +207,4 @@ function sponsorTemplate(sponsor, levels) {
 
   console.log(parent);
   return parent;
-}
-
-  
+} */
