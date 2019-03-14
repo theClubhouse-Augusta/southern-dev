@@ -113,6 +113,16 @@
         "title": "Web Lead",
         "bio-short": "The Web Practice Lead at Rural Sourcing's Augusta, GA, dev center. He is a full-stack engineer with over 20 years of experience and has worked on projects for companies of all sizes, including the likes of Proctor & Gamble, American Express, Hayneedle.com, and many more. His days at Rural Sourcing are spent knee-deep in React and mentoring his colleagues in between tickets. He's a design pattern junkie, UX strategist, and has a knack for explaining complicated tech topics to laymen.",
         "image": "wesD.jpg"
+      },
+      {
+        "name": "Jessica King",
+        "company": "Independent Contractor",
+        "title": "",
+        "bio-short": "A badass rockstar of enterprise architectures, eCommerce, and ERP integrations. She's spent two decades building full stack applications designed for growth and stability. Her clients span many business sectors but have digital transformation in common, which is where Jessica comes in. She has a reputation for successfully herding cats and bringing order to chaos. When she's not working, she's spending time with her family, playing board games, and making music.",
+        "image": "jessicaK.jpg",
+        "social-media": {
+          "twitter": "https://twitter.com/JesKing"
+        }
       }
     ],
     "sponsors": [
