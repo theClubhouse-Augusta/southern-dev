@@ -89,7 +89,7 @@ const sponsors = [
   },
   {
     "name": "freemouth",
-    "link": "",
+    "link": "https://freemouthmedia.com/",
     "level": "silver"
   }
 ];

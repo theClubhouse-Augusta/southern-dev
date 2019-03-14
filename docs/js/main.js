@@ -78,7 +78,7 @@ var sponsors = [{
   "level": "silver"
 }, {
   "name": "freemouth",
-  "link": "",
+  "link": "https://freemouthmedia.com/",
   "level": "silver"
 }];
 "use strict";
