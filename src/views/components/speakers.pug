@@ -6,14 +6,14 @@ section.speakers
       .bio
         img(src="../images/speaker-" + speaker.image)
         .txt-container
+          h4= speaker.name
+          h5= speaker.company
+          p= speaker["bio-short"]
           if speaker["social-media"]
             .social-media
               each val, index in speaker["social-media"]
                 a(href=val)
                   i.fab(class="fa-" + index)
-          h4= speaker.name
-          h5= speaker.company
-          p= speaker["bio-short"]
     //- .bio>img+h4+p
   //- div.cfp
   //-   h4 CFP

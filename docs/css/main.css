@@ -37,42 +37,83 @@ section.speakers {
     color: #fdfcfc;
     background-color: #f48971; }
   section.speakers .bio {
+    border: 3px solid rgb(244, 137, 113, .5);
     border-radius: 3px;
-    padding: 60px 0;
+    /* background-color: #1d1d5c; Test to see what area it covers */
+    padding: 20px 0;
     text-align: left;
-    width: 100%;
-    max-width: 800px;
+    width: 80%;
+    max-width: 1000px;
+    margin: 25px auto;
+}
+@media (min-width: 900px) {
+  section.speakers .bio {
+    border: none;
     margin: 0 auto;
-    border-bottom: 1px solid #f3f2f2; }
+    width: 100%;
+  }
+}
     section.speakers .bio .fa-twitter {
-      color: #a3aaf5; }
+      color: #3066db;
+      font-size: 1.5em;
+    }
+    section.speakers .bio .fa-twitter :hover{
+      color: #19184e;
+      transition: .5s;
+    }
     section.speakers .bio img {
       display: block;
       margin: 0 auto;
+      /* background-color: #00d300; */
+      width: 200px;
       border-radius: 100%;
-      width: 150px;
-      border: 1px solid #91806e; }
+      transition: .5s;
+      border: 4px solid #f48971;
+      padding: 5px;
+      }
       @media (min-width: 900px) {
         section.speakers .bio img {
-          float: left; } }
+          float: left;
+          margin: 15px 40px;
+          border-radius: 0;
+          border: none;
+        } 
+        }
     section.speakers .bio .txt-container {
-      display: block;
+      display: inline-block;
       margin: 0 auto;
-      width: 80%;
-      max-width: 500px; }
+      /* background-color: #d37000; */
+      width: 90%;
+      max-width: 600px;
+      padding: 15px;
+      display: block;
+      text-align: center;
+      transition: .5s;
+      border: none;
+    }
+    section.speakers .bio .txt-container p {
+      text-align: justify;
+    }
       @media (min-width: 900px) {
         section.speakers .bio .txt-container {
-          padding-left: 80px; } }
+
+          display: inline-block;
+          text-align: justify;
+          border-left: 5px solid #f48971;
+        } }
       section.speakers .bio .txt-container h4 {
         font-size: 3.6rem;
         color: #456abf;
-        margin: 20px 0 10px 0; }
+        margin: 20px 0 10px 0; 
+      }
       section.speakers .bio .txt-container h5 {
         font-weight: normal;
         display: block;
-        margin-bottom: 10px; }
+        margin-bottom: 10px; 
+      }
   section.speakers .cfp {
-    padding: 60px 0; }
+    padding: 60px 0; 
+  }
     section.speakers .cfp .txt-box {
       display: inline-block;
       margin: 20px auto 0 auto;
@@ -82,12 +123,15 @@ section.speakers {
       background-color: #456abf;
       border-radius: 5px;
       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
-      transition: box-shadow .5s ease; }
+      transition: box-shadow .5s ease; 
+    }
       section.speakers .cfp .txt-box:hover {
-        box-shadow: none; }
+        box-shadow: none; 
+      }
     section.speakers .cfp h4 {
       font-size: 3.6rem;
-      font-weight: bold; }
+      font-weight: bold; 
+    }
 
 h1 {
   font-size: 4rem;
@@ -473,36 +517,6 @@ h1 {
       -ms-transform: translateY(-13px) rotate(90deg);
       -o-transform: translateY(-13px) rotate(90deg);
       transform: translateY(-13px) rotate(90deg); } }
-
-section.schedule {
-  background-color: #fdfcfc;
-  padding: 0; }
-  section.schedule h1 {
-    color: #fdfcfc;
-    background-color: #f48971; }
-  section.schedule .event-display {
-    border-radius: 3px;
-    padding: 60px 0;
-    text-align: left;
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
-    border-bottom: 1px solid #f3f2f2; }
-    section.schedule .event-display .event-title {
-      font-size: 16px;
-      font-weight: bold; }
-    section.schedule .event-display .event-info {
-      font-size: large;
-      color: #f3f2f2; }
-    section.schedule .event-display img {
-      display: block;
-      margin: 0 auto;
-      border-radius: 100%;
-      width: 150px;
-      border: 1px solid #91806e; }
-      @media (min-width: 900px) {
-        section.schedule .event-display img {
-          float: left; } }
 
 #header-main {
   z-index: 3;
