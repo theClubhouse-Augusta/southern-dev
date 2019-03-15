@@ -152,12 +152,36 @@
       ],
       "events": [
           {
-              "title": "This talk that has a pretty long title that is kind of witty, but then maybe lazy too. You really can't tell any more.",
-              "speaker": "Some Guy",
-              "description": "Bacon ipsum dolor amet tenderloin t-bone turducken capicola beef short ribs landjaeger swine pork burgdoggen buffalo. Salami swine chicken alcatra t-bone tenderloin jowl pork loin. Kevin cupim t-bone filet mignon short loin meatloaf. Meatloaf cupim swine corned beef, strip steak flank pork belly ground round alcatra spare ribs. Meatloaf fatback picanha prosciutto t-bone leberkas ground round strip steak capicola short loin pork belly. Kielbasa alcatra meatball tenderloin, fatback corned beef landjaeger. Pork belly turkey shankle pig, bacon jowl tri-tip.",
-              "image": "patrickr.png",
-              "location": "Room 1",
+              "title": "From Combat to Code: How Open Source Opens Doors",
+              "speaker": "Jerome Hardaway",
+              "description": "Bacon ipsum dolor amet tenderloin t-bone turducken capicola beef short ribs landjaeger swine pork burgdoggen buffalo. Salami swine chicken alcatra t-bone tenderloin jowl pork loin. Kevin cupim t-bone filet mignon short loin meatloaf. Meatloaf cupim swine corned beef, strip steak flank pork belly ground round alcatra spare ribs.",
+              "image": "jerome.jpg",
+              "location": "Plug N Play",
               "time": 9
-          }
+          },
+          {
+            "title": "Nativescript - Mobile Dev for Web Devs",
+            "speaker": "Mark Locklear",
+            "description": "Bacon ipsum dolor amet tenderloin t-bone turducken capicola beef short ribs landjaeger swine pork burgdoggen buffalo. Salami swine chicken alcatra t-bone tenderloin jowl pork loin. Kevin cupim t-bone filet mignon short loin meatloaf. Meatloaf cupim swine corned beef, strip steak flank pork belly ground round alcatra spare ribs.",
+            "image": "markL.jpg",
+            "location": "Plug N Play",
+            "time": 11
+        },
+        {
+          "title": "Updating a Classic: .NET to NodeJS",
+          "speaker": "Patrick Rodgers",
+          "description": "Bacon ipsum dolor amet tenderloin t-bone turducken capicola beef short ribs landjaeger swine pork burgdoggen buffalo. Salami swine chicken alcatra t-bone tenderloin jowl pork loin. Kevin cupim t-bone filet mignon short loin meatloaf. Meatloaf cupim swine corned beef, strip steak flank pork belly ground round alcatra spare ribs.",
+          "image": "patrickR.jpg",
+          "location": "Virtual World",
+          "time": 10
+        },
+        {
+          "title": "Mentoring: Creating Masters",
+          "speaker": "Wes Dollar",
+          "description": "Bacon ipsum dolor amet tenderloin t-bone turducken capicola beef short ribs landjaeger swine pork burgdoggen buffalo. Salami swine chicken alcatra t-bone tenderloin jowl pork loin. Kevin cupim t-bone filet mignon short loin meatloaf. Meatloaf cupim swine corned beef, strip steak flank pork belly ground round alcatra spare ribs.",
+          "image": "wesD.jpg",
+          "location": "Virtual World",
+          "time": 10
+        }
       ]
 }
