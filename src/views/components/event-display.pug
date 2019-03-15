@@ -1,11 +1,11 @@
 - var imageUrl = event.image
-div(class='event-display')
-  p(class='event-title')= event.title
-  div(class='event-speaker-div')
-    p(class='event-speaker')= event.speaker
-  div(class='event-place')
-    span(class='event-location')= event.location
-    span(class='event-time')= event.date
+.event-display
+  p.event-title= event.title
+  .event-speaker-div
+    p.event-speaker= event.speaker
+  .event-place
+    span.event-location= event.location
+    span.event-time= event.date
   br
-  div(class='event-description')= event.description
-  img(class='event-image'  src='../images/' + imageUrl)
+  .event-description= event.description
+  img.event-image(src='../images/speaker-' + imageUrl)

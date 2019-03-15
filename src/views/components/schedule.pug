@@ -8,20 +8,24 @@ section.schedule
           if n > 12
             .time(class=n-12)= n - 12
               |  p.m.
-            - n++
             each event in events
-              include event-display.pug
+              if n === event.time
+                include event-display.pug
+            - n++
           else if n === 12
             .time(class="12")= 12
               |  p.m.
-            - n++
             each event in events
-              include event-display.pug
+              if n === event.time
+                include event-display.pug
+            - n++
           else
-            .time(class=n)= n++
+            .time(class=n)= n
               |  a.m.
             each event in events
-              include event-display.pug
+              if n === event.time
+                include event-display.pug
+            - n++
 
 
 
