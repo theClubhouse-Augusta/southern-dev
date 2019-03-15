@@ -1,11 +1,8 @@
 - var imageUrl = event.image
 .event-display
-  p.event-title= event.title
-  .event-speaker-div
-    p.event-speaker= event.speaker
-  .event-place
-    span.event-location= event.location
-    span.event-time= event.date
-  br
-  .event-description= event.description
-  img.event-image(src='../images/speaker-' + imageUrl)
+  h4.event-title= event.title
+  p.event-description= event.description
+  .event-details
+    img.event-image(src='../images/speaker-' + imageUrl)
+    p.event-speaker-name= event.speaker
+    p.event-location= event.location

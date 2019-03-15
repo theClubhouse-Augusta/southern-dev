@@ -481,50 +481,31 @@ section.schedule {
     color: #fdfcfc;
     background-color: #f48971; }
   section.schedule li {
+    display: flex;
+    align-items: center;
     font-size: 1.6rem; }
+  section.schedule .time {
+    width: 10%;
+    display: inline-block; }
   section.schedule .event-display {
-    display: grid;
-    grid-template-columns: [first] 200px [second] auto;
-    grid-template-rows: [first] auto [second] 50px [third] auto;
     border-radius: 3px;
     padding: 60px 0;
     text-align: left;
-    width: 100%;
+    width: 90%;
     max-width: 800px;
     margin: 0 auto;
     border-bottom: 1px solid #f3f2f2; }
     section.schedule .event-display .event-title {
-      font-weight: bold;
-      grid-column-start: span 2;
-      grid-row-start: first;
-      grid-row-end: second; }
+      font-weight: bold; }
     section.schedule .event-display .event-info {
       font-size: large;
       color: #f3f2f2; }
-    section.schedule .event-display .event-speaker {
-      grid-column-start: first;
-      grid-column-end: second;
-      grid-row-start: second;
-      grid-row-end: third; }
-    section.schedule .event-display .event-place {
-      grid-column-start: second;
-      grid-row-start: second;
-      grid-row-end: third;
-      font-size: medium;
-      justify-self: end; }
-    section.schedule .event-display .event-description {
-      grid-column-start: second;
-      grid-row-start: third;
-      font-size: medium; }
     section.schedule .event-display img {
       display: block;
       margin: 0 auto;
       border-radius: 100%;
-      width: 150px;
-      border: 1px solid #91806e;
-      grid-column-start: first;
-      grid-column-end: second;
-      grid-row-start: third; }
+      width: 50px;
+      border: 1px solid #91806e; }
       @media (min-width: 900px) {
         section.schedule .event-display img {
           float: left; } }
