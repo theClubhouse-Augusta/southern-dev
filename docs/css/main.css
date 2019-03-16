@@ -25,7 +25,6 @@ h5 {
 
 h6 {
   font-size: 1.8rem; }
-
 p, a {
   font-size: 1.6rem;
   line-height: 1.6; }
@@ -45,7 +44,7 @@ section.speakers {
     margin: 0 auto;
     border-bottom: 1px solid #f3f2f2; }
     section.speakers .bio .fa-twitter {
-      color: #a3aaf5; }
+      color: #ADB2F4; }
     section.speakers .bio img {
       display: block;
       margin: 0 auto;
@@ -344,7 +343,7 @@ h1 {
     width: 60%;
     float: right;
     margin: 0;
-    padding: 0;
+    padding: 0px;
     height: 100%;
     background-color: white;
     transition: all ease .5s;
@@ -352,11 +351,21 @@ h1 {
   .index-nav .index-contact .button {
     border-bottom: none; }
   .index-nav .index-about .index-bg {
-    background-image: url("../images/chairs.jpg"); }
+    background-image: url("../images/chairs.jpg");
+    max-height: 200px;
+}
   .index-nav .index-speakers .index-bg {
-    background-image: url("../images/microphone.jpg"); }
+    background-image: url("../images/microphone.jpg");
+    max-height: 200px;
+}
   .index-nav .index-contact .index-bg {
-    background-image: url("../images/phone.jpg"); }
+    background-image: url("../images/phone.jpg"); 
+    max-height: 100%;
+}
+.index-nav .button
+{
+    padding: 5%;
+}
 
 .sponsors {
   margin: 30px auto; }
@@ -393,7 +402,7 @@ h1 {
     .sponsors .sponsor-section img {
       max-width: 200px;
       width: 100%;
-      padding: 20px; }
+      padding: 20px 0; }
       @media (min-width: 600px) {
         .sponsors .sponsor-section img {
           padding: 10px; } }
@@ -473,36 +482,6 @@ h1 {
       -ms-transform: translateY(-13px) rotate(90deg);
       -o-transform: translateY(-13px) rotate(90deg);
       transform: translateY(-13px) rotate(90deg); } }
-
-section.schedule {
-  background-color: #fdfcfc;
-  padding: 0; }
-  section.schedule h1 {
-    color: #fdfcfc;
-    background-color: #f48971; }
-  section.schedule .event-display {
-    border-radius: 3px;
-    padding: 60px 0;
-    text-align: left;
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
-    border-bottom: 1px solid #f3f2f2; }
-    section.schedule .event-display .event-title {
-      font-size: 16px;
-      font-weight: bold; }
-    section.schedule .event-display .event-info {
-      font-size: large;
-      color: #f3f2f2; }
-    section.schedule .event-display img {
-      display: block;
-      margin: 0 auto;
-      border-radius: 100%;
-      width: 150px;
-      border: 1px solid #91806e; }
-      @media (min-width: 900px) {
-        section.schedule .event-display img {
-          float: left; } }
 
 #header-main {
   z-index: 3;
@@ -716,3 +695,12 @@ label {
 
 #splash-contact {
   background-image: url("../images/stock-contact.jpg"); }
+.blue h2
+{
+    color: #cfdcfc;
+}
+.whitespace
+{
+    padding: 10px;
+    
+}
