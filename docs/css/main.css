@@ -474,41 +474,59 @@ h1 {
       -o-transform: translateY(-13px) rotate(90deg);
       transform: translateY(-13px) rotate(90deg); } }
 
-section.schedule {
+section .schedule {
   background-color: #fdfcfc;
   padding: 0; }
-  section.schedule h1 {
-    color: #fdfcfc;
-    background-color: #f48971; }
-  section.schedule li {
-    display: flex;
-    align-items: center;
-    font-size: 1.6rem; }
-  section.schedule .time {
-    width: 10%;
-    display: inline-block; }
-  section.schedule .event-display {
-    border-radius: 3px;
-    padding: 60px 0;
-    text-align: left;
-    width: 90%;
-    max-width: 800px;
+
+section h1 {
+  background-color: #f48971;
+  color: #fdfcfc; }
+
+section li {
+  align-items: center;
+  display: flex;
+  font-size: 1.6rem;
+  margin: 20px 0;
+  position: relative; }
+
+section .time {
+  background-color: #f48971;
+  display: block;
+  float: left;
+  height: 100%;
+  position: absolute; }
+
+section .events {
+  display: block;
+  float: right;
+  margin: 0;
+  width: 90%; }
+
+section .event-title {
+  font-weight: bold; }
+
+section .event-info {
+  color: #f3f2f2; }
+
+section .event-display {
+  border-bottom: 1px solid #f3f2f2;
+  border-radius: 3px;
+  display: inline-block;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 60px 0;
+  position: relative;
+  text-align: left;
+  width: 80%; }
+  section .event-display img {
+    border: 1px solid #91806e;
+    border-radius: 100%;
+    display: block;
     margin: 0 auto;
-    border-bottom: 1px solid #f3f2f2; }
-    section.schedule .event-display .event-title {
-      font-weight: bold; }
-    section.schedule .event-display .event-info {
-      font-size: large;
-      color: #f3f2f2; }
-    section.schedule .event-display img {
-      display: block;
-      margin: 0 auto;
-      border-radius: 100%;
-      width: 50px;
-      border: 1px solid #91806e; }
-      @media (min-width: 900px) {
-        section.schedule .event-display img {
-          float: left; } }
+    width: 50px; }
+    @media (min-width: 900px) {
+      section .event-display img {
+        float: left; } }
 
 #header-main {
   z-index: 3;
