@@ -489,10 +489,26 @@ section li {
   font-size: 1.6rem;
   margin: 0;
   position: relative; }
-  section li:nth-child(even) .time {
-    background-color: #f48971; }
-  section li:nth-child(odd) .time {
-    background-color: #456abf; }
+  section li:nth-child(1) .time {
+    background-color: #042f95; }
+  section li:nth-child(2) .time {
+    background-color: #053fc7; }
+  section li:nth-child(3) .time {
+    background-color: #064ff9; }
+  section li:nth-child(4) .time {
+    background-color: #3872fa; }
+  section li:nth-child(5) .time {
+    background-color: #6a95fb; }
+  section li:nth-child(6) .time {
+    background-color: #9cb9fc; }
+  section li:nth-child(7) .time {
+    background-color: #cddcfe; }
+  section li:nth-child(8) .time {
+    background-color: white; }
+  section li:nth-child(9) .time {
+    background-color: white; }
+  section li:nth-child(10) .time {
+    background-color: white; }
 
 section .time {
   display: block;
