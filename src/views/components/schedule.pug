@@ -2,38 +2,38 @@ section.schedule
   header
     h1 Schedule
     - var n = 9;
-    ul
-      while n < 17
-        li
-          if n > 12
-            .events
-              each event in events
-                if n === event.time
-                  .time(class=n-12)
-                    p
-                      //- | n - 12
-                      //- |  p.m.
-                  include event-display.pug
-            - n++
-          else if n === 12
-            .events
-              each event in events
-                if n === event.time
-                  .time(class="12")
-                    p
-                      //- |  12 p.m.
-                  include event-display.pug
-            - n++
-          else
-            div.time(class=n)
-              p
-                //- | n
-                //- |  a.m.
-            .events
-              each event in events
-                if n === event.time
-                  include event-display.pug
-            - n++
+  ul
+    while n < 17
+      li
+        if n > 12
+          .events
+            each event in events
+              if n === event.time
+                .time(class=n-12)
+                  p
+                    //- | n - 12
+                    //- |  p.m.
+                include event-display.pug
+          - n++
+        else if n === 12
+          .events
+            each event in events
+              if n === event.time
+                .time(class="12")
+                  p
+                    //- |  12 p.m.
+                include event-display.pug
+          - n++
+        else
+          .events
+            each event in events
+              if n === event.time
+                div.time(class=n)
+                  p
+                    //- | n
+                    //- |  a.m.
+                include event-display.pug
+          - n++
 
 
 

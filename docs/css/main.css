@@ -480,21 +480,26 @@ section .schedule {
 
 section h1 {
   background-color: #f48971;
-  color: #fdfcfc; }
+  color: #fdfcfc;
+  margin-bottom: 0; }
 
 section li {
   align-items: center;
   display: flex;
   font-size: 1.6rem;
-  margin: 20px 0;
+  margin: 0;
   position: relative; }
+  section li:nth-child(even) .time {
+    background-color: #f48971; }
+  section li:nth-child(odd) .time {
+    background-color: #456abf; }
 
 section .time {
-  background-color: #f48971;
   display: block;
   float: left;
   height: 100%;
-  position: absolute; }
+  position: absolute;
+  width: 10%; }
 
 section .events {
   display: block;
@@ -513,6 +518,7 @@ section .event-display {
   border-radius: 3px;
   display: inline-block;
   margin: 0 auto;
+  margin-left: 10%;
   max-width: 800px;
   padding: 60px 0;
   position: relative;

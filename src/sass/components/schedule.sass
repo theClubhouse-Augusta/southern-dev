@@ -6,20 +6,29 @@ section
   h1
     background-color: $pink5
     color: $gray1
+    margin-bottom: 0
 
   li
     align-items: center
     display: flex
     font-size: 1.6rem
-    margin: 20px 0
+    margin: 0
     position: relative
 
+    &:nth-child(even)
+      .time
+        background-color: $pink5
+
+    &:nth-child(odd)
+      .time
+        background-color: $blue5
+
   .time
-    background-color: $pink5
     display: block
     float: left
     height: 100%
     position: absolute
+    width: 10%
 
     // p
     //   bottom: 0
@@ -43,6 +52,7 @@ section
     border-radius: 3px
     display: inline-block
     margin: 0 auto
+    margin-left: 10%
     max-width: 800px
     padding: 60px 0
     position: relative
