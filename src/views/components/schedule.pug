@@ -6,26 +6,29 @@ section.schedule
       while n < 17
         li
           if n > 12
-            each event in events
-              if n === event.time
-                p.time(class=n-12)
-                  p= n - 12
-                    |  p.m.
-                include event-display.pug
-            - n++
-          else if n === 12
-            div.time(class="12")
-              p= 12
-                |  p.m.
             .events
               each event in events
                 if n === event.time
+                  .time(class=n-12)
+                    p
+                      //- | n - 12
+                      //- |  p.m.
+                  include event-display.pug
+            - n++
+          else if n === 12
+            .events
+              each event in events
+                if n === event.time
+                  .time(class="12")
+                    p
+                      //- |  12 p.m.
                   include event-display.pug
             - n++
           else
             div.time(class=n)
-              p= n
-                |  a.m.
+              p
+                //- | n
+                //- |  a.m.
             .events
               each event in events
                 if n === event.time
