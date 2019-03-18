@@ -123,6 +123,13 @@
         "social-media": {
           "twitter": "https://twitter.com/JesKing"
         }
+      },
+      {
+        "name": "Bowe Strickland",
+        "company": "Red Hat",
+        "title": "Principal Design Engineer, Training",
+        "bio-short": "As a graduate student in physics in the early 1990's, Bowe discovered the allure of open source software installing the 70 3.5\" floppies for the Slackware distribution, and has been a passionate advocate ever since. In 1999, after unsuccessfully looking for another job which would allow him to spend mornings sitting in coffeehouses, he joined Red Hat, Inc., as one of the founding members of Red Hat's training department.",
+        "image": "boweS.png"
       }
     ],
     "sponsors": [
