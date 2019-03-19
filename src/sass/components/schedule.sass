@@ -14,7 +14,6 @@ section
     font-size: 1.6rem
     margin: 0
     position: relative
-
     @for $i from 1 through 10
       &:nth-child(#{$i})
         .time
@@ -24,21 +23,17 @@ section
     display: block
     float: left
     height: 100%
+    max-width: 50px
     position: absolute
     width: 10%
-
-    // p
-    //   bottom: 0
-    //   position: absolute
-    //   top: 0
 
   .events
     display: block
     float: right
     margin: 0
-    width: 90%
+    width: 100%
 
-  .event-title
+  h4
     font-weight: bold
 
   .event-info
@@ -56,11 +51,32 @@ section
     text-align: left
     width: 80%
 
+    &.plug-n-play
+      background-color: rgba($gray5, .2)
+
+    .event-description
+      margin: 20px 0 30px
+      text-indent: 3rem
+
+  .event-details
+    display: flex
+    justify-content: space-between
+    width: 100%
+
     img
       border: 1px solid $gray5
       border-radius: 100%
       display: block
-      margin: 0 auto
+      height: 50px
+      margin-left: 0
+      // margin: 40px 0
       width: 50px
-      @media(min-width: 900px)
-        float: left
+
+    .flex-left
+      align-items: center
+      display: flex
+      // justify-content:
+
+      p
+        margin: 0 20px
+

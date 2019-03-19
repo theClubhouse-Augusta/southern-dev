@@ -1,9 +1,13 @@
 - var imageUrl = event.image
-.event-display
+- var eventLocation = event.location.toLowerCase().split(' ').join('-')
+
+.event-display(class= eventLocation)
   h4.event-title= event.title
   p.event-description= event.description
   .event-details
-    img.event-image(src='../images/speaker-' + imageUrl)
-    p.event-speaker-name= event.speaker
-    p.event-location= event.location
-    p.event-time= event.time
+    .flex-left
+      img.event-image(src='../images/speaker-' + imageUrl)
+      p.event-speaker-name= event.speaker
+    .flex-right
+      p.event-location Room: #{event.location}
+      p.event-time Time: #{event.time}

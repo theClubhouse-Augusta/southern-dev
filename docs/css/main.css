@@ -514,6 +514,7 @@ section .time {
   display: block;
   float: left;
   height: 100%;
+  max-width: 50px;
   position: absolute;
   width: 10%; }
 
@@ -521,9 +522,9 @@ section .events {
   display: block;
   float: right;
   margin: 0;
-  width: 90%; }
+  width: 100%; }
 
-section .event-title {
+section h4 {
   font-weight: bold; }
 
 section .event-info {
@@ -540,15 +541,28 @@ section .event-display {
   position: relative;
   text-align: left;
   width: 80%; }
-  section .event-display img {
+  section .event-display.plug-n-play {
+    background-color: rgba(145, 128, 110, 0.2); }
+  section .event-display .event-description {
+    margin: 20px 0 30px;
+    text-indent: 3rem; }
+
+section .event-details {
+  display: flex;
+  justify-content: space-between;
+  width: 100%; }
+  section .event-details img {
     border: 1px solid #91806e;
     border-radius: 100%;
     display: block;
-    margin: 0 auto;
+    height: 50px;
+    margin-left: 0;
     width: 50px; }
-    @media (min-width: 900px) {
-      section .event-display img {
-        float: left; } }
+  section .event-details .flex-left {
+    align-items: center;
+    display: flex; }
+    section .event-details .flex-left p {
+      margin: 0 20px; }
 
 #header-main {
   z-index: 3;
