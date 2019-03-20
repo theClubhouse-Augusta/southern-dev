@@ -2,12 +2,13 @@
 - var eventLocation = event.location.toLowerCase().split(' ').join('-')
 
 .event-display(class= eventLocation)
-  h4.event-title= event.title
-  p.event-description= event.description
-  .event-details
-    .flex-left
-      img.event-image(src='../images/speaker-' + imageUrl)
-      p.event-speaker-name= event.speaker
-    .flex-right
-      p.event-location Room: #{event.location}
-      p.event-time Time: #{event.time}
+  .event-content
+    h4.event-title= event.title
+    p.event-description= event.description
+    .event-details
+      .flex-left
+        img.event-image(src='../images/speaker-' + imageUrl)
+        p.event-speaker-name= event.speaker
+      .flex-right
+        p.event-location Room: #{event.location}
+        p.event-time Time: #{event.time}

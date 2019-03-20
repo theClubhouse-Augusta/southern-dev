@@ -1,7 +1,5 @@
-section
-  .schedule
-    background-color: $gray1
-    padding: 0
+.schedule
+  padding: 0
 
   h1
     background-color: $pink5
@@ -21,11 +19,10 @@ section
 
   .time
     display: block
-    float: left
     height: 100%
-    max-width: 50px
+    left: 0
     position: absolute
-    width: 10%
+    width: 5%
 
   .events
     display: block
@@ -44,19 +41,26 @@ section
     border-radius: 3px
     display: inline-block
     margin: 0 auto
-    margin-left: 10%
-    max-width: 800px
+    margin-left: 5%
     padding: 60px 0
     position: relative
     text-align: left
-    width: 80%
+    width: 95%
 
     &.plug-n-play
-      background-color: rgba($gray5, .2)
+      background-color: $gray1
+
+    &.virtual-world
+      background-color: $pink1
 
     .event-description
       margin: 20px 0 30px
       text-indent: 3rem
+
+  .event-content
+    margin: 0 auto
+    max-width: 700px
+    padding: 0 40px
 
   .event-details
     display: flex

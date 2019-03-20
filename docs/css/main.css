@@ -474,95 +474,90 @@ h1 {
       -o-transform: translateY(-13px) rotate(90deg);
       transform: translateY(-13px) rotate(90deg); } }
 
-section .schedule {
-  background-color: #fdfcfc;
+.schedule {
   padding: 0; }
-
-section h1 {
-  background-color: #f48971;
-  color: #fdfcfc;
-  margin-bottom: 0; }
-
-section li {
-  align-items: center;
-  display: flex;
-  font-size: 1.6rem;
-  margin: 0;
-  position: relative; }
-  section li:nth-child(1) .time {
-    background-color: #042f95; }
-  section li:nth-child(2) .time {
-    background-color: #053fc7; }
-  section li:nth-child(3) .time {
-    background-color: #064ff9; }
-  section li:nth-child(4) .time {
-    background-color: #3872fa; }
-  section li:nth-child(5) .time {
-    background-color: #6a95fb; }
-  section li:nth-child(6) .time {
-    background-color: #9cb9fc; }
-  section li:nth-child(7) .time {
-    background-color: #cddcfe; }
-  section li:nth-child(8) .time {
-    background-color: white; }
-  section li:nth-child(9) .time {
-    background-color: white; }
-  section li:nth-child(10) .time {
-    background-color: white; }
-
-section .time {
-  display: block;
-  float: left;
-  height: 100%;
-  max-width: 50px;
-  position: absolute;
-  width: 10%; }
-
-section .events {
-  display: block;
-  float: right;
-  margin: 0;
-  width: 100%; }
-
-section h4 {
-  font-weight: bold; }
-
-section .event-info {
-  color: #f3f2f2; }
-
-section .event-display {
-  border-bottom: 1px solid #f3f2f2;
-  border-radius: 3px;
-  display: inline-block;
-  margin: 0 auto;
-  margin-left: 10%;
-  max-width: 800px;
-  padding: 60px 0;
-  position: relative;
-  text-align: left;
-  width: 80%; }
-  section .event-display.plug-n-play {
-    background-color: rgba(145, 128, 110, 0.2); }
-  section .event-display .event-description {
-    margin: 20px 0 30px;
-    text-indent: 3rem; }
-
-section .event-details {
-  display: flex;
-  justify-content: space-between;
-  width: 100%; }
-  section .event-details img {
-    border: 1px solid #91806e;
-    border-radius: 100%;
-    display: block;
-    height: 50px;
-    margin-left: 0;
-    width: 50px; }
-  section .event-details .flex-left {
+  .schedule h1 {
+    background-color: #f48971;
+    color: #fdfcfc;
+    margin-bottom: 0; }
+  .schedule li {
     align-items: center;
-    display: flex; }
-    section .event-details .flex-left p {
-      margin: 0 20px; }
+    display: flex;
+    font-size: 1.6rem;
+    margin: 0;
+    position: relative; }
+    .schedule li:nth-child(1) .time {
+      background-color: #042f95; }
+    .schedule li:nth-child(2) .time {
+      background-color: #053fc7; }
+    .schedule li:nth-child(3) .time {
+      background-color: #064ff9; }
+    .schedule li:nth-child(4) .time {
+      background-color: #3872fa; }
+    .schedule li:nth-child(5) .time {
+      background-color: #6a95fb; }
+    .schedule li:nth-child(6) .time {
+      background-color: #9cb9fc; }
+    .schedule li:nth-child(7) .time {
+      background-color: #cddcfe; }
+    .schedule li:nth-child(8) .time {
+      background-color: white; }
+    .schedule li:nth-child(9) .time {
+      background-color: white; }
+    .schedule li:nth-child(10) .time {
+      background-color: white; }
+  .schedule .time {
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    width: 5%; }
+  .schedule .events {
+    display: block;
+    float: right;
+    margin: 0;
+    width: 100%; }
+  .schedule h4 {
+    font-weight: bold; }
+  .schedule .event-info {
+    color: #f3f2f2; }
+  .schedule .event-display {
+    border-bottom: 1px solid #f3f2f2;
+    border-radius: 3px;
+    display: inline-block;
+    margin: 0 auto;
+    margin-left: 5%;
+    padding: 60px 0;
+    position: relative;
+    text-align: left;
+    width: 95%; }
+    .schedule .event-display.plug-n-play {
+      background-color: #fdfcfc; }
+    .schedule .event-display.virtual-world {
+      background-color: #fce8e8; }
+    .schedule .event-display .event-description {
+      margin: 20px 0 30px;
+      text-indent: 3rem; }
+  .schedule .event-content {
+    margin: 0 auto;
+    max-width: 700px;
+    padding: 0 40px; }
+  .schedule .event-details {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; }
+    .schedule .event-details img {
+      border: 1px solid #91806e;
+      border-radius: 100%;
+      display: block;
+      height: 50px;
+      margin-left: 0;
+      width: 50px; }
+    .schedule .event-details .flex-left {
+      align-items: center;
+      display: flex; }
+      .schedule .event-details .flex-left p {
+        margin: 0 20px; }
 
 #header-main {
   z-index: 3;
