@@ -303,7 +303,7 @@
     {
       "title": "Nativescript - Mobile Dev for Web Devs",
       "speaker": "Mark Locklear",
-      "description": "Bacon ipsum dolor amet tenderloin t-bone turducken capicola beef short ribs landjaeger swine pork burgdoggen buffalo. Salami swine chicken alcatra t-bone tenderloin jowl pork loin. Kevin cupim t-bone filet mignon short loin meatloaf. Meatloaf cupim swine corned beef, strip steak flank pork belly ground round alcatra spare ribs.",
+      "description": "I was asked by a colleague if I could update a mobile app that was developed by a previous employee. I reluctantly agreed to take a look at the code thinking “I don’t know Swift or Android Development” and I am not a Mobile Developer! To my surprise and delight, I found the app was written in a framework called Nativescript. This framework has great documentation, good support on StackOverflow and a very active Slack Channel. It has a host of plugins available, along with support for Angular and Vue. Also, the code is intuitive and well organized.",
       "image": "markL.jpg",
       "location": "Plug N Play",
       "time": 11
@@ -335,7 +335,7 @@
     {
       "title": "CloudWatch-ing: Creating More Useful Logs & Alerts with AWS",
       "speaker": "Rhia Dixon",
-      "description": "Bacon ipsum dolor amet tenderloin t-bone turducken capicola beef short ribs landjaeger swine pork burgdoggen buffalo. Salami swine chicken alcatra t-bone tenderloin jowl pork loin. Kevin cupim t-bone filet mignon short loin meatloaf. Meatloaf cupim swine corned beef, strip steak flank pork belly ground round alcatra spare ribs.",
+      "description": "Logging is meaningless without alerts, and overzealous logging is inefficient. Learning to use Amazon CloudWatch for streamlined, meaningful, centralized logging and alerts can drastically reduce the time it takes to notice issues, find bugs, and fix them.",
       "image": "rhia.jpg",
       "location": "Plug N Play",
       "time": 12
@@ -343,7 +343,7 @@
     {
       "title": "\"Git hook[ed]\" on images & up your documentation game",
       "speaker": "Veronica Hanus",
-      "description": "Bacon ipsum dolor amet tenderloin t-bone turducken capicola beef short ribs landjaeger swine pork burgdoggen buffalo. Salami swine chicken alcatra t-bone tenderloin jowl pork loin. Kevin cupim t-bone filet mignon short loin meatloaf. Meatloaf cupim swine corned beef, strip steak flank pork belly ground round alcatra spare ribs.",
+      "description": "Can you remember the difference between two hex color values? Me neither! Entering visual representations of recent-changes into version control makes review of past changes easier & speeds acclimation to a new web project. Join me for a review of current methods & how to choose the best for you!",
       "image": "veronicaH.jpg",
       "location": "Virtual World",
       "time": 13
@@ -351,7 +351,7 @@
     {
       "title": "Rethinking quality and the engineers who protect it",
       "speaker": "Andrew Smelser",
-      "description": "Bacon ipsum dolor amet tenderloin t-bone turducken capicola beef short ribs landjaeger swine pork burgdoggen buffalo. Salami swine chicken alcatra t-bone tenderloin jowl pork loin. Kevin cupim t-bone filet mignon short loin meatloaf. Meatloaf cupim swine corned beef, strip steak flank pork belly ground round alcatra spare ribs.",
+      "description": "Testing software is a critical responsibility, but testing is not a synonym for quality. Shifting your approach to software quality from black box testers, to quality coaching could lead to delivering higher quality products. In this talk, I share strategies for coaching quality, without testers!",
       "image": "andrewS.jpg",
       "location": "Plug N Play",
       "time": 14
@@ -365,9 +365,9 @@
       "time": 14
     },
     {
-      "title": ":Building Quality Assurance:",
+      "title": "How to Deliver Quality Software",
       "speaker": "Jeanne Schmidt",
-      "description": "Bacon ipsum dolor amet tenderloin t-bone turducken capicola beef short ribs landjaeger swine pork burgdoggen buffalo. Salami swine chicken alcatra t-bone tenderloin jowl pork loin. Kevin cupim t-bone filet mignon short loin meatloaf. Meatloaf cupim swine corned beef, strip steak flank pork belly ground round alcatra spare ribs.",
+      "description": "How mature development teams deliver quality software. Teams who strive to deliver software in a continuous integration and continuous delivery environment must ensure that their quick deployments work as expected.  Jeanne provide strategies and real world examples of successful software development projects.  She'll cover agile development and testing techniques, automation guidance and specific steps teams can use to \"bake in\" quality during the design phase through delivery.",
       "image": "jeanneS.jpg",
       "location": "Plug N Play",
       "time": 15
@@ -375,7 +375,7 @@
     {
       "title": "Coding with Compassion",
       "speaker": "Jessica King",
-      "description": "Bacon ipsum dolor amet tenderloin t-bone turducken capicola beef short ribs landjaeger swine pork burgdoggen buffalo. Salami swine chicken alcatra t-bone tenderloin jowl pork loin. Kevin cupim t-bone filet mignon short loin meatloaf. Meatloaf cupim swine corned beef, strip steak flank pork belly ground round alcatra spare ribs.",
+      "description": "Have you ever treated the word “User” like a 4-letter word?“ Has your software ever been described as “complicated”, “not user friendly”, or “confusing”? Have you ever had your software used incorrectly or not at all? At the end of this talk, you should come away with concrete ways you can flip those notions upside down and have your users truly believe you’re the best and always have their interests in mind. ",
       "image": "jessicaK.jpg",
       "location": "Virtual World",
       "time": 15
