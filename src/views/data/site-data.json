@@ -170,7 +170,27 @@
       },
       {
         "name": "gray",
-        "link": "",
+        "link": "https://planwithgray.com/",
+        "level": "community"
+      },
+      {
+        "name": "uniti",
+        "link": "https://uniti.com/fiber/",
+        "level": "silver"
+      },
+      {
+        "name": "bgit",
+        "link": "https://browngirlsintech.com/",
+        "level": "community"
+      },
+      {
+        "name": "bgc",
+        "link": "https://www.browngirlscode.org/",
+        "level": "community"
+      },
+      {
+        "name": "moonrise",
+        "link": "https://moonrise.works/",
         "level": "community"
       }
     ],
