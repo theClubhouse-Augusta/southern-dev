@@ -146,8 +146,13 @@
         },
         {
           "name": "gray",
-          "link": "",
+          "link": "https://planwithgray.com/",
           "level": "community"
+        },
+        {
+          "name": "uniti",
+          "link": "https://uniti.com/fiber/",
+          "level": "silver"
         }
       ],
       "events": [
