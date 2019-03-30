@@ -1,11 +1,14 @@
 - var imageUrl = event.image
-div(class='event-display')
-  p(class='event-title')= event.title
-  div(class='event-speaker-div')
-    p(class='event-speaker')= event.speaker
-  div(class='event-place')
-    p(class='event-location')= event.location
-    p(class='event-time')= event.time
-  br
-  p= event.description
-  img(class='event-image'  src='../images/' + imageUrl)
+- var eventLocation = event.location.toLowerCase().split(' ').join('-')
+
+.event-display(class= eventLocation)
+  .event-content
+    h4.event-title= event.title
+    p.event-description= event.description
+    .event-details
+      .flex-left
+        img.event-image(src='../images/speaker-' + imageUrl)
+        p.event-speaker-name= event.speaker
+      .flex-right
+        //- p.event-location Room: #{event.location}
+        //- p.event-time Time: #{event.time}
