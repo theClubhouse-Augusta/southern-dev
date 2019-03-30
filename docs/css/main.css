@@ -522,7 +522,7 @@ h1 {
   .schedule .event-info {
     color: #f3f2f2; }
   .schedule .event-display {
-    border-bottom: 1px solid #f3f2f2;
+    border-bottom: 1px solid #bcb3a9;
     border-radius: 3px;
     display: inline-block;
     margin: 0 auto;
@@ -531,10 +531,6 @@ h1 {
     position: relative;
     text-align: left;
     width: 95%; }
-    .schedule .event-display.plug-n-play {
-      background-color: #fdfcfc; }
-    .schedule .event-display.virtual-world {
-      background-color: #fce8e8; }
     .schedule .event-display .event-description {
       margin: 20px 0 30px;
       text-indent: 3rem; }

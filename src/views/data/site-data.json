@@ -268,10 +268,11 @@
       "level": "community"
     }
   ],
-  "events": [{
+  "events": [
+    {
       "title": "From Combat to Code: How Open Source Opens Doors",
       "speaker": "Jerome Hardaway",
-      "description": "Bacon ipsum dolor amet tenderloin t-bone turducken capicola beef short ribs landjaeger swine pork burgdoggen buffalo. Salami swine chicken alcatra t-bone tenderloin jowl pork loin. Kevin cupim t-bone filet mignon short loin meatloaf. Meatloaf cupim swine corned beef, strip steak flank pork belly ground round alcatra spare ribs.",
+      "description": "",
       "image": "jerome.jpg",
       "location": "Plug N Play",
       "time": 9
@@ -285,9 +286,9 @@
       "time": 9
     },
     {
-      "title": ":Accessibility and Civic engagement:",
+      "title": "Trying Stuff and Seeing What Happens: Accessibility and Civic Hacking",
       "speaker": "Mark Noonan",
-      "description": "Bacon ipsum dolor amet tenderloin t-bone turducken capicola beef short ribs landjaeger swine pork burgdoggen buffalo. Salami swine chicken alcatra t-bone tenderloin jowl pork loin. Kevin cupim t-bone filet mignon short loin meatloaf. Meatloaf cupim swine corned beef, strip steak flank pork belly ground round alcatra spare ribs.",
+      "description": "This talk will look at the themes of impact and accessibility by discussing three civic hacking projects involving Code for Atlanta. We will talk about one project related to paratransit service delivery that raised $40,000 for charity and helped influence MARTA's online paratransit experience. Then we'll discuss a project that uses a commercial game truck as a venue for coding classes for teenagers. Finally we'll take a look at work in-progress on a project related to realtime automated transcriptions and translations of live events. All three share the same goal: increased access to information, education, and services. And all three projects operate with an approach familiar to all kinds of developers: get out there and try stuff. Run pilots. Get feedback. See what happens. ",
       "image": "markN.jpg",
       "location": "Plug N Play",
       "time": 10
@@ -295,7 +296,7 @@
     {
       "title": "UX++",
       "speaker": "Harsha Vemulapaulli",
-      "description": "Bacon ipsum dolor amet tenderloin t-bone turducken capicola beef short ribs landjaeger swine pork burgdoggen buffalo. Salami swine chicken alcatra t-bone tenderloin jowl pork loin. Kevin cupim t-bone filet mignon short loin meatloaf. Meatloaf cupim swine corned beef, strip steak flank pork belly ground round alcatra spare ribs.",
+      "description": "for any product or service to be considered exceptional it has to deliver an exceptional user experience. His talk will explore the components of exceptional experiences across software solutions as diverse as plain old web sites (is that a thing any more) to the new frontiers of wearables, voice and beyond.",
       "image": "harsha.jpg",
       "location": "Virtual World",
       "time": 10
@@ -311,23 +312,15 @@
     {
       "title": "Updating a Classic: .NET to NodeJS",
       "speaker": "Patrick Rodgers",
-      "description": "Bacon ipsum dolor amet tenderloin t-bone turducken capicola beef short ribs landjaeger swine pork burgdoggen buffalo. Salami swine chicken alcatra t-bone tenderloin jowl pork loin. Kevin cupim t-bone filet mignon short loin meatloaf. Meatloaf cupim swine corned beef, strip steak flank pork belly ground round alcatra spare ribs.",
+      "description": "The story of a development team updating a classic asp site to use node.js and C# without anyone knowing.",
       "image": "patrickR.png",
       "location": "Virtual World",
       "time": 11
     },
     {
-      "title": ":Containerization and Training:",
-      "speaker": "Bowe Strickland",
-      "description": "Bacon ipsum dolor amet tenderloin t-bone turducken capicola beef short ribs landjaeger swine pork burgdoggen buffalo. Salami swine chicken alcatra t-bone tenderloin jowl pork loin. Kevin cupim t-bone filet mignon short loin meatloaf. Meatloaf cupim swine corned beef, strip steak flank pork belly ground round alcatra spare ribs.",
-      "image": "boweS.png",
-      "location": "Plug N Play",
-      "time": 11
-    },
-    {
       "title": "Mentoring: Creating Masters",
       "speaker": "Wes Dollar",
-      "description": "Bacon ipsum dolor amet tenderloin t-bone turducken capicola beef short ribs landjaeger swine pork burgdoggen buffalo. Salami swine chicken alcatra t-bone tenderloin jowl pork loin. Kevin cupim t-bone filet mignon short loin meatloaf. Meatloaf cupim swine corned beef, strip steak flank pork belly ground round alcatra spare ribs.",
+      "description": "",
       "image": "wesD.jpg",
       "location": "Virtual World",
       "time": 12
@@ -357,14 +350,6 @@
       "time": 14
     },
     {
-      "title": ":Inclusivity and Community building:",
-      "speaker": "Erica Stanley",
-      "description": "Bacon ipsum dolor amet tenderloin t-bone turducken capicola beef short ribs landjaeger swine pork burgdoggen buffalo. Salami swine chicken alcatra t-bone tenderloin jowl pork loin. Kevin cupim t-bone filet mignon short loin meatloaf. Meatloaf cupim swine corned beef, strip steak flank pork belly ground round alcatra spare ribs.",
-      "image": "ericaS.jpg",
-      "location": "Virtual World",
-      "time": 14
-    },
-    {
       "title": "How to Deliver Quality Software",
       "speaker": "Jeanne Schmidt",
       "description": "How mature development teams deliver quality software. Teams who strive to deliver software in a continuous integration and continuous delivery environment must ensure that their quick deployments work as expected.  Jeanne provide strategies and real world examples of successful software development projects.  She'll cover agile development and testing techniques, automation guidance and specific steps teams can use to \"bake in\" quality during the design phase through delivery.",
@@ -379,6 +364,25 @@
       "image": "jessicaK.jpg",
       "location": "Virtual World",
       "time": 15
+    },
+    {
+      "title": "What Building Communities Taught Me About Building Inclusive Engineering Teams",
+      "speaker": "Erica Stanley",
+      "description": "I was once that engineer that thought she would never move into management. I loved coding my days, and often nights away. Why would I ever want to stop? My ideas about management began to change once I started the Atlanta network of Women Who Code. I've learned so much about the people challenges we face in tech, while also learning how to empower the people around me to get big things done. What I didn't realize until years later was how these experiences were preparing me to build inclusive teams and lead and motivate engineers from various backgrounds to work collaboratively. This session will share some of my lessons learned as a community leader and how I've applied them in my role as an engineering manager. We'll also discuss ways building communities can help companies grow their team and their engineering brand.",
+      "image": "ericaS.jpg",
+      "location": "Virtual World",
+      "time": 14
+    }
+  ],
+  "tbr":
+  [
+    {
+      "title": ":Containerization:",
+      "speaker": "Bowe Strickland",
+      "description": "Bacon ipsum dolor amet tenderloin t-bone turducken capicola beef short ribs landjaeger swine pork burgdoggen buffalo. Salami swine chicken alcatra t-bone tenderloin jowl pork loin. Kevin cupim t-bone filet mignon short loin meatloaf. Meatloaf cupim swine corned beef, strip steak flank pork belly ground round alcatra spare ribs.",
+      "image": "boweS.png",
+      "location": "Plug N Play",
+      "time": 11
     }
   ]
 }
