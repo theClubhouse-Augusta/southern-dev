@@ -480,32 +480,6 @@ h1 {
     background-color: #f48971;
     color: #fdfcfc;
     margin-bottom: 0; }
-  .schedule li {
-    align-items: center;
-    display: flex;
-    font-size: 1.6rem;
-    margin: 0;
-    position: relative; }
-    .schedule li:nth-child(1) .time {
-      background-color: #042f95; }
-    .schedule li:nth-child(2) .time {
-      background-color: #053fc7; }
-    .schedule li:nth-child(3) .time {
-      background-color: #064ff9; }
-    .schedule li:nth-child(4) .time {
-      background-color: #3872fa; }
-    .schedule li:nth-child(5) .time {
-      background-color: #6a95fb; }
-    .schedule li:nth-child(6) .time {
-      background-color: #9cb9fc; }
-    .schedule li:nth-child(7) .time {
-      background-color: #cddcfe; }
-    .schedule li:nth-child(8) .time {
-      background-color: white; }
-    .schedule li:nth-child(9) .time {
-      background-color: white; }
-    .schedule li:nth-child(10) .time {
-      background-color: white; }
   .schedule .time {
     display: block;
     height: 100%;
@@ -554,6 +528,32 @@ h1 {
       display: flex; }
       .schedule .event-details .flex-left p {
         margin: 0 20px; }
+  .schedule li {
+    align-items: center;
+    display: flex;
+    font-size: 1.6rem;
+    margin: 0;
+    position: relative; }
+    .schedule li:nth-child(1) .time {
+      background-color: #042f95; }
+    .schedule li:nth-child(2) .time {
+      background-color: #053fc7; }
+    .schedule li:nth-child(3) .time {
+      background-color: #064ff9; }
+    .schedule li:nth-child(4) .time {
+      background-color: #3872fa; }
+    .schedule li:nth-child(5) .time {
+      background-color: #6a95fb; }
+    .schedule li:nth-child(6) .time {
+      background-color: #9cb9fc; }
+    .schedule li:nth-child(7) .time {
+      background-color: #cddcfe; }
+    .schedule li:nth-child(8) .time {
+      background-color: white; }
+    .schedule li:nth-child(9) .time {
+      background-color: white; }
+    .schedule li:nth-child(10) .time {
+      background-color: white; }
 
 #header-main {
   z-index: 3;

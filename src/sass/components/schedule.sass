@@ -6,17 +6,6 @@
     color: $gray1
     margin-bottom: 0
 
-  li
-    align-items: center
-    display: flex
-    font-size: 1.6rem
-    margin: 0
-    position: relative
-    @for $i from 1 through 10
-      &:nth-child(#{$i})
-        .time
-          background-color: lighten($blue9, $i * 10%)
-
   .time
     display: block
     height: 100%
@@ -84,3 +73,13 @@
       p
         margin: 0 20px
 
+  li
+    align-items: center
+    display: flex
+    font-size: 1.6rem
+    margin: 0
+    position: relative
+    @for $i from 1 through 10
+      &:nth-child(#{$i})
+        .time
+          background-color: lighten($blue9, $i * 10%)
