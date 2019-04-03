@@ -226,6 +226,26 @@ h1 {
   width: 90%;
   margin: 0 auto; }
 
+.contact .get-involved {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%; }
+  .contact .get-involved h3 {
+    margin: 20px;
+    font-weight: bold; }
+  .contact .get-involved .container {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.4);
+    margin: 20px;
+    border-radius: 5px;
+    width: 300px; }
+  .contact .get-involved .icon {
+    display: block;
+    font-size: 60px;
+    color: #a3aaf5; }
+  .contact .get-involved .button {
+    margin: 20px; }
+
 .slick {
   display: block;
   height: 50vh;
