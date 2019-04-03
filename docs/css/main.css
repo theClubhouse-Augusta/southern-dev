@@ -238,7 +238,8 @@ h1 {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.4);
     margin: 20px;
     border-radius: 5px;
-    width: 300px; }
+    width: 100%;
+    max-width: 275px; }
   .contact .get-involved .icon {
     display: block;
     font-size: 60px;
@@ -705,6 +706,23 @@ h1 {
     color: #456abf; }
   .footerMain li:nth-child(even) a:hover {
     color: #f48971; }
+  .footerMain .fa-facebook-square {
+    color: #3C5A99; }
+  .footerMain .fa-twitter {
+    color: #38A1F3; }
+  .footerMain .fa-linkedin {
+    color: #0077B5; }
+  .footerMain ul#social {
+    margin-left: 0; }
+    .footerMain ul#social li {
+      display: inline;
+      padding-right: 20px; }
+      .footerMain ul#social li:hover .fa-facebook-square,
+      .footerMain ul#social li:hover .fa-twitter,
+      .footerMain ul#social li:hover .fa-linkedin {
+        color: #faaf9e; }
+    .footerMain ul#social a {
+      font-size: 2.4rem; }
 
 body {
   width: 100%;
