@@ -164,6 +164,21 @@
     "level": "silver"
   },
   {
+    "name": "uniti",
+    "link": "https://uniti.com/fiber/",
+    "level": "silver"
+  },
+  {
+    "name": "RSI",
+    "link": "https://www.ruralsourcing.com/",
+    "level": "silver"
+  },
+  {
+    "name": "bsides",
+    "link": "https://bsidesaugusta.org/",
+    "level": "silver"
+  },
+  {
     "name": "github",
     "link": "https://github.com/",
     "level": "community"
@@ -172,11 +187,6 @@
     "name": "gray",
     "link": "https://planwithgray.com/",
     "level": "community"
-  },
-  {
-    "name": "uniti",
-    "link": "https://uniti.com/fiber/",
-    "level": "silver"
   },
   {
     "name": "bgit",
@@ -191,6 +201,11 @@
   {
     "name": "moonrise",
     "link": "https://moonrise.works/",
+    "level": "community"
+  },
+  {
+    "name": "eventbrite",
+    "link": "https://www.eventbrite.com",
     "level": "community"
   }
   ],
