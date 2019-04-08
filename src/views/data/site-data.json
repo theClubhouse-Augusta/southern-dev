@@ -164,6 +164,21 @@
     "level": "silver"
   },
   {
+    "name": "uniti",
+    "link": "https://uniti.com/fiber/",
+    "level": "silver"
+  },
+  {
+    "name": "RSI",
+    "link": "https://www.ruralsourcing.com/",
+    "level": "silver"
+  },
+  {
+    "name": "bsides",
+    "link": "https://bsidesaugusta.org/",
+    "level": "silver"
+  },
+  {
     "name": "github",
     "link": "https://github.com/",
     "level": "community"
@@ -172,11 +187,6 @@
     "name": "gray",
     "link": "https://planwithgray.com/",
     "level": "community"
-  },
-  {
-    "name": "uniti",
-    "link": "https://uniti.com/fiber/",
-    "level": "silver"
   },
   {
     "name": "bgit",
@@ -191,6 +201,11 @@
   {
     "name": "moonrise",
     "link": "https://moonrise.works/",
+    "level": "community"
+  },
+  {
+    "name": "eventbrite",
+    "link": "https://www.eventbrite.com",
     "level": "community"
   }
   ],
@@ -246,7 +261,7 @@
     {
       "title": "Mentoring: Creating Masters",
       "speaker": "Wes Dollar",
-      "description": "",
+      "description": "All dev shops share a few common traits - there's never enough hours in the day, we always need more velocity, and creating or adding more talent is always at the top of the list. In this talk, Wes will guide us through his tried and true methods for raising the level of talent across the team, providing tips, tricks, and valuable insight on how to create masters by making room for mentoring in your team's day-to-day workflow.",
       "image": "wesD.jpg",
       "location": "Virtual World",
       "time": 12
