@@ -3,7 +3,7 @@ section.speakers
     h1 Speakers
   div#bios
     each speaker in speakers
-      .bio
+      div(class="bio" id=speaker["name"].split(' ').join('') )
         img(src="../images/speaker-" + speaker.image)
         .txt-container
           if speaker["social-media"]
