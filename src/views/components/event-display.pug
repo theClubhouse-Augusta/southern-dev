@@ -1,7 +1,8 @@
 - var imageUrl = event.image
 - var eventLocation = event.location.toLowerCase().split(' ').join('-')
 
-.event-display(class= eventLocation)
+
+a.event-display(class=eventLocation href=`speakers.html#${event.speaker.split(' ').join('')}`)
   .event-content
     h4.event-title= event.title
     p.event-description= event.description
