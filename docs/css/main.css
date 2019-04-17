@@ -576,6 +576,17 @@ h1 {
     .schedule li:nth-child(10) .time {
       background-color: white; }
 
+.btn-runcode {
+  width: 40%;
+  margin: auto;
+  display: block; }
+
+.btn-runcode-learn {
+  float: left; }
+
+.btn-runcode-sign {
+  float: right; }
+
 #header-main {
   z-index: 3;
   overflow: hidden;
