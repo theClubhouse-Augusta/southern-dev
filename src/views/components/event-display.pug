@@ -1,11 +1,12 @@
 - var imageUrl = event.image
 - var eventLocation = event.location.toLowerCase().split(' ').join('-')
 
-.event-display(class= eventLocation)
+
+.event-display(class=eventLocation)
   .event-content
     h4.event-title= event.title
     p.event-description= event.description
-    .event-details
+    a.event-details(href=`speakers.html#${event.speaker.split(' ').join('')}`, style="text-decoration:none;")
       .flex-left
         img.event-image(src='../images/speaker-' + imageUrl)
         p.event-speaker-name(id=event.speaker.split(' ').join('')) #{event.speaker}
