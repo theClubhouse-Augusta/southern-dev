@@ -37,13 +37,26 @@ section.speakers {
     color: #fdfcfc;
     background-color: #f48971; }
   section.speakers .bio {
-    border-radius: 3px;
-    padding: 60px 0;
+    position: relative;
     text-align: left;
     width: 100%;
     max-width: 800px;
     margin: 0 auto;
-    border-bottom: 1px solid #f3f2f2; }
+    border-bottom: 1px solid #bcb3a9; }
+    section.speakers .bio:before {
+      display: block;
+      content: " ";
+      margin-top: -100px;
+      height: 100px;
+      visibility: hidden;
+      pointer-events: none;
+      padding-bottom: 60px; }
+    section.speakers .bio:after {
+      display: block;
+      content: " ";
+      visibility: hidden;
+      pointer-events: none;
+      padding-top: 60px; }
     section.speakers .bio .fa-twitter {
       color: #a3aaf5; }
     section.speakers .bio img {

@@ -5,13 +5,30 @@ section.speakers
     color: $gray1
     background-color: $pink5
   .bio
-    border-radius: 3px
-    padding: 60px 0
+    position: relative
+    // border-radius: 3px
+    // padding: 60px 0
     text-align: left
     width: 100%
     max-width: 800px
     margin: 0 auto
-    border-bottom: 1px solid $gray2
+    border-bottom: 1px solid $gray3
+
+    &:before
+      display: block
+      content: " "
+      margin-top: -100px
+      height: 100px
+      visibility: hidden
+      pointer-events: none
+      padding-bottom: 60px
+    &:after
+      display: block
+      content: " "
+      visibility: hidden
+      pointer-events: none
+      padding-top: 60px
+
     .fa-twitter
       color: $blue3
     img
