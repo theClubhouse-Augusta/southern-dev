@@ -587,6 +587,10 @@ h1 {
 .btn-runcode-sign {
   float: right; }
 
+@media only screen and (max-width: 800px) {
+  .runcode-info {
+    display: none; } }
+
 #header-main {
   z-index: 3;
   overflow: hidden;
