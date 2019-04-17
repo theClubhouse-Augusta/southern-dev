@@ -27,6 +27,6 @@ include ../layouts/header.pug
                         //- img(src="", alt="") placeholder for pics
                         h3= member["name"].split(' ').join('')
                         h4= member["slack"]
-                        p= member["info"]
+                        p(class="runcode-info")= member["info"]
 
     include ../layouts/footer.pug
