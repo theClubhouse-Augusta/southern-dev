@@ -228,31 +228,63 @@
       "speaker": "Eric Harrison",
       "description": "In this talk, Eric will explore the looming American financial crisis and our responsibility as engineers to use software  and automation to help the financially challenged. We’ll cover potential solutions using Moonrise as a case study and envision a better American economy through efficiency optimizations.",
       "image": "eric.png",
-      "location": "Room 2",
-      "time": 10
-    },
-    {
-      "title": "Trying Stuff and Seeing What Happens: Accessibility and Civic Hacking",
-      "speaker": "Mark Noonan",
-      "description": "This talk will look at the themes of impact and accessibility by discussing three civic hacking projects involving Code for Atlanta. We will talk about one project related to paratransit service delivery that raised $40,000 for charity and helped influence MARTA's online paratransit experience. Then we'll discuss a project that uses a commercial game truck as a venue for coding classes for teenagers. Finally we'll take a look at work in-progress on a project related to realtime automated transcriptions and translations of live events. All three share the same goal: increased access to information, education, and services. And all three projects operate with an approach familiar to all kinds of developers: get out there and try stuff. Run pilots. Get feedback. See what happens. ",
-      "image": "markN.jpg",
       "location": "Room 1",
-      "time": 16
+      "time": 10
     },
     {
       "title": "UX++",
       "speaker": "Harsha Vemulapaulli",
       "description": "for any product or service to be considered exceptional it has to deliver an exceptional user experience. His talk will explore the components of exceptional experiences across software solutions as diverse as plain old web sites (is that a thing any more) to the new frontiers of wearables, voice and beyond.",
       "image": "harsha.jpg",
-      "location": "Room 2",
+      "location": "Room 1",
       "time": 11
+    },
+    {
+      "title": "CloudWatch-ing: Creating More Useful Logs & Alerts with AWS",
+      "speaker": "Rhia Dixon",
+      "description": "Logging is meaningless without alerts, and overzealous logging is inefficient. Learning to use Amazon CloudWatch for streamlined, meaningful, centralized logging and alerts can drastically reduce the time it takes to notice issues, find bugs, and fix them.",
+      "image": "rhia.jpg",
+      "location": "Room 1",
+      "time": 13
+    },
+    {
+      "title": "\"Git hook[ed]\" on images & up your documentation game",
+      "speaker": "Veronica Hanus",
+      "description": "Can you remember the difference between two hex color values? Me neither! Entering visual representations of recent-changes into version control makes review of past changes easier & speeds acclimation to a new web project. Join me for a review of current methods & how to choose the best for you!",
+      "image": "veronicaH.jpg",
+      "location": "Room 1",
+      "time": 14
+    },
+    {
+      "title": "Rethinking quality and the engineers who protect it",
+      "speaker": "Andrew Smelser",
+      "description": "Testing software is a critical responsibility, but testing is not a synonym for quality. Shifting your approach to software quality from black box testers, to quality coaching could lead to delivering higher quality products. In this talk, I share strategies for coaching quality, without testers!",
+      "image": "andrewS.jpg",
+      "location": "Room 1",
+      "time": 15
+    },
+    {
+      "title": "What Building Communities Taught Me About Building Inclusive Engineering Teams",
+      "speaker": "Erica Stanley",
+      "description": "I was once that engineer that thought she would never move into management. I loved coding my days, and often nights away. Why would I ever want to stop? My ideas about management began to change once I started the Atlanta network of Women Who Code. I've learned so much about the people challenges we face in tech, while also learning how to empower the people around me to get big things done. What I didn't realize until years later was how these experiences were preparing me to build inclusive teams and lead and motivate engineers from various backgrounds to work collaboratively. This session will share some of my lessons learned as a community leader and how I've applied them in my role as an engineering manager. We'll also discuss ways building communities can help companies grow their team and their engineering brand.",
+      "image": "ericaS.jpg",
+      "location": "Room 1",
+      "time": 16
+    },
+    {
+      "title": "Trying Stuff and Seeing What Happens: Accessibility and Civic Hacking",
+      "speaker": "Mark Noonan",
+      "description": "This talk will look at the themes of impact and accessibility by discussing three civic hacking projects involving Code for Atlanta. We will talk about one project related to paratransit service delivery that raised $40,000 for charity and helped influence MARTA's online paratransit experience. Then we'll discuss a project that uses a commercial game truck as a venue for coding classes for teenagers. Finally we'll take a look at work in-progress on a project related to realtime automated transcriptions and translations of live events. All three share the same goal: increased access to information, education, and services. And all three projects operate with an approach familiar to all kinds of developers: get out there and try stuff. Run pilots. Get feedback. See what happens. ",
+      "image": "markN.jpg",
+      "location": "Room 2",
+      "time": 16
     },
     {
       "title": "Nativescript - Mobile Dev for Web Devs",
       "speaker": "Mark Locklear",
       "description": "I was asked by a colleague if I could update a mobile app that was developed by a previous employee. I reluctantly agreed to take a look at the code thinking “I don’t know Swift or Android Development” and I am not a Mobile Developer! To my surprise and delight, I found the app was written in a framework called Nativescript. This framework has great documentation, good support on StackOverflow and a very active Slack Channel. It has a host of plugins available, along with support for Angular and Vue. Also, the code is intuitive and well organized.",
       "image": "markL.jpg",
-      "location": "Room 1",
+      "location": "Room 2",
       "time": 14
     },
     {
@@ -272,35 +304,11 @@
       "time": 13
     },
     {
-      "title": "CloudWatch-ing: Creating More Useful Logs & Alerts with AWS",
-      "speaker": "Rhia Dixon",
-      "description": "Logging is meaningless without alerts, and overzealous logging is inefficient. Learning to use Amazon CloudWatch for streamlined, meaningful, centralized logging and alerts can drastically reduce the time it takes to notice issues, find bugs, and fix them.",
-      "image": "rhia.jpg",
-      "location": "Room 1",
-      "time": 13
-    },
-    {
-      "title": "\"Git hook[ed]\" on images & up your documentation game",
-      "speaker": "Veronica Hanus",
-      "description": "Can you remember the difference between two hex color values? Me neither! Entering visual representations of recent-changes into version control makes review of past changes easier & speeds acclimation to a new web project. Join me for a review of current methods & how to choose the best for you!",
-      "image": "veronicaH.jpg",
-      "location": "Room 2",
-      "time": 14
-    },
-    {
-      "title": "Rethinking quality and the engineers who protect it",
-      "speaker": "Andrew Smelser",
-      "description": "Testing software is a critical responsibility, but testing is not a synonym for quality. Shifting your approach to software quality from black box testers, to quality coaching could lead to delivering higher quality products. In this talk, I share strategies for coaching quality, without testers!",
-      "image": "andrewS.jpg",
-      "location": "Room 1",
-      "time": 15
-    },
-    {
       "title": "How to Deliver Quality Software",
       "speaker": "Jeanne Schmidt",
       "description": "How mature development teams deliver quality software. Teams who strive to deliver software in a continuous integration and continuous delivery environment must ensure that their quick deployments work as expected.  Jeanne provide strategies and real world examples of successful software development projects.  She'll cover agile development and testing techniques, automation guidance and specific steps teams can use to \"bake in\" quality during the design phase through delivery.",
       "image": "jeanneS.jpg",
-      "location": "Room 1",
+      "location": "Room 2",
       "time": 10
     },
     {
@@ -312,19 +320,11 @@
       "time": 9
     },
     {
-      "title": "What Building Communities Taught Me About Building Inclusive Engineering Teams",
-      "speaker": "Erica Stanley",
-      "description": "I was once that engineer that thought she would never move into management. I loved coding my days, and often nights away. Why would I ever want to stop? My ideas about management began to change once I started the Atlanta network of Women Who Code. I've learned so much about the people challenges we face in tech, while also learning how to empower the people around me to get big things done. What I didn't realize until years later was how these experiences were preparing me to build inclusive teams and lead and motivate engineers from various backgrounds to work collaboratively. This session will share some of my lessons learned as a community leader and how I've applied them in my role as an engineering manager. We'll also discuss ways building communities can help companies grow their team and their engineering brand.",
-      "image": "ericaS.jpg",
-      "location": "Room 2",
-      "time": 16
-    },
-    {
       "title": "From Pets to Cattle: Deploying Web Applications with Kubernetes",
       "speaker": "Bowe Strickland",
       "description": "The world has become accustomed to \"always on\" web applications (can you imagine Gmail announcing a maintenance outage?). This talk will discuss open source techniques for managing highly available web applications, using Docker containers to tighten the flow from development to deployment, Kubernetes to orchestrate graceful application upgrades, and how to design applications to best take advantage of these approaches. The talk will conclude with a brief demonstration (if the demo gods are willing...).",
       "image": "boweS.png",
-      "location": "Room 1",
+      "location": "Room 2",
       "time": 15
     }
   ]
