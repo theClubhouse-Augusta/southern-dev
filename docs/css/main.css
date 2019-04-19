@@ -569,23 +569,23 @@ h1 {
     margin: 0;
     position: relative; }
     .schedule li:nth-child(1) .time {
-      background-color: #042f95; }
+      background-color: #042c8b; }
     .schedule li:nth-child(2) .time {
-      background-color: #053fc7; }
+      background-color: #0539b3; }
     .schedule li:nth-child(3) .time {
-      background-color: #064ff9; }
+      background-color: #0646db; }
     .schedule li:nth-child(4) .time {
-      background-color: #3872fa; }
+      background-color: #1056f9; }
     .schedule li:nth-child(5) .time {
-      background-color: #6a95fb; }
+      background-color: #3872fa; }
     .schedule li:nth-child(6) .time {
-      background-color: #9cb9fc; }
+      background-color: #608efb; }
     .schedule li:nth-child(7) .time {
-      background-color: #cddcfe; }
+      background-color: #88abfc; }
     .schedule li:nth-child(8) .time {
-      background-color: white; }
+      background-color: #afc7fd; }
     .schedule li:nth-child(9) .time {
-      background-color: white; }
+      background-color: #d7e3fe; }
     .schedule li:nth-child(10) .time {
       background-color: white; }
 
