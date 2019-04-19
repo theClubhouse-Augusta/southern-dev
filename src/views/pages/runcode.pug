@@ -1,28 +1,46 @@
 - var page = "runcode"
-include ../layouts/header.pug 
+include ../layouts/header.pug
 #body-wrapper
     main.runcode
-        section.competition 
-            h1 Programming Competition 
-            h3 Presented By 
-            h2 RunCode 
-            img(src="images/sponsor-runcode.png")
-            p Starts 5pm @_Clubhouse Friday April 26th
-            p Ends 5pm @_Clubhouse Saturday April 27th
-            p Competitors on site are eligible for prizes!
-            br
-            p This year RunCode is going to be running a programming competition for the conference and we're stoked! RunCode has a super smart team of folks who are building out some challenges just for us. You will also get to come out and meet them as they will be on site helping you level up your code fu. 
-            br
-            .button-cont(class="btn-runcode") 
-                a(href="https://docs.runcode.ninja/" class="button btn-runcode-learn") 
-                    button Learn More 
-                a(href="https://runcode.ninja/" class="button btn-runcode-sign")
-                    button Sign Up 
-                
-        .runcode-team
-            h2 Team Members 
-            div#teamMembers 
-                each member in runcodeTeam 
+
+        section.competition
+            header
+                h1 Programming Competition
+                .content-wrapper
+                    h2 Presented By
+                        br
+                        span RunCode
+                    img.logo(src="images/sponsor-runcode.png" href="runcode.ninja" target="_blank" rel="noreferrer")
+
+                    ul
+                        li
+                            span.blue Starts
+                            |  5pm&#160;
+                            a(href="https://theclubhou.se") @_Clubhouse&#160;
+                            u Friday April 26th
+                        li
+                            span.pink Ends
+                            |  5pm&#160;
+                            a(href="https://theclubhou.se") @_Clubhouse&#160;
+                            u Saturday April 27th
+                        li On site competitors are eligible for prizes!
+            .content-wrapper
+                p.summary This year RunCode is going to be running a programming competition for the conference and we're stoked! RunCode has a super smart team of folks who are building out some challenges just for us. You will also get to come out and meet them as they will be on site helping you level up your code fu.
+
+                .ctas
+                    .cta
+                        p New to RunCode
+                        a(href="https://runcode.ninja/" class="button btn-runcode-sign")
+                            button Sign Up
+                    .cta
+                        p Checkout RunCode
+                        a(href="https://docs.runcode.ninja/" class="button btn-runcode-learn")
+                            button Philosophy
+
+        section.runcode-team
+            h2 Team Members
+            div#teamMembers
+                each member in runcodeTeam
                     div(id=member["name"].split(' ').join('') )
                         //- img(src="", alt="") placeholder for pics
                         h3= member["name"].split(' ').join('')
