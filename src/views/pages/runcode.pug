@@ -10,7 +10,7 @@ include ../layouts/header.pug
                     h2 Presented By
                         br
                         span RunCode
-                    img.logo(src="images/sponsor-runcode.png" href="runcode.ninja" target="_blank" rel="noreferrer")
+                    img.logo(src="images/sponsor-runcode.png" href="https://runcode.ninja" target="_blank" rel="noreferrer")
 
                     ul
                         li
@@ -38,13 +38,15 @@ include ../layouts/header.pug
                             button Philosophy
 
         section.runcode-team
-            h2 Team Members
-            div#teamMembers
+            header
+                h2 Team Members
+            .team-members
                 each member in runcodeTeam
-                    div(id=member["name"].split(' ').join('') )
-                        //- img(src="", alt="") placeholder for pics
-                        h3= member["name"].split(' ').join('')
-                        h4= member["slack"]
-                        p(class="runcode-info")= member["info"]
+                    .team-member
+                        img(src="../images/" + member.image)
+                        h3= member.name
+                            br
+                            = member.slack
+                        p= member.info
 
     include ../layouts/footer.pug

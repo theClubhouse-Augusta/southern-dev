@@ -332,16 +332,20 @@
     {
       "name": "Josh Rykowski",
       "slack": "ryko212",
+      "twitter": "https://twitter.com/ryko212",
+      "image": "runcode-ryko212.jpg",
       "info": "Josh Rykowski currently serves as a Cyberspace operations officer for the US Army where he has lead a Cyber Protection Team and worked to develop specialized training for those same teams. On his convoluted path to cybersecurity he obtained a Bachelors of Science in Electrical Engineering from the United States Military Academy and a Masters Degree in Computer Science from Rice University focusing on multi-robot systems. \n In his spare time, Josh serves as the executive director and challenge developer for the RunCode.ninja programming challenge non-profit where he works with a talented team of individuals to provide real-world programming challenges while cultivating community support at no-cost to the broader community. \n Finally, he is passionate about teaching and giving back to the community through volunteering his time as a technical mentor for CyberPatriot, managing the RunCode.ninja non-profit, and mentoring local talent within the cyber domain."
     },
     {
       "name": "Zach McElroy",
       "slack": "ohai",
+      "image": "runcode-ohai.jpg",
       "info": "Hi, I'm Zach. When I'm not chatting online with babes all day, you'll probably find me Blue Teaming or writing/building infrastructure to support Blue Team OPs. I like to write Python when possible, or C and PHP if I'm feeling exceptionally masochistic. \n I don't have any fancy degrees or even much book lern'n, so I stick to building/maintaining the RunCode platform and writing up some challenges here and there."
     },
     {
       "name": "Scott Hamilton",
       "slack": "funtimes",
+      "image": "runcode-funtimes.jpg",
       "info": "Scott Hamilton is a Cyber Operations Warrant Officer in the United States Army. He currently serves as one of the lead developers and systems architect for the Network, Engineering, Research, and Development shop for the Cyber Protection Brigade. \n In his free time he is one of five challenge developers that contribute to RunCode platform."
     },
     {

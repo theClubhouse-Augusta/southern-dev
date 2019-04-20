@@ -52,9 +52,6 @@
                 margin: 0 auto
                 width: 100%
 
-
-
-
     .cta
         background-color: white
         box-shadow: $shadow1
@@ -65,3 +62,31 @@
             text-align: center
             font-size: 2.4rem
             padding-bottom: 20px
+
+    .team-members
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-around
+        .team-member
+            width: 15%
+            padding: 20px
+            box-shadow: $shadow1, $shadow3
+            margin: 20px auto
+            border-radius: 5px
+
+        img
+            width: 100%
+
+        p
+            height: 1000px
+            max-height: 0
+            opacity: 0
+            position: absolute
+            max-width: 300px
+            background-color: white
+            transition: opacity .6s ease
+        & > :hover
+            p
+                max-height: 1000px
+                opacity: 1
+
