@@ -39,14 +39,15 @@ include ../layouts/header.pug
 
         section.runcode-team
             header
-                h2 Team Members
+                h2 The Team
             .team-members
                 each member in runcodeTeam
                     .team-member
-                        img(src="../images/" + member.image)
-                        h3= member.name
-                            br
-                            = member.slack
+                        .activator
+                            img(src="../images/" + member.image)
+                            h3= member.name
+                                br
+                                = member.slack
                         p= member.info
 
     include ../layouts/footer.pug

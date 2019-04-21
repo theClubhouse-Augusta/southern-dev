@@ -651,29 +651,41 @@ h1 {
     font-size: 2.4rem;
     padding-bottom: 20px; }
 
-.runcode .team-members {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around; }
-  .runcode .team-members .team-member {
-    width: 15%;
-    padding: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.4);
-    margin: 20px auto;
-    border-radius: 5px; }
-  .runcode .team-members img {
-    width: 100%; }
-  .runcode .team-members p {
-    height: 1000px;
-    max-height: 0;
-    opacity: 0;
-    position: absolute;
-    max-width: 300px;
-    background-color: white;
-    transition: opacity .6s ease; }
-  .runcode .team-members > :hover p {
-    max-height: 1000px;
-    opacity: 1; }
+.runcode .runcode-team h2 {
+  font-weight: bold; }
+
+.runcode .team-members .team-member {
+  width: 50%;
+  max-width: 500px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.4);
+  margin: 20px auto;
+  border-radius: 5px;
+  transition: all .6s ease; }
+
+.runcode .team-members img {
+  width: 100%;
+  max-width: 200px;
+  margin: 20px auto;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  display: block; }
+
+.runcode .team-members h3 {
+  padding-bottom: 20px; }
+
+.runcode .team-members p {
+  max-height: 0;
+  opacity: 0;
+  width: 100%;
+  background-color: white;
+  transition: all .6s ease;
+  padding: 0;
+  text-align: left; }
+
+.runcode .team-members > :hover p {
+  max-height: 1000px;
+  opacity: 1; }
 
 #header-main {
   z-index: 3;
