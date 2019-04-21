@@ -508,22 +508,22 @@ h1 {
       -o-transform: translateY(-13px) rotate(90deg);
       transform: translateY(-13px) rotate(90deg); } }
 
-.general-schedule {
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+.general-schedule ul {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2), 0 15px 35px rgba(0, 0, 0, 0.2);
   background-color: #f3f2f2;
+  padding: 50px;
+  width: 80%;
+  max-width: 500px;
   margin: 20px auto; }
-  .general-schedule ul {
-    width: 80%;
-    max-width: 800px;
-    margin: 20px auto; }
-  .general-schedule li {
-    padding: 10px 0; }
+
+.general-schedule li {
+  padding: 10px 0; }
 
 .schedule {
   padding: 0;
   border-top: 1px solid #bcb3a9; }
   .schedule h1 {
-    background-color: #f48971;
+    background-image: linear-gradient(to right, #a3aaf5, #1f36ad);
     color: #fdfcfc;
     margin-bottom: 0; }
   .schedule .ctas {
@@ -537,7 +537,7 @@ h1 {
     width: 50%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     padding: 20px;
-    margin: 20px auto; }
+    margin: 20px; }
     .schedule .cta h3 {
       font-size: 2rem;
       padding-bottom: 20px; }
