@@ -10,8 +10,8 @@
   .event-content
     h4.event-title= event.title
     p.event-description= event.description
-    a.event-details(href=`speakers.html#${speaker}`, style="text-decoration:none;")
-      .flex-left
+    .event-details
+      a.flex-left(href=`speakers.html#${speaker}`, style="text-decoration:none;")
         img.event-image(src='../images/speaker-' + imageUrl)
         p.event-speaker-name(id=event.speaker.split(' ').join('')) #{event.speaker}
           //- p. event.speaker
