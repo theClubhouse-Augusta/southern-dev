@@ -1,5 +1,30 @@
 include ../layouts/header.pug
 #body-wrapper
-  main
+  main.schedule
+    header
+      h1 Schedule
+    section.ctas
+      .cta
+        h3 Programming Competition
+        a.button(href="https://www.eventbrite.com/e/southern-developer-conference-tickets-55867745932" target="_blank" rel="noreferrer noopener")
+          button Check Out
+      .cta
+        h3 Printable Schedule
+        a.button(href="https://docs.google.com/spreadsheets/d/1kNusG341d_vrSswLqQmA0KtYnVKHR63eEcu1c7sP4LM/edit#gid=0" target="_blank" rel="noreferrer noopener")
+          button All Here
+
+    section.general-schedule
+      h3 General Plan of the Day
+      ul
+        li 8:00 am Registration Starts
+        li 8:30 am Opening Remarks
+        li 9:00 am Talks begin
+        li Noon Lunch
+        li 1:00 pm Talks begin again
+        li 4:00 pm Programming Competition Ends
+        li 4:30 pm Competition prizes awarded and closing remarks
+        li 5:00 pm VIP party begins
+
+
     include ../components/schedule.pug
   include ../layouts/footer.pug
