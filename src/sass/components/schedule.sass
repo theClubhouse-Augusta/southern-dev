@@ -1,10 +1,40 @@
+.general-schedule
+  ul
+    box-shadow: $shadow1, $shadow5
+    background-color: $gray2
+    padding: 50px
+    width: 80%
+    max-width: 500px
+    margin: 20px auto
+  li
+    padding: 10px 0
+
 .schedule
   padding: 0
+  border-top: 1px solid $gray3
+
 
   h1
-    background-color: $pink5
+    background-image: linear-gradient(to right, $blue3, $blue7)
     color: $gray1
     margin-bottom: 0
+
+  .ctas
+    display: flex
+    justify-content: space-around
+    max-width: 800px
+    @media(max-width: 800px)
+      display: block
+
+  .cta
+    width: 50%
+    box-shadow: $shadow1
+    padding: 20px
+    margin: 20px
+
+    h3
+      font-size: 2rem
+      padding-bottom: 20px
 
   .time
     display: block
@@ -35,6 +65,7 @@
     position: relative
     text-align: left
     width: 95%
+
 
     // &.plug-n-play
     //   background-color: $gray1
@@ -82,4 +113,4 @@
     @for $i from 1 through 10
       &:nth-child(#{$i})
         .time
-          background-color: lighten($blue9, $i * 10%)
+          background-color: lighten($blue9, $i * 8%)
