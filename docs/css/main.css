@@ -710,7 +710,7 @@ h1 {
   padding: 0;
   text-align: left; }
 
-.runcode .team-members > :hover p {
+.runcode .team-members .active {
   max-height: 1000px;
   opacity: 1; }
 
