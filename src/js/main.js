@@ -47,9 +47,28 @@ window.onload = function () {
     });
   }
 
+/*
+  RUNCODE HOVER EFFECT
+*/
 
+  if(document.querySelectorAll(".activator")) {
+    let activator = document.querySelectorAll(".activator");
 
+    activator.forEach(function(element) {
+      let elSibClass = element.nextSibling.classList;
+
+      element.addEventListener("mouseenter", function() {
+        elSibClass.add("active");
+      });
+
+      element.addEventListener("mouseleave", function() {
+        elSibClass.remove("active");
+      });
+    });
+  }
 }
+
+/* END RUNCODE HOVER EFFECT */
 
 function GenerateFilters (){
   const instaFilters = document.querySelector(".insta-filters"),
