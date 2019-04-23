@@ -47,27 +47,28 @@ window.onload = function () {
     });
   }
 
-  // Hover effect for RunCode Team member expanders
-  // check them out at southerndev.co/RunCode
+/*
+  RUNCODE HOVER EFFECT
+*/
 
   if(document.querySelectorAll(".activator")) {
-    const activator = document.querySelectorAll(".activator");
-    console.log(activator)
+    let activator = document.querySelectorAll(".activator");
 
     activator.forEach(function(element) {
-      // element.nextSibling.classList.add("Hello");
-      // console.log(element.nextSibling);
-      element.addEventListener("mouseenter", function(event) {
-        // console.log(element.nextSibling);
-        element.nextSibling.classList.add("active");
+      let elSibClass = element.nextSibling.classList;
+
+      element.addEventListener("mouseenter", function() {
+        elSibClass.add("active");
       });
-      element.addEventListener("mouseleave", function(event) {
-        element.nextSibling.classList.remove("active");
-      })
+
+      element.addEventListener("mouseleave", function() {
+        elSibClass.remove("active");
+      });
     });
   }
-
 }
+
+/* END RUNCODE HOVER EFFECT */
 
 function GenerateFilters (){
   const instaFilters = document.querySelector(".insta-filters"),
