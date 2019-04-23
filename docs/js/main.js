@@ -130,7 +130,29 @@ window.onload = function () {
       logo.style.filter = dropShadow;
     });
   }
+
+  /*
+    RUNCODE HOVER EFFECT
+  */
+
+  if (document.querySelectorAll(".activator")) {
+    var activator = document.querySelectorAll(".activator");
+
+    activator.forEach(function (element) {
+      var elSibClass = element.nextSibling.classList;
+
+      element.addEventListener("mouseenter", function () {
+        elSibClass.add("active");
+      });
+
+      element.addEventListener("mouseleave", function () {
+        elSibClass.remove("active");
+      });
+    });
+  }
 };
+
+/* END RUNCODE HOVER EFFECT */
 
 function GenerateFilters() {
   var instaFilters = document.querySelector(".insta-filters"),
