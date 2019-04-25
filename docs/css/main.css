@@ -975,3 +975,6 @@ label {
   color: #000000;
   text-decoration: none;
   cursor: pointer; }
+
+.bio {
+  padding-bottom: 30px; }
