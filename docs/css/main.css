@@ -733,6 +733,40 @@ h1 {
   max-height: 1000px;
   opacity: 1; }
 
+#slides #logo-stuff {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 500px;
+  z-index: 10000; }
+
+.fade {
+  overflow: hidden;
+  padding: 0; }
+  .fade .slick-slide {
+    display: inline-block;
+    position: relative; }
+  .fade .slide {
+    background-size: cover;
+    margin: 0; }
+  .fade .slide-1 {
+    background-image: url("../images/slides-asheville.jpg"); }
+  .fade .slide-2 {
+    background-image: url("../images/slides-nashville.jpg"); }
+  .fade .slide-3 {
+    background-image: url("../images/slides-chicago.jpg"); }
+  .fade .slide-4 {
+    background-image: url("../images/slides-newyork.jpg"); }
+  .fade .slide-5 {
+    background-image: url("../images/slides-charlotte.jpg"); }
+  .fade .slide-6 {
+    background-image: url("../images/ga.jpg"); }
+  .fade img {
+    opacity: 0;
+    height: 100%;
+    min-width: 100%; }
+
 #header-main {
   z-index: 3;
   overflow: hidden;
