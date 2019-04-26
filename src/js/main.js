@@ -1,5 +1,17 @@
 window.onload = function () {
 
+  if(document.getElementById("slides")) {
+    $('.fade').slick({
+      speed: 1000,
+      autoplaySpeed: 15000,
+      autoplay: true,
+      fade: true,
+      arrows: false,
+      cssEase: 'linear'
+    });
+  }
+
+
   const logo = document.querySelector(".logo"),
     hamburger = document.querySelector('.hamburger');
 
@@ -66,9 +78,13 @@ window.onload = function () {
       });
     });
   }
-}
-
 /* END RUNCODE HOVER EFFECT */
+
+
+
+}
+/* END OF WINDOW ONLOAD LISTENER */
+
 
 function GenerateFilters (){
   const instaFilters = document.querySelector(".insta-filters"),

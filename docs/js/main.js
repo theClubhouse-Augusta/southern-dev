@@ -81,9 +81,20 @@ var sponsors = [{
   "link": "https://freemouthmedia.com/",
   "level": "silver"
 }];
-"use strict";
+'use strict';
 
 window.onload = function () {
+
+  if (document.getElementById("slides")) {
+    $('.fade').slick({
+      speed: 1000,
+      autoplaySpeed: 15000,
+      autoplay: true,
+      fade: true,
+      arrows: false,
+      cssEase: 'linear'
+    });
+  }
 
   var logo = document.querySelector(".logo"),
       hamburger = document.querySelector('.hamburger');
@@ -150,9 +161,9 @@ window.onload = function () {
       });
     });
   }
+  /* END RUNCODE HOVER EFFECT */
 };
-
-/* END RUNCODE HOVER EFFECT */
+/* END OF WINDOW ONLOAD LISTENER */
 
 function GenerateFilters() {
   var instaFilters = document.querySelector(".insta-filters"),
