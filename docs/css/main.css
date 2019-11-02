@@ -286,8 +286,8 @@ h1 {
 
 .splash {
   position: relative;
-  min-height: 50vw;
-  padding: 10rem 0 6rem; }
+  height: 100vh;
+  padding: 0; }
   .splash .splash-img {
     position: absolute;
     display: block;
@@ -301,22 +301,23 @@ h1 {
     background-color: #456AC0;
     filter: saturate(1.5) grayscale(0.4) sepia(0.2) contrast(1.2);
     -webkit-filter: saturate(1.5) grayscale(0.4) sepia(0.2) contrast(1.2); }
-  .splash h1, .splash .logo {
-    position: relative;
-    margin: 0 auto; }
+  .splash .splash-filter {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #f48971;
+    opacity: .3; }
   .splash h1 {
     position: absolute;
     bottom: 10%;
     width: 100%;
-    opacity: 0;
     transition: opacity .4s ease;
     background-color: transparent;
     padding: 1rem;
     color: #fdfcfc;
-    text-shadow: 0 0 80px #bcb3a9; }
-    @media (min-width: 600px) {
-      .splash h1 {
-        opacity: 1; } }
+    text-shadow: 0 0 50px #211a12; }
   .splash .insta-filters, .splash #dev-btn {
     position: absolute;
     top: 0;
@@ -330,11 +331,6 @@ h1 {
     margin: 10px 5px;
     color: white;
     border: none; }
-  .splash .logo {
-    filter: drop-shadow(-10px 10px 5px rgba(0, 0, 0, 0.5));
-    transition: all .2s ease;
-    width: 50%;
-    max-width: 500px; }
 
 .date, .tickets {
   display: inline-block;
