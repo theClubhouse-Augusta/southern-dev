@@ -41,16 +41,19 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
-    '@nuxtjs/style-resources'
+    // '@nuxtjs/style-resources'
   ],
   /*
    ** Load global SASS styles  
   */ 
-  styleResources: {
-    sass: [
-      './assets/main.sass'
-    ]
-  },
+  // styleResources: {
+  //   sass: [
+  //     './assets/**/*.sass'
+  //   ]
+  // },
+  css: [
+    '@/assets/main.sass'
+  ],
   /*
   ** vuetify module configuration
   ** https://github.com/nuxt-community/vuetify-module
