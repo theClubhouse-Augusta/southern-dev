@@ -1,0 +1,116 @@
+.general-schedule
+  ul
+    box-shadow: $shadow1, $shadow5
+    background-color: $gray2
+    padding: 50px
+    width: 80%
+    max-width: 500px
+    margin: 20px auto
+  li
+    padding: 10px 0
+
+.schedule
+  padding: 0
+  border-top: 1px solid $gray3
+
+
+  h1
+    background-image: linear-gradient(to right, $blue3, $blue7)
+    color: $gray1
+    margin-bottom: 0
+
+  .ctas
+    display: flex
+    justify-content: space-around
+    max-width: 800px
+    @media(max-width: 800px)
+      display: block
+
+  .cta
+    width: 50%
+    box-shadow: $shadow1
+    padding: 20px
+    margin: 20px
+
+    h3
+      font-size: 2rem
+      padding-bottom: 20px
+
+  .time
+    display: block
+    height: 100%
+    left: 0
+    position: absolute
+    width: 5%
+
+  .events
+    display: block
+    float: right
+    margin: 0
+    width: 100%
+
+  h4
+    font-weight: bold
+
+  .event-info
+    color: $gray2
+
+  .event-display
+    border-bottom: 1px solid $gray3
+    border-radius: 3px
+    display: inline-block
+    margin: 0 auto
+    margin-left: 5%
+    padding: 60px 0
+    position: relative
+    text-align: left
+    width: 95%
+
+
+    // &.plug-n-play
+    //   background-color: $gray1
+
+    // &.virtual-world
+    //   background-color: $pink1
+
+    .event-description
+      margin: 20px 0 30px
+      text-indent: 3rem
+
+  .event-content
+    margin: 0 auto
+    max-width: 700px
+    padding: 0 40px
+
+  .event-details
+    display: flex
+    justify-content: space-between
+    width: 100%
+
+    img
+      border: 1px solid $gray5
+      border-radius: 100%
+      display: block
+      height: 50px
+      margin-left: 0
+      // margin: 40px 0
+      width: 50px
+
+    .flex-left
+      align-items: center
+      display: flex
+      // justify-content:
+
+      p
+        margin: 0 20px
+
+  li
+    align-items: center
+    display: flex
+    font-size: 1.6rem
+    margin: 0
+    position: relative
+    @for $i from 1 through 10
+      &:nth-child(#{$i})
+        .time
+          background-color: lighten($blue9, $i * 8%)

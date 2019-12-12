@@ -1,0 +1,89 @@
+#header-main
+    z-index: 3
+    overflow: hidden
+    position: fixed
+    top: 0
+    right: -300px
+    width: 150px
+    height: 100vh
+    background-color: $gray7
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, .4)
+    transition: right .4s ease
+    &.active-nav
+        @media(max-width: 900px)
+            right: 0
+    @media(min-width: 900px)
+        left: 50%
+        right: auto
+        transform: translateX(-50%)
+        width: 100%
+        max-width: 1920px
+        height: auto
+    img
+        position: relative
+        display: block
+        padding: 100px .5rem .5rem .5rem
+        width: 80%
+        margin: 0 auto
+        @media(min-width: 900px)
+            width: 20%
+            max-width: 100px
+            margin: 0
+            padding: .5rem
+
+    nav
+        width: 100%
+        position: absolute
+        text-align: center
+        @media(min-width: 900px)
+            width: 80%
+            // margin: 0
+            top: 50%
+            // right: 0
+            // transform: translateY(-50%)
+            left: 50%
+            transform: translateX(-50%) translateY(-50%)
+        ul
+            position: relative
+            display: flex
+            flex-direction: column
+            width: 100%
+            max-width: 900px
+            margin: 0 auto
+            @media(min-width: 900px)
+                flex-direction: row
+        li
+            position: relative
+            list-style-type: none
+            text-align: center
+            transition: all ease .2s
+            display: inline-block
+            width: 100%
+            margin: 0 auto
+            @media(min-width: 900px)
+                width: 80px
+        .select
+            &:after
+                content: ""
+                position: absolute
+                display: block
+                left: 10%
+                margin-top: 1rem
+                width: 0
+                height: 3px
+                background-color: $blue3
+                transition: all .2s ease
+
+        a
+            display: block
+            text-decoration: none
+            color: $gray1
+            width: 100%
+            font-size: 1.6rem
+            width: 100%
+            padding: 20px 0
+            @media(hover)
+                &:hover
+                    cursor: pointer
+                    .select:after
+                        width: 80%
