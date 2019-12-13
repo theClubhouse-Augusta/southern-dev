@@ -30,5 +30,4 @@ footer.footerMain
         a(target="_blank" rel="noreferrer noopener" href="https://github.com/theClubhouse-Augusta/southern-dev")
           <font-awesome-icon :icon="['fab', 'github']" />
           |  Our code
-        //- <font-awesome-icon :icon="['fab', 'linkedin']"/>
 </template>
