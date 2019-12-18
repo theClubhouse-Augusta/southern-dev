@@ -30,9 +30,8 @@ div
   nuxt
   footer.footerMain
     div.clubhouse
-      a(target="_blank" rel="noreferrer noopener" href="https://theclubhou.se/")  
       a(target="_blank" rel="noreferrer noopener" href="https://theclubhou.se/")
-        | Organized by theClubhou.se and friends
+        span Organized by theClubhou.se and friends
         img(src="~assets/images/theclubhouse.png" alt="Blue circle surrounding a big C with theClubhouse written inside")
     div.main
       ul
@@ -230,40 +229,47 @@ export default {
 /* MAIN FOOTER STYLES */
 .footerMain
   overflow: hidden
-  padding: 2rem
-  width: 80%
-  max-width: 900px
+  padding: 2rem 0
+  width: 90%
+  // max-width: 900px
   a
     display: block
     text-decoration: none
   .clubhouse
     float: none
     margin: 20px 0
+    width: 100%
     @media(min-width: 700px)
+      width: 50%
       float: left
     img
       width: 100%
       max-width: 100px
+      margin: 0 auto
       margin-top: 10px
+      display: block
     a:hover
       color: $pink5
   .main
     float: none
     display: block
     margin: 20px auto
+    width: 100%
     @media(min-width: 700px)
+      width: 50%
       float: right
     a
       display: inline-block
   ul
-    text-align: left
     margin: 0 auto
-    width: 170px
+    @media(min-width: 700px)
+      text-align: right
+    // width: 170px
 
   li
-    display: inline-block
+    display: block
     margin: 0
-    width: 300px
+    // width: 300px
   li:nth-child(odd)
     a:hover
       color: $blue5

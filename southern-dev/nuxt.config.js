@@ -49,7 +49,7 @@ export default {
   ** Global CSS
   */
   css: [
-    '~/css/normalize.css'
+    '~/css/base.css'
   ],
   /*
   ** Plugins to load before mounting the App
