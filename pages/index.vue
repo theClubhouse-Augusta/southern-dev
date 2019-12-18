@@ -13,6 +13,17 @@
   bottom-footer
 </template>
 <script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
+<script>
 import TopHeader from "~/components/TopHeader.vue";
 import BottomFooter from "~/components/BottomFooter.vue";
 export default {
