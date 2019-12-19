@@ -1,4 +1,4 @@
-import colors from 'vuetify/es5/util/colors'
+import colors from 'vuetify/es5/util/colors';
 
 export default {
   mode: 'universal',
@@ -17,15 +17,21 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
+  generate: {
+    routes: function() {
+      const fs = require('fs')
+      return fs.readdirSync('./assets/content/blog').map(file => {
+        return {
+          route: `/blog/${file.slice(2, -5)}`,
+          payload: require(`./assets/content/blog/${file}`)
+        }
+      })
+    }
+  },
   /*
   ** Customize the progress-bar color
   */
   loading: { color: '#fff' },
-  /*
-  ** Global CSS
-  */
-  css: [
-  ],
   /*
   ** Plugins to load before mounting the App
   */
@@ -41,6 +47,9 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
+      [
+        '@nuxtjs/markdownit'
+      ],
       ['nuxt-fontawesome', {
         imports: [
           {
@@ -52,7 +61,8 @@ export default {
             icons: ['far']
           }
         ]
-      }]
+      },
+    ],
     // '@nuxtjs/style-resources'
   ],
   /*
@@ -87,6 +97,20 @@ export default {
       }
     }
   },
+  markdownit: {
+    injected: true,
+  },
+  // generate: {
+  //   routes: function() {
+  //     const fs = require('fs');
+  //     return fs.readdirSync('./assets/content/blog').map(file => {
+  //       return {
+  //         route: `/blog/${file.slice(2, -5)}`,
+  //         payload: require(`./assets/content/blog/${file}`),
+  //       };
+  //     });
+  //   },
+  // },
   /*
   ** Build configuration
   */
@@ -97,4 +121,4 @@ export default {
     extend (config, ctx) {
     }
   }
-}
+};
