@@ -75,12 +75,18 @@
         h3
             margin: 20px
             font-weight: bold
+            font-size: 30px
+            @media(min-width: 600px)
+                font-size: 50px
         .container
             box-shadow: $shadow1, $shadow3
             margin: 20px
             border-radius: 5px
+            text-align: center
             width: 100%
-            max-width: 275px
+            @media(min-width: 1000px)
+                max-width: 375px
+                width: 33%
         .icon
             display: block
             font-size: 60px

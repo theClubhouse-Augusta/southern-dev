@@ -93,17 +93,17 @@ export default {
         height: 50px
         width: 50px
         padding: 10px
-        border-radius: 100px
+        border-radius: 10px
         cursor: pointer
-        box-shadow: $shadow1
+        box-shadow: $shadow1, $shadow3, inset 0px 0px 13px 0px black
         &:hover
           cursor: pointer
         .line
-            width: 80
-            height: 5px
+            width: 80%
+            height: 3px
             background-color: $gray1
             display: block
-            margin: 8px auto
+            margin: 5px auto
             -webkit-transition: all 0.3s ease-in-out
             -o-transition: all 0.3s ease-in-out
             transition: all 0.3s ease-in-out
@@ -126,15 +126,15 @@ export default {
             -o-transition-delay: 0.3s
             transition-delay: 0.3s
         &.active-nav .line:nth-child(1)
-            -webkit-transform: translateY(13px)
-            -ms-transform: translateY(13px)
-            -o-transform: translateY(13px)
-            transform: translateY(13px)
+            -webkit-transform: translateY(8px)
+            -ms-transform: translateY(8px)
+            -o-transform: translateY(8px)
+            transform: translateY(8px)
         &.active-nav .line:nth-child(3)
-            -webkit-transform: translateY(-13px) rotate(90deg)
-            -ms-transform: translateY(-13px) rotate(90deg)
-            -o-transform: translateY(-13px) rotate(90deg)
-            transform: translateY(-13px) rotate(90deg)
+            -webkit-transform: translateY(-9px) rotate(90deg)
+            -ms-transform: translateY(-9px) rotate(90deg)
+            -o-transform: translateY(-9px) rotate(90deg)
+            transform: translateY(-9px) rotate(90deg)
 
 /* HEADER   styles */
 
