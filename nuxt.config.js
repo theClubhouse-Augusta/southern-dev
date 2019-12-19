@@ -47,9 +47,7 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
-      [
-        '@nuxtjs/markdownit'
-      ],
+        '@nuxtjs/markdownit',
       ['nuxt-fontawesome', {
         imports: [
           {
