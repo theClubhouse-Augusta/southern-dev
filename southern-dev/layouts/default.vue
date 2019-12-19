@@ -11,6 +11,9 @@ div
     nav
       ul
           li
+            a(href="/")
+              img(src="/logo.png") 
+          li
               a(href="/") Home
           li
               a(href="about")
@@ -137,7 +140,6 @@ export default {
 
 #header-main
     z-index: 3
-    overflow: hidden
     position: fixed
     top: 0
     right: -300px
@@ -163,23 +165,24 @@ export default {
         width: 80%
         margin: 0 auto
         @media(min-width: 900px)
-            width: 20%
+            width: 100%
             max-width: 100px
             margin: 0
-            padding: .5rem
+            padding: 0
 
     nav
         width: 100%
         position: absolute
         text-align: center
         @media(min-width: 900px)
+            position: relative
             width: 80%
             // margin: 0
-            top: 50%
+            // top: 50%
             // right: 0
             // transform: translateY(-50%)
             left: 50%
-            transform: translateX(-50%) translateY(-50%)
+            transform: translateX(-50%)
         ul
             position: relative
             display: flex

@@ -3,7 +3,11 @@
     section.splash
       div.splash-img#splash-index(title="Photo courtesy of the Augusta Convention & Visitors Bureau")
       .splash-filter
-    h1 April 25, 2020
+      .content
+          img(src="/logo.png")
+          h1 A Southern Tech Conference
+            br
+            | April 25, 2020
       //- br
       //- a.button(href="./2019" role="button" style="margin-top: 30px;" ) Check out 2019
 </template>
@@ -34,9 +38,20 @@
     right: 0
     background-color: $pink5
     opacity: .3
-  h1
+  .content
+    text-align: center
     position: absolute
+    width: 80%
+    max-width: 900px
+    left: 50%
     bottom: 10%
+    transform: translateX(-50%)
+
+  img
+    width: 50%
+    margin: 0 auto
+    display: block
+  h1
     width: 100%
     transition: opacity .4s ease
     background-color: transparent
