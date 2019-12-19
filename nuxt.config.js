@@ -48,19 +48,19 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
-    //   ['nuxt-fontawesome', {
-    //     imports: [
-    //       {
-    //         set: '@fortawesome/free-brands-svg-icons',
-    //         icons: ['fab']
-    //       },
-    //       {
-    //         set: '@fortawesome/free-regular-svg-icons',
-    //         icons: ['far']
-    //       }
-    //     ]
-    //   },
-    // ],
+      ['nuxt-fontawesome', {
+        imports: [
+          {
+            set: '@fortawesome/free-brands-svg-icons',
+            icons: ['fab']
+          },
+          {
+            set: '@fortawesome/free-regular-svg-icons',
+            icons: ['far']
+          }
+        ]
+      },
+    ],
     '@nuxtjs/markdownit',
     // '@nuxtjs/style-resources'
   ],
