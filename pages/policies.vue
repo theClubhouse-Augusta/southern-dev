@@ -76,16 +76,21 @@
   max-width: 1250px
   margin: 0 auto
   padding: 30px 0
+  h3
+    margin-bottom: 30px
   h4
-    font-size: 3rem
-    margin: 2rem 0 1rem 0
+    font-size: 30px
+    margin: 2rem 0 30px 0
   p
     color: $gray7
     text-align: left
   br
     height: 10px
+  ul
+    text-align: left
+    margin-left: 40px
 
-  p, a
-    font-size: 2.4rem
-    padding-bottom: 2rem
+  p, a, li
+    font-size: 24px
+    padding-bottom: 20px
 </style>

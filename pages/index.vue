@@ -28,6 +28,7 @@
     background-size: cover
     background-repeat: no-repeat
     background-color: $primary-blue
+    background-image: url("~assets/images/ga.jpg")
     filter: saturate(1.5) grayscale(.4) sepia(.2) contrast(1.2)
     -webkit-filter: saturate(1.5) grayscale(.4) sepia(.2) contrast(1.2)
   .splash-filter
@@ -48,9 +49,11 @@
     transform: translateX(-50%)
 
   img
-    width: 50%
     margin: 0 auto
     display: block
+    width: 80%
+    @media(min-width: 700px)
+      width: 50%
   h1
     width: 100%
     transition: opacity .4s ease
@@ -58,6 +61,10 @@
     padding: 1rem
     color: $gray1
     text-shadow: 0 0 50px $gray9
+    font-size: 42px
+    @media(min-width: 700px)
+      font-size: 60px
+    
 
   .insta-filters, #dev-btn
     position: absolute
@@ -143,11 +150,11 @@
     .index-contact .button
         border-bottom: none
     .index-about .index-bg
-        background-image: url("/images/chairs.jpg")
+        background-image: url("~assets/images/chairs.jpg")
     .index-speakers .index-bg
-        background-image: url("/images/microphone.jpg")
+        background-image: url("~assets/images/microphone.jpg")
     .index-contact .index-bg
-        background-image: url("/images/phone.jpg")
+        background-image: url("~assets/images/phone.jpg")
 
 .sponsors
     margin: 30px auto

@@ -89,7 +89,7 @@ export default {
   //   ]
   // },
   css: [
-    '@/assets/main.sass'
+    // '@/assets/main.sass'
   ],
   /*
   ** vuetify module configuration

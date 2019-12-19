@@ -27,9 +27,9 @@ div
           li
               a(href="contact")
                   .select Contact
-          li
-              a(href="/2019/")
-                  .select 2019
+          //- li
+          //-     a(href="/2019/")
+          //-         .select 2019
   nuxt
   footer.footerMain
     div.clubhouse
@@ -97,9 +97,9 @@ export default {
         cursor: pointer
         box-shadow: $shadow1
         &:hover
-                cursor: pointer
+          cursor: pointer
         .line
-            width: 50px
+            width: 80
             height: 5px
             background-color: $gray1
             display: block
@@ -242,9 +242,11 @@ export default {
     float: none
     margin: 20px 0
     width: 100%
+    text-align: center
     @media(min-width: 700px)
       width: 50%
       float: left
+      text-align: left
     img
       width: 100%
       max-width: 100px
