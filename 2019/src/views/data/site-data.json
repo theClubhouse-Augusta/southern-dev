@@ -1,0 +1,364 @@
+{
+  "speakers": [
+    {
+    "name": "Jerome Hardaway",
+    "company": "CBS/Vets Who Code",
+    "title": "Geek @ Arms of Vets Who Code",
+    "bio-short": "Front End Developer && Geek @ Arms of Vets Who Code. After serving the Air Force as a member of Security Forces, he transitioned into code during the Great Recession with his first job working on Databases with the Dept of Homeland Security.",
+    "bio-long": "Jerome Hardaway is a Front End Developer && Geek @ Arms of Vets Who Code. After serving the Air Force as a member of Security Forces, he transitioned into code during the Great Recession with his first job working on Databases with the Dept of Homeland Security.\n    While building and leading engineers at Vets Who Code, his main duties is building relationships, telling the stories of our veterans, talks, learning and passing higher level training to the incoming leadership team as they support and grow the next groups of entry-level && junior developers.",
+    "image": "jerome.jpg",
+    "social-media": {
+      "twitter": "https://twitter.com/JeromeHardaway"
+    }
+  },
+  {
+    "name": "Harsha Vemulapalli",
+    "company": "Robert Bosch LLC",
+    "title": "Head of Design for Bosch",
+    "bio-short": "Head of Design for Robert Bosch. In this capacity, he leads UX efforts focused on building on Bosch’s history of excellence as a leading global supplier of technology and services by driving adoption of innovative, design-thinking solutions and services. His teams span the gamut from Industrial Design, Service Design, Interaction Design, Visual Design and User Research.",
+    "bio-long": "Harsha Vemulapalli is the Head of Design for Robert Bosch. In this capacity, he leads UX efforts focused on building on Bosch’s history of excellence as a leading global supplier of technology and services by driving adoption of innovative, design-thinking solutions and services. His teams span the gamut from Industrial Design, Service Design, Interaction Design, Visual Design and User Research.\nPrior to joining Bosch, Harsha served in UX leadership roles with the United States Air Force and the Centers for Disease Control and Prevention, and worked on design and product teams at Blackbaud, Morris DigitalWorks, Mirant and Softsys (hey it was the Tech Bubble days and all the good names were taken).\nLike the Ultimate Warrior, Harsha hails from parts unknown. He would also prefer to be introduced as “weight unknown” and “height unknown.”",
+    "image": "harsha.jpg"
+  },
+  {
+    "name": "Eric Harrison",
+    "company": "Moonrise",
+    "title": "Co-founder and CTO of Moonrise",
+    "bio-short": "co-founder and CTO of Moonrise, a social-impact startup trying to use AI to connect financially challenged workers to awesome jobs. He's the author of An Introduction to Robot Programming and has spent his career trying to automate-away the worst parts of life.",
+    "image": "eric.png",
+    "social-media": {
+      "twitter": "https://twitter.com/blister"
+    }
+  },
+  {
+    "name": "Veronica Hanus",
+    "bio-short": "Before Veronica was a programmer, she was a researcher (she helped pick the Mars Curiosity Rover’s landing site!) with an eye for process improvement. As she’s taught herself web development, she’s brought her research approach from her time at NASA-JPL & MIT into whatever she was learning. She loves exploring the web and teaching, and recently co-taught a PyCon tutorial on using web-scraping and modeling to predict Oscar winners. When she isn’t learning how the web can be better for developers, she enjoys blogging, nerding out about documentation, and snuggling as many cats as possible.",
+    "image": "veronicaH.jpg",
+    "social-media": {
+      "twitter": "https://twitter.com/veronica_hanus"
+    }
+  },
+  {
+    "name": "Erica Stanley",
+    "company": "SalesLoft",
+    "title": "Engineeering Manager",
+    "bio-short": "a software engineer, entrepreneur and tech diversity & inclusion advocate. She is a software engineering manager at SalesLoft – where she’s helping grow the product engineering team for the 4th fastest growing software company in North America and #1 best place to work in Atlanta. She’s worked with Fortune 500 companies, including Boeing, FOX Interactive Media, Turner Broadcasting, and Oracle, as well as early-stage and pre-acquisition startups.",
+    "bio-long": "a software engineer, entrepreneur and tech diversity & inclusion advocate. She is a software engineering manager at SalesLoft – where she’s helping grow the product engineering team for the 4th fastest growing software company in North America and #1 best place to work in Atlanta. She’s worked with Fortune 500 companies, including Boeing, FOX Interactive Media, Turner Broadcasting, and Oracle, as well as early-stage and pre-acquisition startups.\nErica is active in the Atlanta technology community. She helps develop and teach youth coding programs, speaks at local hackathons, conferences, and user groups and mentors entrepreneurs for various incubators and accelerators. She also founded the Atlanta network of Women Who Code, where she organizes conferences, hackathons, developer workshops, monthly tech talks and networking events for women technologists.",
+    "image": "ericaS.jpg",
+    "social-media": {
+      "twitter": "https://twitter.com/ericastanley"
+    }
+  },
+  {
+    "name": "Mark Noonan",
+    "company": "Content Thread",
+    "title": "Web Developer at Content Thread",
+    "bio-short": "Web developer at Content Thread (a digital agency and consulting firm specializing in AEM) and a member of Code for Atlanta's leadership team. He also serves as a program developer for People Making Progress, an Atlanta-based nonprofit serving adults with developmental disabilities at home, work, and in the community. In 2017 he led the Paratransit Pal project, which won AT&T's Civic Coding Challenge, after which the project team donated the entire $40,000 prize to charity.",
+    "image": "markN.jpg",
+    "social-media": {
+      "twitter": "https://twitter.com/marktnoonan"
+    }
+  },
+  {
+    "name": "Mark Locklear",
+    "company": "Vets Who Code",
+    "title": "Web Developer, Founder, Mentor Director, Instructor",
+    "bio-short": "Mark Locklear is a web developer at the eXtension Initiative, founder of Remotegig.io and Director of mentors at Vets Who Code. He is an Adjunct Instructor at Asheville Buncombe Technical Community College and is passionate about education and teaching students software development.",
+    "image": "markL.jpg",
+    "social-media": {
+      "twitter": "https://twitter.com/marklocklear"
+    }
+  },
+  {
+    "name": "Andrew Smelser",
+    "company": "Eventbrite",
+    "title": "Software Quality Assurance Engineer",
+    "bio-short": "After studying communication at Vanderbilt University, Andrew stayed in Nashville to work at Eventbrite - an event ticketing and registration platform. Though he has worn many hats in his 5 years there, he now serves as a QA Coach and spearheads projects to improve product quality.",
+    "image": "andrewS.jpg",
+    "social-media": {
+      "twitter": "https://twitter.com/aqualityhuman"
+    }
+  },
+  {
+    "name": "Rhia Dixon",
+    "company": "VeriShip",
+    "title": "Software Engineer",
+    "bio-short": "A software engineer at a data-driven tech company where she creates backend software applications using C#/.NET, Python, AWS and a variety of other tech. While she has always been a STEM girl and holds a B.S. in Physics, her journey to the world of tech kicked off in the summer of 2017 during a full-stack web development bootcamp at the University of Kansas-Edwards Campus",
+    "bio-long": "a software engineer at a data-driven tech company where she creates backend software applications using C#/.NET, Python, AWS and a variety of other tech. While she has always been a STEM girl and holds a B.S. in Physics, her journey to the world of tech kicked off in the summer of 2017 during a full-stack web development bootcamp at the University of Kansas-Edwards Campus. Rhia has immersed herself in the KC tech community by volunteering – both as a mentor, and as Diversity & Inclusion Director – for Kansas City Women in Technology, a non-profit organization dedicated to bringing women in technology together and encouraging more women and girls to pursue careers in technology. When she’s not writing code or volunteering, Rhia is chasing her toddler, making jewelry and crafty things for www.afromotif.com, binge-watching Marvel and Harry Potter movies, or spending time making memories with family and friends.",
+    "image": "rhia.jpg",
+    "social-media": {
+      "twitter": "https://twitter.com/TheFakeRiRi"
+    }
+  },
+  {
+    "name": "Jeanne Schmidt",
+    "company": "Rural Sourcing",
+    "title": "Senior Principal Consultant",
+    "bio-short": "A Senior Principal Consultant and leads the Quality Assurance practice at Rural Sourcing.  Jeanne Schmidt leads a team of software testers who help customers deliver quality software and advise customers on test strategies.  Jeanne serves as a quality coach and quality advocate to help software teams improve the quality of their delivery.",
+    "bio-long": "Jeanne Schmidt is a Senior Principal Consultant and leads the Quality Assurance practice at Rural Sourcing.  Jeanne Schmidt leads a team of software testers who help customers deliver quality software and advise customers on test strategies.  Jeanne serves as a quality coach and quality advocate to help software teams improve the quality of their delivery. Rural Sourcing is the leader in domestic sourcing and a cost-effective, onshore alternative to the traditional model for IT outsourcing. With more than twenty-five years of experience working in software development, Jeanne advises companies on how to deliver quality software. She managed a QA team and PeopleSoft / Oracle for a number of years. Her client projects include Pfizer, Teva Pharmaceuticals, UPS and the American Cancer Society. She has presented at the Techwell StarEast and StarWest conferences and speaks at Agile Augusta. She is the founder of Women in Technology Augusta.",
+    "image": "jeanneS.jpg"
+  },
+  {
+    "name": "Patrick Rodgers",
+    "company": "PowerServe",
+    "title": "Project Manager and Lead Programmer",
+    "bio-short": "A Lead Programmer and Project Manager at Powerserve in Augusta, Georgia. He began his career at Powerserve 13 years ago as a web designer, but in that time discovered his love for programming and made a career swap. He now leads a team of programmers who work on a site that sells over $100 million dollars worth of product annually. He has a passion for solving problems using the best means and 80's punk music.",
+    "image": "patrickR.png",
+    "social-media": {
+      "twitter": "https://twitter.com/1hitsong"
+    }
+  },
+  {
+    "name": "Wes Dollar",
+    "company": "Rural Sourcing",
+    "title": "Web Lead",
+    "bio-short": "The Web Practice Lead at Rural Sourcing's Augusta, GA, dev center. He is a full-stack engineer with over 20 years of experience and has worked on projects for companies of all sizes, including the likes of Proctor & Gamble, American Express, Hayneedle.com, and many more. His days at Rural Sourcing are spent knee-deep in React and mentoring his colleagues in between tickets. He's a design pattern junkie, UX strategist, and has a knack for explaining complicated tech topics to laymen.",
+    "image": "wesD.jpg"
+  },
+  {
+    "name": "Jessica King",
+    "company": "Independent Contractor",
+    "title": "",
+    "bio-short": "A badass rockstar of enterprise architectures, eCommerce, and ERP integrations. She's spent two decades building full stack applications designed for growth and stability. Her clients span many business sectors but have digital transformation in common, which is where Jessica comes in. She has a reputation for successfully herding cats and bringing order to chaos. When she's not working, she's spending time with her family, playing board games, and making music.",
+    "image": "jessicaK.jpg",
+    "social-media": {
+      "twitter": "https://twitter.com/JesKing"
+    }
+  },
+  {
+    "name": "Bowe Strickland",
+    "company": "Red Hat",
+    "title": "Principal Design Engineer, Training",
+    "bio-short": "As a graduate student in physics in the early 1990's, Bowe discovered the allure of open source software installing the 70 3.5\" floppies for the Slackware distribution, and has been a passionate advocate ever since. In 1999, after unsuccessfully looking for another job which would allow him to spend mornings sitting in coffeehouses, he joined Red Hat, Inc., as one of the founding members of Red Hat's training department.",
+    "image": "boweS.png"
+  }
+  ],
+  "sponsors": [
+  {
+    "name": "DREAM",
+    "link": "http://www.dream-enterprise.com/_wp/",
+    "level": "silver"
+  },
+  {
+    "name": "TelWare",
+    "link": "https://www.telware.com/",
+    "level": "silver"
+  },
+  {
+    "name": "powerserve",
+    "link": "https://www.powerserve.net/",
+    "level": "silver"
+  },
+  {
+    "name": "emineo",
+    "link": "https://www.emineomarketing.com/",
+    "level": "silver"
+  },
+  {
+    "name": "freemouth",
+    "link": "https://freemouthmedia.com",
+    "level": "community"
+  },
+  {
+    "name": "runcode",
+    "link": "https://runcode.ninja/",
+    "level": "silver"
+  },
+  {
+    "name": "uniti",
+    "link": "https://uniti.com/fiber/",
+    "level": "silver"
+  },
+  {
+    "name": "RSI",
+    "link": "https://www.ruralsourcing.com/",
+    "level": "silver"
+  },
+  {
+    "name": "upliff",
+    "link": "https://upliff.com/",
+    "level": "silver"
+  },
+  {
+    "name": "bsides",
+    "link": "https://bsidesaugusta.org/",
+    "level": "silver"
+  },
+  {
+    "name": "github",
+    "link": "https://github.com/",
+    "level": "community"
+  },
+  {
+    "name": "gray",
+    "link": "https://planwithgray.com/",
+    "level": "community"
+  },
+  {
+    "name": "bgit",
+    "link": "https://browngirlsintech.com/",
+    "level": "community"
+  },
+  {
+    "name": "bgc",
+    "link": "https://www.browngirlscode.org/",
+    "level": "community"
+  },
+  {
+    "name": "moonrise",
+    "link": "https://moonrise.works/",
+    "level": "community"
+  },
+  {
+    "name": "eventbrite",
+    "link": "https://www.eventbrite.com",
+    "level": "community"
+  }
+  ],
+  "events": [
+    {
+      "title": "From Combat to Code: How Open Source Opens Doors",
+      "speaker": "Jerome Hardaway",
+      "description": "A Talk about how veterans are using software engineering to move on for life after the military, common misconceptions and how to integrate them into your teams.",
+      "image": "jerome.jpg",
+      "location": "Room 1",
+      "time": 9
+    },
+    {
+      "title": "Fixing Financial Insecurity with Automation",
+      "speaker": "Eric Harrison",
+      "description": "In this talk, Eric will explore the looming American financial crisis and our responsibility as engineers to use software  and automation to help the financially challenged. We’ll cover potential solutions using Moonrise as a case study and envision a better American economy through efficiency optimizations.",
+      "image": "eric.png",
+      "location": "Room 1",
+      "time": 10
+    },
+    {
+      "title": "UX++",
+      "speaker": "Harsha Vemulapaulli",
+      "description": "for any product or service to be considered exceptional it has to deliver an exceptional user experience. His talk will explore the components of exceptional experiences across software solutions as diverse as plain old web sites (is that a thing any more) to the new frontiers of wearables, voice and beyond.",
+      "image": "harsha.jpg",
+      "location": "Room 1",
+      "time": 11
+    },
+    {
+      "title": "CloudWatch-ing: Creating More Useful Logs & Alerts with AWS",
+      "speaker": "Rhia Dixon",
+      "description": "Logging is meaningless without alerts, and overzealous logging is inefficient. Learning to use Amazon CloudWatch for streamlined, meaningful, centralized logging and alerts can drastically reduce the time it takes to notice issues, find bugs, and fix them.",
+      "image": "rhia.jpg",
+      "location": "Room 1",
+      "time": 13
+    },
+    {
+      "title": "\"Git hook[ed]\" on images & up your documentation game",
+      "speaker": "Veronica Hanus",
+      "description": "Can you remember the difference between two hex color values? Me neither! Entering visual representations of recent-changes into version control makes review of past changes easier & speeds acclimation to a new web project. Join me for a review of current methods & how to choose the best for you!",
+      "image": "veronicaH.jpg",
+      "location": "Room 1",
+      "time": 14
+    },
+    {
+      "title": "Rethinking quality and the engineers who protect it",
+      "speaker": "Andrew Smelser",
+      "description": "Testing software is a critical responsibility, but testing is not a synonym for quality. Shifting your approach to software quality from black box testers, to quality coaching could lead to delivering higher quality products. In this talk, I share strategies for coaching quality, without testers!",
+      "image": "andrewS.jpg",
+      "location": "Room 1",
+      "time": 15
+    },
+    {
+      "title": "How to Deliver Quality Software",
+      "speaker": "Jeanne Schmidt",
+      "description": "How mature development teams deliver quality software. Teams who strive to deliver software in a continuous integration and continuous delivery environment must ensure that their quick deployments work as expected.  Jeanne provide strategies and real world examples of successful software development projects.  She'll cover agile development and testing techniques, automation guidance and specific steps teams can use to \"bake in\" quality during the design phase through delivery.",
+      "image": "jeanneS.jpg",
+      "location": "Room 1",
+      "time": 16
+    },
+    {
+      "title": "Coding with Compassion",
+      "speaker": "Jessica King",
+      "description": "Have you ever treated the word “User” like a 4-letter word?“ Has your software ever been described as “complicated”, “not user friendly”, or “confusing”? Have you ever had your software used incorrectly or not at all? At the end of this talk, you should come away with concrete ways you can flip those notions upside down and have your users truly believe you’re the best and always have their interests in mind. ",
+      "image": "jessicaK.jpg",
+      "location": "Room 2",
+      "time": 9
+    },
+    {
+      "title": "What Building Communities Taught Me About Building Inclusive Engineering Teams",
+      "speaker": "Erica Stanley",
+      "description": "I was once that engineer that thought she would never move into management. I loved coding my days, and often nights away. Why would I ever want to stop? My ideas about management began to change once I started the Atlanta network of Women Who Code. I've learned so much about the people challenges we face in tech, while also learning how to empower the people around me to get big things done. What I didn't realize until years later was how these experiences were preparing me to build inclusive teams and lead and motivate engineers from various backgrounds to work collaboratively. This session will share some of my lessons learned as a community leader and how I've applied them in my role as an engineering manager. We'll also discuss ways building communities can help companies grow their team and their engineering brand.",
+      "image": "ericaS.jpg",
+      "location": "Room 2",
+      "time": 10
+    },
+    {
+      "title": "Trying Stuff and Seeing What Happens: Accessibility and Civic Hacking",
+      "speaker": "Mark Noonan",
+      "description": "This talk will look at the themes of impact and accessibility by discussing three civic hacking projects involving Code for Atlanta. We will talk about one project related to paratransit service delivery that raised $40,000 for charity and helped influence MARTA's online paratransit experience. Then we'll discuss a project that uses a commercial game truck as a venue for coding classes for teenagers. Finally we'll take a look at work in-progress on a project related to realtime automated transcriptions and translations of live events. All three share the same goal: increased access to information, education, and services. And all three projects operate with an approach familiar to all kinds of developers: get out there and try stuff. Run pilots. Get feedback. See what happens. ",
+      "image": "markN.jpg",
+      "location": "Room 2",
+      "time": 11
+    },
+    {
+      "title": "Mentoring: Creating Masters",
+      "speaker": "Wes Dollar",
+      "description": "All dev shops share a few common traits - there's never enough hours in the day, we always need more velocity, and creating or adding more talent is always at the top of the list. In this talk, Wes will guide us through his tried and true methods for raising the level of talent across the team, providing tips, tricks, and valuable insight on how to create masters by making room for mentoring in your team's day-to-day workflow.",
+      "image": "wesD.jpg",
+      "location": "Room 2",
+      "time": 13
+    },
+    {
+      "title": "Nativescript - Mobile Dev for Web Devs",
+      "speaker": "Mark Locklear",
+      "description": "I was asked by a colleague if I could update a mobile app that was developed by a previous employee. I reluctantly agreed to take a look at the code thinking “I don’t know Swift or Android Development” and I am not a Mobile Developer! To my surprise and delight, I found the app was written in a framework called Nativescript. This framework has great documentation, good support on StackOverflow and a very active Slack Channel. It has a host of plugins available, along with support for Angular and Vue. Also, the code is intuitive and well organized.",
+      "image": "markL.jpg",
+      "location": "Room 2",
+      "time": 14
+    },
+    {
+      "title": "From Pets to Cattle: Deploying Web Applications with Kubernetes",
+      "speaker": "Bowe Strickland",
+      "description": "The world has become accustomed to \"always on\" web applications (can you imagine Gmail announcing a maintenance outage?). This talk will discuss open source techniques for managing highly available web applications, using Docker containers to tighten the flow from development to deployment, Kubernetes to orchestrate graceful application upgrades, and how to design applications to best take advantage of these approaches. The talk will conclude with a brief demonstration (if the demo gods are willing...).",
+      "image": "boweS.png",
+      "location": "Room 2",
+      "time": 15
+    },
+    {
+      "title": "Updating a Classic: .NET to NodeJS",
+      "speaker": "Patrick Rodgers",
+      "description": "The story of a development team updating a classic asp site to use node.js and C# without anyone knowing.",
+      "image": "patrickR.png",
+      "location": "Room 2",
+      "time": 16
+    }
+  ],
+  "runcodeTeam": [
+    {
+      "name": "Josh Rykowski",
+      "slack": "ryko212",
+      "twitter": "https://twitter.com/ryko212",
+      "image": "runcode-ryko212.jpg",
+      "info": "Josh Rykowski currently serves as a Cyberspace operations officer for the US Army where he has lead a Cyber Protection Team and worked to develop specialized training for those same teams. On his convoluted path to cybersecurity he obtained a Bachelors of Science in Electrical Engineering from the United States Military Academy and a Masters Degree in Computer Science from Rice University focusing on multi-robot systems. \n In his spare time, Josh serves as the executive director and challenge developer for the RunCode.ninja programming challenge non-profit where he works with a talented team of individuals to provide real-world programming challenges while cultivating community support at no-cost to the broader community. \n Finally, he is passionate about teaching and giving back to the community through volunteering his time as a technical mentor for CyberPatriot, managing the RunCode.ninja non-profit, and mentoring local talent within the cyber domain."
+    },
+    {
+      "name": "Zach McElroy",
+      "slack": "ohai",
+      "image": "runcode-ohai.jpg",
+      "info": "Hi, I'm Zach. When I'm not chatting online with babes all day, you'll probably find me Blue Teaming or writing/building infrastructure to support Blue Team OPs. I like to write Python when possible, or C and PHP if I'm feeling exceptionally masochistic. \n I don't have any fancy degrees or even much book lern'n, so I stick to building/maintaining the RunCode platform and writing up some challenges here and there."
+    },
+    {
+      "name": "Scott Hamilton",
+      "slack": "funtimes",
+      "image": "runcode-funtimes.jpg",
+      "info": "Scott Hamilton is a Cyber Operations Warrant Officer in the United States Army. He currently serves as one of the lead developers and systems architect for the Network, Engineering, Research, and Development shop for the Cyber Protection Brigade. \n In his free time he is one of five challenge developers that contribute to RunCode platform."
+    },
+    {
+      "name": "Nate Hicks",
+      "slack": "nazwadi",
+      "image": "runcode-nazwadi.jpg",
+      "info": "Nathan Hicks is a Cyberspace operations officer in the US Army where he was previously involved in the development and execution of training exercises for Cyber Protection Teams, as well as leading operations for the same.  He is currently finishing an Army Advanced Civil Schooling assignment at Georgia Tech where he will graduate with an M.S. Cybersecurity in May.  He obtained a Bachelor of Science in Computer Science from the United States Military Academy. \n In his spare time, Nathan serves as a challenge developer and part-time sysadmin for RunCode, takes care of administrative tasks on behalf of the non-profit, and on a personal level enjoys experimenting with Linux infrastructure and coding projects."
+    },
+    {
+      "name": "Matt Bledsoe",
+      "slack": "thatguy",
+      "image": "runcode-thatguy.png",
+      "info": "Matthew Bledsoe is a Software Engineer at St Jude Children's Research Hospital where he provides support migrating cutting edge cancer research out of the laboratory and into clinical usage.  He also serves as a Cyber Operations Technician in the US Army Reserves.  He has a B.S. in Electrical Engineering, B.S in Computer Engineering, and a M.S. in Electrical Engineering.  How that landed him in healthcare and cyber security is still a mystery. \n Outside of work you'll find him still behind a computer playing games, breaking his homelab, or working on RunCode.  Matthew is the newest member of the team, so if anything is broken it is safe to assume he is to blame."
+    }
+  ]
+}

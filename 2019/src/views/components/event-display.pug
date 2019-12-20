@@ -1,0 +1,20 @@
+- var imageUrl = event.image
+- var eventLocation = event.location.toLowerCase().split(' ').join('-')
+- var speaker = event.speaker.split(' ').join('')
+- var eventTime = event.time;
+- eventTime > 12 ? eventTime -= 12 : "";
+- eventTime < 7 ? eventTime += "pm" : eventTime += "am";
+
+
+.event-display(class=eventLocation id=speaker + event.time)
+  .event-content
+    h4.event-title= event.title
+    p.event-description= event.description
+    .event-details
+      a.flex-left(href=`speakers.html#${speaker}`, style="text-decoration:none;")
+        img.event-image(src='../images/speaker-' + imageUrl)
+        p.event-speaker-name(id=event.speaker.split(' ').join('')) #{event.speaker}
+          //- p. event.speaker
+      .flex-right
+        p.event-location Room: #{event.location}
+        p.event-time Time: #{eventTime}

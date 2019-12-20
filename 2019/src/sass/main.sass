@@ -1,0 +1,91 @@
+@import "global/global"
+@import "components/components"
+@import "layout/layout"
+
+// Layout
+
+body
+  width: 100%
+  padding: 0
+  margin: 0
+
+h1
+  padding: 40px 0
+  padding-top: 125px
+  margin: 0 auto
+  margin-bottom: 40px
+    
+
+main
+  margin: 0 auto
+  overflow: hidden
+  p, label
+    font-size: 1.6rem
+
+section, footer
+  padding: 20px 0
+  margin: 0 auto
+  h2
+    margin-top: 0
+    margin-bottom: 20px
+    font-weight: bold
+    font-size: 3rem
+    color: darken($primary-blue, 50%)
+  p
+    margin: 0 auto
+
+footer
+  p
+    padding: .5rem 0
+
+
+a.button, input[type=submit]
+  display: inline-block
+  background-color: $pink5
+  border-radius: 2px
+  border: 2px solid $pink5
+  box-shadow: $shadow3
+  font-weight: bold
+  font-size: 2rem
+  padding: 5px 20px
+  color: $gray1
+  transition: box-shadow .4s ease
+  &:hover
+    box-shadow: $shadow1
+button
+  background-color: transparent
+  border: none
+
+label
+  width: 100%
+
+// Classes
+
+.fa-twitter
+  color: $blue7
+
+// Id styles
+
+#body-wrapper
+  position: relative
+  margin: 0 auto
+  text-align: center
+  max-width: 1920px
+  background-color: $gray1
+
+#dev-btn
+  display: none
+
+#results
+  color: tomato
+  margin: 0 auto
+
+// Splash images throught he pages
+#splash-index
+  background-image: url("../images/ga.jpg")
+#splash-about
+  background-image: url("../images/stock-audience.jpg")
+#splash-tickets
+  background-image: url("../images/stock-ticket.jpg")
+#splash-contact
+  background-image: url("../images/stock-contact.jpg")

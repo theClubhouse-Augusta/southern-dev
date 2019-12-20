@@ -1,0 +1,40 @@
+{
+  "name": "southern-dev",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp watch",
+    "build": "gulp images"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theClubhouse-Augusta/southern-dev.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/theClubhouse-Augusta/southern-dev/issues"
+  },
+  "homepage": "https://github.com/theClubhouse-Augusta/southern-dev#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "browser-sync": "^2.26.3",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^7.0.1",
+    "gulp-cache": "1.1.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-data": "1.3.1",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-pug": "^4.0.1",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "2.6.5"
+  },
+  "dependencies": {
+    "babel-preset-es2015": "^6.24.1",
+    "core-js": "2.6.5"
+  }
+}
