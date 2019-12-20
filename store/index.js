@@ -37,6 +37,6 @@ export const state = () => ({
         console.log(res.slug);
         return res;
       });
-      await commit('setSpeakerList', speakers);
+      await commit('setSpeakers', speakers);
     }
   }
