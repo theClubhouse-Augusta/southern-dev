@@ -19,4 +19,6 @@ $ yarn start
 $ yarn generate
 ```
 
+Find information [here](https://yarnpkg.com/lang/en/docs/install) about yarn and installing it on your local machine.
+
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
