@@ -1,8 +1,11 @@
-@import "global/global"
-@import "components/components"
-@import "layout/layout"
+// Ref: https://github.com/nuxt-community/vuetify-module#customvariables
 
-// Layout
+@import "global/global"
+// @import "components/components"
+// @import "layout/layout"
+//
+// The variables you want to modify
+// $font-size-root: 20px
 
 body
   width: 100%
@@ -58,34 +61,3 @@ button
 
 label
   width: 100%
-
-// Classes
-
-.fa-twitter
-  color: $blue7
-
-// Id styles
-
-#body-wrapper
-  position: relative
-  margin: 0 auto
-  text-align: center
-  max-width: 1920px
-  background-color: $gray1
-
-#dev-btn
-  display: none
-
-#results
-  color: tomato
-  margin: 0 auto
-
-// Splash images throught he pages
-#splash-index
-  background-image: url("~assets/images/ga.jpg")
-#splash-about
-  background-image: url("~assets/images/stock-audience.jpg")
-#splash-tickets
-  background-image: url("~assets/images/stock-ticket.jpg")
-#splash-contact
-  background-image: url("~assets/images/stock-contact.jpg")

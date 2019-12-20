@@ -1,3 +1,17 @@
+<template lang="pug">
+  main
+    section.splash
+      div.splash-img#splash-index(title="Photo courtesy of the Augusta Convention & Visitors Bureau")
+      .splash-filter
+      .content
+          img(src="/logo.png")
+          h1 A Southern Tech Conference
+            br
+            | April 25, 2020
+      //- br
+      //- a.button(href="./2019" role="button" style="margin-top: 30px;" ) Check out 2019
+</template>
+<style lang="sass" scoped>
 
 .splash
   position: relative
@@ -14,6 +28,7 @@
     background-size: cover
     background-repeat: no-repeat
     background-color: $primary-blue
+    background-image: url("~assets/images/ga.jpg")
     filter: saturate(1.5) grayscale(.4) sepia(.2) contrast(1.2)
     -webkit-filter: saturate(1.5) grayscale(.4) sepia(.2) contrast(1.2)
   .splash-filter
@@ -24,15 +39,32 @@
     right: 0
     background-color: $pink5
     opacity: .3
-  h1
+  .content
+    text-align: center
     position: absolute
+    width: 80%
+    max-width: 900px
+    left: 50%
     bottom: 10%
+    transform: translateX(-50%)
+
+  img
+    margin: 0 auto
+    display: block
+    width: 80%
+    @media(min-width: 700px)
+      width: 50%
+  h1
     width: 100%
     transition: opacity .4s ease
     background-color: transparent
     padding: 1rem
     color: $gray1
     text-shadow: 0 0 50px $gray9
+    font-size: 42px
+    @media(min-width: 700px)
+      font-size: 60px
+    
 
   .insta-filters, #dev-btn
     position: absolute
@@ -118,11 +150,11 @@
     .index-contact .button
         border-bottom: none
     .index-about .index-bg
-        background-image: url("/images/chairs.jpg")
+        background-image: url("~assets/images/chairs.jpg")
     .index-speakers .index-bg
-        background-image: url("/images/microphone.jpg")
+        background-image: url("~assets/images/microphone.jpg")
     .index-contact .index-bg
-        background-image: url("/images/phone.jpg")
+        background-image: url("~assets/images/phone.jpg")
 
 .sponsors
     margin: 30px auto
@@ -169,3 +201,4 @@
         header
             width: 100%
             margin-bottom: 30px
+</style>

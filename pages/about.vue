@@ -1,3 +1,34 @@
+<template lang="pug">
+  //- - var page = "about"
+  //- include ../layouts/header.pug
+  #body-wrapper
+    main.about
+      header
+        h1 A Community led Conference
+      section.mission
+        h2 Our Mission
+        p Our goal is to push software development, design,  and technical leadership beyond elementary conversations. We believe an annual conference is a way to begin these discussions that can carry over to our developer and business communities throughout the year to improve technical communication.
+      //- section.who-we-are
+      //-   h2 Who We Are
+      //-   p We are a group of tech artisans who meet up, hangout, build, and create stuff. We love our city and what to make it better.
+      section.policies
+        h2 Policies
+        p We take safety and inclusivity seriously and want everyone to have as good of a time as possible. Please read over our Code of Conduct and other policies to help us create the best conference experience.
+        .button-cont
+          a.button(href="policies")
+            button Our Policies
+      section.location
+        .txt-container
+          h3 Venue Location
+          a(href="https://cybercenter.georgia.gov/" target="_blank" rel="noreferrer noopener") Georgia Cyber Center
+          p 100 Grace Hopper Lane, Augusta, GA 30901
+        div.iframeCont
+          iframe(src="https://www.google.com/maps/d/u/0/embed?mid=1CQdON6sA-pMuOvTIrZcyzU7B6rw-e_lu")
+      //- include ../layouts/footer.pug
+  
+</template>
+
+<style lang="sass" scoped>
 h1
   font-size: 4rem
   background-color: $blue1
@@ -103,3 +134,5 @@ h1
     margin-left: 40px
 
 
+
+</style>
