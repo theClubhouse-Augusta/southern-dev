@@ -1,11 +1,24 @@
-import colors from 'vuetify/es5/util/colors'
+import colors from 'vuetify/es5/util/colors';
 
 export default {
   mode: 'universal',
   /*
   ** Headers of the page
   */
+  generate: {
+    routes: function() {
+      const fs = require('fs')
+      return fs.readdirSync('./assets/content/blog').map(file => {
+        return {
+          route: `/blog/${file.slice(2, -5)}`,
+          payload: require(`./assets/content/blog/${file}`)
+        }
+      })
+    }
+  },
   head: {
+    titleTemplate: '%s - ' + process.env.npm_package_name,
+    title: process.env.npm_package_name || '',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -31,8 +44,6 @@ export default {
       // General
       { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
     ],
-    titleTemplate: '%s - ' + process.env.npm_package_name,
-    title: process.env.npm_package_name || '',
     link: [
       { rel: 'icon', href: '/favicon.png' },
       {href: "https://fonts.googleapis.com/css?family=Roboto|Merriweather:400,700"}
@@ -46,12 +57,6 @@ export default {
   */
   loading: { color: '#fff' },
   /*
-  ** Global CSS
-  */
-  css: [
-    '~/css/base.css'
-  ],
-  /*
   ** Plugins to load before mounting the App
   */
   plugins: [
@@ -61,35 +66,38 @@ export default {
   */
   buildModules: [
     '@nuxtjs/vuetify',
+    '@nuxtjs/markdownit',
   ],
   /*
   ** Nuxt.js modules
   */
   modules: [
-    ['nuxt-fontawesome', {
-      imports: [
-        {
-          set: '@fortawesome/free-brands-svg-icons',
-          icons: ['fab']
-        },
-        {
-          set: '@fortawesome/free-regular-svg-icons',
-          icons: ['far']
-        }
-      ]
-    }]
+      ['nuxt-fontawesome', {
+        imports: [
+          {
+            set: '@fortawesome/free-brands-svg-icons',
+            icons: ['fab']
+          },
+          {
+            set: '@fortawesome/free-regular-svg-icons',
+            icons: ['far']
+          }
+        ]
+      },
+    ],
+    '@nuxtjs/markdownit',
     // '@nuxtjs/style-resources'
   ],
   /*
    ** Load global SASS styles  
-  */
+  */ 
   // styleResources: {
   //   sass: [
-  // './assets/**/*.sass'
+  //     './assets/**/*.sass'
   //   ]
   // },
   css: [
-    // '@/assets/main.sass'
+    '@/assets/main.sass'
   ],
   /*
   ** vuetify module configuration
@@ -112,6 +120,9 @@ export default {
       }
     }
   },
+  markdownit: {
+    injected: true,
+  },
   /*
   ** Build configuration
   */
@@ -119,7 +130,7 @@ export default {
     /*
     ** You can extend webpack config here
     */
-    extend(config, ctx) {
+    extend (config, ctx) {
     }
   }
-}
+};

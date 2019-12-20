@@ -1,33 +1,24 @@
-# Southern Dev Conf website
+# southern-dev
 
-## Welcome!
+> nuxt version of southern dev
 
-Thank you for stopping by our humble repo. We are building a website for the Southern Dev conference in Augusta GA that is going to be held in April 27th 2019.
+## Build Setup
 
-#### How to contribute
-Please checkout the issues we have on the repo to help guide the direction we're trying to go. 
+``` bash
+# install dependencies
+$ yarn install
 
-If you have your own issue you would like to start please feel free to submit a PR or add a new issue. 
+# serve with hot reload at localhost:3000
+$ yarn dev
 
-###### To get this project started:
+# build for production and launch server
+$ yarn build
+$ yarn start
 
+# generate static project
+$ yarn generate
 ```
-git clone https://github.com/theClubhouse-Augusta/southern-dev.git
-cd southern-dev
-npm install
-```
 
-To run project use `npm run start`
-Edit files in `src` folder and Gulp along with Browser sync will reload browser.
+Find information [here](https://yarnpkg.com/lang/en/docs/install) about yarn and installing it on your local machine.
 
-- Known Gulp bugs
-    - Pug errors break gulp needing to restart
-    - HTML does not reload process (change a sass file and will run HTML)
-    - If images are added when Gulp isn't running Image process doesn't run. Need to be running Gulp to get it to work
-
-- Template Guidelines
-    - *NOTE*: When we get more sponsors uncomment those levels
-    - When adding a sponsor:
-        - in the `images` folder the naming convention is: `sponsor-` + `sponsor.name` + `.png`
-        - I am only handling PNGs template gen will not catch a JPG or any other file format. 
-            - (To create that test I think would require a network call to test the file type and that just ain't worth it).
+For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).

@@ -1,0 +1,64 @@
+.footerMain
+  overflow: hidden
+  padding: 2rem
+  width: 80%
+  max-width: 900px
+  a
+    display: block
+    text-decoration: none
+  .clubhouse
+    float: none
+    margin: 20px 0
+    @media(min-width: 700px)
+      float: left
+    img
+      width: 100%
+      max-width: 100px
+      margin-top: 10px
+    a:hover
+      color: $pink5
+  .main
+    float: none
+    display: block
+    margin: 20px auto
+    @media(min-width: 700px)
+      float: right
+    a
+      display: inline-block
+  ul
+    text-align: left
+    margin: 0 auto
+    width: 170px
+
+  li
+    display: inline-block
+    margin: 0
+    width: 300px
+  li:nth-child(odd)
+    a:hover
+      color: $blue5
+  li:nth-child(even)
+    a:hover
+      color: $pink5
+
+  .fa-facebook-square
+    color: #3C5A99
+  .fa-twitter
+    color: #38A1F3
+  .fa-linkedin
+    color: #0077B5
+
+  ul#social
+    margin-left: 0
+    li
+      display: inline
+      padding-right: 20px
+      &:hover
+        .fa-facebook-square,
+        .fa-twitter,
+        .fa-linkedin
+          color: $pink3
+    a
+      font-size: 2.4rem
+
+
