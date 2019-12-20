@@ -69,7 +69,6 @@ export default {
       {src: "https://www.googletagmanager.com/gtag/js?id=UA-132392058-1", defer: "true"}
     ]
   },
->>>>>>> theClubhouse-Augusta/optimize
   /*
   ** Customize the progress-bar color
   */
