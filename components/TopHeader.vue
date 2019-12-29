@@ -25,6 +25,9 @@ div
               a(href="contact")
                   .select Contact
           li
+              a(href="blog")
+                  .select Blog
+          li
               a(href="/2019/")
                   .select 2019
 </template>

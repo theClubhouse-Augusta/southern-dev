@@ -18,9 +18,12 @@ div
           li
               a(href="about")
                   .select About
-          //- li
-          //-     a(href="speakers.html")
-          //-         .select Speakers
+          li
+              a(href="speakers")
+                  .select Speakers
+          li
+              a(href="blog")
+                  .select Blog
           //- li
           //-     a(href="schedule.html")
           //-         .select Schedule
