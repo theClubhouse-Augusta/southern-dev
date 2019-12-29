@@ -1,7 +1,7 @@
 export const state = () => ({
     blogPosts: [],
     speakers: []
-  })
+  });
   
   export const mutations = {
     setBlogPosts(state, list) {
@@ -20,23 +20,23 @@ export const state = () => ({
         /\.json$/
       );
       let blogPosts = files.keys().map(key => {
-        let res = files(key)
-        res.slug = key.slice(2, -5)
-        return res
+        let res = files(key);
+        res.slug = key.slice(2, -5);
+        return res;
       });
-      await commit('setBlogPosts', blogPosts)
+      await commit('setBlogPosts', blogPosts);
 
       let speakerList = await require.context(
         '~/assets/content/speakers/',
         false,
         /\.json$/
       );
-      let speakers = files.keys().map(key => {
-        let res = files(key);
+      let speakers = speakerList.keys().map(key => {
+        let res = speakerList(key);
         res.slug = key.slice(2, -5);
         console.log(res.slug);
         return res;
       });
       await commit('setSpeakers', speakers);
     }
-  }
+  };
