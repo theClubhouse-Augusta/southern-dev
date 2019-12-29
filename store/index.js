@@ -22,6 +22,7 @@ export const state = () => ({
       let blogPosts = files.keys().map(key => {
         let res = files(key);
         res.slug = key.slice(2, -5);
+        console.log(res.slug);
         return res;
       });
       await commit('setBlogPosts', blogPosts);

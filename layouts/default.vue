@@ -16,19 +16,19 @@ div
           li
               a(href="/") Home
           li
-              a(href="about")
+              a(href="/about")
                   .select About
           li
-              a(href="speakers")
+              a(href="/speakers")
                   .select Speakers
           li
-              a(href="blog")
+              a(href="/blog")
                   .select Blog
           //- li
           //-     a(href="schedule.html")
           //-         .select Schedule
           li
-              a(href="contact")
+              a(href="/contact")
                   .select Contact
           //- li
           //-     a(href="/2019/")
