@@ -4,7 +4,7 @@
             header
                 h1 This Year's Speakers
             ul(v-for="(speaker, index) in speakers" :key="index")
-                nuxt-link(:to="`speakers/${speaker.slug}`") {{speaker.name}} - {{speaker.title}}
+                nuxt-link(:to="`/speakers/${speaker.slug}`") {{speaker.name}} - {{speaker.title}}
                 p {{speaker.talkDescription}}
 </template>
 <script>

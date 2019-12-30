@@ -4,7 +4,7 @@
       header
         h1 Catch Up On What We Are Doing
       ul(v-for="(blogPost, index) in blogPosts" :key="index")
-        nuxt-link(:to="`blog/${blogPost.slug}`") {{blogPost.title}}
+        nuxt-link(:to="`/blog/${blogPost.slug}`") {{blogPost.title}}
         p {{blogPost.body.slice(0, 20)}}...
 </template>
 <script>

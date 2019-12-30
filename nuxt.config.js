@@ -12,7 +12,7 @@ export default {
         console.log(file.slice(0, -5));
         console.log(file);
         return {
-          route: `/blog/${file.slice(2, -5)}`,
+          route: `/blog/${file.slice(0, -5)}`,
           payload: require(`./assets/content/blog/${file}`)
         };
       });
