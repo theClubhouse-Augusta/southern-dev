@@ -11,7 +11,7 @@ export default {
         if (payload) return { speaker: payload }
         else {
             return {
-                speaker: await require(`~/assets/content/speakers/${params.name}.json`)
+                speaker: await require(`~/assets/content/speakers/${params.speaker}.json`)
             }
         }
     }
