@@ -1,9 +1,13 @@
-<template>
-    <speaker>
-        <h1>{{speaker.name}}</h1>
-        <h4>{{speaker.talkTitle}}</h4>
-        <div v-html="$md.render(speaker.talkDescription)" />
-    </speaker>
+<template lang="pug">
+    div
+        h1.talk-title {{speaker.talkTitle}}
+        div.speaker-div
+            div.speaker-info
+                h3.speaker-name {{speaker.name}}
+                h5.speaker-title {{speaker.speakerTitle}}
+            div.speaker-img
+                img(:src="require(`${speaker.speakerImage}`)")
+        div.talk-description(v-html="$md.render(speaker.talkDescription)")
 </template>
 <script>
 export default {
