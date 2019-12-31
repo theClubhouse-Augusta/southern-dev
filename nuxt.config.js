@@ -7,13 +7,26 @@ export default {
   */
   generate: {
     routes: function() {
-      const fs = require('fs')
-      return fs.readdirSync('./assets/content/blog').map(file => {
+      const fs = require('fs');
+      let posts = fs.readdirSync('./assets/content/blog').map(file => {
+        console.log(file.slice(0, -5));
+        console.log(file);
         return {
-          route: `/blog/${file.slice(2, -5)}`,
+          route: `/blog/${file.slice(0, -5)}`,
           payload: require(`./assets/content/blog/${file}`)
-        }
-      })
+        };
+      });
+      let speakers = fs.readdirSync('./assets/content/speakers').map(file => {
+        console.log(file.slice(0, -5));
+        console.log(file);
+        return {
+          route: `/speakers/${file.slice(0, -5)}`,
+          payload: require(`./assets/content/speakers/${file}`)
+        };
+      });
+      return Promise.all([posts, speakers]).then(values => {
+        return [...values[0], ...values[1]];
+      });
     }
   },
   head: {

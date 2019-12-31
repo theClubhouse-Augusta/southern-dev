@@ -15,7 +15,7 @@ collections:
     format: 'json'
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     editor:
-      preview: false
+      preview: true
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
@@ -25,13 +25,15 @@ collections:
     label: 'Speakers'
     folder: 'assets/content/speakers'
     create: true
-    format: json
+    format: 'json'
     slug: '{{title}}'
     editor: 
-      preview: false
+      preview: true
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Speaker Name', name: 'name', widget: 'string' }
       - { label: 'Bio', name: 'bio', widget: 'markdown' }
       - { label: 'Speaker Title', name: 'speakerTitle', widget: 'string' }
+      - { label: 'Talk Title', name: 'talkTitle', widget: 'string' }
       - { label: 'Talk Description', name: 'talkDescription', widget: 'markdown' }
+      - { label: 'Speaker Image', name: 'speakerImage', widget: 'file' }
