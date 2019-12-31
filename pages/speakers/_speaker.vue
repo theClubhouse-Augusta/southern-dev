@@ -6,7 +6,7 @@
                 h3.speaker-name {{speaker.name}}
                 h5.speaker-title {{speaker.speakerTitle}}
             div.speaker-img
-                img(:src="require(`${speaker.speakerImage}`)")
+                //- img(:src="require(`${speaker.speakerImage}`)")
         div.talk-description(v-html="$md.render(speaker.talkDescription)")
 </template>
 <script>
