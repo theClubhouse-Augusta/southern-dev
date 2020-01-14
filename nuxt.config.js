@@ -98,6 +98,7 @@ export default {
         ]
       },
     ],
+    '@nuxtjs/pwa',
     '@nuxtjs/markdownit',
     // '@nuxtjs/style-resources'
   ],
