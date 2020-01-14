@@ -34,6 +34,10 @@ collections:
       - { label: 'Speaker Name', name: 'name', widget: 'string' }
       - { label: 'Bio', name: 'bio', widget: 'markdown' }
       - { label: 'Speaker Title', name: 'speakerTitle', widget: 'string' }
-      - { label: 'Talk Title', name: 'talkTitle', widget: 'string' }
-      - { label: 'Talk Description', name: 'talkDescription', widget: 'markdown' }
       - { label: 'Speaker Image', name: 'speakerImage', widget: 'file' }
+      - { label: 'Talk Time', name: 'talkTime', widget: 'datetime' }
+      - label: "Talk Location"
+        name: "talkLocation"
+        widget: "select"
+        options: ['Room 1', 'Room 2', 'Workshop Space 1', 'Workshop Space 2']
+      - { label: 'Talk Description', name: 'talkDescription', widget: 'markdown' }
