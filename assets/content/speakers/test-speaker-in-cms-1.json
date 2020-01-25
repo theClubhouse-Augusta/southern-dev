@@ -5,5 +5,7 @@
   "speakerTitle": "10X Developer!!!",
   "talkTitle": "Let me tell you how much I can do",
   "talkDescription": "Here is some information about this talk and what we are going to do and stuff like that...",
-  "speakerImage": "/images/uploads/logo.png"
+  "speakerImage": "/images/uploads/logo.png",
+  "location": "Room 2"
+
 }
