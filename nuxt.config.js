@@ -111,14 +111,14 @@ export default {
   //   ]
   // },
   css: [
-    '@/assets/main.sass'
+    '@/assets/sass/main.sass'
   ],
   /*
   ** vuetify module configuration
   ** https://github.com/nuxt-community/vuetify-module
   */
   vuetify: {
-    customVariables: ['~/assets/variables.sass'],
+    customVariables: ['~/assets/sass/variables.sass'],
     theme: {
       dark: true,
       themes: {
