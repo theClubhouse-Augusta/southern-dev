@@ -1,0 +1,10 @@
+{
+  "title": "Mark Noonan 2020",
+  "name": "Mark Noonan",
+  "bio": "Still needed",
+  "speakerTitle": "Web Developer at Content Thread",
+  "speakerImage": "images/uploads/logo.png",
+  "talkTime": "2020-04-25T17:00:44.233Z",
+  "talkLocation": "Room 1",
+  "talkDescription": "A lot of us know a good amount of HTML & CSS, but have never really been thrown a group of flat images and videos and told to \"make this whole website\". Breaking designs down and making a plan can be intimidating, especially if the first time you have to do it is at your first developer job! But is an important professional skill, so let's get some practice. In this presentation we'll talk about how to assess a design and use the patterns that you find in it to decide what your CSS needs are, then use the nature of the content to pick what the right accessible HTML elements, and finally bring those two needs together with clean, maintainable results. We'll also talk about what kinds of questions you can and should be asking when you receive a design, and while you work on it, to help you do a great job and know you are building the right thing."
+}
