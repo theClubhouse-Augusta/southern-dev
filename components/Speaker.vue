@@ -1,26 +1,18 @@
 <template lang="pug">
-    .speaker(@click="active = !active")
-        Modal(v-if="active" :speaker="speaker")
+    .speaker(@click="modalActivate")
         .speaker-img-container
             img.speaker-img(:src="require(`~/assets${speaker.speakerImage}`)")
         .speaker-name-container
             h5.speaker-name {{speaker.name}}
 </template>
 <script>
-import Modal from './modal';
+
 export default {
-    components: {
-        Modal
-    },
-    data () {
-        return { 
-            active: false 
-        }
-    },
     props: ["speaker"],
-    mounted () {
-        console.log("speaker", this.speaker)
-        console.log("index", this.index);
+    methods: {
+        modalActivate() {
+            this.$emit("modalActivate", this.speaker.name);
+        }
     }
 } 
 </script>
