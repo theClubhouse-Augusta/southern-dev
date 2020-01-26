@@ -24,9 +24,9 @@ div
           li
               a(href="/blog")
                   .select Blog
-          //- li
-          //-     a(href="schedule.html")
-          //-         .select Schedule
+          li
+              a(href="/schedule")
+                  .select Schedule
           li
               a(href="/contact")
                   .select Contact
