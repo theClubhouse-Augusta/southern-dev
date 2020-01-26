@@ -11,7 +11,7 @@ export default {
     props: ["speaker"],
     methods: {
         modalActivate() {
-            this.$emit("modalActivate", this.speaker.name);
+            this.$emit("modalActivate", this.speaker);
         }
     }
 } 

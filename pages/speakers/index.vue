@@ -1,20 +1,36 @@
 <template lang="pug">
     #body-wrapper
         main.speaker-list
+            Modal(v-if="activeSpeaker" :speaker="activeSpeaker")
             h1 This Year's Speakers
             ul
                 li(v-for="(speaker, index) in speakers" :key="index")
                     Speaker(:speaker="speaker")
+                    //-  @modalActivate="setModal" Uncomment for deploying modal
+                     
 </template>
 <script>
-    import Speaker from '../../components/Speaker/';
+    import Speaker from '../../components/Speaker';
+    import Modal from '../../components/Modal';
     export default {
         components: {
-            Speaker
+            Speaker,
+            Modal
+        },
+        data () {
+            return {
+                activeSpeaker: false
+            }
         },
         computed: {
             speakers() {
                 return this.$store.state.speakers;
+            }
+        },
+        methods: {
+            setModal(speaker) {
+                console.log(speaker);
+                this.activeSpeaker = speaker;
             }
         }
     }
