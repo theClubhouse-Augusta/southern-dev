@@ -22,8 +22,8 @@ div
               a(href="/speakers")
                   .select Speakers
           li
-              a(href="/blog")
-                  .select Blog
+              a(href="/news")
+                  .select News
           li
               a(href="/schedule")
                   .select Schedule

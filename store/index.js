@@ -1,11 +1,11 @@
 export const state = () => ({
-    blogPosts: [],
+    newsPosts: [],
     speakers: []
   });
   
   export const mutations = {
-    setBlogPosts(state, list) {
-      state.blogPosts = list;
+    setNewsPosts(state, list) {
+      state.newsPosts = list;
     },
     setSpeakers(state, list) {
       state.speakers = list;
@@ -15,17 +15,17 @@ export const state = () => ({
   export const actions = {
     async nuxtServerInit({ commit }) {
       let files = await require.context(
-        '~/assets/content/blog/',
+        '~/assets/content/news/',
         false,
         /\.json$/
       );
-      let blogPosts = files.keys().map(key => {
+      let newsPosts = files.keys().map(key => {
         let res = files(key);
         res.slug = key.slice(2, -5);
         console.log(res.slug);
         return res;
       });
-      await commit('setBlogPosts', blogPosts);
+      await commit('setNewsPosts', newsPosts);
 
       let speakerList = await require.context(
         '~/assets/content/speakers/',

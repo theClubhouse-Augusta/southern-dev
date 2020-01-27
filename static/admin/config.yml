@@ -8,9 +8,9 @@ media_folder: "assets/images/uploads"
 public_folder: "images/uploads"
 
 collections:
-  - name: 'blog'
-    label: 'Blog'
-    folder: 'assets/content/blog'
+  - name: 'news'
+    label: 'News'
+    folder: 'assets/content/news'
     create: true
     format: 'json'
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
