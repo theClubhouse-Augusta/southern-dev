@@ -30,6 +30,9 @@ div
           li
               a(href="/contact")
                   .select Contact
+          li
+              a(href="/partners")
+                  .select Partners
           //- li
           //-     a(href="/2019/")
           //-         .select 2019
