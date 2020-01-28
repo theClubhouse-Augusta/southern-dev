@@ -1,6 +1,7 @@
 export const state = () => ({
     newsPosts: [],
-    speakers: []
+    speakers: [],
+    partners: []
   });
   
   export const mutations = {
@@ -9,6 +10,9 @@ export const state = () => ({
     },
     setSpeakers(state, list) {
       state.speakers = list;
+    },
+    setPartners(state, list) {
+      state.partners = list;
     }
   };
   
@@ -39,5 +43,17 @@ export const state = () => ({
         return res;
       });
       await commit('setSpeakers', speakers);
+
+      let partnerFiles = await require.context(
+        '~/assets/content/partners/',
+        false,
+        /\.json$/
+      );
+      let partners = partnerFiles.keys().map(key => {
+        let res = partnerFiles(key);
+        res.slug = key.slice(2, -5);
+        return res;
+      });
+      await commit('setPartners', partners);
     }
   };

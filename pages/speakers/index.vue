@@ -5,7 +5,7 @@
             ul
                 li(v-for="(speaker, index) in speakers" :key="index")
                     .row
-                        img.speaker-img(:src="require(`~/assets${speaker.speakerImage}`)")
+                        img.speaker-img(:src="require(`~/assets/${speaker.speakerImage}`)")
                         .talk-info
                             h4 {{ speaker.talkTitle }}
                             nuxt-link(:to="`/speakers/${speaker.slug}`") {{speaker.name}}

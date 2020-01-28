@@ -41,3 +41,20 @@ collections:
         widget: "select"
         options: ['Room 1', 'Room 2', 'Workshop Space 1', 'Workshop Space 2']
       - { label: 'Talk Description', name: 'talkDescription', widget: 'markdown' }
+  - name: 'partners'
+    label: 'Partners'
+    folder: 'assets/content/partners'
+    format: 'json'
+    create: true
+    slug: '{{title}}-{{year}}'
+    identifier_field: name
+    editor:
+      preview: false
+    fields:
+      - { label: 'Name', name: 'name', widget: 'string' }
+      - { label: 'Partner Image', name: 'image', widget: 'file' }
+      - { label: 'About', name: 'about', widget: 'markdown' }
+      - label: "Partner Level"
+        name: 'partnerLevel'
+        widget: 'select'
+        options: ['Community', 'Silver', 'Gold', 'Platinum']
