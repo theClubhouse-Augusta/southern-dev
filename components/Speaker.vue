@@ -1,7 +1,7 @@
 <template lang="pug">
     .speaker(@click="modalActivate")
         .speaker-img-container
-            img.speaker-img(:src="require(`~/assets${speaker.speakerImage}`)")
+            img.speaker-img(:src="require(`~/assets/${speaker.speakerImage}`)")
         .speaker-name-container
             h5.speaker-name {{speaker.name}}
 </template>

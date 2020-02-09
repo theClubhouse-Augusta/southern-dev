@@ -7,7 +7,7 @@
         div.content-row
             div.txt-container(v-html="$md.render(speaker.talkDescription)")
         div.bio
-            img(:src="require(`~/assets${speaker.speakerImage}`)")
+            img(:src="require(`~/assets/${speaker.speakerImage}`)")
             div {{speaker.bio}}
 </template>
 <script>

@@ -5,18 +5,9 @@
             h1 This Year's Speakers
             ul
                 li(v-for="(speaker, index) in speakers" :key="index")
-<<<<<<< HEAD
                     Speaker(:speaker="speaker")
                     //-  @modalActivate="setModal" Uncomment for deploying modal
                      
-=======
-                    .row
-                        img.speaker-img(:src="require(`~/assets/${speaker.speakerImage}`)")
-                        .talk-info
-                            h4 {{ speaker.talkTitle }}
-                            nuxt-link(:to="`/speakers/${speaker.slug}`") {{speaker.name}}
-                            div(v-html="$md.render(speaker.talkDescription)")
->>>>>>> 8e44577b735a92201a0a4c31fda08ec5c84d4fc2
 </template>
 <script>
     import Speaker from '../../components/Speaker';
