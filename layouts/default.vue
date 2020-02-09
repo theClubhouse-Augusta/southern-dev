@@ -22,14 +22,17 @@ div
               a(href="/speakers")
                   .select Speakers
           li
-              a(href="/blog")
-                  .select Blog
+              a(href="/news")
+                  .select News
           li
               a(href="/schedule")
                   .select Schedule
           li
               a(href="/contact")
                   .select Contact
+          li
+              a(href="/partners")
+                  .select Partners
           //- li
           //-     a(href="/2019/")
           //-         .select 2019
