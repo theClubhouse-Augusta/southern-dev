@@ -6,8 +6,10 @@
       .content
           img(src="/logo.png")
           h1 A Southern Tech Conference
-            br
-            | April 25, 2020
+    section.date 
+      h2 April 25, 2020
+      a.button(href="https://www.theclubhou.se/event-tickets/southern-dev-2020-general-admission" rel="noreferrer noopener" target="_blank")
+          button Get Yo Tickets
       //- br
       //- a.button(href="./2019" role="button" style="margin-top: 30px;" ) Check out 2019
 </template>
@@ -15,7 +17,7 @@
 
 .splash
   position: relative
-  height: 100vh
+  height: 50vh
   padding: 0
   .splash-img
     position: absolute
@@ -40,30 +42,37 @@
     background-color: $pink5
     opacity: .3
   .content
-    text-align: center
     position: absolute
-    width: 80%
-    max-width: 900px
-    left: 50%
+    top: 10%
+    right: 10%
     bottom: 10%
-    transform: translateX(-50%)
-
+    left: 10%
+    z-index: 1
+    overflow: hidden
   img
     margin: 0 auto
     display: block
-    width: 80%
+    width: 70%
+    max-width: 400px
+    position: relative
     @media(min-width: 700px)
       width: 50%
+      top: 100px
   h1
     width: 100%
+    position: absolute
+    bottom: 0
+    right: 0
+    padding: 0
+    margin: 0
     transition: opacity .4s ease
     background-color: transparent
-    padding: 1rem
     color: $gray1
     text-shadow: 0 0 50px $gray9
-    font-size: 42px
+    font-size: 24px
+    text-align: right
     @media(min-width: 700px)
-      font-size: 60px
+      font-size: 40px
     
 
   .insta-filters, #dev-btn
@@ -80,25 +89,35 @@
     color: white
     border: none
 
-.date, .tickets
+.date
     display: inline-block
     vertical-align: top
-    padding: 100px 0
-    margin: 0 auto
-    width: 100%
+    margin: 20px auto
+    position: relative
+    width: 90%
+    left: 50%
+    transform: translateX(-50%)
     box-shadow: $shadow1
-    // border-radius: 5px
+    border-radius: 5px
     background-color: white
-    @media(min-width: 900px)
-        max-width: 450px
+    max-width: 450px
     h2
         font-weight: 500
+        font-size: 24px
+        text-align: center
         margin: 20px auto
-    h2 div
-        padding-top: 18px
-        color: $pink7
-.tickets
-    margin-bottom: 150px
+    a
+      text-decoration: none
+      padding: 0
+      display: inline-block
+      position: relative
+      left: 50%
+      transform: translate(-50%)
+    button
+      font-size: 18px
+      margin: 0 auto
+      padding: 10px 20px
+      display: block
 
 .index-nav
     max-width: 900px
