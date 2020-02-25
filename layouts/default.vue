@@ -15,24 +15,24 @@ div
               img(src="/logo.png") 
           li
               a(href="/") Home
-          li
-              a(href="/about")
-                  .select About
-          li
-              a(href="/speakers")
-                  .select Speakers
-          li
-              a(href="/news")
-                  .select News
-          li
-              a(href="/schedule")
-                  .select Schedule
+          //- li
+          //-     a(href="/about")
+          //-         .select About
+          //- li
+          //-     a(href="/speakers")
+          //-         .select Speakers
+          //- li
+          //-     a(href="/news")
+          //-         .select News
+          //- li
+          //-     a(href="/schedule")
+          //-         .select Schedule
           li
               a(href="/contact")
                   .select Contact
-          li
-              a(href="/partners")
-                  .select Partners
+          //- li
+          //-     a(href="/partners")
+          //-         .select Partners
           //- li
           //-     a(href="/2019/")
           //-         .select 2019
