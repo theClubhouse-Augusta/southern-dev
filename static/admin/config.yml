@@ -1,0 +1,60 @@
+backend:
+  name: git-gateway
+  branch: optimize #Branch to update (optional; defaults to master)
+
+publish_mode: editorial_workflow
+
+media_folder: "assets/images/uploads"
+public_folder: "images/uploads"
+
+collections:
+  - name: 'news'
+    label: 'News'
+    folder: 'assets/content/news'
+    create: true
+    format: 'json'
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    editor:
+      preview: true
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Description', name: 'description', widget: 'string' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+  - name: 'speaker'
+    label: 'Speakers'
+    folder: 'assets/content/speakers'
+    create: true
+    format: 'json'
+    slug: '{{title}}'
+    editor: 
+      preview: true
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Speaker Name', name: 'name', widget: 'string' }
+      - { label: 'Bio', name: 'bio', widget: 'markdown' }
+      - { label: 'Speaker Title', name: 'speakerTitle', widget: 'string' }
+      - { label: 'Speaker Image', name: 'speakerImage', widget: 'file' }
+      - { label: 'Talk Time', name: 'talkTime', widget: 'datetime' }
+      - label: "Talk Location"
+        name: "talkLocation"
+        widget: "select"
+        options: ['Room 1', 'Room 2', 'Workshop Space 1', 'Workshop Space 2']
+      - { label: 'Talk Description', name: 'talkDescription', widget: 'markdown' }
+  - name: 'partners'
+    label: 'Partners'
+    folder: 'assets/content/partners'
+    format: 'json'
+    create: true
+    slug: '{{title}}-{{year}}'
+    identifier_field: name
+    editor:
+      preview: false
+    fields:
+      - { label: 'Name', name: 'name', widget: 'string' }
+      - { label: 'Partner Image', name: 'image', widget: 'file' }
+      - { label: 'About', name: 'about', widget: 'markdown' }
+      - label: "Partner Level"
+        name: 'partnerLevel'
+        widget: 'select'
+        options: ['Community', 'Silver', 'Gold', 'Platinum']
