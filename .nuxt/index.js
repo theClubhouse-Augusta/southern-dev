@@ -12,10 +12,10 @@ import { createStore } from './store.js'
 
 /* Plugins */
 
-import nuxt_plugin_workbox_3672d63b from 'nuxt_plugin_workbox_3672d63b' // Source: .\\workbox.js (mode: 'client')
-import nuxt_plugin_plugin_6a15b290 from 'nuxt_plugin_plugin_6a15b290' // Source: .\\vuetify\\plugin.js (mode: 'all')
-import nuxt_plugin_markdownit_275711a8 from 'nuxt_plugin_markdownit_275711a8' // Source: .\\markdown-it.js (mode: 'all')
-import nuxt_plugin_templatesplugin5804ceb7_7d3c18de from 'nuxt_plugin_templatesplugin5804ceb7_7d3c18de' // Source: .\\templates.plugin.5804ceb7.js (mode: 'all')
+import nuxt_plugin_workbox_1d2b534a from 'nuxt_plugin_workbox_1d2b534a' // Source: .\\workbox.js (mode: 'client')
+import nuxt_plugin_plugin_a2997ad0 from 'nuxt_plugin_plugin_a2997ad0' // Source: .\\vuetify\\plugin.js (mode: 'all')
+import nuxt_plugin_markdownit_614ee74c from 'nuxt_plugin_markdownit_614ee74c' // Source: .\\markdown-it.js (mode: 'all')
+import nuxt_plugin_templatesplugin5804ceb7_32c5abb1 from 'nuxt_plugin_templatesplugin5804ceb7_32c5abb1' // Source: .\\templates.plugin.5804ceb7.js (mode: 'all')
 
 // Component: <ClientOnly>
 Vue.component(ClientOnly.name, ClientOnly)
@@ -172,20 +172,20 @@ async function createApp (ssrContext) {
 
   // Plugin execution
 
-  if (process.client && typeof nuxt_plugin_workbox_3672d63b === 'function') {
-    await nuxt_plugin_workbox_3672d63b(app.context, inject)
+  if (process.client && typeof nuxt_plugin_workbox_1d2b534a === 'function') {
+    await nuxt_plugin_workbox_1d2b534a(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_plugin_6a15b290 === 'function') {
-    await nuxt_plugin_plugin_6a15b290(app.context, inject)
+  if (typeof nuxt_plugin_plugin_a2997ad0 === 'function') {
+    await nuxt_plugin_plugin_a2997ad0(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_markdownit_275711a8 === 'function') {
-    await nuxt_plugin_markdownit_275711a8(app.context, inject)
+  if (typeof nuxt_plugin_markdownit_614ee74c === 'function') {
+    await nuxt_plugin_markdownit_614ee74c(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_templatesplugin5804ceb7_7d3c18de === 'function') {
-    await nuxt_plugin_templatesplugin5804ceb7_7d3c18de(app.context, inject)
+  if (typeof nuxt_plugin_templatesplugin5804ceb7_32c5abb1 === 'function') {
+    await nuxt_plugin_templatesplugin5804ceb7_32c5abb1(app.context, inject)
   }
 
   // If server-side, wait for async component to be resolved first

@@ -62,7 +62,8 @@ export default {
       {href: "https://fonts.googleapis.com/css?family=Roboto|Merriweather:400,700"}
     ],
     script: [
-      {src: "https://www.googletagmanager.com/gtag/js?id=UA-132392058-1", defer: "true"}
+      {src: "https://www.googletagmanager.com/gtag/js?id=UA-132392058-1", defer: "true"},
+      {src: src="https://identity.netlify.com/v1/netlify-identity-widget.js" }
     ]
   },
   /*

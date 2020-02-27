@@ -3,16 +3,16 @@ import Router from 'vue-router'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
-const _1f747aac = () => interopDefault(import('..\\pages\\about.vue' /* webpackChunkName: "pages_about" */))
-const _16bd53ff = () => interopDefault(import('..\\pages\\contact.vue' /* webpackChunkName: "pages_contact" */))
-const _b5cfc804 = () => interopDefault(import('..\\pages\\news\\index.vue' /* webpackChunkName: "pages_news_index" */))
-const _fbd78548 = () => interopDefault(import('..\\pages\\partners.vue' /* webpackChunkName: "pages_partners" */))
-const _56acd0fe = () => interopDefault(import('..\\pages\\policies.vue' /* webpackChunkName: "pages_policies" */))
-const _86b18570 = () => interopDefault(import('..\\pages\\schedule.vue' /* webpackChunkName: "pages_schedule" */))
-const _703dff46 = () => interopDefault(import('..\\pages\\speakers\\index.vue' /* webpackChunkName: "pages_speakers_index" */))
-const _2dc2c6de = () => interopDefault(import('..\\pages\\news\\_news.vue' /* webpackChunkName: "pages_news__news" */))
-const _57fed285 = () => interopDefault(import('..\\pages\\speakers\\_speaker.vue' /* webpackChunkName: "pages_speakers__speaker" */))
-const _3f2c5571 = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages_index" */))
+const _0ae71a68 = () => interopDefault(import('..\\pages\\about.vue' /* webpackChunkName: "pages_about" */))
+const _e89077c2 = () => interopDefault(import('..\\pages\\contact.vue' /* webpackChunkName: "pages_contact" */))
+const _391d7c1e = () => interopDefault(import('..\\pages\\news\\index.vue' /* webpackChunkName: "pages_news_index" */))
+const _a7305d88 = () => interopDefault(import('..\\pages\\partners.vue' /* webpackChunkName: "pages_partners" */))
+const _0205a93e = () => interopDefault(import('..\\pages\\policies.vue' /* webpackChunkName: "pages_policies" */))
+const _320a5db0 = () => interopDefault(import('..\\pages\\schedule.vue' /* webpackChunkName: "pages_schedule" */))
+const _1bf9507d = () => interopDefault(import('..\\pages\\speakers\\index.vue' /* webpackChunkName: "pages_speakers_index" */))
+const _7c6fb204 = () => interopDefault(import('..\\pages\\news\\_news.vue' /* webpackChunkName: "pages_news__news" */))
+const _dd59e336 = () => interopDefault(import('..\\pages\\speakers\\_speaker.vue' /* webpackChunkName: "pages_speakers__speaker" */))
+const _1a444d91 = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages_index" */))
 
 // TODO: remove in Nuxt 3
 const emptyFn = () => {}
@@ -32,43 +32,43 @@ export const routerOptions = {
 
   routes: [{
     path: "/about",
-    component: _1f747aac,
+    component: _0ae71a68,
     name: "about"
   }, {
     path: "/contact",
-    component: _16bd53ff,
+    component: _e89077c2,
     name: "contact"
   }, {
     path: "/news",
-    component: _b5cfc804,
+    component: _391d7c1e,
     name: "news"
   }, {
     path: "/partners",
-    component: _fbd78548,
+    component: _a7305d88,
     name: "partners"
   }, {
     path: "/policies",
-    component: _56acd0fe,
+    component: _0205a93e,
     name: "policies"
   }, {
     path: "/schedule",
-    component: _86b18570,
+    component: _320a5db0,
     name: "schedule"
   }, {
     path: "/speakers",
-    component: _703dff46,
+    component: _1bf9507d,
     name: "speakers"
   }, {
     path: "/news/:news",
-    component: _2dc2c6de,
+    component: _7c6fb204,
     name: "news-news"
   }, {
     path: "/speakers/:speaker",
-    component: _57fed285,
+    component: _dd59e336,
     name: "speakers-speaker"
   }, {
     path: "/",
-    component: _3f2c5571,
+    component: _1a444d91,
     name: "index"
   }],
 
