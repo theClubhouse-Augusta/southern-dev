@@ -8,10 +8,13 @@ import {
 
 import NuxtError from '..\\layouts\\error.vue'
 import NuxtLoading from './components/nuxt-loading.vue'
+import NuxtBuildIndicator from './components/nuxt-build-indicator'
 
 import '..\\node_modules\\@fortawesome\\fontawesome-svg-core\\styles.css'
 
 import '..\\assets\\sass\\main.sass'
+
+import '..\\node_modules\\vuetify\\dist\\vuetify.css'
 
 import _7c9dce94 from '..\\layouts\\deefault.vue'
 import _6f6c098b from '..\\layouts\\default.vue'
@@ -19,7 +22,7 @@ import _6f6c098b from '..\\layouts\\default.vue'
 const layouts = { "_deefault": _7c9dce94,"_default": _6f6c098b }
 
 export default {
-  head: {"titleTemplate":"%s - southern-dev","title":"southern-dev","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"httpEquiv":"X-UA-Compatible","content":"IE=edge"},{"property":"og:title","content":"Southern Dev Conference"},{"property":"og:site_name","content":"southerndev"},{"property":"og:url","content":"southerndev.co"},{"property":"og:description","content":"A developer conference in Augusta Georgia. We want to push forward the conversation around software engineering beyond the basics."},{"property":"og:type","content":"website"},{"property":"og:image","content":"\u002Flogo.png"},{"name":"twitter:card","content":"summary_large_image"},{"name":"twitter:site","content":"@sodevcon"},{"name":"twitter:title","content":"Southern Dev Conference"},{"name":"twitter:image","content":"\u002Flogo.png"},{"name":"google-site-verification","content":"6kUjhvEiJXYvAHEbR88rpfXohyc23GlOoXzcgnWAqcU"},{"hid":"description","name":"description","content":"nuxt version of southern dev"},{"hid":"mobile-web-app-capable","name":"mobile-web-app-capable","content":"yes"},{"hid":"apple-mobile-web-app-title","name":"apple-mobile-web-app-title","content":"southern-dev"},{"hid":"author","name":"author","content":"axecopfire"},{"hid":"theme-color","name":"theme-color","content":"#fff"}],"link":[{"rel":"icon","href":"\u002Ffavicon.png"},{"href":"https:\u002F\u002Ffonts.googleapis.com\u002Fcss?family=Roboto|Merriweather:400,700"},{"rel":"stylesheet","type":"text\u002Fcss","href":"https:\u002F\u002Ffonts.googleapis.com\u002Fcss?family=Roboto:100,300,400,500,700,900&display=swap"},{"rel":"stylesheet","type":"text\u002Fcss","href":"https:\u002F\u002Fcdn.jsdelivr.net\u002Fnpm\u002F@mdi\u002Ffont@latest\u002Fcss\u002Fmaterialdesignicons.min.css"},{"rel":"manifest","href":"\u002F_nuxt\u002Fmanifest.884fca9d.json"}],"script":[{"src":"https:\u002F\u002Fwww.googletagmanager.com\u002Fgtag\u002Fjs?id=UA-132392058-1","defer":"true"}],"style":[],"htmlAttrs":{"lang":"en"}},
+  head: {"titleTemplate":"%s - southern-dev","title":"southern-dev","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"httpEquiv":"X-UA-Compatible","content":"IE=edge"},{"property":"og:title","content":"Southern Dev Conference"},{"property":"og:site_name","content":"southerndev"},{"property":"og:url","content":"southerndev.co"},{"property":"og:description","content":"A developer conference in Augusta Georgia. We want to push forward the conversation around software engineering beyond the basics."},{"property":"og:type","content":"website"},{"property":"og:image","content":"\u002Flogo.png"},{"name":"twitter:card","content":"summary_large_image"},{"name":"twitter:site","content":"@sodevcon"},{"name":"twitter:title","content":"Southern Dev Conference"},{"name":"twitter:image","content":"\u002Flogo.png"},{"name":"google-site-verification","content":"6kUjhvEiJXYvAHEbR88rpfXohyc23GlOoXzcgnWAqcU"},{"hid":"description","name":"description","content":"nuxt version of southern dev"},{"hid":"mobile-web-app-capable","name":"mobile-web-app-capable","content":"yes"},{"hid":"apple-mobile-web-app-title","name":"apple-mobile-web-app-title","content":"southern-dev"},{"hid":"author","name":"author","content":"axecopfire"},{"hid":"theme-color","name":"theme-color","content":"#fff"}],"link":[{"rel":"icon","href":"\u002Ffavicon.png"},{"href":"https:\u002F\u002Ffonts.googleapis.com\u002Fcss?family=Roboto|Merriweather:400,700"},{"rel":"stylesheet","type":"text\u002Fcss","href":"https:\u002F\u002Ffonts.googleapis.com\u002Fcss?family=Roboto:100,300,400,500,700,900&display=swap"},{"rel":"stylesheet","type":"text\u002Fcss","href":"https:\u002F\u002Fcdn.jsdelivr.net\u002Fnpm\u002F@mdi\u002Ffont@latest\u002Fcss\u002Fmaterialdesignicons.min.css"},{"rel":"manifest","href":"\u002F_nuxt\u002Fmanifest.884fca9d.json"}],"script":[{"src":"https:\u002F\u002Fwww.googletagmanager.com\u002Fgtag\u002Fjs?id=UA-132392058-1","defer":"true"},{"src":"https:\u002F\u002Fidentity.netlify.com\u002Fv1\u002Fnetlify-identity-widget.js"}],"style":[],"htmlAttrs":{"lang":"en"}},
 
   render (h, props) {
     const loadingEl = h('NuxtLoading', { ref: 'loading' })
@@ -64,7 +67,7 @@ export default {
       }
     }, [
       loadingEl,
-
+      h(NuxtBuildIndicator),
       transitionEl
     ])
   },
@@ -174,6 +177,10 @@ export default {
     },
 
     setLayout (layout) {
+      if(layout && typeof layout !== 'string') {
+        throw new Error('[nuxt] Avoid using non-string value as layout property.')
+      }
+
       if (!layout || !layouts['_' + layout]) {
         layout = 'default'
       }
