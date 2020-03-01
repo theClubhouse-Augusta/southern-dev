@@ -13,14 +13,14 @@ div
           li
             a(href="/")
               img(src="/logo.png") 
+          //- li
+          //-     a(href="/") Home
           li
-              a(href="/") Home
-          //- li
-          //-     a(href="/about")
-          //-         .select About
-          //- li
-          //-     a(href="/speakers")
-          //-         .select Speakers
+              a(href="/about")
+                  .select About
+          li
+              a(href="/speakers")
+                  .select Speakers
           //- li
           //-     a(href="/news")
           //-         .select News
