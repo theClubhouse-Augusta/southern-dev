@@ -59,7 +59,7 @@ export default {
     ],
     link: [
       { rel: 'icon', href: '/favicon.png' },
-      {href: "https://fonts.googleapis.com/css?family=Roboto|Merriweather:400,700"}
+      { href: "https://fonts.googleapis.com/css?family=Roboto|Merriweather:400,700" }
     ],
     script: [
       {src: "https://www.googletagmanager.com/gtag/js?id=UA-132392058-1", defer: "true"},
