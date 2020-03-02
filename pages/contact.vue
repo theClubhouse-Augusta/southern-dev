@@ -26,6 +26,7 @@
     h1
         color: $blue1
         background-color: $blue5
+        text-align: center
     h2
         color: $pink1
     form
