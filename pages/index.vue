@@ -6,10 +6,10 @@
       .content
           img(src="/logo.png")
           h1 A Southern Tech Conference
-    section.date 
-      h2 April 25, 2020
-      a.button(href="https://www.theclubhou.se/event-tickets/southern-dev-2020-general-admission" rel="noreferrer noopener" target="_blank")
-          button Get Yo Tickets
+    //- section.date 
+    //-   h2 April 25, 2020
+    //-   a.button(href="https://www.theclubhou.se/event-tickets/southern-dev-2020-general-admission" rel="noreferrer noopener" target="_blank")
+    //-       button Get Yo Tickets
       //- br
       //- a.button(href="./2019" role="button" style="margin-top: 30px;" ) Check out 2019
 </template>

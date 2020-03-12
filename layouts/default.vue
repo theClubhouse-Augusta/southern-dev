@@ -1,35 +1,35 @@
 <template lang="pug">
 div
-  .hamburger(@click="hamburgerToggle()" :class="activeNav")
-      span.line
-      span.line
-      span.line
-  header#header-main(:class="activeNav")
-    a(href="index")
+  //-   .hamburger(@click="hamburgerToggle()" :class="activeNav")
+  //-       span.line
+  //-       span.line
+  //-       span.line
+  //-   header#header-main(:class="activeNav")
+  //-     a(href="index")
       //- img(src="images/logo.png").header-image
     //- include ../components/navbar.pug
-    nav
-      ul
-          li
-            a(href="/")
-              img(src="/logo.png") 
+    //- nav
+    //-   ul
+    //-       li
+    //-         a(href="/")
+    //-           img(src="/logo.png") 
           //- li
           //-     a(href="/") Home
-          li
-              a(href="/about")
-                  .select About
-          li
-              a(href="/speakers")
-                  .select Speakers
+          //- li
+          //-     a(href="/about")
+          //-         .select About
+          //- li
+          //-     a(href="/speakers")
+          //-         .select Speakers
           //- li
           //-     a(href="/news")
           //-         .select News
           //- li
           //-     a(href="/schedule")
           //-         .select Schedule
-          li
-              a(href="/contact")
-                  .select Contact
+          //- li
+          //-     a(href="/contact")
+          //-         .select Contact
           //- li
           //-     a(href="/partners")
           //-         .select Partners
